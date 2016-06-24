@@ -1,0 +1,132 @@
+%\documentclass[a4paper, 11pt, oneside, openany]{ThesisStyle}
+\documentclass[a4paper, 11pt, twoside, openany]{ThesisStyle}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+%\usepackage{capt-of} % needed to put table next to a figure and have captions
+\usepackage{color}
+
+%\usepackage[colorlinks=true,citecolor=blue,filecolor=blue,linkcolor=blue,urlcolor=blue,pdftex]{hyperref}
+
+\usepackage[nottoc]{tocbibind}
+
+\usepackage[left=1.2in, right=1in, top=1in, bottom=1in, includefoot, headheight=13.6pt]{geometry}
+
+\usepackage{array} %allow commands for the table columns specification
+
+\usepackage{natbib}
+
+\usepackage{subfigure} %for column figures
+
+\usepackage{floatflt} %for floating (wrapped) figures
+
+%add
+\usepackage[british]{babel} % For british english hyphenation patterns
+\usepackage[font=small, labelfont=bf]{caption} % Captions
+%\usepackage[width=11cm,font=footnotesize,labelfont=bf, format=default,justification=centerlast]{caption} % Captions\usepackage{fancyhdr} % Change caption style; changes headers and page styles etc.
+\usepackage{url} % Formatting for URL's i.e. http://www.rhizobia.co.nz
+\usepackage{natbib} % The best package for bibliographies
+\usepackage{microtype} % makes pdf look better
+
+\usepackage[nottoc]{tocbibind} % Table of contents
+\usepackage[hyperindex=true,pdftitle={Search for diboson resonances with CMS and Optimization and Upgrade of the CMS Pixel Barrel Detector},pdfauthor={Jennifer Ngadiuba},colorlinks=false,pagebackref=false,citecolor=blue,plainpages=false,pdfpagelabels]{hyperref} % colourlinks=false for printing 
+
+%add
+\usepackage{xspace}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% with this we ensure that the chapter and section
+% headings are in lowercase.
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} % delete current setting for header and footer
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+%\renewcommand{\headrulewidth}{0.5pt}
+%\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt} % make space for the rule
+%\fancypagestyle{plain}{%
+%\fancyhead{} % get rid of headers on plain pages
+%\renewcommand{\headrulewidth}{0pt} % and the line
+%-------------------------------------------------------------------------------------
+
+\newcommand{\mWH}{\ensuremath{m_{\rm WH}\xspace}}
+\newcommand{\mWV}{\ensuremath{m_{\rm WV}\xspace}}
+
+\input{ptdr-definitions.tex}
+%redefine the include macro - no page break with includes (doesn't work)
+%\usepackage{filehook}
+%\AtEndOfIncludes{%
+%  \global\let\savedclearpage\clearpage
+%  \global\let\clearpage\relax
+%}
+%\AfterIncludes{%
+%  \global\let\clearpage\savedclearpage
+%}
+
+
+
+
+
+\begin{document}
+
+\begin{titlepage}
+\input{TitlePage}
+\end{titlepage}
+
+\tableofcontents
+
+%chapter*{Acknowledgements}
+\newpage
+\pagenumbering{arabic}
+
+%\begin{abstract}
+%\end{abstract}
+
+%\chapter{Introduction} %add observational evidence
+	\input{chapters/Chapter1-Introduction/Introduction}
+%\chapter{The CMS Experiment at LHC} %add observational evidence
+	\input{chapters/Chapter2-CMSatLHC/CMSatLHC}
+
+\part{Search for diboson resonances with CMS}
+
+%\chapter{Physics beyond the Standard Model}
+	\input{chapters/Chapter3-Theory/Theory}
+
+%\chapter{Object and event reconstruction}
+	\input{chapters/Chapter4-Objects/EventReconstruction}
+
+%\chapter{Dataset and event simulation}
+	\input{chapters/Chapter5-DataAndSimulation/DataAndSimulation}
+
+%\chapter{Boosted H->bb and W/Z->qq identification with jet substructure}
+	\input{chapters/Chapter6-JetSubstructure/JetSubstructure}		
+
+%\chapter{Final event selection and categorization}
+	\input{chapters/Chapter7-EventSelection/EventSelection}		
+	
+%\chapter{Signal and background modeling}	
+	\input{chapters/Chapter8-SignalAndBackgroundModeling/SignalAndBackgroundModeling}
+
+%\chapter{Final results and statistical interpretation}
+	\input{chapters/Chapter9-Results/Results}
+
+%\chapter{Combination of searches for diboson resonances at $\sqrt{s}$ = 8 and 13 TeV}
+	\input{chapters/Chapter10-Combination/Combination}
+
+\part{Optimization and Upgrade of the CMS Pixel Barrel Detector}
+
+%\chapter{The CMS Pixel Barrel Detector}
+	\input{chapters/Chapter11-BPixDescription/BPixDescription}
+
+%\chapter{Phase I Upgrade of the CMS Pixel Barrel Detector}		
+	\input{chapters/Chapter12-Phase1BPix/Phase1BPix}
+					
+
+\end{document}

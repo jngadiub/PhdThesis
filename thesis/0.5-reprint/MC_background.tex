@@ -1,0 +1,941 @@
+\chapter{MonteCarlo Studies of the Background}
+\label{ch:MC_BG}
+
+For all experiments dealing with very low signal rates, such as dark matter
+or double beta decay searches, the reduction and discrimination of the background is one of the most
+important and difficult tasks. As the sensitivity of these experiments
+keeps increasing, the fight against the background remains crucial.
+The main background sources are gammas and electrons which come
+from the natural radioactivity of the detector materials and surroundings
+and neutrons from two different sources: local radioactivity and cosmic-ray muons.
+
+Gammas passing through the detector produce electron recoils, whereas
+neutrons produce nuclear recoils.
+Even though the gamma background is much higher than the one from neutrons, in most experiments 
+it can be efficiently rejected using discrimination techniques. 
+For example, some dark matter search experiments with noble gases distinguish electronic interactions (gamma and beta 
+background) from nuclear recoils based on a different ratio in the yield of
+scintillation light (primary signal, S1) and ionization charge (secondary signal, S2).
+Using this discrimination technique, XENON10 reached a 99.9\% electron recoil rejection 
+efficiency~\cite{xe10}. For other experiments, it is possible to use the background discrimination based on pulse shape analysis of the scintillation pulses. 
+On the other hand, since neutrons interact as it is expected from a WIMP, they can mimic the dark matter signal. One 
+way to handle this background is a well-planned detector design in
+order to keep radioactive materials far from the active volume. The design is supported by the a-priori selection of ultra low-background
+materials for the detector and the shield construction.
+
+The XENON100 detector \cite{Xe100_IDM08}, which is installed in the  Laboratori Nazionali del Gran Sasso (LNGS) in
+Italy, is a second generation detector within the XENON program which aims at the direct detection of particle dark matter in the form of Weakly Interacting Massive Particles (WIMPs)~\cite{wimps}.
+It is the successor of XENON10, which set a limit on the
+WIMP-nucleon spin-independent cross-section of 8.8$\times$10$^{-44}$ cm$^2$ for
+a  WIMP mass of 100~GeV/c$^2$~\cite{xe10}. XENON100 aims to improve this
+sensitivity by a factor of 40 due to increase of the target mass by a factor
+of 10 and reduction of the background in the target volume by a factor of 100.
+
+It is the purpose of this paper to predict the background from the natural radioactivity in the detector components and to study the reduction using extensive MonteCarlo simulations.
+In Section~\ref{sec:screening}, a brief overview on the screening
+of the detector and shield materials used in XENON100 is given.
+Section~\ref{sec:DetectorGeometry} describes the detector model which was used
+in the Monte Carlo simulations for the background studies. The predicted gamma background is
+discussed in Section~\ref{sec:gammas}. The predicted neutron background from
+detector materials, local radioactivity and cosmic-ray muons is presented in
+Sections~\ref{sec:det-shield}, \ref{sec:rock} and \ref{sec:muon-intro}, 
+respectively. Finally, the conclusions are given in Section~\ref{summary}.
+
+
+\section{XENON100 detector model simulated with the GEANT4 toolkit}
+\label{sec:DetectorGeometry}
+
+In order to simulate the response of the detector to various types of
+radiation and to predict the intristic and ambient 
+electron and nuclear recoil background, a high precision model (a schematic is
+shown in Figure~\ref{DetectorModel}) was created with the GEANT4 toolkit~\cite{g4}.
+
+The shield, with 4$\pi$ coverage of the detector, consists of two layers of lead 
+(15~cm outer layer and 5~cm inner layer with lower contamination of the radioactive isotope 
+${^{210}}$Pb, see table \ref{tab:screen_results}), 20~cm of polyethylene against ambient neutrons, and a 5~cm thick copper layer, to reduce the gamma background from the polyethylene.
+Massive and high radioactive components of the detector, such as feedthroughs and the pulse-tube refrigerator (PTR), which is used to
+liquefy the xenon and maintain the liquid temperature constant during operation, are mounted outside of the shield box.
+
+The XENON100 detector is a dual phase (liquid-gas) time-projection chamber (TPC). The total 
+amount of liquid xenon (LXe) enclosed in the stainless steel vacuum cryostat is 165~kg. The liquid 
+xenon in the target volume is 65~kg, enclosed in a PTFE and copper structure. The cylindrical TPC is formed by 24 interlocking 
+PTFE panels supporting the field shaping rings. PTFE reflects scintillation light (with high 
+efficiency for UV~\cite{yamashita}) and optically separates the target volume from the surrounding 
+LXe, which has a mass of 100~kg ($\sim$4~cm thick). This allows 
+to exploit the self-shield capability of LXe (so-called "passive veto" mode) due to its high density (the mean free path of a 1~MeV gamma in liquid xenon (density 2.86~g/cm$^3$) is 6.0~cm) and radioactive
+purity and therefore to decrease the background rate in the target volume from the outer detector 
+components.
+In addition, the xenon volume around the target with additional light sensors installed acts as an active veto for external background discrimination.
+
+\begin{figure}[!h]
+\begin{center}
+\begin{tabular}{c}
+ \includegraphics[height=0.50\linewidth]{figures/FullWithShield_whiteBG.eps}
+\includegraphics[height=0.50\linewidth]{figures/FullWOshield_whiteBG.eps}
+\end{tabular}
+\caption{Left: The XENON100 detector inside its shield as it was simulated with the
+GEANT4 framework (two layers of lead - dark grey, polyethylene - light grey, and copper - yellow); 
+Right: The closeup view of the detector (blue - stainless steel, magenta - PTFE, yellow - copper, 
+orange - PMTs; stainless steel cryostat and PTFE reflector are not
+shown).}
+\label{DetectorModel}
+\end{center}
+\end{figure}
+
+The TPC is enclosed in a double walled low activity (as shown in 
+Table~\ref{tab:screen_results}) stainless steel cryostat vessel sitting on the support bars made from the stainless steel and fixed to the shield door. The thickness of the cryostat wall is 1.5~mm 
+and the total weight of the vessel is 73.6~kg, which is only 30\% of the XENON10 
+prototype~\cite{xe10}. Inside, the vessel is covered with a PTFE layer (3~mm thick) in order to 
+increase scintillation light collection in the active veto volume. 
+
+The gas phase is maintained inside the "diving bell". It is designed to keep the liquid level constant at a precise height. A positive pressure in the bell is provided by the gas returning from the continuous recirculation system, and the height of the gas outlet in the bell can be changed by a motion feedthrough.
+
+Electrons created by ionization in the LXe target are drifted upwards by a strong electric 
+field ($\sim$1~kV/cm) created by applying voltage on the cathode (75~$\mu$m stainless steel mesh). The anode stack is placed inside the "diving bell". An extraction field ($\sim$10~kV/cm) is created across the liquid-gas interface 
+by applying high voltage on the anode (125~$\mu$m mesh). Two additional meshes are installed below (gate mesh) and above the anode (top mesh) and kept at ground potential, to close the field cage and shield the top PMT array from the high electric field. The drifted electrons are extracted into the gas phase 
+(density 5.9~kg/m$^3$), accelerated and produce the secondary scintillation (electro-luminescence). 
+The gaps between the electrodes (gate - anode and anode - top mesh) are 5~mm, and the liquid level is adjusted between the anode and the gate grids. 
+In the simulation, only the stainless steel support rings for the meshes are considered, given that the meshes themselves (made from Al) have a very low mass and the background originating from their radioactive contamination is negligible.
+To optimize the homogeneity of the drift field inside the TPC, 40 equidistant field shaping rings made of copper wires are used. The voltage divider network consists of 41 resistors (700~MOhm each) mounted on the outer part of the teflon wall inside the chamber.
+
+The scintillation light generated by particles interacting with Xe atoms is detected by 242 1"~x~1" R8520-06-Al Hamamatsu photomultiplier tubes (PMT), optimised to  
+operate in liquid xenon (temperature 177~K, scintillation light wavelength
+178~nm) and to withstand pressures up to 5~atm. The top PMT array consists of 98 PMTs, mounted in a concentric pattern 
+in a PTFE support structure inside the stainless steel bell; 80 PMTs are immersed in liquid xenon on the 
+bottom of the target volume. They are arranged as a rectangular grid in order to maximize the photocathode coverage. Additionally, 64 PMTs view the veto volume: 16 PMTs above and below the TPC and 32 observing the sides.
+In the GEANT4 model, a PMT consists of a stainless steel case, an Al photocathode and a synthetic silica glass (SiO$_{2}$) window.
+The PMTs are supplied with high voltage through the voltage divider circuit mounted on the bases made from Cirlex (C$_{22}$H$_{10}$N$_{2}$O$_{5}$).
+
+Table~\ref{tab:mass} shows the amount of different materials used for the detector construction.
+
+
+\begin{table}[h!]
+\centering
+\caption{Amount of materials used to construct XENON100 detector (first 9 rows) and
+  shield (last 3 rows). The stainless steel includes the cryostat vessel with the top flange and pipes and the "diving bell". The support rings for the electrode meshes are made from the stainless steel but  shown separately, being located directly in the target volume. The PMT components have the following density: photocathode Al - 8.00~g/cm$^3$, synthetic silica glass - 2.2~g/cm$^3$, stainless steel case - 8.0~g/cm$^3$. The voltage divider network (resistor chain) for the field shaping rings is simplified in the model to a thin ceramic tube.}
+
+\begin{tabular}{lcc}
+\hline
+\bf{Material} & \bf{Amount} & \bf{Density, [g/cm$^3$]} \\
+\hline
+Stainless steel & 71.6~kg & 8.0\\
+PTFE & 11.86~kg & 2.2\\
+PMTs  & 242~pieces (130 top and 112 bottom) \\
+PMT bases  & 242 pieces (130 + 112) & 1.43\\
+Support bars (steel) & 49.7~kg & 8.0\\
+Copper (inside) & 3.9~kg & 8.92\\
+Resistor chain & 1.47~g (41 pieces) \\
+Cathode support ring (steel) & 74~g & 8.0 \\
+Top grids support rings (steel) & 236~g & 8.0\\
+Liquid xenon  & 165~kg (target volume 65~kg) & 2.92\\
+\hline
+Polyethylene shield  & 1.6~t & 0.94\\
+Copper shield & 2.1~t & 8.92\\
+Lead shield  & 33.8~t & 11.34\\
+\hline
+\end{tabular}
+\label{tab:mass}
+\end{table}
+
+
+\section{Material screening} \label{sec:screening}
+
+In XENON100, special care was taken to select detector and
+shield materials according to their radioactive contamination. Therefore, before 
+detector construction, the majority of materials planned to be
+used were screened with low background Ge detectors in order to determine their radioactivity, mostly due to $^{238}$U, 
+$^{235}$U, $^{232}$Th, $^{40}$K and $^{60}$Co contamination.
+XENON100 operates a dedicated screening facility underground at LNGS, 
+consisting of a 2.2 kg high purity Ge crystal in an ultra-low background Cu
+cryostat, which is surrounded by a 
+low background shield (Cu and Pb)~\cite{gator}. Moreover, the LNGS screening facility, with some
+of the most sensitive Ge detectors in the world, was also used.
+Several materials particularly low in radioactivity were 
+identified, such as the stainless steel used for the cryostat and
+polytetrafluoroethylene (PTFE) used
+to construct the time-projection chamber (TPC) enclosure.  
+Table~\ref{tab:screen_results} shows the results from the screening of the materials used in detector construction. For more details, we refer to reference~\cite{screening}.
+These activities are used as an input information for the Monte Carlo simulations and background predictions, as described in the following sections.
+
+\begin{table}[h!]
+\centering
+\caption{Radioactive contamination of the materials used in the construction of XENON100, from measurements at underground facilities at LNGS. 
+The support bars are made from 25~mm thick stainless steel, the support rings for the cathode and the top grids from 1.5 and 3.0~mm thick steel, respectively. 
+The PMT signal cables additionally contain 5.0$\pm$0.9~mBq/kg of $^{108m}$Ag. 
+The last four materials are used for the shield of XENON100. The dominating activity 
+for the two types of lead is due to $^{210}$Pb (not shown in the table): for the outer layer the activity of $^{210}$Pb is ($560\pm90$) Bq/kg and for the inner layer it is ($17\pm5$) Bq/kg. }
+\label{tab:screen_results}
+\vspace{0.3cm}
+\begin{tabular}{lccccc}
+\hline
+\bf{Material} & \bf{Unit} & \bf{$^{238}$U} & \bf{$^{232}$Th} & \bf{$^{60}$Co} & \bf{$^{40}$K}  \\
+ &        & \bf{[mBq/unit]} &  \bf{[mBq/unit]} &  \bf{[mBq/unit]} &  \bf{[mBq/unit]} \\
+\hline
+Stainless Steel & kg &  $<$ 1.7	&  $<$ 1.9	& 5.5$\pm$0.6	&  $<$9.0 \\
+PTFE & kg & $<$ 0.31 &  $<$ 0.16	&  $<$ 0.11	&  $<$2.25 \\
+PMTs & piece & 0.15$\pm$0.02 & 0.17$\pm$0.04 & 0.6$\pm$0.1 & 11$\pm$2 \\
+PMT Bases & base & 0.16$\pm$0.02 & 0.07$\pm$0.02	& $<$0.01	& $<$0.16 \\
+Support Bars & kg & $<$ 1.3 & 2.9$\pm$0.7 & 1.4$\pm$0.3 & $<$ 7.1 \\
+Copper (inside) & kg & $<$ 0.22 & $<$ 0.16 & 0.20$\pm$0.08 & $<$ 1.34 \\
+Resistor Chain & piece & 0.027$\pm$0.004 & 0.014$\pm$0.003 & $<$ 0.003 & 0.19$\pm$0.03 \\
+Cathode & kg & 3.6$\pm$0.8 & 1.8$\pm$0.5 & 7.3$\pm$1.3 & $<$ 4.92 \\
+Top Grids & kg & $<$ 2.7 & $<$ 1.5 & 13$\pm$1 & $<$ 12 \\
+PMT signal cable & kg & $<$ 1.6 & 3.7$\pm$1.8 & $<$ 0.69 & 35$\pm$13 \\
+\hline
+Polyethylene & kg &  0.23$\pm$0.05 & $<$ 0.094 &  $<$ 0.89 &  0.7$\pm$0.4 \\
+Copper (shield) & kg &	 $<$ 0.07 &  $<$ 0.03 & $<$0.0045	 &  $<$0.06\\ 
+Pb shield  (inner) & kg &  $<$ 0.92	&  $<$ 0.43 & $<$0.1 & $<$1.46\\
+Pb shield (outer) & kg &  $<$ 0.80	&  $<$ 0.72 &  $<$ 0.12&  14$\pm$3  \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\section{Electron recoil background}
+\label{sec:gammas}
+
+So far, the dominant background of the XENON100 dark matter search experiment is the electron recoil background. Even if the rejection efficiency, based on the ratio of the
+scintillation/ionization signal, is high, it is never 100\%. 
+Gammas come from radioactive contamination of the materials used
+to construct the detector and its shield, radioactive contamination in the liquid xenon itself
+and the decays of ${^{222}}$Rn and its progeny inside the detector shield.
+
+\subsection{Electron recoil background due to radioactive contamination in the detector and shield materials}
+\label{sec:gammas_Materials}
+
+The decays of the radioactive isotopes in the materials listed in Table~\ref{tab:mass}
+were simulated within the GEANT4 framework and the corresponding background rates were calculated. In order to achieve good statistics, minimum 1 year live-time is simulated for each material/isotope.
+
+Energy deposited as ionization appears in XENON100 as peaks of the
+secondary scintillation signal (S2). The data acquisition system (DAQ) built of CAEN V1724 flash ADC modules is capable to digitize the full waveform of 242 PMTs, where the time window for an event is 320~$\mu$s (doubled maximal drift time) and the time resolution is 10~ns. 
+If two or more S2 pulses are recorded in the trace, it means
+that gamma deposited energy at multiple places in the target. Such an event can
+be tagged as a multiple scatter and can be cut in the analysis as background, as the
+predicted behavior of the WIMP, due to the very low elastic scattering cross-section, is a single scatter.
+
+For the calculation of the final background rate, multiple scatter events are
+rejected taking into account the finite position resolution of the detector.  
+Multiple peaks can not be resolved if the interactions happen less than 3~mm apart in z [electron
+drift velocity (2~mm/$\mu$s) $\times$ resolution in time of the S2 signal
+(1.5~$\mu$s)] or 10~mm in the xy-plane (this is the resolution of the position
+reconstruction algorithm which is based on a $\chi$$^{2}$ minimization method, neural network or a support vector machine).
+
+The energy region for the background rate estimation is chosen
+to be sufficiently wide (up to 100~keVee), as the signal from inelastic dark matter is predicted to be 
+in a higher energy range than the one from elastic scattering~\cite{inelastic}. Figure~\ref{fig:Spectra} shows the energy spectra in the entire energy region
+(left) and in the region of interest, up to 100~keVee (right). The rate is given in differential units (dru = events/(kg$\cdot$day$\cdot$keVee), where
+keVee is the unit for electron recoil equivalent energy. The effect of the discrimination 
+between multiple and single scatters on the background rate 
+can be seen; the multiple scatter behavior of incident gammas is 
+typical for higher energies, whereas in the low energy region of the spectra (up to 300~keV), due to a shorter mean free path, 
+the single scatter behavior is more favorable and the multiple scatter cut does not give a significant reduction of the background rate. Further background 
+reduction can be achieved with fiducial volume (FV) cuts, as described below.
+
+\begin{figure}[t!]
+\begin{center}
+\begin{tabular}{c}
+ \includegraphics[width=0.50\linewidth]{figures/allScattersAndSingles_0-2700keV.eps}
+ \includegraphics[width=0.50\linewidth]{figures/allScattersAndSingles_0-100keV.eps}
+\end{tabular}
+\caption{Left: Energy spectra of all scatters (green) and single scatters
+  (black) in the target volume (65~kg of LXe), and single scatters in the 
+50~kg and 30~kg fiducial volumes (blue and red, respectively);  Right: Zoom into the low energy part of the spectra (0-100~keVee).}
+\label{fig:Spectra}
+\end{center}
+\end{figure}
+
+Table~\ref{tab:gamma-rates} presents the upper limits on the average single scatter electron recoil rates
+in the region of interest in the entire 
+target volume and after applying fiducial volume cuts, leaving 50 and 30~kg of
+liquid xenon in the center of the target.
+The radial cut (outer 12~mm for a  50~kg fiducial mass and 32~mm for 30~kg, as shown in Figure~\ref{fig:HitsDistribution}) excludes events happening at the edge of 
+the target volume, originating from decays in the PTFE enclosure and the
+cryostat vessel.
+The background from the PMTs, PMT bases, stainless steel bell and the electrode meshes can 
+be efficiently discriminated by cutting the events happening within the top
+and bottom 10~mm (32~mm) of xenon. 
+The sum of this cuts, combined with rounded corners (see figure \ref{fig:HitsDistribution} reduce the target volume mass to 50~kg (30~kg) of liquid xenon.
+
+\begin{figure}[t!]
+\begin{center}
+ \includegraphics[width=0.45\linewidth]{figures/sum-AZ.eps}
+\caption{Predicted electron background. Single scatter events in the energy region of interest, 0-100~keVee) in the target volume. Z=0 corresponds to
+the liquid-gas interface. The outer (inner) dashed line 
+illustrates the 50~kg (30~kg) fiducial volume cut.}
+\label{fig:HitsDistribution}
+\end{center}
+\end{figure}
+
+In Figure~\ref{fig:Spectra} (right) the xenon X-ray (K-shell fluorescence) peak at 30~keV can be clearly
+seen. However, by applying a cut on the position of the interactions, as
+described later, this peak can be  removed and the spectra are 
+flat in the low energy region (up to approximately 150~keVee). The 
+background rate is thus presented as an average value over 0-100~keVee energy region.
+The position of the single scatter electron recoils between 1-100~keVee is depicted 
+in Figure~\ref{fig:HitsDistribution}.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=0.60\linewidth]{figures/RateVsThreshold_2pads.eps}
+\caption{Left scale: Background rate reduction with fiducial volume and active veto cuts
+  as a function of the energy threshold in the veto. The dashed lines show the
+  background rate with the passive veto; Right scale: The background
+ rate with the fiducial volume and active veto cuts as percentage of the total single scatters rate in the entire target volume.}
+\label{fig:VetoCuts}
+\end{center}
+\end{figure}
+
+The values presented in Table~\ref{tab:gamma-rates} show that the main
+contribution to the total electron recoil background is 
+from the PMTs, followed by the stainless steel, the bases for the PMT 
+voltage divider network, and the PTFE. All other materials (polyethylene shield, PMT high
+voltage and signal cables, the voltage divider network for the field shaping
+rings, and the cathode) contribute less than 2\% to the total background rate in the fiducial volume (both 50 and 30~kg). 
+The background from the three grids on the top of the target volume is quite high,
+but only within the few mm near the liquid surface and can be efficiently removed with the fiducial volume cuts.
+
+\begin{table}[!h]
+\centering
+\caption{Predicted upper limits on the average single electron recoil rates in the energy range of 1-100~keVee, in the entire target volume and in 50 and 30 kg fiducial mass. The
+statistical errors are less than 1\%. The rates are given in mdru = 10$^{-3}$~events/(kg$\cdot$day$\cdot$keVee).}
+\label{tab:gamma-rates}
+\vspace{0.3cm}
+\begin{tabular}{lccc}
+\hline
+\bf{Material} & \multicolumn{3}{c}{\bf{Single electron recoils [mdru] in}}\\
+         	      & \bf{target volume (65~kg)} & \bf{50~kg FV} & \bf{30~kg FV} \\
+\hline
+Steel & $<$~19.3 & $<$~3.98 &  $<$~1.68\\
+PTFE & $<$~9.8 & $<$~0.24 &  $<$~0.09\\
+PMT & $<$~77.7 & $<$~14.55 & $<$~5.21 \\
+PMT bases & $<$~15.2 & $<$~1.61 & $<$~0.49 \\
+Polyethylene & $<$~0.31 & $<$~0.07 & $<$~0.005\\
+Support bars & $<$~1.0 & $<$~0.28 & $<$~0.12 \\
+Copper (inside) & $<$~0.29 & $<$~0.04 & $<$~0.02 \\
+Cathode & $<$~0.3 & $<$~0.02 & $<$~0.02\\
+Top grids & $<$~11.45 &$<$~0.09 & $<$~0.03\\
+Resistor chain & $<$~1.6$\times$10$^{-3}$ & $<$~4.4$\times$10$^{-6}$ & $<$~1.6$\times$10$^{-6}$ \\
+\hline
+\bf{Total} &  \bf{$<$~135.9} &  \bf{$<$~21.01} & \bf{$<$~7.73}\\
+\hline
+\end{tabular}
+\end{table}
+
+
+As previously mentioned, 100~kg of liquid xenon surround the target volume, act as an active veto. Events in which the gamma deposits part of 
+its energy in the veto volume can thus be rejected in the analysis. 
+The effect of the active veto is presented in Figure~\ref{fig:VetoCuts} (right) as the total rate as a function
+of the energy threshold in the veto volume.
+The active veto (even with an energy threshold of 200~keVee) gives the possibility to decrease 
+the background rate in the entire target volume by 50\%. However, background reduction is more efficient if the the active veto cut is used together with the fiducial 
+volume cuts, which results in more than 90\% reduction of the background rate, as shown in Figure~\ref{fig:VetoCuts}. With S1/S2 discrimination, the electron recoil background can be further reduced by \~99.5\%
+
+
+\subsection{Electron recoil background due to radioactive contamination in liquid xenon}
+\label{sec:LXe}
+
+The background from the beta decay (T$_{1/2}$=10.76~years, endpoint energy 687~keV) of
+$^{85}$Kr, as well as the background from the $^{238}$U and $^{232}$Th  
+decay chains, is a potentially serious 
+limitation in the sensitivity of a rare-event search. The electron recoil
+background due to the residual radioactive contamination of 
+xenon with these isotopes was simulated. In the previous section, the predicted background rates are scaled to the expected activity based on the materials screening. The level of radioactive trace contaminations in xenon is not not precisely at this stag, so the predicted background rate from this source was scaled for different  concentration of $^{238}$U, $^{232}$Th and $^{85}$Kr in liquid xenon, as shown in Figure~\ref{figLXe}.
+
+The abundance of $^{85}$Kr in natural krypton is 10$^{-11}$. 
+Commercial xenon gas, where the purification is performed by distillation and absorption-based chromatography, has a contamination of Kr at the ppm level~\cite{spectragas}. The gas
+used in the XENON100 experiment was processed by the
+cryogenic distillation plant at the Spectra Gas  Company to reduce the concentration of krypton to 5~ppb. However, the goal of the experiment requires that the background rate is dominated by the materials used in the detector construction. As it is shown in Figure~\ref{figLXe}, this results in the concentration of Kr at the ppt level at most.
+
+The high-temperature getter technology used in the experiment to purify xenon
+from water and electronegative contaminants does not remove the noble gas 
+krypton. Therefore, an additional gas purification is performed in XENON100 with a 
+cryogenic distillation column made by Taiyo-Nippon Sanso ~\cite{xmass}. The 3~m tall column is expected to reduce krypton by a factor of 10$^3$ at a purification speed of 0.6~kg/hour. 
+For XENON100, the radioactive contamination in liquid xenon found with a delayed coincidence
+analysis is 2.5~ppt for $^{238}$U, 30~ppt for $^{232}$Th and 4~ppb for Kr (prior to the distillation with the cryogenic column).
+
+\begin{figure}[!h]
+\begin{center}
+ \includegraphics[scale=0.5]{figures/rateVSconc_LXe.eps}
+\caption{Predicted rate of single electron recoils in the region 1 - 100~keVee
+  in the entire target volume as a function of the U (blue), Th (red) and Kr (green) trace contaminations in the xenon itself.}
+\label{figLXe}
+\end{center}
+\end{figure}
+
+
+\subsection{Electron recoil background from $^{222}$Rn decays in the shield cavity}
+\label{sec:radon}
+
+One of the dominant backgrounds in XENON100 is the gamma background from the
+decays of ${^{222}}$Rn daughters (half-life 3.8~days) in the
+atmosphere inside the shield cavity (volume 0.58~m$^3$). The measured radon activity 
+in the LNGS cavern reaches 140~Bq/m$^3$ at the location of the experiment. With the closed
+shield door and an air-tight seal, the volume is
+constantly flushed with nitrogen (flow rate 6 standard liters per minute). Nevertheless, a certain
+amount of radon is still present in the cavity. 
+
+The energy region for the calculation of the background rate from the decays of ${^{222}}$Rn progeny is chosen up to 60~keVee, as the 
+energy spectrum is flat in this region and is slightly going up at higher energies.
+Figure~\ref{fig:radon} (left) presents the predicted background rate as a function of radon concentration inside the shield.
+The specific activity of radon, at which the rate from the ${^{222}}$Rn decay
+chain is equal to the rate from the detector materials (see section \ref{sec:gammas}), 
+is in the range of 10-20~Bq/m$^3$, depending on the fiducial volume cut, as illustrated in Figure~\ref{fig:radon} (right).
+
+\begin{figure}[!h]
+\begin{center}
+\begin{tabular}{c}
+\includegraphics[width=0.50\linewidth]{figures/Rn222_rateVSconcentration.eps}
+\includegraphics[width=0.50\linewidth]{figures/RnRateOverTotalRate.eps}
+\end{tabular}
+\caption{Left: Predicted rate of single electron recoils as a function of ${^{222}}$Rn concentration in the
+  shield cavity for different LXe fiducial masses; Right: Background rate from the decay of radon over the total 
+  background rate (background from detector materials + background from $^{222}$Rn).}
+\label{fig:radon}
+\end{center}
+\end{figure}
+
+In Figure~\ref{fig:RnConc_DAQrate}.
+the correlation of the DAQ trigger rate with the concentration of radon in the
+cavity during an earlier phase of commissioning is shown. A clear correlation can be seen, indicating that the trigger rate is completely dominated by radioactive contamination in the air of the cavity if not properly flushed. During the dark matter runs, a low and constant $^{222}$Rn
+concentration is kept inside the shield. The lowest value measured with the Durridge RAD-7 radiometer is 1-2~Bq/m$^3$.
+
+\begin{figure}[!h]
+\begin{center}
+ \includegraphics[scale=0.5]{figures/DAQrate-RAD7data_080606-080609.eps}
+\caption{$^{222}$Rn concentration inside the shield and DAQ trigger rate.}
+\label{fig:RnConc_DAQrate}
+\end{center}
+\end{figure}
+
+
+\section{Nuclear recoil background}
+\label{sec:nuclearRecoils}
+
+\subsection{Neutrons from local radioactivity in the detector and shield materials}
+\label{sec:det-shield}
+
+Neutrons originating from detector and shield materials deliver the main contribution to
+the neutron background. These neutrons, with a mean energy around 1~MeV, 
+come from ($\alpha$,n)-reactions from U and Th in light materials and spontaneous fission of
+$^{238}$U. Their energy spectra were calculated with the SOURCES4A
+code~\cite{sources4A, vito}. This code also determines neutron production rates
+(in [n$\cdot$s$^{-1}\cdot$cm$^{-3}$]) for given materials, shown in Table~\ref{tab:rate-sources}).
+ Figure~\ref{sources_spectra} shows the energy spectra of
+neutrons produced from U in polyethylene (left) and copper (right) of the detector shield.
+Polyethylene consists of light elements, therefore ($\alpha$,n)-reactions are the dominant
+contribution to the neutron production rate, whereas for copper, 
+which is a high $Z$ material, they are
+negligible\footnote{The
+cross-section for an ($\alpha$,n) reaction decreases with the $Z$ of the target.}.
+
+\begin{figure}[h!]
+  \begin{minipage}[]{0.5\textwidth}
+    \includegraphics*[width=\textwidth]{figures/U_poly_10ppb.eps}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[]{0.5\textwidth}
+    \includegraphics*[width=\textwidth]{figures/U_copper_10ppb.eps}
+  \end{minipage}
+\caption{Neutron spectra for 10 ppb $^{238}$U in polyethylene (left) and in copper
+  (right). The dashed line (red) shows the contribution from spontaneous
+  fission, the dotted-dashed line (blue) from ($\alpha$,n)
+reactions, and the solid line (black) illustrates the sum of the two.}
+\label{sources_spectra}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\caption{Neutron production rates from spontaneous fission and ($\alpha$,n)
+  reactions from U and Th in the detector and shield materials based on the measurements with Gator and calculation with SOURCES}
+\label{tab:rate-sources}
+\vspace{0.3cm}
+\begin{tabular}{lccc}
+\hline
+\bf{Material} & \multicolumn{2}{c}{\bf{Neutron production rate for}} & \bf{n/year from U+Th} \\
+         & \bf{10 ppb U}  & \bf{10 ppb Th}  & \bf{(for measured activity}\\
+       & \bf{[n$\cdot$s$^{-1}\cdot$cm$^{-3}$]} & \bf{[n$\cdot$s$^{-1}\cdot$cm$^{-3}$]} & \bf{and mass)} \\
+\hline
+Steel &  1.56$\times$10$^{-9}$ & 7.27$\times$10$^{-10}$& $<$~12.5\\
+PTFE & 1.83$\times$10$^{-8}$ & 9.36$\times$10$^{-9}$ & $<$~14.1\\
+PMTs\footnotemark[1]  & 1.70$\times$10$^{-8}$ & 1.01$\times$10$^{-8}$ & $<$~21.8\\
+LXe\footnotemark[2] &   3.86$\times$10$^{-10}$ & negligible & $<$~0.1\\
+Polyethylene 	& 2.77$\times$10$^{-10}$ & 7.18$\times$10$^{-11}$& $<$~39.7 \\
+Copper shield &  1.24$\times$10$^{-9}$ & 1.30$\times$10$^{-10}$& $<$~2.0	 \\
+Lead &   1.66$\times$10$^{-9}$ &   negligible & $<$~1483.4  \\
+\hline
+\multicolumn{4}{l}{\footnotesize{$^1$Here, a PMT includes the base for the voltage divider network}} \\
+\multicolumn{4}{l}{\footnotesize{$^2$For LXe, concentration of U and Th is assumed as 1~ppt}} \\
+\end{tabular}
+\end{table}
+ 
+These neutron spectra were used as an input to a
+GEANT4 simulation for the neutron propagation into the active volume.  
+The same position resolution and cuts as for electron recoils were applied to the data. For the multiple scatter selection, an energy threshold of 1~keV for each individual
+scatter has been applied.
+The contribution of single scatter recoils to
+the total rate, in the region of interest 5 - 100~keV nuclear recoil energy (keVnr), is 40 - 50\% for all simulated materials. This is expected because of the rather small size of the detector (order of 30~cm) when compared to the typical mean free path of a 1~MeV neutron in liquid xenon (32~cm). For a larger, ton-scale detector, multiple scatters will dominate over single scatters, with
+the latter being about 20\% of the total rate.
+Figure~\ref{Esingles} shows the energy spectra of single scatter nuclear recoils from all materials. 
+The contributions from the PTFE and the PMTs to the neutron
+background are dominant, followed by the stainless steel of the cryostat.
+Figure~\ref{singles-position} illustrates the position of the single scatter nuclear recoils
+in the energy region of interest in the target volume. The rate at the
+edges of the detector is higher than that in the FV, so the total rate can be significantly (but less effectively than for the electron recoils) reduced by applying FV cuts.
+
+\begin{figure}[h!]
+\begin{center}
+ \includegraphics[scale=0.5]{figures/Total_bg_AV.eps}
+\end{center}
+\caption{Single scatter nuclear recoils in the active volume of XENON100 due
+to U and Th contamination in the detector and the shield materials. The rates are given in dru (nuclear recoils/(kg$\cdot$day$\cdot$keVnr).}
+\label{Esingles}
+\end{figure} 
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.44]{figures/Totalbg_position_shifted.eps}
+\end{center}
+\caption{Predicted neutron background (single scatters in the energy region of interest, 5-100~keVnr) in the target volume. Z coordinate is given as the depth from the liquid-gas interface. The dotted line shows the 50~kg FV cut and the dot-dashed line shows the 30~kg FV cut.}
+\label{singles-position}
+\end{figure}
+
+Table~\ref{tab:nrates} presents the upper limits on the single scatter nuclear recoils
+per year, in the energy region of 5 - 100~keVnr, for 50 and 30~kg fiducial mass. 
+The 50~kg (30~kg) FV cut reduces the total neutron background by 19\% (41\%).
+The total rate of single nuclear recoils in the region of interest from local radioactivity in the
+detector and shield materials is estimated  as 0.7 (for 50~kg FV mass) and
+0.3 (for 30~kg FV mass) events per year.
+The typical statistical errors for all simulation results are less than 1\%.
+
+\begin{table}[h!]
+\centering
+\caption{Rate of the single nuclear recoils for the energy range of 5-100~keV nuclear recoil energy in 
+50 and 30 kg fiducial mass. The statistical (if not shown) are less than 1\%.}
+\label{tab:nrates}
+\vspace{0.3cm}
+\begin{tabular}{lcc}
+\hline
+\bf{Material} &  \multicolumn{2}{c}{\bf{Single scatter nuclear recoils per year in}}\\
+           & \bf{50~kg FV}  & \bf{ 30~kg FV} \\
+\hline
+Steel & $<$~0.088 & $<$~ 0.039  \\
+PTFE  & $<$~0.299 & $<$~0.126 \\
+PMTs  & 0.277 $\pm$ 0.06 &  0.110 $\pm$ 0.02 \\
+LXe   &  $<$~0.003  &0.001    \\
+Polyethylene  & $<$~0.006   & $<$~0.003\\
+Copper shield & $<$~0.005   & $<$~0.002  \\
+Lead  & $<$~0.001  & $<$~0.001  \\
+\hline
+\bf{Total}  &\bf{0.68}   &\bf{0.28} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection {Neutrons from local radioactivity in the cavern} \label{sec:rock}
+
+An additional source of neutrons is the local radioactivity in
+the rock and the 30~cm of concrete surrounding the XENON experimental site. This background
+can be efficiently moderated by placing around the
+detector materials rich in hydrogen. Therefore, the XENON100 detector is surrounded by 20 cm thick layer of high density (0.94~g/cm$^3$) polyethylene.
+The SOURCES4A code was used to produce the neutron
+spectra and rates from the Gran Sasso rock and concrete. 
+The composition and the density of the materials and the activity of the rock
+(shown in Table~\ref{tab:activ-rates}) were taken from~\cite{wulandari}.
+The used composition of the concrete corresponds to 'dry concrete' with 8\% water
+content, whereas the 'wet concrete' has 16\% water content and will give half
+of the neutron flux compared to dry concrete~\cite{wulandari}. 
+The U/Th activity of the concrete at the XENON100 location was measured by the low background high purity Ge facility, described in section \ref{sec:screening}.
+Table~\ref{tab:activ-rates} shows the expected neutron production rate
+per year per unit mass from both rock and concrete. Even if this rate is
+higher for rock than for concrete, the latter gives dominant
+contribution (see Figure~\ref{rock-flux}), since the majority of neutrons from the 
+rock are moderated by the concrete layer.
+
+\begin{table}[h]
+\centering
+\caption{U and Th concentration in the Gran Sasso rock and concrete and the relevant
+neutron production rates.}
+\label{tab:activ-rates}
+\vspace{0.3cm}
+\begin{tabular}{lccccc}
+\hline
+\bf{Material} & \bf{U activity}  & \bf{Th activity}  & \multicolumn{2}{c}{\bf{Neutron production
+  rate}} & \bf{Total rate}\\                      
+        &     \bf{[ppb]}   & \bf{[ppb]}  &
+        \multicolumn{2}{c}{\bf{[10$^{-10}$ n$\cdot$s$^{-1}\cdot$cm$^{-3}$] from}}  & \bf{[n$\cdot$y$^{-1}\cdot$g$^{-1}$]}\\ 
+         &                        &    & \bf{10 ppb U} & \bf{10 ppb Th} & \\         
+\hline
+Rock &  6800 $\pm$ 670 &  2167 $\pm$ 74 & 8.13 & 2.64 & 7.1\\
+Concrete & 1380 $\pm$ 240 & 1230 $\pm$ 250 & 9.17 & 5.03 & 2.5\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Neutron flux at the XENON experimental site} \label{sec:localflux}
+
+The neutron flux calculated at the surface of the XENON experimental site is shown in Figure~\ref{rock-flux}. 
+The chosen rock thickness for the simulation is sufficient, as there are
+essentially no neutrons crossing more than 3~m of rock. 
+In Figure~\ref{rock-flux} the individual contributions from rock and concrete 
+are illustrated. Even 
+if the total neutron production from rock is higher, concrete
+contributes more to the total flux (~75\%).  
+The features seen at low energies in figure \ref{rock-flux}  
+reflect the structures in the cross-section of neutron scattering on O$_2$, C, and Ca. For example, the peak around 2.2~MeV comes from the neutron scattering
+on O$_2$ which has a resonance in the cross-section at this energy~\cite{n-cross-section}. 
+The integral neutron flux is (2.0$\pm$0.4)$\times$10$^{-6}$
+ n$\cdot$s$^{-1}\cdot$cm$^{-2}$, for energies above 1~MeV it is (0.65$\pm$0.12)$\times$10$^{-6}$  n$\cdot$s$^{-1}\cdot$cm$^{-2}$.
+These fluxes do not take into account the backscattering from the walls in the laboratory.
+References~\cite{lemrani, tziaferi} report an increment of the flux by 50\% above 1~MeV when
+back-scattering is included. Hence the neutron flux at the concrete-laboratory
+boundary due to local radioactivity is calculated as (2.4 $\pm$ 0.4)$\times$10$^{-6}$
+ n$\cdot$s$^{-1}\cdot$cm$^{-2}$ for all energies and (1.0$\pm$0.2)$\times$10$^{-6}$  n$\cdot$s$^{-1}\cdot$cm$^{-2}$ above 1~MeV.  
+These rates agree within 50\% with those calculated by \cite{wulandari} and measured by \cite{measured-flux} for Hall A in LNGS.
+The error of the flux includes both statistical errors and systematic errors from the
+uncertainty in the measured activity.
+
+\begin{figure}[h!]
+\begin{center}
+ \includegraphics[scale=0.5]{figures/Flux_rockconc_15x9x6_perseccm2.eps}
+\caption{Neutron flux at the concrete laboratory boundary from neutrons
+  coming from local radioactivity in the rock (red line) and concrete (blue
+  line) of the XENON100 experimental hall. No back-scattering is included here
+  (it is, however, taken into account in the subsequent calculations).}
+\label{rock-flux}
+\end{center}
+\end{figure}
+ 
+\subsection{Nuclear recoils in XENON100}
+
+The neutrons from rock and concrete were propagated further into the shield and
+into the XENON100 detector.  
+The same position resolution as discussed in section~\ref{sec:gammas} was applied.
+Table~\ref{tab:rock-rates} presents the number of single scatter nuclear recoils per year from
+concrete and rock for 50 and 30~kg fiducial mass. The statistical 
+errors are 30\% and 40\% respectively,
+since this simulation was time-consuming. Approximately 2 years for U
+and about 4.5 years for Th were simulated. The rate is higher
+than the one from all the detector and shield materials (see
+Table~\ref{tab:nrates}). In order to improve the capability of the shield to moderate neutrons from the rock and concrete, tanks filled with water (20~cm thick) are placed
+around the shield box, covering 4 sides of it. This
+additional shield reduces the neutron background from
+concrete and rock by one order of magnitude.
+The second row of the table~\ref{tab:rock-rates} shows the single
+nuclear recoil rates including the water shield. The rate from the 
+surrounding cavern is comparable with the
+background coming from the radioactivity in shield and detector materials. 
+
+\begin{table}[h]
+\centering
+\caption{Total single nuclear recoil rates for 50 and 30 kg fiducial mass
+from rock and 'dry' concrete \cite{wulandari} with and without water shield for the energy
+region of 5 - 100~keVnr.}
+\label{tab:rock-rates}
+\vspace{0.3cm}
+\begin{tabular}{lcc}
+\hline
+\bf{shield} &  \multicolumn{2}{c}{\bf{Single nuclear recoils per year in}}\\
+\bf{configuration} & \bf{50~kg FV}  & \bf{ 30~kg FV} \\
+
+\hline
+w/o water shield  &   4.78 $\pm$ 1.48   &  1.96 $\pm$ 0.94  \\
+with water shield &  0.48 $\pm$ 0.15   & 0.20 $\pm$ 0.09    \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection {Muon-induced neutrons} \label{sec:muon-intro}
+
+Rare-event experiments are located deep underground in order to shield the
+detectors from cosmic-rays. Muons are the only relevant particles that can penetrate 
+hundreds of meters of rock and reach the underground laboratory.
+Even if their flux at LNGS is reduced by six orders of magnitude, they can
+be an important background for high sensitivity experiments.
+Muons produce neutrons by hadronic and
+electromagnetic cascades with nuclei in the rock and concrete, the detector and shield
+materials and by muon spallations as well as muon captures in the target nuclei.
+The deeper the experimental site, the higher the mean muon energy,
+therefore the neutron production by muon capture underground is
+considered negligible.
+The energy of muon-induced neutrons extends up to few GeV, therefore
+the usual neutron shield, rich in hydrogen, cannot moderate and capture
+them.
+
+In the simulation of the muon-induced neutron background, the first step is the transportation 
+of muons from the Earth's surface
+down to the underground laboratory. The neutron yield from cosmic-ray muons strongly
+depends on the depth of the experimental hall and the mountain profile. For
+LNGS this simulation has already been done using the MUSIC 
+code~\cite{music} and this data have been used for the current
+simulation.
+The second step is the calculation of the angular distribution and the energy
+spectrum of muons at the experimental site of the XENON100 detector. 
+This was carried out with the MUSUN code~\cite{musun}, which samples single
+atmospheric muons at the Gran Sasso underground laboratory, taking into
+account the slant depth distribution. 
+The programme uses the tables of muon energy spectra at various 
+zenith and azimuthal angles at Gran Sasso and the angular distribution of muon 
+intensities at LNGS (Hall A) from
+the best fit to the LVD experimental data. 
+The mean muon energy at the Gran Sasso Laboratory was found to be 273~GeV and the
+muon flux 1.17~m$^{-2}$h$^{-1}$.
+The mean slant depth is 3749~m.w.e.. 
+Both $\mu^{+}$ and $\mu^{-}$  were simulated, with a ratio of $\mu^{+} / \mu^{-}$ equal to
+1.4, as shown by recent observations for high energy muons~\cite{mu-ratio}.
+The last step of this simulation is to propagate these muons through the rock,
+the concrete, and the shield materials into the XENON100 detector. The rock
+thickness is assumed to be 6~m, which is sufficient for all cascades
+to develop and to produce neutrons. 
+The muon propagation was done with the GEANT4 code and the QGSP-BIC-HP physics list
+was used.
+
+
+\subsection{Neutron flux at the XENON experimental site} 
+
+The flux of neutrons produced in muon interactions with the rock
+and concrete at the XENON experimental site is shown in Figure~\ref{mu-nflux}. 
+The total neutron flux is (4.13 $\pm$ 0.01)$\times$10$^{-9}$~n$\cdot$s$^{-1}\cdot$cm$^{-2}$ and it increases to 
+4.91$\times$10$^{-9}$~n$\cdot$s$^{-1}\cdot$cm$^{-2}$ if the back-scattering (multiple
+scatters on the walls of the laboratory) is included. With an energy threshold 1~MeV the flux is 1.56$\times$10$^{-9}$~n$\cdot$s$^{-1}\cdot$cm$^{-2}$. 
+The calculated flux is three orders of magnitude lower than the one from the radioactive contamination in the rock and concrete (see section~\ref{sec:localflux}).
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics*[scale=0.5]{figures/Neutron_flux_boundary.eps}
+\end{center}
+\caption{Muon-induced neutron flux at the concrete-laboratory boundary
+ of the XENON100 experimental site.}
+\label{mu-nflux}
+\end{figure}
+
+\subsection{Neutron production due to cosmic ray muons} \label{n-production}
+
+Muon-induced neutrons are produced in several physical processes, which
+are listed in Table~\ref{tab:process}.
+The contributions obtained from each process agree well with \cite{musun}, 
+where muons with an energy of 280~GeV (which is close to the mean muon energy in
+Gran Sasso) were simulated.
+The fraction of neutrons coming from a primary process, such
+as muon spallation, is low for high energy muons~\cite{mei-hime} and muon
+capture is almost negligible. 
+Moreover, Table~\ref{tab:process} (columns 3 and 4) shows the same contribution 
+for targets consisting of a high or a low $Z$ material. Since the cross-section of
+electromagnetic muon interaction is proportional to $Z$$^2$/$A$, electromagnetic cascades become more important for the target materials with high $Z$ (39\% of the total number of produced neutrons) than in those with low $Z$ (7\%).
+
+\begin{table}[h]
+\centering
+\caption{Physical processes for neutron production from cosmic-ray muons.}
+\label{tab:process}
+\vspace{0.3cm}
+\begin{tabular}{lccc}
+\hline
+\bf{Physical Process}  & \bf{\% produced} & \multicolumn{2}{c} {\bf{\%, for a target with}} \\
+                 &      \bf{neutrons}    & \bf{high Z} & \bf{low Z} \\
+\hline
+Hadronic & 77 &  60 & 92 \\
+Electromagnetic & 18 & 39 &  7\\
+Muon spallation & 4  & 1 & 1\\
+$\mu^-$ capture &  1 & ignored & ignored\\
+\hline
+\end{tabular}
+\end{table}
+
+In most cases, as shown in Table~\ref{tab:process}, a muon produces only a few primary hadrons. 
+These hadrons can generate showers of secondary hadrons, including neutrons. The number of
+neutrons produced per primary muon is called the multiplicity, which for rock is about 7.2 (reference~\cite{wang} calculated the mean multiplicity for the Gran Sasso rock as 6.4).
+In general, it depends on the target material, therefore
+Table~\ref{tab:multi-Emean} presents the multiplicity for each material separately.
+As can be seen, a higher $Z$ target results in a lower neutron multiplicity.
+In addition, this table shows the mean neutron energy produced in
+several materials. For rock, it is around 32~MeV and 
+neutrons produced in the high-$Z$ target materials have lower 
+mean energies. Similar conclusion was derived in reference~\cite{vito}. 
+
+\begin{table}[ht]
+\centering
+\caption{Neutron multiplicity and mean neutron energies for different materials.}
+\label{tab:multi-Emean}
+\vspace{0.3cm}
+\begin{tabular}{lcc}
+\hline
+\bf{Material}  & \bf{Mean}  & \bf{Mean neutron}   \\
+          & \bf{multiplicity}& \bf{energy [MeV]}\\
+\hline
+Rock & 7.3 & 31.6\\
+Concrete & 9.2 & 32.7\\
+Polyethylene & 33.5 & 34.3 \\
+Copper & 12.1 & 14.8 \\
+Lead &  8.9 & 6.8\\
+%Stainless Steel &  13.3& 8.3 \\
+\hline
+\end{tabular}
+\end{table}
+
+Figure~\ref{n-per-muon} illustrates the neutron energy spectra from muons per muon
+path in the shield materials.
+For lead (copper), it is found to be 5.5$\times$10$^{-3}$ (1.3$\times$10$^{-3}$)
+neutrons/muon/ (g$\cdot$cm$^{-2}$), whereas for polyethylene it is 2.3$\times$10$^{-4}$
+neutrons/muon/(g$\cdot$cm$^{-2}$). In addition, the flux above $\sim$10~MeV is material independent.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.5]{figures/shielding_neutrons_per_muonMuonpathMeV_smallernumbers.eps}
+\end{center}
+\caption{Neutron energy spectra from muons in the shield materials, per
+muon path (g/cm$^2$).}
+\label{n-per-muon}
+\end{figure}
+
+The majority (97.3\%) of muon-induced neutrons were produced in the rock,
+since most of the muons which survive to this depth travel
+vertically and do not "see" the XENON shield  
+(the rock thickness is 6~m). Moreover, the muon path in the rock is much 
+larger than in any other of the simulated materials.
+
+\subsection{Nuclear recoils in the XENON100 detector} 
+
+Neutrons which were produced from cosmic-ray muons as they passed through the surrounding cavern, the shield and the detector materials, were propagated into the active volume
+of the XENON100 detector.
+The muon energy loss in LXe was calculated as $\langle-dE/dx\rangle$ = 2.29 $\pm$ 0.10~MeV$\cdot$cm$^2$/g. 
+
+As described in section~\ref{n-production}, most of the muon-induced neutrons are produced in the rock.  However, only a very small fraction of them scatter in LXe (shown in Table~\ref{tab:recoils}). 
+Regarding the shield and detector materials, the closer a material to LXe, 
+the more likely it is for a neutron which was produced in it to give a recoil in LXe.
+For example, copper inside the TPC gives higher contribution to the total number of recoils in LXe ($\sim$39\% of the total number of single scatter nuclear recoils) than other materials. 
+LXe itself also contributes significantly as a target for muons. In summary, from all the neutrons produced, only 0.01\% scattered at least once in LXe.
+
+\begin{table}[ht]
+\centering
+\caption{Contribution of each material to the total number of nuclear recoils in LXe.}
+\vspace{0.3cm}
+\begin{tabular}{lc}
+\hline
+\bf{Material} &  \bf{Contribution to the total recoils} [\%]  \\
+\hline
+Rock &  0.04\\
+Concrete  & 0.11\\
+Polyethylene & 1.8 \\
+Copper & 37.6 \\
+Pb & 4.6 \\
+Stainless steel & 6.6\\
+LXe & 38.8 \\
+Other materials & 10.5 \\
+\hline
+\end{tabular}
+\label{tab:recoils}
+\end{table}
+
+Around 3$\times$10$^8$ muons, corresponding to about 15 years, were simulated (give that the muon flux is 1.17~m$^{-2}$h$^{-1}$).
+Figure~\ref{totalE} (black line) shows the total energy deposited in the active volume of
+LXe. The feature at high energies (about 10$^5$~keV) is due to the
+passage of muons in LXe (green line). 
+The rate of events caused by muons is expected to be 1.7/day. 
+The middle part of the energy range in Figure~\ref{totalE} (blue line) is due to the
+electromagnetic component, whereas the part in the low energy region (red line) is mainly
+due to pure elastic recoils (single+multiple scatters) in the active volume. The number of events which contain elastic
+recoils with an electromagnetic component is ~78\% of the total recoils in LXe. 
+Table~\ref{tab:nrecoils-muons} (first row) presents the nuclear recoil rates in LXe from the muon-induced neutrons.  
+These recoils were split into single and multiple scatters, with the former
+contributing 28\% to the total.
+In case of multiple scatters, a threshold of 1~keV per scatter was applied, which increased the number of events identified as single scatters by 55\%.
+
+Table~\ref{tab:nrecoils-muons} shows the rates of single scatter nuclear
+recoils in LXe for 50~kg and 30~kg fiducial volumes. Single scatter nuclear
+recoil rate is comparable in the 50~kg mass with that from ($\alpha$, n) reactions in
+detector and shield materials 
+and negligible for the 30~kg FV mass. Thus, there is  no need for a muon veto
+for the current XENON100 detector.
+However, for a larger experiment with a fiducial mass of 100~kg, the single nuclear recoil rate due
+to this background component will be $\sim$1/year, rendering essential the use of a muon veto.
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[scale=0.5]{figures/AllRecoils_superimposed.eps}
+\end{center}
+\caption{Total energy deposited in the target volume by muon-induced neutrons (black line).
+Red: energy distribution of pure nuclear recoils (single+multiple scatters); blue: electromagnetic 
+component; green: passage of muons in LXe.}
+\label{totalE}
+\end{figure}
+ 
+\begin{table}[ht]
+\centering
+\caption{Pure nuclear recoil rates (electromagnetic component is not included) of muon-induced neutrons in the energy region of 5 - 100~keVnr.}
+\vspace{0.3cm}
+\begin{tabular}{lcc}
+\hline
+\bf{Type} & \bf{Target mass}  & \bf{Nuclear recoils per year}\\
+\hline
+Pure single+multiple scatters & entire target volume (65 kg) & 36.3 $\pm$ 1.6 \\
+Pure single scatters  & 50 kg FV & 0.27 $\pm$ 0.13  \\
+Pure single scatters  & 30 kg FV & $<$ 0.07 \\
+\hline
+\end{tabular}
+\label{tab:nrecoils-muons}
+\end{table}
+
+\section{Conclusions} \label{summary}
+
+A detailed MonteCarlo study was performed in order to predict electron and nuclear recoil background rates for the 
+XENON100 experiment. The study is based on GEANT4 Monte Carlo simulations using detailed detector and shield geometry, and the measured radioactivity values of all the components. 
+Several steps in the simulations were compared with results from literature
+to check their validity.
+
+The upper limit on the average single scatter electron recoil rate in the energy region of interest (0-100~keVee) with a passive veto is expected to be 21.01~mdru and 7.73~mdru for 50 and 30~kg. By applying an active veto cut with the energy threshold 200~keVee, these rates can be reduced down to 8~mdru for 50~kg FV or 3~mdru for 30~kg FV. The discrimination between electron and nuclear recoils based on the ratio of proportional to primary scintillation light will give further reduction by 99.5\%.
+
+The rate of single scatter nuclear recoils from local radioactivity (rock, concrete, 
+shield and detector materials) is 1.16 (0.48) per
+year, whereas from muon-induced neutrons it is 0.27 (0.07) per
+year for a 50 and 30~kg fiducial mass, respectively. 
+In summary, the total single nuclear recoil rate from all the neutron background sources is
+1.43 (0.55) per year for 50~kg (30~kg) fiducial volume.
+For the current XENON100 detector we conclude that no muon veto is required.
+In addition, the neutron flux at the concrete-laboratory boundary was calculated as 
+(2.39 $\pm$ 0.41)$\times$10$^{-6}$ and (4.91 $\pm$ 0.01)$\times$10$^{-9}$~n$\cdot$s$^{-1}\cdot$cm$^{-2}$ from
+radioactivity in the rock and concrete and from cosmic-ray muons respectively, 
+including back-scattering.
+
+In summary, these detailed background studies show that XENON100 can reach its projected sensitivity for the WIMP-nucleon spin-independent 
+interactions of $\sim$2$\times$10$^{-45}$~cm$^2$ for a WIMP mass of 100~GeV/c$^2$.
+
+The above conclusions can be useful for detector construction and background
+prediction for other rare-event experiments which use similar materials as XENON100.
+
+
+\newpage
+\begin{thebibliography} {129}
+
+\bibitem{xe10} J.~Angle {\it et al.} (XENON10 Collaboration), Phys. Rev. Lett. 100 (2008) 021303.
+\bibitem{Xe100_IDM08} E.~Aprile, L.~Baudis for XENON100 Collaboration, arxiv:0902.4253.
+\bibitem{wimps} G.~Steigman and M.S.~Turner, Nucl. Phys. B 253, 375 (1985);\\
+				D.~Clowe {\it et al.} Astrophys. J. 648 L109 (2006).
+\bibitem{gator} J.~Angle {\it et al.} "The Gator low-level counting facility
+and material screening results''. Manuscript in preparation. 
+\bibitem{screening} A.~D.~Ferella {\it et al.} "Material screening and selection for the XENON100 experiment and its upgrade". Manuscript in preparation. 
+\bibitem{g4} GEANT4 Collaboration, NIM A506 (2003) 250.
+\bibitem{yamashita} M.~Yamashita {\it et al.}, NIM A535 (2004) 692.
+\bibitem{inelastic} S.~Chang {\it et al.}, Phys. Rev. D79 (2009) 043513.
+\bibitem{spectragas} http://www.spectragases.com/content/upload/AssetMgmt/PDFs/puregases/
+\bibitem{xmass} K.~Abe {\it et al.} (XMASS Collaboration), arXiv:0809.4413 (2008).
+\bibitem{sources4A} Wilson {\it et al.}, Phys. Lett. B645 (2007) 153;\\
+              M.~Carson {\it et al.}, Astrop. Physics 21 (2004) 667.   
+\bibitem{vito} V.~A.~Kudryavtsev, L.~Pandola, V.~Tomasello, Eur. Phys. J. A 36
+  (2008) 171. 
+\bibitem{n-cross-section} http://atom.kaeri.re.kr/endfplot.shtml
+\bibitem{lemrani} R.~Lemrani {\it et al.}, NIM A560, 454 (2006).
+\bibitem{tziaferi} E.~Tziaferi {\it et al.}, Astrop. Phys. 27, 326 (2007).
+\bibitem{wulandari} H.~Wulandari {\it et al.}, Astrop. Phys. 22, 313 (2004).
+\bibitem{measured-flux} F.~Arneodo {\it et al.}, Il Nuovo Cim. 112A. 819 (1999); \\
+                      P.~Belli {\it et al.}, Il Nuovo Cim. 101A, 959 (1989).
+\bibitem{music} P.~Antonioli {\it et al.}, Astrop. Phys. 7, 357 (1997); \\
+               V.~A.Kudryavtsev {\it et al.}, Phys. Lett. B471, 251 (1999). 
+\bibitem{musun} V.~A.~Kudryavtsev {\it et al.}, NIM A505, 688 (2003).
+\bibitem{mu-ratio} S.Mufson for MINOS Collaboration, "Measurements of the muon
+  charge ratio in MINOS", 30th International Cosmic Ray Conference, 2007 Mexico.
+\bibitem{g4list} M.~G.~Marino {\it et al.}, NIM A582, 611 (2007).
+\bibitem{mei-hime} D.~M.~Mei, A.~Hime, PRD 73, 053004 (2006).
+\bibitem{wang} Y.~Wang, PRD 64, 013012 (2001).
+
+\end{thebibliography}
+

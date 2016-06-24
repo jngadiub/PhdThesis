@@ -1,0 +1,47 @@
+Production rate for 1Bq/kg: 
+poly       = 4.00753e-09 n/s/cm3
+steel      = 2.65637e-08 n/s/cm3
+titanium   = 3.97647e-08 n/s/cm3
+teflon     = 3.78776e-07 n/s/cm3
+copper     = 1.31944e-08 n/s/cm3
+cirlex     = 6.98843e-09 n/s/cm3
+rock       = 1.30694e-08 n/s/cm3
+concrete   = 1.97997e-08 n/s/cm3
+lead       = 0 n/s/cm3
+pmt_metal1 = 2.04365e-08 n/s/cm3
+pmt_metal2 = 2.94155e-08 n/s/cm3
+pmt_quartz = 9.46864e-09 n/s/cm3
+pmt_glass  = 5.78419e-08 n/s/cm3
+pmt_Al     = 3.40027e-07 n/s/cm3
+
+Production rate for 1Bq/kg of U-238: 
+poly       = 2.24232e-09 n/s/cm3
+steel      = 8.69008e-09 n/s/cm3
+titanium   = 4.93792e-09 n/s/cm3
+teflon     = 1.4855e-07 n/s/cm3
+copper     = 1.0006e-08 n/s/cm3
+cirlex     = 3.5342e-09 n/s/cm3
+rock       = 6.58279e-09 n/s/cm3
+concrete   = 7.42823e-09 n/s/cm3
+lead       = 1.37719e-08 n/s/cm3
+pmt_metal1 = 1.0769e-08 n/s/cm3
+pmt_metal2 = 1.16989e-08 n/s/cm3
+pmt_quartz = 4.88838e-09 n/s/cm3
+pmt_glass  = 2.51078e-08 n/s/cm3
+pmt_Al     = 1.1682e-07 n/s/cm3
+
+Production rate for 1Bq/kg of Th-232: 
+poly       = 1.76521e-09 n/s/cm3
+steel      = 1.78736e-08 n/s/cm3
+titanium   = 3.48267e-08 n/s/cm3
+teflon     = 2.30226e-07 n/s/cm3
+copper     = 3.18841e-09 n/s/cm3
+cirlex     = 3.45423e-09 n/s/cm3
+rock       = 6.48659e-09 n/s/cm3
+concrete   = 1.23715e-08 n/s/cm3
+lead       = 0 n/s/cm3
+pmt_metal1 = 9.66757e-09 n/s/cm3
+pmt_metal2 = 1.77166e-08 n/s/cm3
+pmt_quartz = 4.58026e-09 n/s/cm3
+pmt_glass  = 3.27341e-08 n/s/cm3
+pmt_Al     = 2.23207e-07 n/s/cm3

@@ -1,0 +1,67 @@
+\select@language {british}
+\contentsline {chapter}{List of Figures}{viii}
+\contentsline {chapter}{List of Tables}{xiv}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Particle Dark Matter}{3}
+\contentsline {section}{\numberline {2.1}Observational Evidence}{3}
+\contentsline {section}{\numberline {2.2}Theoretical Predictions}{5}
+\contentsline {section}{\numberline {2.3}Dark Matter Searches}{6}
+\contentsline {subsection}{\numberline {2.3.1}Production in Colliders}{7}
+\contentsline {subsection}{\numberline {2.3.2}Indirect Detection}{7}
+\contentsline {subsection}{\numberline {2.3.3}Direct Detection}{8}
+\contentsline {chapter}{\numberline {3}The XENON100 Detector}{11}
+\contentsline {section}{\numberline {3.1}Detection Principle}{11}
+\contentsline {section}{\numberline {3.2}Detector and Shield Design}{12}
+\contentsline {section}{\numberline {3.3}Cryogenic System and Gas Purification}{16}
+\contentsline {section}{\numberline {3.4}Electronics and Data Acquisition}{18}
+\contentsline {section}{\numberline {3.5}The GEANT4 Model of the XENON100 Detector}{21}
+\contentsline {chapter}{\numberline {4}Light Detection}{24}
+\contentsline {section}{\numberline {4.1}Photomultiplier Tubes in the XENON100 experiment}{24}
+\contentsline {section}{\numberline {4.2}PMT Characterization at Room Temperature}{26}
+\contentsline {section}{\numberline {4.3}Light Calibration During Detector Operation}{29}
+\contentsline {section}{\numberline {4.4}Detection Efficiency of the XENON100 PMTs}{33}
+\contentsline {section}{\numberline {4.5}Studies of the Light Detection Efficiency}{36}
+\contentsline {subsection}{\numberline {4.5.1}Light Collection for the Prompt Scintillation Signal (S1)}{36}
+\contentsline {subsection}{\numberline {4.5.2}Light Collection for Proportional Scintillation Signal (S2)}{39}
+\contentsline {chapter}{\numberline {5}Event Vertex Reconstruction}{43}
+\contentsline {section}{\numberline {5.1}Neural Networks Method}{43}
+\contentsline {section}{\numberline {5.2}Study of the Reconstruction Performance with Monte Carlo Simulations}{44}
+\contentsline {section}{\numberline {5.3}Reconstruction of Event Vertex in the Measured Data}{46}
+\contentsline {section}{\numberline {5.4}Effects of the PMT Saturation on the Position Reconstruction}{48}
+\contentsline {section}{\numberline {5.5}Identification of Multiple Scattering Events }{50}
+\contentsline {section}{\numberline {5.6}Z-position Resolution}{51}
+\contentsline {chapter}{\numberline {6}Detector Characterization with Calibration Sources}{53}
+\contentsline {section}{\numberline {6.1}Combined Energy Scale}{54}
+\contentsline {section}{\numberline {6.2}Energy Resolution of the XENON100 Detector}{58}
+\contentsline {section}{\numberline {6.3}Veto Efficiency Measurement with a Collimated $^{137}$Cs Source}{59}
+\contentsline {chapter}{\numberline {7}Studies of the Electromagnetic Background}{63}
+\contentsline {section}{\numberline {7.1}Radioactive Contamination in the Detector and Shield Components}{63}
+\contentsline {section}{\numberline {7.2}Background due to Natural Radioactivity in the Detector and Shield Components}{65}
+\contentsline {section}{\numberline {7.3}Radon in the Shield Cavity}{69}
+\contentsline {section}{\numberline {7.4}Intrinsic Radioactivity in Liquid Xenon}{70}
+\contentsline {subsection}{\numberline {7.4.1}Measurements of $^{222}$Rn Concentration}{70}
+\contentsline {subsection}{\numberline {7.4.2}Krypton Measurement with Delayed Coincidence Analysis}{74}
+\contentsline {section}{\numberline {7.5}Background from Intrinsic Contaminants}{76}
+\contentsline {section}{\numberline {7.6}Cosmogenic Backgrounds}{77}
+\contentsline {subsection}{\numberline {7.6.1}Cosmogenic Activation of the Stainless Steel}{77}
+\contentsline {subsection}{\numberline {7.6.2}Cosmogenic Activation in the Liquid Xenon}{79}
+\contentsline {section}{\numberline {7.7}Comparison of the Predictions with the Measured Data}{81}
+\contentsline {chapter}{\numberline {8}Monte Carlo Studies of the Neutron Background}{84}
+\contentsline {section}{\numberline {8.1}Neutron Background due to Natural Radioactivity in the Detector and Shield Components}{84}
+\contentsline {subsection}{\numberline {8.1.1}Neutron Production in ($\alpha $,n) and Spontaneous Fission Reactions}{84}
+\contentsline {subsection}{\numberline {8.1.2}Simulation of the Neutron Background with GEANT4}{87}
+\contentsline {section}{\numberline {8.2}Muon-induced Neutron Background}{90}
+\contentsline {section}{\numberline {8.3}Simulation of the Energy Threshold}{94}
+\contentsline {chapter}{\numberline {9}Dark Matter Search}{98}
+\contentsline {section}{\numberline {9.1}Nuclear Recoil Equivalent Energy Scale}{98}
+\contentsline {section}{\numberline {9.2}Calibration of the Electronic and Nuclear Recoil Bands}{99}
+\contentsline {section}{\numberline {9.3}Data Quality Cuts and Signal Acceptance}{100}
+\contentsline {subsection}{\numberline {9.3.1}Basic Data Quality Cuts}{100}
+\contentsline {subsection}{\numberline {9.3.2}Energy Cuts}{101}
+\contentsline {subsection}{\numberline {9.3.3}Single Scatter Selection Cuts}{101}
+\contentsline {subsection}{\numberline {9.3.4}Consistency Cuts}{102}
+\contentsline {subsection}{\numberline {9.3.5}Signal Acceptance}{103}
+\contentsline {section}{\numberline {9.4}First Dark Matter Results from the Commissioning Run}{104}
+\contentsline {section}{\numberline {9.5}Analysis of the First Science Run}{106}
+\contentsline {chapter}{\numberline {10}Conclusions}{111}
+\contentsline {chapter}{Bibliography}{115}

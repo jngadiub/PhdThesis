@@ -1,0 +1,2805 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  25 FEB 2016 15:41
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**thesis_0.5-reprint.tex
+(./thesis_0.5-reprint.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(./ThesisStyle.cls
+Document Class: ThesisStyle 2004/02/16 v1.4f Standard LaTeX document class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen114
+\epsfysize=\dimen115
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count101
+\Gm@cntv=\count102
+\c@Gm@tempcnt=\count103
+\Gm@bindingoffset=\dimen116
+\Gm@wd@mp=\dimen117
+\Gm@odd@mp=\dimen118
+\Gm@even@mp=\dimen119
+\Gm@layoutwidth=\dimen120
+\Gm@layoutheight=\dimen121
+\Gm@layouthoffset=\dimen122
+\Gm@layoutvoffset=\dimen123
+\Gm@dimlist=\toks20
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen124
+\extrarowheight=\dimen125
+\NC@list=\toks21
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip48
+\bibsep=\skip49
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count104
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip50
+\subfigcapskip=\skip51
+\subfigcaptopadj=\dimen126
+\subfigbottomskip=\skip52
+\subfigcapmargin=\dimen127
+\subfiglabelskip=\skip53
+\c@subfigure=\count105
+\c@lofdepth=\count106
+\c@subtable=\count107
+\c@lotdepth=\count108
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2011/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip54
+\subfig@bottom=\skip55
+)
+(./floatflt.sty
+Package: floatflt 1997/07/16 v. 1.31
+\c@OptionTest=\count109
+\figbox=\box28
+\tabbox=\box29
+\pagebox=\box30
+\ffigcount=\count110
+\ftabcount=\count111
+\fftest=\count112
+\hangcount=\count113
+\nosuccesstryfig=\count114
+\nosuccesstrytab=\count115
+\figgutter=\dimen128
+\tabgutter=\dimen129
+\htdone=\dimen130
+\pageht=\dimen131
+\startpageht=\dimen132
+\tabbredd=\dimen133
+\floatfltwidth=\dimen134
+\fltitemwidth=\dimen135
+\outputpretest=\toks22
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count116
+\U@D=\dimen136
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen137
+\captionmargin@=\dimen138
+\captionwidth=\dimen139
+\caption@indent=\dimen140
+\caption@parindent=\dimen141
+\caption@hangindent=\dimen142
+)
+\c@ContinuedFloat=\count117
+Package caption Info: floatflt package is loaded.
+Package caption Info: subfigure package is loaded.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
+\MT@toks=\toks23
+\MT@count=\count118
+LaTeX Info: Redefining \lsstyle on input line 1597.
+LaTeX Info: Redefining \lslig on input line 1597.
+\MT@outer@space=\skip56
+LaTeX Info: Redefining \textls on input line 1605.
+\MT@outer@kern=\dimen143
+LaTeX Info: Redefining \textmicrotypecontext on input line 2156.
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2010/01/10 v2.4 microtype main configuration file (RS)
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip57
+\f@ncyO@elh=\skip58
+\f@ncyO@erh=\skip59
+\f@ncyO@olh=\skip60
+\f@ncyO@orh=\skip61
+\f@ncyO@elf=\skip62
+\f@ncyO@erf=\skip63
+\f@ncyO@olf=\skip64
+\f@ncyO@orf=\skip65
+)
+(./thesis_0.5-reprint.aux)
+\openout1 = `thesis_0.5-reprint.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+
+(/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count119
+\scratchdimen=\dimen144
+\scratchbox=\box31
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen145
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks25
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includefoot twoside 
+* h-part:(L,W,R)=(86.72377pt, 438.51411pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=438.51411pt
+* \textheight=673.04391pt
+* \oddsidemargin=14.45378pt
+* \evensidemargin=0.0pt
+* \topmargin=-33.4738pt
+* \headheight=14.1pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=106.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 73.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2009/11/09 v2.0 microtype config. file: Computer Modern Roman 
+(RS)
+)
+(./TitlePage.tex) [1
+
+
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Zusa
+mmenfassung.tex [1]
+Missing character: There is no † in font cmr10!
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 10.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Missing character: There is no Ÿ in font cmr10!
+) [2
+
+]
+(./Abstract.tex [3]) [4
+
+] [5] (./thesis_0.5-reprint.toc [6
+
+])
+\tf@toc=\write3
+\openout3 = `thesis_0.5-reprint.toc'.
+
+ [7]
+(./thesis_0.5-reprint.lof [8
+
+] [9] [10] [11])
+\tf@lof=\write4
+\openout4 = `thesis_0.5-reprint.lof'.
+
+ [12] [13]
+(./thesis_0.5-reprint.lot [14
+
+])
+\tf@lot=\write5
+\openout5 = `thesis_0.5-reprint.lot'.
+
+ [15] (./Introduction.tex
+Chapter 1.
+
+Overfull \hbox (1.654pt too wide) in paragraph at lines 12--13
+[]\OT1/cmr/m/n/10.95 (-20) The XENON100 de-tector is a time-projection cham-ber
+ (TPC) that al-lows three-dimensional
+ []
+
+[1
+
+]) (./ParticleDarkMatter.tex [2]
+Chapter 2.
+) (./ObservationalEvidence.tex
+<plots/DarkMatter/RotationCurve_NGC6503.png, id=70, 337.26pt x 303.534pt>
+File: plots/DarkMatter/RotationCurve_NGC6503.png Graphic file (type png)
+
+<use plots/DarkMatter/RotationCurve_NGC6503.png>
+Package pdftex.def Info: plots/DarkMatter/RotationCurve_NGC6503.png used on inp
+ut line 13.
+(pdftex.def)             Requested size: 175.40295pt x 157.86636pt.
+ [3
+
+]
+floatflt Message: Flt. fig. 1 set on page 4, shifted 3 par(s) forward.
+
+<plots/DarkMatter/GravitationalLensingNASA_white.png, id=75, 704.6325pt x 532.9
+9126pt>
+File: plots/DarkMatter/GravitationalLensingNASA_white.png Graphic file (type pn
+g)
+ <use plots/DarkMatter/GravitationalLensingNASA_white.png>
+Package pdftex.def Info: plots/DarkMatter/GravitationalLensingNASA_white.png us
+ed on input line 38.
+(pdftex.def)             Requested size: 188.404pt x 142.51575pt.
+
+<plots/DarkMatter/BulletCluster_white.png, id=76, 385.44pt x 240.9pt>
+File: plots/DarkMatter/BulletCluster_white.png Graphic file (type png)
+
+<use plots/DarkMatter/BulletCluster_white.png>
+Package pdftex.def Info: plots/DarkMatter/BulletCluster_white.png used on input
+ line 41.
+(pdftex.def)             Requested size: 228.03105pt x 142.51575pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+ [4 <./plots/DarkMatter/RotationCurve_NGC6503.png (PNG copy)>])
+(./TheoreticalPredictions.tex [5 <./plots/DarkMatter/GravitationalLensingNASA_w
+hite.png> <./plots/DarkMatter/BulletCluster_white.png>]
+<plots/DarkMatter/wimp_expectation_modWithLabels.png, id=84, 745.78625pt x 576.
+1525pt>
+File: plots/DarkMatter/wimp_expectation_modWithLabels.png Graphic file (type pn
+g)
+ <use plots/DarkMatter/wimp_expectation_modWithLabels.png>
+Package pdftex.def Info: plots/DarkMatter/wimp_expectation_modWithLabels.png us
+ed on input line 23.
+(pdftex.def)             Requested size: 208.29688pt x 160.91719pt.
+)
+(./ParticleDarkMatterSearches.tex) (./ProductionInColliders.tex [6 <./plots/Dar
+kMatter/wimp_expectation_modWithLabels.png>]) (./IndirectDetection.tex [7])
+(./DirectDetection.tex
+Overfull \hbox (0.25548pt too wide) in paragraph at lines 12--1
+[]\OT1/cmr/m/n/10.95 (-20) A cos-mic anti-matter ex-per-i-ment, the satellite-b
+orne charged cos-mic ray de-tector PAMELA,
+ []
+
+<plots/DarkMatter/DetectionSignals2.png, id=93, 869.2475pt x 554.07pt>
+File: plots/DarkMatter/DetectionSignals2.png Graphic file (type png)
+
+<use plots/DarkMatter/DetectionSignals2.png>
+Package pdftex.def Info: plots/DarkMatter/DetectionSignals2.png used on input l
+ine 8.
+(pdftex.def)             Requested size: 263.11115pt x 167.71025pt.
+ [8 <./plots/DarkMatter/DetectionSignals2.png>] [9]) (./Xe100detector.tex [10]
+Chapter 3.
+) (./DetectionPrinciple.tex
+<plots/DetectionPrinciple/DetectionPrincipleWithLabels.png, id=105, 766.865pt x
+ 725.71124pt>
+File: plots/DetectionPrinciple/DetectionPrincipleWithLabels.png Graphic file (t
+ype png)
+ <use plots/DetectionPrinciple/DetectionPrincipleWithLabels.png>
+Package pdftex.def Info: plots/DetectionPrinciple/DetectionPrincipleWithLabels.
+png used on input line 10.
+(pdftex.def)             Requested size: 217.06233pt x 205.41245pt.
+
+Package floatflt Message: Floating figure 2 set on page 11
+[11
+
+ <./plots/DetectionPrinciple/DetectionPrincipleWithLabels.png>])
+(./DetectorAndShieldDesign.tex [12]
+<plots/Detector/Xe100shield.png, id=112, 903.375pt x 677.53125pt>
+File: plots/Detector/Xe100shield.png Graphic file (type png)
+
+<use plots/Detector/Xe100shield.png>
+Package pdftex.def Info: plots/Detector/Xe100shield.png used on input line 14.
+(pdftex.def)             Requested size: 263.10236pt x 197.33pt.
+
+<plots/Detector/WaterShield.png, id=113, 115.632pt x 154.176pt>
+File: plots/Detector/WaterShield.png Graphic file (type png)
+
+<use plots/Detector/WaterShield.png>
+Package pdftex.def Info: plots/Detector/WaterShield.png used on input line 17.
+(pdftex.def)             Requested size: 147.99962pt x 197.33pt.
+
+<plots/Detector/Xe100_CAD_withLabelsAndScale.png, id=114, 810.02625pt x 766.865
+pt>
+File: plots/Detector/Xe100_CAD_withLabelsAndScale.png Graphic file (type png)
+ <use plots/Detector/Xe100_CAD_withLabelsAndScale.png>
+Package pdftex.def Info: plots/Detector/Xe100_CAD_withLabelsAndScale.png used o
+n input line 28.
+(pdftex.def)             Requested size: 438.51411pt x 415.15407pt.
+ [13 <./plots/Detector/Xe100shield.png (PNG copy)> <./plots/Detector/WaterShiel
+d.png>]
+
+LaTeX Warning: Text page 14 contains only floats.
+
+[14 <./plots/Detector/Xe100_CAD_withLabelsAndScale.png>]
+<plots/Detector/TPC_withLabels.png, id=122, 462.72874pt x 774.895pt>
+File: plots/Detector/TPC_withLabels.png Graphic file (type png)
+
+<use plots/Detector/TPC_withLabels.png>
+Package pdftex.def Info: plots/Detector/TPC_withLabels.png used on input line 6
+7.
+(pdftex.def)             Requested size: 170.20433pt x 285.0315pt.
+
+Package floatflt Message: Floating figure 3 set on page 15
+) (./GasSystem.tex [15 <./plots/Detector/TPC_withLabels.png>]
+<plots/Detector/schemeMod_CoolingSystem.png, id=128, 843.15pt x 720.6925pt>
+File: plots/Detector/schemeMod_CoolingSystem.png Graphic file (type png)
+
+<use plots/Detector/schemeMod_CoolingSystem.png>
+Package pdftex.def Info: plots/Detector/schemeMod_CoolingSystem.png used on inp
+ut line 49.
+(pdftex.def)             Requested size: 307.81795pt x 263.11115pt.
+
+<plots/Detector/CoolingTower_door.png, id=129, 175.65625pt x 434.62375pt>
+File: plots/Detector/CoolingTower_door.png Graphic file (type png)
+
+<use plots/Detector/CoolingTower_door.png>
+Package pdftex.def Info: plots/Detector/CoolingTower_door.png used on input lin
+e 52.
+(pdftex.def)             Requested size: 106.34337pt x 263.11115pt.
+ [16 <./plots/Detector/schemeMod_CoolingSystem.png> <./plots/Detector/CoolingTo
+wer_door.png>]
+<plots/Detector/PurificationPanel_withLabels.png, id=134, 434.62375pt x 681.546
+25pt>
+File: plots/Detector/PurificationPanel_withLabels.png Graphic file (type png)
+ <use plots/Detector/PurificationPanel_withLabels.png>
+Package pdftex.def Info: plots/Detector/PurificationPanel_withLabels.png used o
+n input line 65.
+(pdftex.def)             Requested size: 153.80507pt x 241.1841pt.
+
+<plots/Detector/schemeMod_PurificationPanel.png, id=135, 645.41125pt x 703.6287
+5pt>
+File: plots/Detector/schemeMod_PurificationPanel.png Graphic file (type png)
+ <use plots/Detector/schemeMod_PurificationPanel.png>
+Package pdftex.def Info: plots/Detector/schemeMod_PurificationPanel.png used on
+ input line 68.
+(pdftex.def)             Requested size: 221.2293pt x 241.1841pt.
+
+<plots/Detector/DistillationColumn.png, id=136, 365.365pt x 698.61pt>
+File: plots/Detector/DistillationColumn.png Graphic file (type png)
+
+<use plots/Detector/DistillationColumn.png>
+Package pdftex.def Info: plots/Detector/DistillationColumn.png used on input li
+ne 81.
+(pdftex.def)             Requested size: 137.60248pt x 263.11115pt.
+
+<plots/Detector/schemeMod_DistillationColumn.png, id=137, 498.86375pt x 598.235
+pt>
+File: plots/Detector/schemeMod_DistillationColumn.png Graphic file (type png)
+ <use plots/Detector/schemeMod_DistillationColumn.png>
+Package pdftex.def Info: plots/Detector/schemeMod_DistillationColumn.png used o
+n input line 84.
+(pdftex.def)             Requested size: 219.40938pt x 263.11115pt.
+ [17 <./plots/Detector/PurificationPanel_withLabels.png> <./plots/Detector/sche
+meMod_PurificationPanel.png>]) (./DAQ.tex
+<plots/Detector/DAQschemeNew2.png, id=142, 554.82281pt x 434.37282pt>
+File: plots/Detector/DAQschemeNew2.png Graphic file (type png)
+
+<use plots/Detector/DAQschemeNew2.png>
+Package pdftex.def Info: plots/Detector/DAQschemeNew2.png used on input line 11
+.
+(pdftex.def)             Requested size: 394.66002pt x 308.98349pt.
+
+<plots/Detector/Waveform_withLabels.png, id=143, 920.43875pt x 659.46375pt>
+File: plots/Detector/Waveform_withLabels.png Graphic file (type png)
+
+<use plots/Detector/Waveform_withLabels.png>
+Package pdftex.def Info: plots/Detector/Waveform_withLabels.png used on input l
+ine 21.
+(pdftex.def)             Requested size: 394.66002pt x 282.76894pt.
+ [18 <./plots/Detector/DistillationColumn.png> <./plots/Detector/schemeMod_Dist
+illationColumn.png>]
+Underfull \vbox (badness 2600) has occurred while \output is active []
+
+ [19 <./plots/Detector/DAQschemeNew2.png>] [20 <./plots/Detector/Waveform_withL
+abels.png>]) (./Geant4model.tex
+Package epstopdf Info: Source file: <plots/Geant4model/DetectorModel_shield_wit
+hLabels1.eps>
+(epstopdf)                    date: 2011-02-11 22:33:09
+(epstopdf)                    size: 2757890 bytes
+(epstopdf)             Output file: <plots/Geant4model/DetectorModel_shield_wit
+hLabels1-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-03-01 22:18:28
+(epstopdf)                    size: 50110 bytes
+(epstopdf)             Command: <epstopdf --outfile=plots/Geant4model/DetectorM
+odel_shield_withLabels1-eps-converted-to.pdf plots/Geant4model/DetectorModel_sh
+ield_withLabels1.eps>
+(epstopdf)             \includegraphics on input line 11.
+Package epstopdf Info: Output file is already uptodate.
+
+<plots/Geant4model/DetectorModel_shield_withLabels1-eps-converted-to.pdf, id=15
+5, 631.35875pt x 722.7pt>
+File: plots/Geant4model/DetectorModel_shield_withLabels1-eps-converted-to.pdf G
+raphic file (type pdf)
+
+<use plots/Geant4model/DetectorModel_shield_withLabels1-eps-converted-to.pdf>
+Package pdftex.def Info: plots/Geant4model/DetectorModel_shield_withLabels1-eps
+-converted-to.pdf used on input line 11.
+(pdftex.def)             Requested size: 191.54778pt x 219.25705pt.
+
+<plots/Geant4model/DetModel_withPTR.png, id=156, 522.95375pt x 515.9275pt>
+File: plots/Geant4model/DetModel_withPTR.png Graphic file (type png)
+
+<use plots/Geant4model/DetModel_withPTR.png>
+Package pdftex.def Info: plots/Geant4model/DetModel_withPTR.png used on input l
+ine 14.
+(pdftex.def)             Requested size: 226.68507pt x 223.63979pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21 <./plots/Geant4model/DetectorModel_shield_withLabels1-eps-converted-to.pdf>
+ <./plots/Geant4model/DetModel_withPTR.png>] [22]) [23]
+Chapter 4.
+(./PMT.tex <plots/PMT/R8520.png, id=176, 192.72pt x 197.73875pt>
+File: plots/PMT/R8520.png Graphic file (type png)
+
+<use plots/PMT/R8520.png>
+Package pdftex.def Info: plots/PMT/R8520.png used on input line 26.
+(pdftex.def)             Requested size: 85.47635pt x 87.70148pt.
+
+<plots/PMT/PMTbase.png, id=177, 221.82875pt x 224.84pt>
+File: plots/PMT/PMTbase.png Graphic file (type png)
+
+<use plots/PMT/PMTbase.png>
+Package pdftex.def Info: plots/PMT/PMTbase.png used on input line 29.
+(pdftex.def)             Requested size: 86.52638pt x 87.70148pt.
+
+<plots/QE/plotQEvsWL_highQE.png, id=178, 698.61pt x 473.77pt>
+File: plots/QE/plotQEvsWL_highQE.png Graphic file (type png)
+
+<use plots/QE/plotQEvsWL_highQE.png>
+Package pdftex.def Info: plots/QE/plotQEvsWL_highQE.png used on input line 32.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24
+
+ <./plots/PMT/R8520.png> <./plots/PMT/PMTbase.png> <./plots/QE/plotQEvsWL_highQ
+E.png>] <plots/PMT/TopPMTarray_front.png, id=184, 671.50874pt x 513.92pt>
+File: plots/PMT/TopPMTarray_front.png Graphic file (type png)
+
+<use plots/PMT/TopPMTarray_front.png>
+Package pdftex.def Info: plots/PMT/TopPMTarray_front.png used on input line 93.
+
+(pdftex.def)             Requested size: 171.89336pt x 131.55557pt.
+
+<plots/PMT/TopPMTarray_rear.png, id=185, 720.6925pt x 452.69125pt>
+File: plots/PMT/TopPMTarray_rear.png Graphic file (type png)
+
+<use plots/PMT/TopPMTarray_rear.png>
+Package pdftex.def Info: plots/PMT/TopPMTarray_rear.png used on input line 96.
+(pdftex.def)             Requested size: 209.43535pt x 131.55557pt.
+
+<plots/PMT/BottomPMTarray_front.png, id=186, 903.375pt x 677.53125pt>
+File: plots/PMT/BottomPMTarray_front.png Graphic file (type png)
+
+<use plots/PMT/BottomPMTarray_front.png>
+Package pdftex.def Info: plots/PMT/BottomPMTarray_front.png used on input line 
+105.
+(pdftex.def)             Requested size: 175.40616pt x 131.55557pt.
+
+<plots/PMT/BottomPMTarray_rear.png, id=187, 790.955pt x 648.4225pt>
+File: plots/PMT/BottomPMTarray_rear.png Graphic file (type png)
+
+<use plots/PMT/BottomPMTarray_rear.png>
+Package pdftex.def Info: plots/PMT/BottomPMTarray_rear.png used on input line 1
+08.
+(pdftex.def)             Requested size: 160.46924pt x 131.55557pt.
+ [25 <./plots/PMT/TopPMTarray_front.png> <./plots/PMT/TopPMTarray_rear.png> <./
+plots/PMT/BottomPMTarray_front.png> <./plots/PMT/BottomPMTarray_rear.png>]
+<plots/PMT/VetoTopPMTarray.png, id=196, 699.61375pt x 675.52374pt>
+File: plots/PMT/VetoTopPMTarray.png Graphic file (type png)
+
+<use plots/PMT/VetoTopPMTarray.png>
+Package pdftex.def Info: plots/PMT/VetoTopPMTarray.png used on input line 121.
+(pdftex.def)             Requested size: 136.24799pt x 131.55557pt.
+
+<plots/PMT/VetoBottomPMTarray.png, id=197, 752.8125pt x 524.96124pt>
+File: plots/PMT/VetoBottomPMTarray.png Graphic file (type png)
+
+<use plots/PMT/VetoBottomPMTarray.png>
+Package pdftex.def Info: plots/PMT/VetoBottomPMTarray.png used on input line 12
+4.
+(pdftex.def)             Requested size: 188.65065pt x 131.55557pt.
+
+<plots/PMT/topPMTs.png, id=198, 660.4675pt x 619.31375pt>
+File: plots/PMT/topPMTs.png Graphic file (type png)
+
+<use plots/PMT/topPMTs.png>
+Package pdftex.def Info: plots/PMT/topPMTs.png used on input line 136.
+(pdftex.def)             Requested size: 198.75653pt x 186.36983pt.
+
+<plots/PMT/bottomPMTs.png, id=199, 655.44875pt x 622.325pt>
+File: plots/PMT/bottomPMTs.png Graphic file (type png)
+
+<use plots/PMT/bottomPMTs.png>
+Package pdftex.def Info: plots/PMT/bottomPMTs.png used on input line 139.
+(pdftex.def)             Requested size: 196.28609pt x 186.36983pt.
+) (./PMTtest.tex [26 <./plots/PMT/VetoTopPMTarray.png> <./plots/PMT/VetoBottomP
+MTarray.png> <./plots/PMT/topPMTs.png> <./plots/PMT/bottomPMTs.png>]
+<plots/PMTtest/PMTtestSetupFlip_withLabels.png, id=207, 713.66624pt x 443.6575p
+t>
+File: plots/PMTtest/PMTtestSetupFlip_withLabels.png Graphic file (type png)
+ <use plots/PMTtest/PMTtestSetupFlip_withLabels.png>
+Package pdftex.def Info: plots/PMTtest/PMTtestSetupFlip_withLabels.png used on 
+input line 10.
+(pdftex.def)             Requested size: 350.81262pt x 218.08458pt.
+
+<plots/PMTtest/GoodPMTspectrum1.png, id=208, 614.295pt x 415.5525pt>
+File: plots/PMTtest/GoodPMTspectrum1.png Graphic file (type png)
+
+<use plots/PMTtest/GoodPMTspectrum1.png>
+Package pdftex.def Info: plots/PMTtest/GoodPMTspectrum1.png used on input line 
+24.
+(pdftex.def)             Requested size: 208.29688pt x 140.90553pt.
+
+<plots/PMTtest/BadPMTspectrum1.png, id=209, 614.295pt x 415.5525pt>
+File: plots/PMTtest/BadPMTspectrum1.png Graphic file (type png)
+
+<use plots/PMTtest/BadPMTspectrum1.png>
+Package pdftex.def Info: plots/PMTtest/BadPMTspectrum1.png used on input line 2
+8.
+(pdftex.def)             Requested size: 208.29688pt x 140.90553pt.
+ [27 <./plots/PMTtest/PMTtestSetupFlip_withLabels.png>] <plots/PMTtest/gainVShv
+.png, id=215, 698.61pt x 473.77pt>
+File: plots/PMTtest/gainVShv.png Graphic file (type png)
+
+<use plots/PMTtest/gainVShv.png>
+Package pdftex.def Info: plots/PMTtest/gainVShv.png used on input line 46.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/PMTtest/resVSgain.png, id=216, 698.61pt x 473.77pt>
+File: plots/PMTtest/resVSgain.png Graphic file (type png)
+
+<use plots/PMTtest/resVSgain.png>
+Package pdftex.def Info: plots/PMTtest/resVSgain.png used on input line 50.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/PMTtest/gainVSqe_LowHigh_withLines.png, id=217, 698.61pt x 473.77pt>
+File: plots/PMTtest/gainVSqe_LowHigh_withLines.png Graphic file (type png)
+
+<use plots/PMTtest/gainVSqe_LowHigh_withLines.png>
+Package pdftex.def Info: plots/PMTtest/gainVSqe_LowHigh_withLines.png used on i
+nput line 84.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/PMTtest/QualityFactor_LowHigh.png, id=218, 698.61pt x 473.77pt>
+File: plots/PMTtest/QualityFactor_LowHigh.png Graphic file (type png)
+
+<use plots/PMTtest/QualityFactor_LowHigh.png>
+Package pdftex.def Info: plots/PMTtest/QualityFactor_LowHigh.png used on input 
+line 89.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28 <./plots/PMTtest/GoodPMTspectrum1.png> <./plots/PMTtest/BadPMTspectrum1.png
+> <./plots/PMTtest/gainVShv.png> <./plots/PMTtest/resVSgain.png>])
+(./GainCalibration.tex
+<plots/PMTcalibration/CalibrationSchemeFull.png, id=224, 1039.885pt x 333.245pt
+>
+File: plots/PMTcalibration/CalibrationSchemeFull.png Graphic file (type png)
+ <use plots/PMTcalibration/CalibrationSchemeFull.png>
+Package pdftex.def Info: plots/PMTcalibration/CalibrationSchemeFull.png used on
+ input line 15.
+(pdftex.def)             Requested size: 438.51411pt x 140.52635pt.
+ [29 <./plots/PMTtest/gainVSqe_LowHigh_withLines.png> <./plots/PMTtest/QualityF
+actor_LowHigh.png>]
+[30 <./plots/PMTcalibration/CalibrationSchemeFull.png>]
+<plots/PMTcalibration/ADCvsSMPmod.png, id=231, 569.4876pt x 383.5128pt>
+File: plots/PMTcalibration/ADCvsSMPmod.png Graphic file (type png)
+
+<use plots/PMTcalibration/ADCvsSMPmod.png>
+Package pdftex.def Info: plots/PMTcalibration/ADCvsSMPmod.png used on input lin
+e 50.
+(pdftex.def)             Requested size: 208.29688pt x 140.27068pt.
+
+<plots/PMTcalibration/PMTcalibrationWindow_withLEDpulse.png, id=232, 827.09pt x
+ 601.24625pt>
+File: plots/PMTcalibration/PMTcalibrationWindow_withLEDpulse.png Graphic file (
+type png)
+ <use plots/PMTcalibration/PMTcalibrationWindow_withLEDpulse.png>
+Package pdftex.def Info: plots/PMTcalibration/PMTcalibrationWindow_withLEDpulse
+.png used on input line 53.
+(pdftex.def)             Requested size: 206.10216pt x 149.82495pt.
+
+[31 <./plots/PMTcalibration/ADCvsSMPmod.png> <./plots/PMTcalibration/PMTcalibra
+tionWindow_withLEDpulse.png>]
+<plots/PMTcalibration/PMTsinglePE.png, id=236, 569.4876pt x 535.2798pt>
+File: plots/PMTcalibration/PMTsinglePE.png Graphic file (type png)
+
+<use plots/PMTcalibration/PMTsinglePE.png>
+Package pdftex.def Info: plots/PMTcalibration/PMTsinglePE.png used on input lin
+e 102.
+(pdftex.def)             Requested size: 186.61066pt x 175.40295pt.
+
+<plots/PMTcalibration/PMTdc_clean.png, id=237, 598.235pt x 574.145pt>
+File: plots/PMTcalibration/PMTdc_clean.png Graphic file (type png)
+
+<use plots/PMTcalibration/PMTdc_clean.png>
+Package pdftex.def Info: plots/PMTcalibration/PMTdc_clean.png used on input lin
+e 105.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+
+<plots/PMTcalibration/CorrelatedNoise_PMT1-2.png, id=238, 598.235pt x 574.145pt
+>
+File: plots/PMTcalibration/CorrelatedNoise_PMT1-2.png Graphic file (type png)
+ <use plots/PMTcalibration/CorrelatedNoise_PMT1-2.png>
+Package pdftex.def Info: plots/PMTcalibration/CorrelatedNoise_PMT1-2.png used o
+n input line 116.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+
+<plots/PMTcalibration/PMT1_withNoiseCut.png, id=239, 598.235pt x 574.145pt>
+File: plots/PMTcalibration/PMT1_withNoiseCut.png Graphic file (type png)
+
+<use plots/PMTcalibration/PMT1_withNoiseCut.png>
+Package pdftex.def Info: plots/PMTcalibration/PMT1_withNoiseCut.png used on inp
+ut line 119.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32 <./plots/PMTcalibration/PMTsinglePE.png> <./plots/PMTcalibration/PMTdc_clea
+n.png>] <plots/PMTcalibration/h_gain1.png, id=243, 698.61pt x 473.77pt>
+File: plots/PMTcalibration/h_gain1.png Graphic file (type png)
+
+<use plots/PMTcalibration/h_gain1.png>
+Package pdftex.def Info: plots/PMTcalibration/h_gain1.png used on input line 13
+3.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/PMTcalibration/gain_vs_time.png, id=244, 698.61pt x 473.77pt>
+File: plots/PMTcalibration/gain_vs_time.png Graphic file (type png)
+
+<use plots/PMTcalibration/gain_vs_time.png>
+Package pdftex.def Info: plots/PMTcalibration/gain_vs_time.png used on input li
+ne 136.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+) (./QuantumEfficiency.tex [33 <./plots/PMTcalibration/CorrelatedNoise_PMT1-2.p
+ng> <./plots/PMTcalibration/PMT1_withNoiseCut.png> <./plots/PMTcalibration/h_ga
+in1.png> <./plots/PMTcalibration/gain_vs_time.png>] <plots/QE/plotQEvsSKb_lowQE
+.png, id=251, 698.61pt x 473.77pt>
+File: plots/QE/plotQEvsSKb_lowQE.png Graphic file (type png)
+
+<use plots/QE/plotQEvsSKb_lowQE.png>
+Package pdftex.def Info: plots/QE/plotQEvsSKb_lowQE.png used on input line 22.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/QE/plotQEvsSKb_highQE.png, id=252, 698.61pt x 473.77pt>
+File: plots/QE/plotQEvsSKb_highQE.png Graphic file (type png)
+
+<use plots/QE/plotQEvsSKb_highQE.png>
+Package pdftex.def Info: plots/QE/plotQEvsSKb_highQE.png used on input line 25.
+
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/QE/QEmap.png, id=253, 1161.33875pt x 501.875pt>
+File: plots/QE/QEmap.png Graphic file (type png)
+
+<use plots/QE/QEmap.png>
+Package pdftex.def Info: plots/QE/QEmap.png used on input line 51.
+(pdftex.def)             Requested size: 438.51411pt x 189.50452pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34 <./plots/QE/plotQEvsSKb_lowQE.png> <./plots/QE/plotQEvsSKb_highQE.png>]
+<plots/QE/lightVSpmt_data.png, id=257, 614.295pt x 413.545pt>
+File: plots/QE/lightVSpmt_data.png Graphic file (type png)
+
+<use plots/QE/lightVSpmt_data.png>
+Package pdftex.def Info: plots/QE/lightVSpmt_data.png used on input line 74.
+(pdftex.def)             Requested size: 208.29688pt x 140.22482pt.
+
+<plots/QE/lightVSpmt_mc.png, id=258, 614.295pt x 413.545pt>
+File: plots/QE/lightVSpmt_mc.png Graphic file (type png)
+
+<use plots/QE/lightVSpmt_mc.png>
+Package pdftex.def Info: plots/QE/lightVSpmt_mc.png used on input line 77.
+(pdftex.def)             Requested size: 208.29688pt x 140.22482pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<plots/QE/pol4_dataMC.png, id=259, 614.295pt x 413.545pt>
+File: plots/QE/pol4_dataMC.png Graphic file (type png)
+
+<use plots/QE/pol4_dataMC.png>
+Package pdftex.def Info: plots/QE/pol4_dataMC.png used on input line 89.
+(pdftex.def)             Requested size: 208.29688pt x 140.22482pt.
+
+<plots/QE/qeVSpmt_mod.png, id=260, 614.295pt x 413.545pt>
+File: plots/QE/qeVSpmt_mod.png Graphic file (type png)
+
+<use plots/QE/qeVSpmt_mod.png>
+Package pdftex.def Info: plots/QE/qeVSpmt_mod.png used on input line 92.
+(pdftex.def)             Requested size: 208.29688pt x 140.22482pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./LCE.tex) (./LCEs1.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 <./plots/QE/QEmap.png>] [36 <./plots/QE/lightVSpmt_data.png> <./plots/QE/l
+ightVSpmt_mc.png> <./plots/QE/pol4_dataMC.png> <./plots/QE/qeVSpmt_mod.png>]
+<plots/LCEs1/RZhits.png, id=268, 260.975pt x 590.205pt>
+File: plots/LCEs1/RZhits.png Graphic file (type png)
+
+<use plots/LCEs1/RZhits.png>
+Package pdftex.def Info: plots/LCEs1/RZhits.png used on input line 51.
+(pdftex.def)             Requested size: 116.34258pt x 263.11115pt.
+
+<plots/LCEs1/RZhitsBot_target.png, id=269, 260.975pt x 590.205pt>
+File: plots/LCEs1/RZhitsBot_target.png Graphic file (type png)
+
+<use plots/LCEs1/RZhitsBot_target.png>
+Package pdftex.def Info: plots/LCEs1/RZhitsBot_target.png used on input line 54
+.
+(pdftex.def)             Requested size: 116.34258pt x 263.11115pt.
+
+<plots/LCEs1/RZhitsTop_target.png, id=270, 260.975pt x 590.205pt>
+File: plots/LCEs1/RZhitsTop_target.png Graphic file (type png)
+
+<use plots/LCEs1/RZhitsTop_target.png>
+Package pdftex.def Info: plots/LCEs1/RZhitsTop_target.png used on input line 57
+.
+(pdftex.def)             Requested size: 116.34258pt x 263.11115pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<plots/LCEs1/LCE_MCandData.png, id=271, 569.12625pt x 383.4325pt>
+File: plots/LCEs1/LCE_MCandData.png Graphic file (type png)
+
+<use plots/LCEs1/LCE_MCandData.png>
+Package pdftex.def Info: plots/LCEs1/LCE_MCandData.png used on input line 66.
+(pdftex.def)             Requested size: 208.29688pt x 140.33492pt.
+
+<plots/LCEs1/S1asym_MCandData.png, id=272, 569.12625pt x 385.44pt>
+File: plots/LCEs1/S1asym_MCandData.png Graphic file (type png)
+
+<use plots/LCEs1/S1asym_MCandData.png>
+Package pdftex.def Info: plots/LCEs1/S1asym_MCandData.png used on input line 69
+.
+(pdftex.def)             Requested size: 208.29688pt x 141.06966pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37] [38 <./plots/LCEs1/RZhits.png> <./plots/LCEs1/RZhitsBot_target.png> <./plo
+ts/LCEs1/RZhitsTop_target.png> <./plots/LCEs1/LCE_MCandData.png (PNG copy)> <./
+plots/LCEs1/S1asym_MCandData.png>]
+<plots/LCEs1/S1correctionMap_withLabels.png, id=279, 665.48625pt x 460.72125pt>
+File: plots/LCEs1/S1correctionMap_withLabels.png Graphic file (type png)
+<use plots/LCEs1/S1correctionMap_withLabels.png>
+Package pdftex.def Info: plots/LCEs1/S1correctionMap_withLabels.png used on inp
+ut line 88.
+(pdftex.def)             Requested size: 263.11115pt x 182.15514pt.
+) (./LCEs2.tex
+<plots/LCEs2/AnodeStack.png, id=280, 1073.00874pt x 643.40375pt>
+File: plots/LCEs2/AnodeStack.png Graphic file (type png)
+
+<use plots/LCEs2/AnodeStack.png>
+Package pdftex.def Info: plots/LCEs2/AnodeStack.png used on input line 12.
+(pdftex.def)             Requested size: 219.39516pt x 131.55557pt.
+
+<plots/LCEs2/CopperScreenPhoto.png, id=281, 1606.0pt x 1204.5pt>
+File: plots/LCEs2/CopperScreenPhoto.png Graphic file (type png)
+
+<use plots/LCEs2/CopperScreenPhoto.png>
+Package pdftex.def Info: plots/LCEs2/CopperScreenPhoto.png used on input line 1
+5.
+(pdftex.def)             Requested size: 175.38626pt x 131.55557pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<plots/LCEs2/G4_S2simulation.png, id=282, 383.4325pt x 231.86626pt>
+File: plots/LCEs2/G4_S2simulation.png Graphic file (type png)
+
+<use plots/LCEs2/G4_S2simulation.png>
+Package pdftex.def Info: plots/LCEs2/G4_S2simulation.png used on input line 26.
+
+(pdftex.def)             Requested size: 208.29688pt x 125.95949pt.
+
+<plots/LCEs2/LCE_S2_comparison.png, id=283, 614.295pt x 413.545pt>
+File: plots/LCEs2/LCE_S2_comparison.png Graphic file (type png)
+
+<use plots/LCEs2/LCE_S2_comparison.png>
+Package pdftex.def Info: plots/LCEs2/LCE_S2_comparison.png used on input line 2
+9.
+(pdftex.def)             Requested size: 208.29688pt x 140.22482pt.
+ [39 <./plots/LCEs1/S1correctionMap_withLabels.png>]
+<plots/LCEs2/40keV_S2topvsR_MC1andData.png, id=288, 525.965pt x 501.875pt>
+File: plots/LCEs2/40keV_S2topvsR_MC1andData.png Graphic file (type png)
+
+<use plots/LCEs2/40keV_S2topvsR_MC1andData.png>
+Package pdftex.def Info: plots/LCEs2/40keV_S2topvsR_MC1andData.png used on inpu
+t line 43.
+(pdftex.def)             Requested size: 208.29688pt x 198.75536pt.
+
+<plots/LCEs2/40keV_S2botvsR_MC1andData.png, id=289, 525.965pt x 501.875pt>
+File: plots/LCEs2/40keV_S2botvsR_MC1andData.png Graphic file (type png)
+
+<use plots/LCEs2/40keV_S2botvsR_MC1andData.png>
+Package pdftex.def Info: plots/LCEs2/40keV_S2botvsR_MC1andData.png used on inpu
+t line 46.
+(pdftex.def)             Requested size: 208.29688pt x 198.75536pt.
+
+<plots/LCEs2/S2topCorrectionMap.png, id=290, 551.05875pt x 474.77374pt>
+File: plots/LCEs2/S2topCorrectionMap.png Graphic file (type png)
+
+<use plots/LCEs2/S2topCorrectionMap.png>
+Package pdftex.def Info: plots/LCEs2/S2topCorrectionMap.png used on input line 
+55.
+(pdftex.def)             Requested size: 208.29688pt x 179.45963pt.
+
+<plots/LCEs2/S2bottomCorrectionMap.png, id=291, 563.10374pt x 475.7775pt>
+File: plots/LCEs2/S2bottomCorrectionMap.png Graphic file (type png)
+
+<use plots/LCEs2/S2bottomCorrectionMap.png>
+Package pdftex.def Info: plots/LCEs2/S2bottomCorrectionMap.png used on input li
+ne 58.
+(pdftex.def)             Requested size: 208.29688pt x 175.99135pt.
+ [40 <./plots/LCEs2/AnodeStack.png> <./plots/LCEs2/CopperScreenPhoto.png> <./pl
+ots/LCEs2/G4_S2simulation.png> <./plots/LCEs2/LCE_S2_comparison.png>] [41 <./pl
+ots/LCEs2/40keV_S2topvsR_MC1andData.png> <./plots/LCEs2/40keV_S2botvsR_MC1andDa
+ta.png> <./plots/LCEs2/S2topCorrectionMap.png> <./plots/LCEs2/S2bottomCorrectio
+nMap.png>]) (./XYreconstruction.tex
+[42]
+Chapter 5.
+<plots/NN/NNscheme_withWeightsAndArrows.png, id=303, 740.7675pt x 610.28pt>
+File: plots/NN/NNscheme_withWeightsAndArrows.png Graphic file (type png)
+
+<use plots/NN/NNscheme_withWeightsAndArrows.png>
+Package pdftex.def Info: plots/NN/NNscheme_withWeightsAndArrows.png used on inp
+ut line 20.
+(pdftex.def)             Requested size: 175.40295pt x 144.50533pt.
+
+Package floatflt Message: Floating figure 4 set on page 43
+[43
+
+ <./plots/NN/NNscheme_withWeightsAndArrows.png>]
+<plots/NN/TopLightPattern_withDeadPMTs.png, id=307, 539.01375pt x 509.905pt>
+File: plots/NN/TopLightPattern_withDeadPMTs.png Graphic file (type png)
+
+<use plots/NN/TopLightPattern_withDeadPMTs.png>
+Package pdftex.def Info: plots/NN/TopLightPattern_withDeadPMTs.png used on inpu
+t line 39.
+(pdftex.def)             Requested size: 175.40295pt x 165.92723pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+
+ []
+
+Package floatflt Message: Floating figure 5 set on page 44
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
+
+ []
+
+<plots/NN/Rerror.png, id=308, 598.235pt x 574.145pt>
+File: plots/NN/Rerror.png Graphic file (type png)
+ <use plots/NN/Rerror.png>
+Package pdftex.def Info: plots/NN/Rerror.png used on input line 85.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+
+<plots/NN/RerrorAbs_vs_R_correctedAxis.png, id=309, 598.235pt x 574.145pt>
+File: plots/NN/RerrorAbs_vs_R_correctedAxis.png Graphic file (type png)
+
+<use plots/NN/RerrorAbs_vs_R_correctedAxis.png>
+Package pdftex.def Info: plots/NN/RerrorAbs_vs_R_correctedAxis.png used on inpu
+t line 88.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+
+<plots/NN/PosrecMC_1dead_cut.png, id=310, 565.6332pt x 512.1534pt>
+File: plots/NN/PosrecMC_1dead_cut.png Graphic file (type png)
+
+<use plots/NN/PosrecMC_1dead_cut.png>
+Package pdftex.def Info: plots/NN/PosrecMC_1dead_cut.png used on input line 97.
+
+(pdftex.def)             Requested size: 186.45238pt x 168.82552pt.
+
+<plots/NN/ReconstructionError_MC_XY.png, id=311, 598.235pt x 574.145pt>
+File: plots/NN/ReconstructionError_MC_XY.png Graphic file (type png)
+
+<use plots/NN/ReconstructionError_MC_XY.png>
+Package pdftex.def Info: plots/NN/ReconstructionError_MC_XY.png used on input l
+ine 100.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+ [44 <./plots/NN/TopLightPattern_withDeadPMTs.png>] [45 <./plots/NN/Rerror.png>
+ <./plots/NN/RerrorAbs_vs_R_correctedAxis.png> <./plots/NN/PosrecMC_1dead_cut.p
+ng> <./plots/NN/ReconstructionError_MC_XY.png>]
+<plots/NN/PosrecBG100keV_withAxis.png, id=320, 597.23125pt x 573.14125pt>
+File: plots/NN/PosrecBG100keV_withAxis.png Graphic file (type png)
+
+<use plots/NN/PosrecBG100keV_withAxis.png>
+Package pdftex.def Info: plots/NN/PosrecBG100keV_withAxis.png used on input lin
+e 129.
+(pdftex.def)             Requested size: 182.7795pt x 175.40295pt.
+
+<plots/NN/XYreconstruction_AmBe_withAxis.png, id=321, 598.235pt x 574.145pt>
+File: plots/NN/XYreconstruction_AmBe_withAxis.png Graphic file (type png)
+
+<use plots/NN/XYreconstruction_AmBe_withAxis.png>
+Package pdftex.def Info: plots/NN/XYreconstruction_AmBe_withAxis.png used on in
+put line 132.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+ [46 <./plots/NN/PosrecBG100keV_withAxis.png> <./plots/NN/XYreconstruction_AmBe
+_withAxis.png>]
+<plots/NN/PosrecCo60_noContraction_withLabels.png, id=325, 598.235pt x 574.145p
+t>
+File: plots/NN/PosrecCo60_noContraction_withLabels.png Graphic file (type png)
+ <use plots/NN/PosrecCo60_noContraction_withLabels.png>
+Package pdftex.def Info: plots/NN/PosrecCo60_noContraction_withLabels.png used 
+on input line 147.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+
+<plots/NN/PosrecCo60_contraction103_withLabels.png, id=326, 598.235pt x 574.145
+pt>
+File: plots/NN/PosrecCo60_contraction103_withLabels.png Graphic file (type png)
+
+ <use plots/NN/PosrecCo60_contraction103_withLabels.png>
+Package pdftex.def Info: plots/NN/PosrecCo60_contraction103_withLabels.png used
+ on input line 150.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+ [47 <./plots/NN/PosrecCo60_noContraction_withLabels.png> <./plots/NN/PosrecCo6
+0_contraction103_withLabels.png>]
+<plots/NN/CollimatorPicture_withLabels3.png, id=330, 792.9625pt x 603.25375pt>
+File: plots/NN/CollimatorPicture_withLabels3.png Graphic file (type png)
+
+<use plots/NN/CollimatorPicture_withLabels3.png>
+Package pdftex.def Info: plots/NN/CollimatorPicture_withLabels3.png used on inp
+ut line 165.
+(pdftex.def)             Requested size: 213.26785pt x 162.24808pt.
+
+<plots/NN/CollimatorResult_withLabels1.png, id=331, 598.235pt x 574.145pt>
+File: plots/NN/CollimatorResult_withLabels1.png Graphic file (type png)
+
+<use plots/NN/CollimatorResult_withLabels1.png>
+Package pdftex.def Info: plots/NN/CollimatorResult_withLabels1.png used on inpu
+t line 168.
+(pdftex.def)             Requested size: 182.75807pt x 175.40295pt.
+) (./PosRecSaturation.tex
+<plots/Saturation/S2vsR_Cs137_nn1_withLine.png, id=332, 525.965pt x 325.215pt>
+File: plots/Saturation/S2vsR_Cs137_nn1_withLine.png Graphic file (type png)
+
+<use plots/Saturation/S2vsR_Cs137_nn1_withLine.png>
+Package pdftex.def Info: plots/Saturation/S2vsR_Cs137_nn1_withLine.png used on 
+input line 8.
+(pdftex.def)             Requested size: 208.29688pt x 128.79347pt.
+
+<plots/Saturation/S2vsR_AmBe_nn1_withLine.png, id=333, 525.965pt x 326.21875pt>
+File: plots/Saturation/S2vsR_AmBe_nn1_withLine.png Graphic file (type png)
+<use plots/Saturation/S2vsR_AmBe_nn1_withLine.png>
+Package pdftex.def Info: plots/Saturation/S2vsR_AmBe_nn1_withLine.png used on i
+nput line 11.
+(pdftex.def)             Requested size: 208.29688pt x 129.19098pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<plots/Saturation/c_r1_nn1_85bins_Saturation-L1-withLinesAndLabels.png, id=334,
+ 597.23125pt x 573.14125pt>
+File: plots/Saturation/c_r1_nn1_85bins_Saturation-L1-withLinesAndLabels.png Gra
+phic file (type png)
+
+<use plots/Saturation/c_r1_nn1_85bins_Saturation-L1-withLinesAndLabels.png>
+Package pdftex.def Info: plots/Saturation/c_r1_nn1_85bins_Saturation-L1-withLin
+esAndLabels.png used on input line 21.
+(pdftex.def)             Requested size: 159.9332pt x 153.4826pt.
+
+<plots/Saturation/c_r1_nn1_85bins_Saturation-L2-withLines1.png, id=335, 597.231
+25pt x 573.14125pt>
+File: plots/Saturation/c_r1_nn1_85bins_Saturation-L2-withLines1.png Graphic fil
+e (type png)
+
+<use plots/Saturation/c_r1_nn1_85bins_Saturation-L2-withLines1.png>
+Package pdftex.def Info: plots/Saturation/c_r1_nn1_85bins_Saturation-L2-withLin
+es1.png used on input line 24.
+(pdftex.def)             Requested size: 159.9332pt x 153.4826pt.
+
+<plots/Saturation/c_r1_nn1_85bins_Saturation-L3-withLines1.png, id=336, 597.231
+25pt x 573.14125pt>
+File: plots/Saturation/c_r1_nn1_85bins_Saturation-L3-withLines1.png Graphic fil
+e (type png)
+
+<use plots/Saturation/c_r1_nn1_85bins_Saturation-L3-withLines1.png>
+Package pdftex.def Info: plots/Saturation/c_r1_nn1_85bins_Saturation-L3-withLin
+es1.png used on input line 27.
+(pdftex.def)             Requested size: 159.9332pt x 153.4826pt.
+
+<plots/Saturation/c_r1_nn1_85bins_Saturation-L4-withLines1.png, id=337, 597.231
+25pt x 573.14125pt>
+File: plots/Saturation/c_r1_nn1_85bins_Saturation-L4-withLines1.png Graphic fil
+e (type png)
+
+<use plots/Saturation/c_r1_nn1_85bins_Saturation-L4-withLines1.png>
+Package pdftex.def Info: plots/Saturation/c_r1_nn1_85bins_Saturation-L4-withLin
+es1.png used on input line 30.
+(pdftex.def)             Requested size: 159.9332pt x 153.4826pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[48 <./plots/NN/CollimatorPicture_withLabels3.png> <./plots/NN/CollimatorResult
+_withLabels1.png>] [49 <./plots/Saturation/S2vsR_Cs137_nn1_withLine.png> <./plo
+ts/Saturation/S2vsR_AmBe_nn1_withLine.png> <./plots/Saturation/c_r1_nn1_85bins_
+Saturation-L1-withLinesAndLabels.png> <./plots/Saturation/c_r1_nn1_85bins_Satur
+ation-L2-withLines1.png> <./plots/Saturation/c_r1_nn1_85bins_Saturation-L3-with
+Lines1.png> <./plots/Saturation/c_r1_nn1_85bins_Saturation-L4-withLines1.png>])
+(./PosRecCuts.tex
+<plots/PosRecCuts/CHInn_OnlyQualityCuts_WithLines_wide_WithNumbers.png, id=344,
+ 698.61pt x 473.77pt>
+File: plots/PosRecCuts/CHInn_OnlyQualityCuts_WithLines_wide_WithNumbers.png Gra
+phic file (type png)
+
+<use plots/PosRecCuts/CHInn_OnlyQualityCuts_WithLines_wide_WithNumbers.png>
+Package pdftex.def Info: plots/PosRecCuts/CHInn_OnlyQualityCuts_WithLines_wide_
+WithNumbers.png used on input line 12.
+(pdftex.def)             Requested size: 242.48111pt x 164.44278pt.
+
+<plots/PosRecCuts/H2_Xdif_COLZ_Ncuts1_WithCutLinesandAcceptance.png, id=345, 59
+8.235pt x 574.145pt>
+File: plots/PosRecCuts/H2_Xdif_COLZ_Ncuts1_WithCutLinesandAcceptance.png Graphi
+c file (type png)
+
+<use plots/PosRecCuts/H2_Xdif_COLZ_Ncuts1_WithCutLinesandAcceptance.png>
+Package pdftex.def Info: plots/PosRecCuts/H2_Xdif_COLZ_Ncuts1_WithCutLinesandAc
+ceptance.png used on input line 15.
+(pdftex.def)             Requested size: 171.33855pt x 164.44278pt.
+
+[50 <./plots/PosRecCuts/CHInn_OnlyQualityCuts_WithLines_wide_WithNumbers.png> <
+./plots/PosRecCuts/H2_Xdif_COLZ_Ncuts1_WithCutLinesandAcceptance.png>]
+<plots/PosRecCuts/XdifChi_AmBe_Ncuts1.png, id=349, 798.985pt x 774.895pt>
+File: plots/PosRecCuts/XdifChi_AmBe_Ncuts1.png Graphic file (type png)
+
+<use plots/PosRecCuts/XdifChi_AmBe_Ncuts1.png>
+Package pdftex.def Info: plots/PosRecCuts/XdifChi_AmBe_Ncuts1.png used on input
+ line 49.
+(pdftex.def)             Requested size: 180.8489pt x 175.40295pt.
+
+<plots/PosRecCuts/b_6.png, id=350, 582.175pt x 568.1225pt>
+File: plots/PosRecCuts/b_6.png Graphic file (type png)
+
+<use plots/PosRecCuts/b_6.png>
+Package pdftex.def Info: plots/PosRecCuts/b_6.png used on input line 52.
+(pdftex.def)             Requested size: 175.24902pt x 171.02023pt.
+) (./PositionResolution.tex [51 <./plots/PosRecCuts/XdifChi_AmBe_Ncuts1.png> <.
+/plots/PosRecCuts/b_6.png>]
+<plots/PositionResolution/CEalex_PassiveVeto_62kg_AllRes.png, id=355, 698.61pt 
+x 473.77pt>
+File: plots/PositionResolution/CEalex_PassiveVeto_62kg_AllRes.png Graphic file 
+(type png)
+ <use plots/PositionResolution/CEalex_PassiveVeto_62kg_AllRes.png>
+Package pdftex.def Info: plots/PositionResolution/CEalex_PassiveVeto_62kg_AllRe
+s.png used on input line 12.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/PositionResolution/RateResolution1.png, id=356, 698.61pt x 473.77pt>
+File: plots/PositionResolution/RateResolution1.png Graphic file (type png)
+
+<use plots/PositionResolution/RateResolution1.png>
+Package pdftex.def Info: plots/PositionResolution/RateResolution1.png used on i
+nput line 15.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+) (./DetectorCalibration.tex
+[52 <./plots/PositionResolution/CEalex_PassiveVeto_62kg_AllRes.png> <./plots/Po
+sitionResolution/RateResolution1.png>]
+Chapter 6.
+
+<plots/AmBeCalibration/AmBe_run10_withLabels1.png, id=360, 914.41624pt x 619.31
+375pt>
+File: plots/AmBeCalibration/AmBe_run10_withLabels1.png Graphic file (type png)
+ <use plots/AmBeCalibration/AmBe_run10_withLabels1.png>
+Package pdftex.def Info: plots/AmBeCalibration/AmBe_run10_withLabels1.png used 
+on input line 11.
+(pdftex.def)             Requested size: 306.95853pt x 207.88954pt.
+ [53
+
+ <./plots/AmBeCalibration/AmBe_run10_withLabels1.png>]) (./CombinedEnergy.tex
+<plots/CES/MacroscopicAnticorrelation_withLabels.png, id=364, 698.61pt x 473.77
+pt>
+File: plots/CES/MacroscopicAnticorrelation_withLabels.png Graphic file (type pn
+g)
+ <use plots/CES/MacroscopicAnticorrelation_withLabels.png>
+Package pdftex.def Info: plots/CES/MacroscopicAnticorrelation_withLabels.png us
+ed on input line 13.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/CES/MicroscopicAnticorrelation_withLabels.png, id=365, 698.61pt x 473.77
+pt>
+File: plots/CES/MicroscopicAnticorrelation_withLabels.png Graphic file (type pn
+g)
+ <use plots/CES/MicroscopicAnticorrelation_withLabels.png>
+Package pdftex.def Info: plots/CES/MicroscopicAnticorrelation_withLabels.png us
+ed on input line 16.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+ [54 <./plots/CES/MacroscopicAnticorrelation_withLabels.png> <./plots/CES/Micro
+scopicAnticorrelation_withLabels.png>]
+<plots/CES/662keV_const200_withFits_withLabels.png, id=369, 525.965pt x 502.878
+75pt>
+File: plots/CES/662keV_const200_withFits_withLabels.png Graphic file (type png)
+
+ <use plots/CES/662keV_const200_withFits_withLabels.png>
+Package pdftex.def Info: plots/CES/662keV_const200_withFits_withLabels.png used
+ on input line 44.
+(pdftex.def)             Requested size: 183.44846pt x 175.40295pt.
+
+<plots/CES/40and80keV_const200_withFits.png, id=370, 525.965pt x 501.875pt>
+File: plots/CES/40and80keV_const200_withFits.png Graphic file (type png)
+
+<use plots/CES/40and80keV_const200_withFits.png>
+Package pdftex.def Info: plots/CES/40and80keV_const200_withFits.png used on inp
+ut line 69.
+(pdftex.def)             Requested size: 183.82565pt x 175.40295pt.
+
+<plots/CES/164and236keV_const200_withFits.png, id=371, 525.965pt x 502.87875pt>
+File: plots/CES/164and236keV_const200_withFits.png Graphic file (type png)
+<use plots/CES/164and236keV_const200_withFits.png>
+Package pdftex.def Info: plots/CES/164and236keV_const200_withFits.png used on i
+nput line 72.
+(pdftex.def)             Requested size: 183.44846pt x 175.40295pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[55 <./plots/CES/662keV_const200_withFits_withLabels.png>]
+<plots/CES/Cs137_PassiveVeto_withXray.png, id=375, 614.295pt x 413.545pt>
+File: plots/CES/Cs137_PassiveVeto_withXray.png Graphic file (type png)
+
+<use plots/CES/Cs137_PassiveVeto_withXray.png>
+Package pdftex.def Info: plots/CES/Cs137_PassiveVeto_withXray.png used on input
+ line 114.
+(pdftex.def)             Requested size: 195.4161pt x 131.55557pt.
+
+<plots/CES/Cs137_ActiveVeto.png, id=376, 614.295pt x 413.545pt>
+File: plots/CES/Cs137_ActiveVeto.png Graphic file (type png)
+
+<use plots/CES/Cs137_ActiveVeto.png>
+Package pdftex.def Info: plots/CES/Cs137_ActiveVeto.png used on input line 117.
+
+(pdftex.def)             Requested size: 195.4161pt x 131.55557pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<plots/CES/logS2S1_40keV.png, id=377, 1048.91875pt x 754.82pt>
+File: plots/CES/logS2S1_40keV.png Graphic file (type png)
+
+<use plots/CES/logS2S1_40keV.png>
+Package pdftex.def Info: plots/CES/logS2S1_40keV.png used on input line 126.
+(pdftex.def)             Requested size: 182.81128pt x 131.55557pt.
+
+<plots/AmBeCalibration/CES_AmBe_withLinesAndLabels.png, id=378, 698.61pt x 473.
+77pt>
+File: plots/AmBeCalibration/CES_AmBe_withLinesAndLabels.png Graphic file (type 
+png)
+ <use plots/AmBeCalibration/CES_AmBe_withLinesAndLabels.png>
+Package pdftex.def Info: plots/AmBeCalibration/CES_AmBe_withLinesAndLabels.png 
+used on input line 130.
+(pdftex.def)             Requested size: 193.98915pt x 131.55557pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[56 <./plots/CES/40and80keV_const200_withFits.png> <./plots/CES/164and236keV_co
+nst200_withFits.png>] [57 <./plots/CES/Cs137_PassiveVeto_withXray.png> <./plots
+/CES/Cs137_ActiveVeto.png> <./plots/CES/logS2S1_40keV.png> <./plots/AmBeCalibra
+tion/CES_AmBe_withLinesAndLabels.png>]) (./EnergyResolution.tex
+<plots/EnergyResolution/ResolutionFunctions_withEmpiricalCorrect_withLabels.png
+, id=387, 698.61pt x 473.77pt>
+File: plots/EnergyResolution/ResolutionFunctions_withEmpiricalCorrect_withLabel
+s.png Graphic file (type png)
+
+<use plots/EnergyResolution/ResolutionFunctions_withEmpiricalCorrect_withLabels
+.png>
+Package pdftex.def Info: plots/EnergyResolution/ResolutionFunctions_withEmpiric
+alCorrect_withLabels.png used on input line 8.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/EnergyResolution/CsSpectrumDifferentScales.png, id=388, 698.61pt x 473.7
+7pt>
+File: plots/EnergyResolution/CsSpectrumDifferentScales.png Graphic file (type p
+ng)
+ <use plots/EnergyResolution/CsSpectrumDifferentScales.png>
+Package pdftex.def Info: plots/EnergyResolution/CsSpectrumDifferentScales.png u
+sed on input line 12.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+ [58 <./plots/EnergyResolution/ResolutionFunctions_withEmpiricalCorrect_withLab
+els.png> <./plots/EnergyResolution/CsSpectrumDifferentScales.png>])
+(./VetoEfficiencyMeasurement.tex
+Overfull \hbox (17.64882pt too wide) in paragraph at lines 1--1
+[]\OT1/cmr/bx/n/14.4 Veto Ef-fi-ciency Meas-ure-ment with a Col-lim-ated $[]$Cs
+ Source 
+ []
+
+
+<plots/VetoMeasurement/mapLY_ZsideVeto_withMarkers.png, id=392, 614.295pt x 413
+.545pt>
+File: plots/VetoMeasurement/mapLY_ZsideVeto_withMarkers.png Graphic file (type 
+png)
+ <use plots/VetoMeasurement/mapLY_ZsideVeto_withMarkers.png>
+Package pdftex.def Info: plots/VetoMeasurement/mapLY_ZsideVeto_withMarkers.png 
+used on input line 16.
+(pdftex.def)             Requested size: 227.98859pt x 153.4826pt.
+
+<plots/VetoMeasurement/map_topVeto_withMarkers.png, id=393, 543.02875pt x 501.8
+75pt>
+File: plots/VetoMeasurement/map_topVeto_withMarkers.png Graphic file (type png)
+
+ <use plots/VetoMeasurement/map_topVeto_withMarkers.png>
+Package pdftex.def Info: plots/VetoMeasurement/map_topVeto_withMarkers.png used
+ on input line 19.
+(pdftex.def)             Requested size: 170.81465pt x 157.86534pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<plots/VetoMeasurement/SideVetoMapping.png, id=394, 803.0pt x 602.25pt>
+File: plots/VetoMeasurement/SideVetoMapping.png Graphic file (type png)
+
+<use plots/VetoMeasurement/SideVetoMapping.png>
+Package pdftex.def Info: plots/VetoMeasurement/SideVetoMapping.png used on inpu
+t line 28.
+(pdftex.def)             Requested size: 175.41077pt x 131.55557pt.
+
+<plots/VetoMeasurement/TopVetoMapping.png, id=395, 675.52374pt x 650.43pt>
+File: plots/VetoMeasurement/TopVetoMapping.png Graphic file (type png)
+
+<use plots/VetoMeasurement/TopVetoMapping.png>
+Package pdftex.def Info: plots/VetoMeasurement/TopVetoMapping.png used on input
+ line 31.
+(pdftex.def)             Requested size: 136.62788pt x 131.55557pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[59]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<plots/VetoMeasurement/Cs137inCollimator_AZ_MC_pos37_with3sigma.png, id=399, 61
+4.295pt x 413.545pt>
+File: plots/VetoMeasurement/Cs137inCollimator_AZ_MC_pos37_with3sigma.png Graphi
+c file (type png)
+
+<use plots/VetoMeasurement/Cs137inCollimator_AZ_MC_pos37_with3sigma.png>
+Package pdftex.def Info: plots/VetoMeasurement/Cs137inCollimator_AZ_MC_pos37_wi
+th3sigma.png used on input line 74.
+(pdftex.def)             Requested size: 208.29688pt x 140.22482pt.
+
+<plots/VetoMeasurement/Cs137inCollimator_sigmaZvsDepth.png, id=400, 614.295pt x
+ 413.545pt>
+File: plots/VetoMeasurement/Cs137inCollimator_sigmaZvsDepth.png Graphic file (t
+ype png)
+ <use plots/VetoMeasurement/Cs137inCollimator_sigmaZvsDepth.png>
+Package pdftex.def Info: plots/VetoMeasurement/Cs137inCollimator_sigmaZvsDepth.
+png used on input line 77.
+(pdftex.def)             Requested size: 208.29688pt x 140.22482pt.
+
+<plots/VetoMeasurement/VetoRegions.png, id=401, 1200.485pt x 373.395pt>
+File: plots/VetoMeasurement/VetoRegions.png Graphic file (type png)
+
+<use plots/VetoMeasurement/VetoRegions.png>
+Package pdftex.def Info: plots/VetoMeasurement/VetoRegions.png used on input li
+ne 86.
+(pdftex.def)             Requested size: 438.51411pt x 136.39345pt.
+ [60 <./plots/VetoMeasurement/mapLY_ZsideVeto_withMarkers.png> <./plots/VetoMea
+surement/map_topVeto_withMarkers.png> <./plots/VetoMeasurement/SideVetoMapping.
+png (PNG copy)> <./plots/VetoMeasurement/TopVetoMapping.png>] [61 <./plots/Veto
+Measurement/Cs137inCollimator_AZ_MC_pos37_with3sigma.png> <./plots/VetoMeasurem
+ent/Cs137inCollimator_sigmaZvsDepth.png> <./plots/VetoMeasurement/VetoRegions.p
+ng>]
+<plots/VetoMeasurement/RZregions.png, id=409, 350.30875pt x 771.88374pt>
+File: plots/VetoMeasurement/RZregions.png Graphic file (type png)
+
+<use plots/VetoMeasurement/RZregions.png>
+Package pdftex.def Info: plots/VetoMeasurement/RZregions.png used on input line
+ 104.
+(pdftex.def)             Requested size: 99.50761pt x 219.25705pt.
+
+<plots/VetoMeasurement/AZ_targetVeto_passive.png, id=410, 349.305pt x 590.205pt
+>
+File: plots/VetoMeasurement/AZ_targetVeto_passive.png Graphic file (type png)
+ <use plots/VetoMeasurement/AZ_targetVeto_passive.png>
+Package pdftex.def Info: plots/VetoMeasurement/AZ_targetVeto_passive.png used o
+n input line 107.
+(pdftex.def)             Requested size: 129.76315pt x 219.25705pt.
+
+<plots/VetoMeasurement/AZ_targetVeto_active.png, id=411, 349.305pt x 590.205pt>
+File: plots/VetoMeasurement/AZ_targetVeto_active.png Graphic file (type png)
+<use plots/VetoMeasurement/AZ_targetVeto_active.png>
+Package pdftex.def Info: plots/VetoMeasurement/AZ_targetVeto_active.png used on
+ input line 110.
+(pdftex.def)             Requested size: 129.76315pt x 219.25705pt.
+) (./ERbackground.tex
+[62 <./plots/VetoMeasurement/RZregions.png> <./plots/VetoMeasurement/AZ_targetV
+eto_passive.png> <./plots/VetoMeasurement/AZ_targetVeto_active.png>]
+Chapter 7.
+) (./screening.tex
+Overfull \hbox (1.29202pt too wide) in paragraph at lines 16--38
+ [][] 
+ []
+
+[63
+
+] [64]) (./BackgroundMaterials.tex
+Package epstopdf Info: Source file: <plots/BackgroundMaterials/SpectraFS_withFV
+40andFV30_75bins_dot.eps>
+(epstopdf)                    date: 2011-02-11 22:33:09
+(epstopdf)                    size: 10045 bytes
+(epstopdf)             Output file: <plots/BackgroundMaterials/SpectraFS_withFV
+40andFV30_75bins_dot-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-03-01 22:34:10
+(epstopdf)                    size: 8111 bytes
+(epstopdf)             Command: <epstopdf --outfile=plots/BackgroundMaterials/S
+pectraFS_withFV40andFV30_75bins_dot-eps-converted-to.pdf plots/BackgroundMateri
+als/SpectraFS_withFV40andFV30_75bins_dot.eps>
+(epstopdf)             \includegraphics on input line 12.
+Package epstopdf Info: Output file is already uptodate.
+
+<plots/BackgroundMaterials/SpectraFS_withFV40andFV30_75bins_dot-eps-converted-t
+o.pdf, id=423, 569.12625pt x 385.44pt>
+File: plots/BackgroundMaterials/SpectraFS_withFV40andFV30_75bins_dot-eps-conver
+ted-to.pdf Graphic file (type pdf)
+
+<use plots/BackgroundMaterials/SpectraFS_withFV40andFV30_75bins_dot-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: plots/BackgroundMaterials/SpectraFS_withFV40andFV30_75
+bins_dot-eps-converted-to.pdf used on input line 12.
+(pdftex.def)             Requested size: 208.29688pt x 141.06966pt.
+Package epstopdf Info: Source file: <plots/BackgroundMaterials/SpectraWS_withFV
+40andFV30_50bins_dot.eps>
+(epstopdf)                    date: 2011-02-11 22:33:09
+(epstopdf)                    size: 10015 bytes
+(epstopdf)             Output file: <plots/BackgroundMaterials/SpectraWS_withFV
+40andFV30_50bins_dot-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-03-01 22:34:10
+(epstopdf)                    size: 8243 bytes
+(epstopdf)             Command: <epstopdf --outfile=plots/BackgroundMaterials/S
+pectraWS_withFV40andFV30_50bins_dot-eps-converted-to.pdf plots/BackgroundMateri
+als/SpectraWS_withFV40andFV30_50bins_dot.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+<plots/BackgroundMaterials/SpectraWS_withFV40andFV30_50bins_dot-eps-converted-t
+o.pdf, id=424, 569.12625pt x 385.44pt>
+File: plots/BackgroundMaterials/SpectraWS_withFV40andFV30_50bins_dot-eps-conver
+ted-to.pdf Graphic file (type pdf)
+
+<use plots/BackgroundMaterials/SpectraWS_withFV40andFV30_50bins_dot-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: plots/BackgroundMaterials/SpectraWS_withFV40andFV30_50
+bins_dot-eps-converted-to.pdf used on input line 15.
+(pdftex.def)             Requested size: 208.29688pt x 141.06966pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.1pt): 
+ Make it at least 25.2842pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65 <./plots/BackgroundMaterials/SpectraFS_withFV40andFV30_75bins_dot-eps-conve
+rted-to.pdf> <./plots/BackgroundMaterials/SpectraWS_withFV40andFV30_50bins_dot-
+eps-converted-to.pdf>]
+
+Package floatflt Warning: Floating figures 5 and 6 colliding.
+
+<plots/BackgroundMaterials/Tl208decay.png, id=438, 989.6975pt x 628.3475pt>
+File: plots/BackgroundMaterials/Tl208decay.png Graphic file (type png)
+
+<use plots/BackgroundMaterials/Tl208decay.png>
+Package pdftex.def Info: plots/BackgroundMaterials/Tl208decay.png used on input
+ line 26.
+(pdftex.def)             Requested size: 208.29688pt x 132.24449pt.
+
+Package floatflt Message: Floating figure 6 set on page 66
+
+<plots/BackgroundMaterials/AZcolor_ER_PassiveVeto_withLabels1.png, id=439, 698.
+61pt x 473.77pt>
+File: plots/BackgroundMaterials/AZcolor_ER_PassiveVeto_withLabels1.png Graphic 
+file (type png)
+
+<use plots/BackgroundMaterials/AZcolor_ER_PassiveVeto_withLabels1.png>
+Package pdftex.def Info: plots/BackgroundMaterials/AZcolor_ER_PassiveVeto_withL
+abels1.png used on input line 42.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/BackgroundMaterials/AZcolor_ER_ActiveVeto100keV_withLabels1.png, id=440,
+ 698.61pt x 473.77pt>
+File: plots/BackgroundMaterials/AZcolor_ER_ActiveVeto100keV_withLabels1.png Gra
+phic file (type png)
+
+<use plots/BackgroundMaterials/AZcolor_ER_ActiveVeto100keV_withLabels1.png>
+Package pdftex.def Info: plots/BackgroundMaterials/AZcolor_ER_ActiveVeto100keV_
+withLabels1.png used on input line 45.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+Package epstopdf Info: Source file: <plots/BackgroundMaterials/VetoReduction_li
+near_dot.eps>
+(epstopdf)                    date: 2011-02-11 22:33:09
+(epstopdf)                    size: 8195 bytes
+(epstopdf)             Output file: <plots/BackgroundMaterials/VetoReduction_li
+near_dot-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-03-01 22:34:11
+(epstopdf)                    size: 7587 bytes
+(epstopdf)             Command: <epstopdf --outfile=plots/BackgroundMaterials/V
+etoReduction_linear_dot-eps-converted-to.pdf plots/BackgroundMaterials/VetoRedu
+ction_linear_dot.eps>
+(epstopdf)             \includegraphics on input line 56.
+Package epstopdf Info: Output file is already uptodate.
+
+<plots/BackgroundMaterials/VetoReduction_linear_dot-eps-converted-to.pdf, id=44
+1, 569.12625pt x 385.44pt>
+File: plots/BackgroundMaterials/VetoReduction_linear_dot-eps-converted-to.pdf G
+raphic file (type pdf)
+
+<use plots/BackgroundMaterials/VetoReduction_linear_dot-eps-converted-to.pdf>
+Package pdftex.def Info: plots/BackgroundMaterials/VetoReduction_linear_dot-eps
+-converted-to.pdf used on input line 56.
+(pdftex.def)             Requested size: 208.29688pt x 141.06966pt.
+
+<plots/VetoMeasurement/etotv_all.png, id=442, 614.295pt x 413.545pt>
+File: plots/VetoMeasurement/etotv_all.png Graphic file (type png)
+
+<use plots/VetoMeasurement/etotv_all.png>
+Package pdftex.def Info: plots/VetoMeasurement/etotv_all.png used on input line
+ 59.
+(pdftex.def)             Requested size: 208.29688pt x 140.22482pt.
+ [66 <./plots/BackgroundMaterials/Tl208decay.png> <./plots/BackgroundMaterials/
+AZcolor_ER_PassiveVeto_withLabels1.png> <./plots/BackgroundMaterials/AZcolor_ER
+_ActiveVeto100keV_withLabels1.png>]
+<plots/BackgroundMaterials/DetectorMaterials_FV30superellipse_PassiveVeto.png, 
+id=446, 569.12625pt x 385.44pt>
+File: plots/BackgroundMaterials/DetectorMaterials_FV30superellipse_PassiveVeto.
+png Graphic file (type png)
+
+<use plots/BackgroundMaterials/DetectorMaterials_FV30superellipse_PassiveVeto.p
+ng>
+Package pdftex.def Info: plots/BackgroundMaterials/DetectorMaterials_FV30supere
+llipse_PassiveVeto.png used on input line 70.
+(pdftex.def)             Requested size: 208.29688pt x 141.06966pt.
+
+<plots/BackgroundMaterials/ChainsContributions.png, id=447, 698.61pt x 473.77pt
+>
+File: plots/BackgroundMaterials/ChainsContributions.png Graphic file (type png)
+
+ <use plots/BackgroundMaterials/ChainsContributions.png>
+Package pdftex.def Info: plots/BackgroundMaterials/ChainsContributions.png used
+ on input line 73.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+Underfull \vbox (badness 1087) has occurred while \output is active []
+
+ [67 <./plots/BackgroundMaterials/VetoReduction_linear_dot-eps-converted-to.pdf
+> <./plots/VetoMeasurement/etotv_all.png> <./plots/BackgroundMaterials/Detector
+Materials_FV30superellipse_PassiveVeto.png> <./plots/BackgroundMaterials/Chains
+Contributions.png>] [68]) (./RadonCavity.tex
+<plots//RnCavity/run08_spring_BoxAndCavity_CLR.png, id=460, 1401.235pt x 774.89
+5pt>
+File: plots//RnCavity/run08_spring_BoxAndCavity_CLR.png Graphic file (type png)
+
+ <use plots//RnCavity/run08_spring_BoxAndCavity_CLR.png>
+Package pdftex.def Info: plots//RnCavity/run08_spring_BoxAndCavity_CLR.png used
+ on input line 12.
+(pdftex.def)             Requested size: 394.66002pt x 218.24611pt.
+ [69 <./plots//RnCavity/run08_spring_BoxAndCavity_CLR.png>]
+<plots/RnCavity/Rn222_30kg_PassiveVeto.png, id=465, 698.61pt x 473.77pt>
+File: plots/RnCavity/Rn222_30kg_PassiveVeto.png Graphic file (type png)
+
+<use plots/RnCavity/Rn222_30kg_PassiveVeto.png>
+Package pdftex.def Info: plots/RnCavity/Rn222_30kg_PassiveVeto.png used on inpu
+t line 23.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+Package epstopdf Info: Source file: <plots/RnCavity/RnCavity_Rate-vs-Conc_dot.e
+ps>
+(epstopdf)                    date: 2011-02-11 22:33:09
+(epstopdf)                    size: 10306 bytes
+(epstopdf)             Output file: <plots/RnCavity/RnCavity_Rate-vs-Conc_dot-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2011-03-01 22:50:54
+(epstopdf)                    size: 8697 bytes
+(epstopdf)             Command: <epstopdf --outfile=plots/RnCavity/RnCavity_Rat
+e-vs-Conc_dot-eps-converted-to.pdf plots/RnCavity/RnCavity_Rate-vs-Conc_dot.eps
+>
+(epstopdf)             \includegraphics on input line 26.
+Package epstopdf Info: Output file is already uptodate.
+
+<plots/RnCavity/RnCavity_Rate-vs-Conc_dot-eps-converted-to.pdf, id=466, 569.126
+25pt x 385.44pt>
+File: plots/RnCavity/RnCavity_Rate-vs-Conc_dot-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use plots/RnCavity/RnCavity_Rate-vs-Conc_dot-eps-converted-to.pdf>
+Package pdftex.def Info: plots/RnCavity/RnCavity_Rate-vs-Conc_dot-eps-converted
+-to.pdf used on input line 26.
+(pdftex.def)             Requested size: 208.29688pt x 141.06966pt.
+)
+(./IntrinsicRadioactivity.tex) (./DelayedCoincidenceRn222.tex
+<plots/RnDC/DecayScheme_214.png, id=467, 651.43375pt x 92.345pt>
+File: plots/RnDC/DecayScheme_214.png Graphic file (type png)
+
+<use plots/RnDC/DecayScheme_214.png>
+Package pdftex.def Info: plots/RnDC/DecayScheme_214.png used on input line 10.
+(pdftex.def)             Requested size: 263.11115pt x 37.29805pt.
+
+<plots/RnDC/DecayScheme_212.png, id=468, 643.40375pt x 75.28125pt>
+File: plots/RnDC/DecayScheme_212.png Graphic file (type png)
+
+<use plots/RnDC/DecayScheme_212.png>
+Package pdftex.def Info: plots/RnDC/DecayScheme_212.png used on input line 13.
+(pdftex.def)             Requested size: 263.11115pt x 30.78624pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<plots/RnDC/detEff_total.png, id=469, 698.61pt x 473.77pt>
+File: plots/RnDC/detEff_total.png Graphic file (type png)
+
+<use plots/RnDC/detEff_total.png>
+Package pdftex.def Info: plots/RnDC/detEff_total.png used on input line 23.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+Underfull \hbox (badness 3460) in paragraph at lines 24--24
+[]\OT1/cmr/bx/n/10 Figure 7.9: |\OT1/cmr/m/n/10 (+20) De-tec-tion ef-fi-ciency 
+for $\OML/cmm/m/it/10 $\OT1/cmr/m/n/10 (+20) -
+ []
+
+[70 <./plots/RnCavity/Rn222_30kg_PassiveVeto.png> <./plots/RnCavity/RnCavity_Ra
+te-vs-Conc_dot-eps-converted-to.pdf>]
+floatflt Message: Flt. fig. 7 set on page 71, shifted 1 par(s) forward.
+<plots/RnDC/event1_withLabels.png, id=478, 843.15pt x 366.36874pt>
+File: plots/RnDC/event1_withLabels.png Graphic file (type png)
+
+<use plots/RnDC/event1_withLabels.png>
+Package pdftex.def Info: plots/RnDC/event1_withLabels.png used on input line 47
+.
+(pdftex.def)             Requested size: 208.29688pt x 90.50743pt.
+
+<plots/RnDC/event3_withLabels.png, id=479, 828.09375pt x 365.365pt>
+File: plots/RnDC/event3_withLabels.png Graphic file (type png)
+
+<use plots/RnDC/event3_withLabels.png>
+Package pdftex.def Info: plots/RnDC/event3_withLabels.png used on input line 50
+.
+(pdftex.def)             Requested size: 208.29688pt x 91.9041pt.
+ [71 <./plots/RnDC/DecayScheme_214.png> <./plots/RnDC/DecayScheme_212.png> <./p
+lots/RnDC/detEff_total.png> <./plots/RnDC/event1_withLabels.png> <./plots/RnDC/
+event3_withLabels.png>]
+<plots/RnDC/TimeDif_Bi214-Po214.png, id=483, 614.295pt x 414.54875pt>
+File: plots/RnDC/TimeDif_Bi214-Po214.png Graphic file (type png)
+
+<use plots/RnDC/TimeDif_Bi214-Po214.png>
+Package pdftex.def Info: plots/RnDC/TimeDif_Bi214-Po214.png used on input line 
+61.
+(pdftex.def)             Requested size: 214.4347pt x 144.71045pt.
+
+<plots/RnDC/Bi214-Po214_MCandDATA_withLabels.png, id=484, 614.295pt x 472.76625
+pt>
+File: plots/RnDC/Bi214-Po214_MCandDATA_withLabels.png Graphic file (type png)
+ <use plots/RnDC/Bi214-Po214_MCandDATA_withLabels.png>
+Package pdftex.def Info: plots/RnDC/Bi214-Po214_MCandDATA_withLabels.png used o
+n input line 64.
+(pdftex.def)             Requested size: 188.02989pt x 144.71045pt.
+
+<plots/RnDC/rate_vs_time_run07_DelayedCoincidence.png, id=485, 697.60625pt x 47
+2.76625pt>
+File: plots/RnDC/rate_vs_time_run07_DelayedCoincidence.png Graphic file (type p
+ng)
+ <use plots/RnDC/rate_vs_time_run07_DelayedCoincidence.png>
+Package pdftex.def Info: plots/RnDC/rate_vs_time_run07_DelayedCoincidence.png u
+sed on input line 73.
+(pdftex.def)             Requested size: 208.29688pt x 141.16008pt.
+
+<plots/RnDC/rate_vs_time_run08_DelayedCoincidence.png, id=486, 697.60625pt x 47
+2.76625pt>
+File: plots/RnDC/rate_vs_time_run08_DelayedCoincidence.png Graphic file (type p
+ng)
+ <use plots/RnDC/rate_vs_time_run08_DelayedCoincidence.png>
+Package pdftex.def Info: plots/RnDC/rate_vs_time_run08_DelayedCoincidence.png u
+sed on input line 76.
+(pdftex.def)             Requested size: 208.29688pt x 141.16008pt.
+ [72 <./plots/RnDC/TimeDif_Bi214-Po214.png> <./plots/RnDC/Bi214-Po214_MCandDATA
+_withLabels.png> <./plots/RnDC/rate_vs_time_run07_DelayedCoincidence.png> <./pl
+ots/RnDC/rate_vs_time_run08_DelayedCoincidence.png>]
+<plots/RnDC/S2_vs_S1_run08_FV30.png, id=490, 561.09625pt x 518.93875pt>
+File: plots/RnDC/S2_vs_S1_run08_FV30.png Graphic file (type png)
+
+<use plots/RnDC/S2_vs_S1_run08_FV30.png>
+Package pdftex.def Info: plots/RnDC/S2_vs_S1_run08_FV30.png used on input line 
+90.
+(pdftex.def)             Requested size: 165.95004pt x 153.4826pt.
+
+<plots/RnDC/S2const3_vs_S1_FitAlpha2nd_mod.png, id=491, 597.23125pt x 575.14874
+pt>
+File: plots/RnDC/S2const3_vs_S1_FitAlpha2nd_mod.png Graphic file (type png)
+ <use plots/RnDC/S2const3_vs_S1_FitAlpha2nd_mod.png>
+Package pdftex.def Info: plots/RnDC/S2const3_vs_S1_FitAlpha2nd_mod.png used on 
+input line 93.
+(pdftex.def)             Requested size: 173.02858pt x 166.6375pt.
+
+<plots/RnDC/MCdata_Rn222_2ndPeak_withLabels2.png, id=492, 697.60625pt x 474.773
+74pt>
+File: plots/RnDC/MCdata_Rn222_2ndPeak_withLabels2.png Graphic file (type png)
+ <use plots/RnDC/MCdata_Rn222_2ndPeak_withLabels2.png>
+Package pdftex.def Info: plots/RnDC/MCdata_Rn222_2ndPeak_withLabels2.png used o
+n input line 102.
+(pdftex.def)             Requested size: 208.29688pt x 141.75948pt.
+
+<plots/RnDC/BothMethods_run08.png, id=493, 698.61pt x 473.77pt>
+File: plots/RnDC/BothMethods_run08.png Graphic file (type png)
+
+<use plots/RnDC/BothMethods_run08.png>
+Package pdftex.def Info: plots/RnDC/BothMethods_run08.png used on input line 10
+6.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+ [73 <./plots/RnDC/S2_vs_S1_run08_FV30.png> <./plots/RnDC/S2const3_vs_S1_FitAlp
+ha2nd_mod.png> <./plots/RnDC/MCdata_Rn222_2ndPeak_withLabels2.png> <./plots/RnD
+C/BothMethods_run08.png>])
+(./DelayedCoincidenceKr85.tex
+<plots/Kr85/Kr85coincidence1.png, id=498, 692.5875pt x 119.44624pt>
+File: plots/Kr85/Kr85coincidence1.png Graphic file (type png)
+
+<use plots/Kr85/Kr85coincidence1.png>
+Package pdftex.def Info: plots/Kr85/Kr85coincidence1.png used on input line 13.
+
+(pdftex.def)             Requested size: 241.1841pt x 41.59538pt.
+
+<plots/Kr85/DelayTime_Kr85.png, id=499, 698.61pt x 473.77pt>
+File: plots/Kr85/DelayTime_Kr85.png Graphic file (type png)
+
+<use plots/Kr85/DelayTime_Kr85.png>
+Package pdftex.def Info: plots/Kr85/DelayTime_Kr85.png used on input line 21.
+(pdftex.def)             Requested size: 171.02023pt x 115.97707pt.
+
+Package floatflt Message: Floating figure 8 set on page 74
+<plots/Kr85/Kr85WF1_withLabels.png, id=500, 896.34875pt x 386.44376pt>
+File: plots/Kr85/Kr85WF1_withLabels.png Graphic file (type png)
+
+<use plots/Kr85/Kr85WF1_withLabels.png>
+Package pdftex.def Info: plots/Kr85/Kr85WF1_withLabels.png used on input line 3
+7.
+(pdftex.def)             Requested size: 208.29688pt x 89.80006pt.
+
+<plots/Kr85/Kr85WF3_withLabels.png, id=501, 896.34875pt x 387.4475pt>
+File: plots/Kr85/Kr85WF3_withLabels.png Graphic file (type png)
+
+<use plots/Kr85/Kr85WF3_withLabels.png>
+Package pdftex.def Info: plots/Kr85/Kr85WF3_withLabels.png used on input line 4
+0.
+(pdftex.def)             Requested size: 208.29688pt x 90.03331pt.
+ [74 <./plots/Kr85/Kr85coincidence1.png> <./plots/Kr85/DelayTime_Kr85.png>]
+<plots/Kr85/S1_run08_withLabels.png, id=505, 698.61pt x 473.77pt>
+File: plots/Kr85/S1_run08_withLabels.png Graphic file (type png)
+
+<use plots/Kr85/S1_run08_withLabels.png>
+Package pdftex.def Info: plots/Kr85/S1_run08_withLabels.png used on input line 
+50.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/Kr85/dt_run08_withFit.png, id=506, 698.61pt x 473.77pt>
+File: plots/Kr85/dt_run08_withFit.png Graphic file (type png)
+
+<use plots/Kr85/dt_run08_withFit.png>
+Package pdftex.def Info: plots/Kr85/dt_run08_withFit.png used on input line 53.
+
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/Kr85/PDF_run08_withLabels.png, id=507, 698.61pt x 473.77pt>
+File: plots/Kr85/PDF_run08_withLabels.png Graphic file (type png)
+
+<use plots/Kr85/PDF_run08_withLabels.png>
+Package pdftex.def Info: plots/Kr85/PDF_run08_withLabels.png used on input line
+ 72.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/Kr85/LogL_run08_withLabels.png, id=508, 698.61pt x 473.77pt>
+File: plots/Kr85/LogL_run08_withLabels.png Graphic file (type png)
+
+<use plots/Kr85/LogL_run08_withLabels.png>
+Package pdftex.def Info: plots/Kr85/LogL_run08_withLabels.png used on input lin
+e 75.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+ [75 <./plots/Kr85/Kr85WF1_withLabels.png> <./plots/Kr85/Kr85WF3_withLabels.png
+> <./plots/Kr85/S1_run08_withLabels.png> <./plots/Kr85/dt_run08_withFit.png>]) 
+(./BackgroundIntrinsic.tex
+Package epstopdf Info: Source file: <plots/BackgroundIntrinsic/RnLiquid_Rate-vs
+-Conc.eps>
+(epstopdf)                    date: 2011-02-11 22:33:09
+(epstopdf)                    size: 10342 bytes
+(epstopdf)             Output file: <plots/BackgroundIntrinsic/RnLiquid_Rate-vs
+-Conc-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-06-14 22:56:26
+(epstopdf)                    size: 9890 bytes
+(epstopdf)             Command: <epstopdf --outfile=plots/BackgroundIntrinsic/R
+nLiquid_Rate-vs-Conc-eps-converted-to.pdf plots/BackgroundIntrinsic/RnLiquid_Ra
+te-vs-Conc.eps>
+(epstopdf)             \includegraphics on input line 13.
+Package epstopdf Info: Output file is already uptodate.
+
+<plots/BackgroundIntrinsic/RnLiquid_Rate-vs-Conc-eps-converted-to.pdf, id=514, 
+569.12625pt x 385.44pt>
+File: plots/BackgroundIntrinsic/RnLiquid_Rate-vs-Conc-eps-converted-to.pdf Grap
+hic file (type pdf)
+
+<use plots/BackgroundIntrinsic/RnLiquid_Rate-vs-Conc-eps-converted-to.pdf>
+Package pdftex.def Info: plots/BackgroundIntrinsic/RnLiquid_Rate-vs-Conc-eps-co
+nverted-to.pdf used on input line 13.
+(pdftex.def)             Requested size: 208.29688pt x 141.06966pt.
+Package epstopdf Info: Source file: <plots/BackgroundIntrinsic/Kr85_Rate-vs-Con
+c.eps>
+(epstopdf)                    date: 2011-02-11 22:33:09
+(epstopdf)                    size: 13626 bytes
+(epstopdf)             Output file: <plots/BackgroundIntrinsic/Kr85_Rate-vs-Con
+c-eps-converted-to.pdf>
+(epstopdf)                    date: 2011-06-14 22:57:25
+(epstopdf)                    size: 11721 bytes
+(epstopdf)             Command: <epstopdf --outfile=plots/BackgroundIntrinsic/K
+r85_Rate-vs-Conc-eps-converted-to.pdf plots/BackgroundIntrinsic/Kr85_Rate-vs-Co
+nc.eps>
+(epstopdf)             \includegraphics on input line 16.
+Package epstopdf Info: Output file is already uptodate.
+
+<plots/BackgroundIntrinsic/Kr85_Rate-vs-Conc-eps-converted-to.pdf, id=515, 569.
+12625pt x 385.44pt>
+File: plots/BackgroundIntrinsic/Kr85_Rate-vs-Conc-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use plots/BackgroundIntrinsic/Kr85_Rate-vs-Conc-eps-converted-to.pdf>
+Package pdftex.def Info: plots/BackgroundIntrinsic/Kr85_Rate-vs-Conc-eps-conver
+ted-to.pdf used on input line 16.
+(pdftex.def)             Requested size: 208.29688pt x 141.06966pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[76 <./plots/Kr85/PDF_run08_withLabels.png> <./plots/Kr85/LogL_run08_withLabels
+.png>]) (./CosmogenicBackgrounds.tex) (./CosmogenicActivationSteel.tex [77 <./p
+lots/BackgroundIntrinsic/RnLiquid_Rate-vs-Conc-eps-converted-to.pdf> <./plots/B
+ackgroundIntrinsic/Kr85_Rate-vs-Conc-eps-converted-to.pdf>] [78]
+<plots/Cosmogenics/CosmogenicsSteel_LNGSandSEA.png, id=539, 698.61pt x 473.77pt
+>
+File: plots/Cosmogenics/CosmogenicsSteel_LNGSandSEA.png Graphic file (type png)
+
+ <use plots/Cosmogenics/CosmogenicsSteel_LNGSandSEA.png>
+Package pdftex.def Info: plots/Cosmogenics/CosmogenicsSteel_LNGSandSEA.png used
+ on input line 73.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/Cosmogenics/CosmogenicSpectra_LNGSproduction_noV48.png, id=540, 698.61pt
+ x 473.77pt>
+File: plots/Cosmogenics/CosmogenicSpectra_LNGSproduction_noV48.png Graphic file
+ (type png)
+
+<use plots/Cosmogenics/CosmogenicSpectra_LNGSproduction_noV48.png>
+Package pdftex.def Info: plots/Cosmogenics/CosmogenicSpectra_LNGSproduction_noV
+48.png used on input line 76.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+)
+(./CosmogenicActivationLXe.tex
+<plots/Cosmogenics/ACTIVIA_COSMO_wide1.png, id=541, 1200.485pt x 373.395pt>
+File: plots/Cosmogenics/ACTIVIA_COSMO_wide1.png Graphic file (type png)
+
+<use plots/Cosmogenics/ACTIVIA_COSMO_wide1.png>
+Package pdftex.def Info: plots/Cosmogenics/ACTIVIA_COSMO_wide1.png used on inpu
+t line 52.
+(pdftex.def)             Requested size: 328.88557pt x 102.29366pt.
+) (./DataMCcomparison.tex
+[79 <./plots/Cosmogenics/CosmogenicsSteel_LNGSandSEA.png> <./plots/Cosmogenics/
+CosmogenicSpectra_LNGSproduction_noV48.png>]
+
+LaTeX Warning: Text page 80 contains only floats.
+
+
+Overfull \vbox (0.24947pt too high) has occurred while \output is active []
+
+
+[80 <./plots/Cosmogenics/ACTIVIA_COSMO_wide1.png>]
+<plots/DataMC/dataMC_FS.png, id=548, 569.4876pt x 192.72pt>
+File: plots/DataMC/dataMC_FS.png Graphic file (type png)
+
+<use plots/DataMC/dataMC_FS.png>
+Package pdftex.def Info: plots/DataMC/dataMC_FS.png used on input line 10.
+(pdftex.def)             Requested size: 438.51411pt x 148.40073pt.
+
+<plots/DataMC/dataMC_30kg_PassiveVeto_WS2.png, id=549, 569.4876pt x 385.44pt>
+File: plots/DataMC/dataMC_30kg_PassiveVeto_WS2.png Graphic file (type png)
+
+<use plots/DataMC/dataMC_30kg_PassiveVeto_WS2.png>
+Package pdftex.def Info: plots/DataMC/dataMC_30kg_PassiveVeto_WS2.png used on i
+nput line 34.
+(pdftex.def)             Requested size: 208.29688pt x 140.97556pt.
+ [81 <./plots/DataMC/dataMC_FS.png>]
+floatflt Message: Flt. fig. 9 set on page 82, shifted 2 par(s) forward.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<plots/DataMC/pie_30kg_PassiveVeto.png, id=554, 481.8pt x 302.12875pt>
+File: plots/DataMC/pie_30kg_PassiveVeto.png Graphic file (type png)
+
+<use plots/DataMC/pie_30kg_PassiveVeto.png>
+Package pdftex.def Info: plots/DataMC/pie_30kg_PassiveVeto.png used on input li
+ne 111.
+(pdftex.def)             Requested size: 209.78714pt x 131.55557pt.
+
+<plots/DataMC/pie_30kg_ActiveVeto.png, id=555, 480.79625pt x 302.12875pt>
+File: plots/DataMC/pie_30kg_ActiveVeto.png Graphic file (type png)
+
+<use plots/DataMC/pie_30kg_ActiveVeto.png>
+Package pdftex.def Info: plots/DataMC/pie_30kg_ActiveVeto.png used on input lin
+e 114.
+(pdftex.def)             Requested size: 209.35008pt x 131.55557pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./NRbackground.tex [82 <./plots/DataMC/dataMC_30kg_PassiveVeto_WS2.png>]
+[83 <./plots/DataMC/pie_30kg_PassiveVeto.png> <./plots/DataMC/pie_30kg_ActiveVe
+to.png>]
+Chapter 8.
+) (./NRalphaN.tex) (./NRalphaN_SOURCES.tex
+<plots/NRalphaN/NeutronProductionMaterials/steel-ProductionRate_for1Bq.png, id=
+562, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/steel-ProductionRate_for1Bq.png
+ Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/steel-ProductionRate_for1Bq.png>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/steel-Produc
+tionRate_for1Bq.png used on input line 8.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/teflon-ProductionRate_for1Bq.png, id
+=563, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/teflon-ProductionRate_for1Bq.pn
+g Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/teflon-ProductionRate_for1Bq.png
+>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/teflon-Produ
+ctionRate_for1Bq.png used on input line 11.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/copper-ProductionRate_for1Bq.png, id
+=564, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/copper-ProductionRate_for1Bq.pn
+g Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/copper-ProductionRate_for1Bq.png
+>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/copper-Produ
+ctionRate_for1Bq.png used on input line 14.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/lead-ProductionRate_for1Bq.png, id=5
+65, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/lead-ProductionRate_for1Bq.png 
+Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/lead-ProductionRate_for1Bq.png>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/lead-Product
+ionRate_for1Bq.png used on input line 17.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/poly-ProductionRate_for1Bq.png, id=5
+66, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/poly-ProductionRate_for1Bq.png 
+Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/poly-ProductionRate_for1Bq.png>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/poly-Product
+ionRate_for1Bq.png used on input line 20.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/ceramics-ProductionRate_for1Bq.png, 
+id=567, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/ceramics-ProductionRate_for1Bq.
+png Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/ceramics-ProductionRate_for1Bq.p
+ng>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/ceramics-Pro
+ductionRate_for1Bq.png used on input line 23.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/pmt_metal1-ProductionRate_for1Bq.png
+, id=568, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/pmt_metal1-ProductionRate_for1B
+q.png Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/pmt_metal1-ProductionRate_for1Bq
+.png>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/pmt_metal1-P
+roductionRate_for1Bq.png used on input line 32.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/pmt_metal2-ProductionRate_for1Bq.png
+, id=569, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/pmt_metal2-ProductionRate_for1B
+q.png Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/pmt_metal2-ProductionRate_for1Bq
+.png>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/pmt_metal2-P
+roductionRate_for1Bq.png used on input line 35.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/pmt_quartz-ProductionRate_for1Bq.png
+, id=570, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/pmt_quartz-ProductionRate_for1B
+q.png Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/pmt_quartz-ProductionRate_for1Bq
+.png>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/pmt_quartz-P
+roductionRate_for1Bq.png used on input line 38.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/pmt_glass-ProductionRate_for1Bq.png,
+ id=571, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/pmt_glass-ProductionRate_for1Bq
+.png Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/pmt_glass-ProductionRate_for1Bq.
+png>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/pmt_glass-Pr
+oductionRate_for1Bq.png used on input line 41.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/pmt_Al-ProductionRate_for1Bq.png, id
+=572, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/pmt_Al-ProductionRate_for1Bq.pn
+g Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/pmt_Al-ProductionRate_for1Bq.png
+>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/pmt_Al-Produ
+ctionRate_for1Bq.png used on input line 44.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/NeutronProductionMaterials/cirlex-ProductionRate_for1Bq.png, id
+=573, 698.61pt x 473.77pt>
+File: plots/NRalphaN/NeutronProductionMaterials/cirlex-ProductionRate_for1Bq.pn
+g Graphic file (type png)
+
+<use plots/NRalphaN/NeutronProductionMaterials/cirlex-ProductionRate_for1Bq.png
+>
+Package pdftex.def Info: plots/NRalphaN/NeutronProductionMaterials/cirlex-Produ
+ctionRate_for1Bq.png used on input line 47.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+ [84
+
+] [85 <./plots/NRalphaN/NeutronProductionMaterials/steel-ProductionRate_for1Bq.
+png> <./plots/NRalphaN/NeutronProductionMaterials/teflon-ProductionRate_for1Bq.
+png> <./plots/NRalphaN/NeutronProductionMaterials/copper-ProductionRate_for1Bq.
+png> <./plots/NRalphaN/NeutronProductionMaterials/lead-ProductionRate_for1Bq.pn
+g> <./plots/NRalphaN/NeutronProductionMaterials/poly-ProductionRate_for1Bq.png>
+ <./plots/NRalphaN/NeutronProductionMaterials/ceramics-ProductionRate_for1Bq.pn
+g>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86 <./plots/NRalphaN/NeutronProductionMaterials/pmt_metal1-ProductionRate_for
+1Bq.png> <./plots/NRalphaN/NeutronProductionMaterials/pmt_metal2-ProductionRate
+_for1Bq.png> <./plots/NRalphaN/NeutronProductionMaterials/pmt_quartz-Production
+Rate_for1Bq.png> <./plots/NRalphaN/NeutronProductionMaterials/pmt_glass-Product
+ionRate_for1Bq.png> <./plots/NRalphaN/NeutronProductionMaterials/pmt_Al-Product
+ionRate_for1Bq.png> <./plots/NRalphaN/NeutronProductionMaterials/cirlex-Product
+ionRate_for1Bq.png>]) (./NRalphaN_GEANT4.tex
+<plots/NRalphaN/Spectrum_alphan_SM_30kg.png, id=584, 698.61pt x 473.77pt>
+File: plots/NRalphaN/Spectrum_alphan_SM_30kg.png Graphic file (type png)
+
+<use plots/NRalphaN/Spectrum_alphan_SM_30kg.png>
+Package pdftex.def Info: plots/NRalphaN/Spectrum_alphan_SM_30kg.png used on inp
+ut line 11.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/VetoReduction_Neutrons_FV40andFV30.png, id=585, 698.61pt x 473.
+77pt>
+File: plots/NRalphaN/VetoReduction_Neutrons_FV40andFV30.png Graphic file (type 
+png)
+ <use plots/NRalphaN/VetoReduction_Neutrons_FV40andFV30.png>
+Package pdftex.def Info: plots/NRalphaN/VetoReduction_Neutrons_FV40andFV30.png 
+used on input line 15.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/sum_AZ.png, id=586, 698.61pt x 473.77pt>
+File: plots/NRalphaN/sum_AZ.png Graphic file (type png)
+
+<use plots/NRalphaN/sum_AZ.png>
+Package pdftex.def Info: plots/NRalphaN/sum_AZ.png used on input line 24.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRalphaN/AlphaN_AZ_MultipleScatters_xM_25bins.png, id=587, 698.61pt x 47
+3.77pt>
+File: plots/NRalphaN/AlphaN_AZ_MultipleScatters_xM_25bins.png Graphic file (typ
+e png)
+ <use plots/NRalphaN/AlphaN_AZ_MultipleScatters_xM_25bins.png>
+Package pdftex.def Info: plots/NRalphaN/AlphaN_AZ_MultipleScatters_xM_25bins.pn
+g used on input line 28.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+ [87]
+[88 <./plots/NRalphaN/Spectrum_alphan_SM_30kg.png> <./plots/NRalphaN/VetoReduct
+ion_Neutrons_FV40andFV30.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<plots/NRalphaN/AlphaN_Pie62kg_mod.png, id=595, 598.235pt x 330.23375pt>
+File: plots/NRalphaN/AlphaN_Pie62kg_mod.png Graphic file (type png)
+
+<use plots/NRalphaN/AlphaN_Pie62kg_mod.png>
+Package pdftex.def Info: plots/NRalphaN/AlphaN_Pie62kg_mod.png used on input li
+ne 91.
+(pdftex.def)             Requested size: 208.29688pt x 114.9839pt.
+
+<plots/NRalphaN/AlphaN_Pie30kg_mod.png, id=596, 598.235pt x 329.23pt>
+File: plots/NRalphaN/AlphaN_Pie30kg_mod.png Graphic file (type png)
+
+<use plots/NRalphaN/AlphaN_Pie30kg_mod.png>
+Package pdftex.def Info: plots/NRalphaN/AlphaN_Pie30kg_mod.png used on input li
+ne 95.
+(pdftex.def)             Requested size: 208.29688pt x 114.6344pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[89 <./plots/NRalphaN/sum_AZ.png> <./plots/NRalphaN/AlphaN_AZ_MultipleScatters_
+xM_25bins.png>]) (./NRmuons.tex
+<plots/NRmuons/MuonSimulation_withNeutrons.png, id=600, 976.64874pt x 711.65875
+pt>
+File: plots/NRmuons/MuonSimulation_withNeutrons.png Graphic file (type png)
+ <use plots/NRmuons/MuonSimulation_withNeutrons.png>
+Package pdftex.def Info: plots/NRmuons/MuonSimulation_withNeutrons.png used on 
+input line 9.
+(pdftex.def)             Requested size: 438.51411pt x 319.53764pt.
+
+<plots/NRmuons/MuonSpectraAll.png, id=601, 1018.80624pt x 574.145pt>
+File: plots/NRmuons/MuonSpectraAll.png Graphic file (type png)
+
+<use plots/NRmuons/MuonSpectraAll.png>
+Package pdftex.def Info: plots/NRmuons/MuonSpectraAll.png used on input line 18
+.
+(pdftex.def)             Requested size: 350.81262pt x 197.70352pt.
+ [90 <./plots/NRalphaN/AlphaN_Pie62kg_mod.png> <./plots/NRalphaN/AlphaN_Pie30kg
+_mod.png>]
+
+LaTeX Warning: Text page 91 contains only floats.
+
+
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+ [91 <./plots/NRmuons/MuonSimulation_withNeutrons.png> <./plots/NRmuons/MuonSpe
+ctraAll.png>]
+<plots/NRmuons/MuonInduced_AZ_SingleScatters_PassiveVeto_ArbUnits.png, id=610, 
+698.61pt x 473.77pt>
+File: plots/NRmuons/MuonInduced_AZ_SingleScatters_PassiveVeto_ArbUnits.png Grap
+hic file (type png)
+
+<use plots/NRmuons/MuonInduced_AZ_SingleScatters_PassiveVeto_ArbUnits.png>
+Package pdftex.def Info: plots/NRmuons/MuonInduced_AZ_SingleScatters_PassiveVet
+o_ArbUnits.png used on input line 66.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRmuons/MuonInduced_AZ_MultipleScatters_PassiveVeto_ArbUnits.png, id=611
+, 698.61pt x 473.77pt>
+File: plots/NRmuons/MuonInduced_AZ_MultipleScatters_PassiveVeto_ArbUnits.png Gr
+aphic file (type png)
+
+<use plots/NRmuons/MuonInduced_AZ_MultipleScatters_PassiveVeto_ArbUnits.png>
+Package pdftex.def Info: plots/NRmuons/MuonInduced_AZ_MultipleScatters_PassiveV
+eto_ArbUnits.png used on input line 69.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/NRmuons/MuonInducedBG_PassiveVeto_withFV40andFV30.png, id=612, 569.12625
+pt x 385.44pt>
+File: plots/NRmuons/MuonInducedBG_PassiveVeto_withFV40andFV30.png Graphic file 
+(type png)
+
+<use plots/NRmuons/MuonInducedBG_PassiveVeto_withFV40andFV30.png>
+Package pdftex.def Info: plots/NRmuons/MuonInducedBG_PassiveVeto_withFV40andFV3
+0.png used on input line 78.
+(pdftex.def)             Requested size: 208.29688pt x 141.06966pt.
+
+<plots/NRmuons/VetoReduction_Muons-NRVC_FV40andFV30.png, id=613, 698.61pt x 473
+.77pt>
+File: plots/NRmuons/VetoReduction_Muons-NRVC_FV40andFV30.png Graphic file (type
+ png)
+ <use plots/NRmuons/VetoReduction_Muons-NRVC_FV40andFV30.png>
+Package pdftex.def Info: plots/NRmuons/VetoReduction_Muons-NRVC_FV40andFV30.png
+ used on input line 81.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+ [92]
+[93 <./plots/NRmuons/MuonInduced_AZ_SingleScatters_PassiveVeto_ArbUnits.png> <.
+/plots/NRmuons/MuonInduced_AZ_MultipleScatters_PassiveVeto_ArbUnits.png> <./plo
+ts/NRmuons/MuonInducedBG_PassiveVeto_withFV40andFV30.png> <./plots/NRmuons/Veto
+Reduction_Muons-NRVC_FV40andFV30.png>]) (./S2threshold.tex [94]
+<plots/S2threshold/NRspectra_62kg_DetMat_StepFunctionThresholds.png, id=626, 69
+8.61pt x 473.77pt>
+File: plots/S2threshold/NRspectra_62kg_DetMat_StepFunctionThresholds.png Graphi
+c file (type png)
+
+<use plots/S2threshold/NRspectra_62kg_DetMat_StepFunctionThresholds.png>
+Package pdftex.def Info: plots/S2threshold/NRspectra_62kg_DetMat_StepFunctionTh
+resholds.png used on input line 11.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/S2threshold/nrBG_rate-vs-S2threshold.png, id=627, 698.61pt x 473.77pt>
+File: plots/S2threshold/nrBG_rate-vs-S2threshold.png Graphic file (type png)
+
+<use plots/S2threshold/nrBG_rate-vs-S2threshold.png>
+Package pdftex.def Info: plots/S2threshold/nrBG_rate-vs-S2threshold.png used on
+ input line 14.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/S2threshold/NRbandWS-cS2_mean.png, id=628, 698.61pt x 473.77pt>
+File: plots/S2threshold/NRbandWS-cS2_mean.png Graphic file (type png)
+
+<use plots/S2threshold/NRbandWS-cS2_mean.png>
+Package pdftex.def Info: plots/S2threshold/NRbandWS-cS2_mean.png used on input 
+line 25.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/S2threshold/NRbandWS-cS2_sigma.png, id=629, 698.61pt x 473.77pt>
+File: plots/S2threshold/NRbandWS-cS2_sigma.png Graphic file (type png)
+
+<use plots/S2threshold/NRbandWS-cS2_sigma.png>
+Package pdftex.def Info: plots/S2threshold/NRbandWS-cS2_sigma.png used on input
+ line 28.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/S2threshold/NRbandWS_WithContoursAndLabels1.png, id=630, 1013.7875pt x 6
+98.61pt>
+File: plots/S2threshold/NRbandWS_WithContoursAndLabels1.png Graphic file (type 
+png)
+ <use plots/S2threshold/NRbandWS_WithContoursAndLabels1.png>
+Package pdftex.def Info: plots/S2threshold/NRbandWS_WithContoursAndLabels1.png 
+used on input line 43.
+(pdftex.def)             Requested size: 197.33pt x 135.97789pt.
+
+<plots/S2threshold/NRband_MC.png, id=631, 1049.9225pt x 674.52pt>
+File: plots/S2threshold/NRband_MC.png Graphic file (type png)
+
+<use plots/S2threshold/NRband_MC.png>
+Package pdftex.def Info: plots/S2threshold/NRband_MC.png used on input line 46.
+
+(pdftex.def)             Requested size: 208.29688pt x 133.8209pt.
+ [95 <./plots/S2threshold/NRspectra_62kg_DetMat_StepFunctionThresholds.png> <./
+plots/S2threshold/nrBG_rate-vs-S2threshold.png> <./plots/S2threshold/NRbandWS-c
+S2_mean.png> <./plots/S2threshold/NRbandWS-cS2_sigma.png>]
+<plots/S2threshold/S2acceptance_phe.png, id=635, 698.61pt x 473.77pt>
+File: plots/S2threshold/S2acceptance_phe.png Graphic file (type png)
+
+<use plots/S2threshold/S2acceptance_phe.png>
+Package pdftex.def Info: plots/S2threshold/S2acceptance_phe.png used on input l
+ine 57.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/S2threshold/S2acceptance_keVnr.png, id=636, 698.61pt x 473.77pt>
+File: plots/S2threshold/S2acceptance_keVnr.png Graphic file (type png)
+
+<use plots/S2threshold/S2acceptance_keVnr.png>
+Package pdftex.def Info: plots/S2threshold/S2acceptance_keVnr.png used on input
+ line 60.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+ [96 <./plots/S2threshold/NRbandWS_WithContoursAndLabels1.png> <./plots/S2thres
+hold/NRband_MC.png> <./plots/S2threshold/S2acceptance_phe.png> <./plots/S2thres
+hold/S2acceptance_keVnr.png>])
+(./DarkMatterSearch.tex [97]
+Chapter 9.
+) (./Leff.tex <plots/run08/run08_Leff_mod1.png, id=643, 1200.485pt x 473.77pt>
+File: plots/run08/run08_Leff_mod1.png Graphic file (type png)
+
+<use plots/run08/run08_Leff_mod1.png>
+Package pdftex.def Info: plots/run08/run08_Leff_mod1.png used on input line 9.
+(pdftex.def)             Requested size: 438.51411pt x 173.05835pt.
+ [98
+
+ <./plots/run08/run08_Leff_mod1.png>]) (./BandCalibration.tex
+<plots/run07/run07_bandER1.png, id=647, 698.61pt x 473.77pt>
+File: plots/run07/run07_bandER1.png Graphic file (type png)
+
+<use plots/run07/run07_bandER1.png>
+Package pdftex.def Info: plots/run07/run07_bandER1.png used on input line 13.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/run07/run07_bandNR1.png, id=648, 698.61pt x 473.77pt>
+File: plots/run07/run07_bandNR1.png Graphic file (type png)
+
+<use plots/run07/run07_bandNR1.png>
+Package pdftex.def Info: plots/run07/run07_bandNR1.png used on input line 16.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[99]) (./DataQualityCuts.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--20
+
+ []
+
+[100 <./plots/run07/run07_bandER1.png> <./plots/run07/run07_bandNR1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 25--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--36
+
+ []
+
+<plots/DataQualityCuts/S1coincidence_mod.png, id=656, 903.375pt x 648.4225pt>
+File: plots/DataQualityCuts/S1coincidence_mod.png Graphic file (type png)
+
+<use plots/DataQualityCuts/S1coincidence_mod.png>
+Package pdftex.def Info: plots/DataQualityCuts/S1coincidence_mod.png used on in
+put line 41.
+(pdftex.def)             Requested size: 201.61026pt x 144.71045pt.
+
+<plots/DataQualityCuts/S2width_Co60_mod.png, id=657, 674.52pt x 455.7025pt>
+File: plots/DataQualityCuts/S2width_Co60_mod.png Graphic file (type png)
+
+<use plots/DataQualityCuts/S2width_Co60_mod.png>
+Package pdftex.def Info: plots/DataQualityCuts/S2width_Co60_mod.png used on inp
+ut line 44.
+(pdftex.def)             Requested size: 214.19374pt x 144.71045pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--64
+
+ []
+
+[101]
+Underfull \hbox (badness 10000) in paragraph at lines 69--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--80
+
+ []
+
+[102 <./plots/DataQualityCuts/S1coincidence_mod.png> <./plots/DataQualityCuts/S
+2width_Co60_mod.png>]
+<plots/DataQualityCuts/GammaXtopology.png, id=665, 644.4075pt x 710.655pt>
+File: plots/DataQualityCuts/GammaXtopology.png Graphic file (type png)
+
+<use plots/DataQualityCuts/GammaXtopology.png>
+Package pdftex.def Info: plots/DataQualityCuts/GammaXtopology.png used on input
+ line 88.
+(pdftex.def)             Requested size: 175.40295pt x 193.43005pt.
+ [103 <./plots/DataQualityCuts/GammaXtopology.png>]
+<plots/run07/run07_acceptance_modNoPE.png, id=669, 698.61pt x 473.77pt>
+File: plots/run07/run07_acceptance_modNoPE.png Graphic file (type png)
+
+<use plots/run07/run07_acceptance_modNoPE.png>
+Package pdftex.def Info: plots/run07/run07_acceptance_modNoPE.png used on input
+ line 105.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/run08/run08_acceptance_modNoPE.png, id=670, 698.61pt x 473.77pt>
+File: plots/run08/run08_acceptance_modNoPE.png Graphic file (type png)
+
+<use plots/run08/run08_acceptance_modNoPE.png>
+Package pdftex.def Info: plots/run08/run08_acceptance_modNoPE.png used on input
+ line 108.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+) (./run07.tex
+<plots/run07/run07_RZ_mod_withLabels.png, id=671, 698.61pt x 473.77pt>
+File: plots/run07/run07_RZ_mod_withLabels.png Graphic file (type png)
+
+<use plots/run07/run07_RZ_mod_withLabels.png>
+Package pdftex.def Info: plots/run07/run07_RZ_mod_withLabels.png used on input 
+line 17.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/run07/run07_log10_mod_withContourAndLabels1.png, id=672, 698.61pt x 473.
+77pt>
+File: plots/run07/run07_log10_mod_withContourAndLabels1.png Graphic file (type 
+png)
+ <use plots/run07/run07_log10_mod_withContourAndLabels1.png>
+Package pdftex.def Info: plots/run07/run07_log10_mod_withContourAndLabels1.png 
+used on input line 20.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<plots/run07/run07_limit_mod.png, id=673, 1049.9225pt x 724.7075pt>
+File: plots/run07/run07_limit_mod.png Graphic file (type png)
+
+<use plots/run07/run07_limit_mod.png>
+Package pdftex.def Info: plots/run07/run07_limit_mod.png used on input line 31.
+
+(pdftex.def)             Requested size: 263.11115pt x 181.6077pt.
+ [104 <./plots/run07/run07_acceptance_modNoPE.png> <./plots/run08/run08_accepta
+nce_modNoPE.png>] [105 <./plots/run07/run07_RZ_mod_withLabels.png> <./plots/run
+07/run07_log10_mod_withContourAndLabels1.png> <./plots/run07/run07_limit_mod.pn
+g>]) (./run08.tex [106]
+<plots/run08/run08_log10noise_withLabels1.png, id=684, 698.61pt x 473.77pt>
+File: plots/run08/run08_log10noise_withLabels1.png Graphic file (type png)
+
+<use plots/run08/run08_log10noise_withLabels1.png>
+Package pdftex.def Info: plots/run08/run08_log10noise_withLabels1.png used on i
+nput line 21.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/run08/run08_NoiseWaveform_mod1.png, id=685, 698.61pt x 473.77pt>
+File: plots/run08/run08_NoiseWaveform_mod1.png Graphic file (type png)
+
+<use plots/run08/run08_NoiseWaveform_mod1.png>
+Package pdftex.def Info: plots/run08/run08_NoiseWaveform_mod1.png used on input
+ line 24.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/run08/run08_log10signal_withLabels1.png, id=686, 698.61pt x 473.77pt>
+File: plots/run08/run08_log10signal_withLabels1.png Graphic file (type png)
+
+<use plots/run08/run08_log10signal_withLabels1.png>
+Package pdftex.def Info: plots/run08/run08_log10signal_withLabels1.png used on 
+input line 34.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/run08/run08_RZ_withLabels1.png, id=687, 698.61pt x 473.77pt>
+File: plots/run08/run08_RZ_withLabels1.png Graphic file (type png)
+
+<use plots/run08/run08_RZ_withLabels1.png>
+Package pdftex.def Info: plots/run08/run08_RZ_withLabels1.png used on input lin
+e 37.
+(pdftex.def)             Requested size: 208.29688pt x 141.25737pt.
+
+<plots/run08/event3.png, id=688, 963.6pt x 376.40625pt>
+File: plots/run08/event3.png Graphic file (type png)
+
+<use plots/run08/event3.png>
+Package pdftex.def Info: plots/run08/event3.png used on input line 46.
+(pdftex.def)             Requested size: 403.43217pt x 157.58986pt.
+
+<plots/run08/event2.png, id=689, 963.6pt x 373.395pt>
+File: plots/run08/event2.png Graphic file (type png)
+
+<use plots/run08/event2.png>
+Package pdftex.def Info: plots/run08/event2.png used on input line 49.
+(pdftex.def)             Requested size: 403.43217pt x 156.32915pt.
+
+<plots/run08/event1.png, id=690, 964.60374pt x 375.4025pt>
+File: plots/run08/event1.png Graphic file (type png)
+
+<use plots/run08/event1.png>
+Package pdftex.def Info: plots/run08/event1.png used on input line 52.
+(pdftex.def)             Requested size: 403.43217pt x 157.0035pt.
+ [107 <./plots/run08/run08_log10noise_withLabels1.png> <./plots/run08/run08_Noi
+seWaveform_mod1.png> <./plots/run08/run08_log10signal_withLabels1.png> <./plots
+/run08/run08_RZ_withLabels1.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [108 <./plots/run08/event3.png> <./plots/run08/event2.png> <./plots/run08/even
+t1.png>]
+<plots/run08/run08_limit_mod.png, id=700, 1049.9225pt x 724.7075pt>
+File: plots/run08/run08_limit_mod.png Graphic file (type png)
+
+<use plots/run08/run08_limit_mod.png>
+Package pdftex.def Info: plots/run08/run08_limit_mod.png used on input line 64.
+
+(pdftex.def)             Requested size: 263.11115pt x 181.6077pt.
+) (./Conclusions.tex
+Underfull \vbox (badness 2495) has occurred while \output is active []
+
+ [109 <./plots/run08/run08_limit_mod.png>] [110]
+Chapter 10.
+
+Overfull \hbox (0.25435pt too wide) in paragraph at lines 4--6
+\OT1/cmr/m/n/10.95 (-20) The nature of dark mat-ter still re-mains an un-answer
+ed ques-tion of mod-ern phys-ics. XENON100
+ []
+
+<plots/Xe1T/comparison_withLabels_wide.png, id=707, 999.735pt x 473.77pt>
+File: plots/Xe1T/comparison_withLabels_wide.png Graphic file (type png)
+
+<use plots/Xe1T/comparison_withLabels_wide.png>
+Package pdftex.def Info: plots/Xe1T/comparison_withLabels_wide.png used on inpu
+t line 9.
+(pdftex.def)             Requested size: 438.51411pt x 207.80882pt.
+ [111
+
+ <./plots/Xe1T/comparison_withLabels_wide.png>]
+<plots/Xe1T/Xe1T_cryostat1.png, id=712, 790.955pt x 663.47874pt>
+File: plots/Xe1T/Xe1T_cryostat1.png Graphic file (type png)
+
+<use plots/Xe1T/Xe1T_cryostat1.png>
+Package pdftex.def Info: plots/Xe1T/Xe1T_cryostat1.png used on input line 28.
+(pdftex.def)             Requested size: 182.96582pt x 153.4826pt.
+
+<plots/Xe1T/Xe1t_tank.png, id=713, 705.63625pt x 775.89874pt>
+File: plots/Xe1T/Xe1t_tank.png Graphic file (type png)
+
+<use plots/Xe1T/Xe1t_tank.png>
+Package pdftex.def Info: plots/Xe1T/Xe1t_tank.png used on input line 31.
+(pdftex.def)             Requested size: 139.57428pt x 153.4826pt.
+ [112 <./plots/Xe1T/Xe1T_cryostat1.png> <./plots/Xe1T/Xe1t_tank.png>]
+<plots/Xe1T/Xe100andXe1Tsensitivity_with100ppt_withLabels.png, id=717, 698.61pt
+ x 473.77pt>
+File: plots/Xe1T/Xe100andXe1Tsensitivity_with100ppt_withLabels.png Graphic file
+ (type png)
+
+<use plots/Xe1T/Xe100andXe1Tsensitivity_with100ppt_withLabels.png>
+Package pdftex.def Info: plots/Xe1T/Xe100andXe1Tsensitivity_with100ppt_withLabe
+ls.png used on input line 44.
+(pdftex.def)             Requested size: 263.11115pt x 178.4296pt.
+) [113 <./plots/Xe1T/Xe100andXe1Tsensitivity_with100ppt_withLabels.png>]
+(./thesis_0.5-reprint.bbl [114] [115
+
+] [116] [117] [118] [119]
+Overfull \hbox (23.52834pt too wide) in paragraph at lines 627--628
+[]\OT1/cmr/m/n/10.95 (-20) http://geant4.web.cern.ch/geant4/support/proc[]mod[]
+catalog/physics[]lists/referencepl.shtml. 
+ []
+
+
+Overfull \hbox (36.01804pt too wide) in paragraph at lines 630--631
+[]\OT1/cmr/m/n/10.95 (-20) http://geant4.web.cern.ch/geant4/support/proc[]mod[]
+catalog/physics[]lists/hadronic/qgsp.html. 
+ []
+
+[120]) [121] (./thesis_0.5-reprint.aux) ) 
+Here is how much of TeX's memory you used:
+ 9228 strings out of 493633
+ 173321 string characters out of 3143378
+ 223170 words of memory out of 3000000
+ 11745 multiletter control sequences out of 15000+200000
+ 27145 words of font info for 191 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 42i,13n,43p,2188b,1007s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/font
+s/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2011/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2011/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.p
+fb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
+b></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+
+Output written on thesis_0.5-reprint.pdf (137 pages, 21738925 bytes).
+PDF statistics:
+ 824 PDF objects out of 1000 (max. 8388607)
+ 402 compressed objects within 5 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 23584 words of extra memory for PDF output out of 24883 (max. 10000000)
+

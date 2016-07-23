@@ -34,7 +34,7 @@
 \usepackage{microtype} % makes pdf look better
 
 \usepackage[nottoc]{tocbibind} % Table of contents
-\usepackage[hyperindex=true,pdftitle={Search for diboson resonances with CMS and Optimization and Upgrade of the CMS Pixel Barrel Detector},pdfauthor={Jennifer Ngadiuba},colorlinks=false,pagebackref=false,citecolor=blue,plainpages=false,pdfpagelabels]{hyperref} % colourlinks=false for printing 
+\usepackage[hyperindex=true,pdftitle={Search for diboson resonances with CMS and Pixel Barrel Detector  Calibration and Upgrade},pdfauthor={Jennifer Ngadiuba},colorlinks=false,pagebackref=false,citecolor=blue,plainpages=false,pdfpagelabels]{hyperref} % colourlinks=false for printing 
 
 %add
 \usepackage{xspace}
@@ -91,13 +91,16 @@
 
 %\chapter{Introduction} %add observational evidence
 	\input{chapters/Chapter1-Introduction/Introduction}
+	
 %\chapter{The CMS Experiment at LHC} %add observational evidence
 	\input{chapters/Chapter2-CMSatLHC/CMSatLHC}
+	
+%\chapter{Physics beyond the Standard Model}
+	\input{chapters/Chapter3-Theory/Theory}
 
 \part{Search for diboson resonances with CMS}
 
-%\chapter{Physics beyond the Standard Model}
-	\input{chapters/Chapter3-Theory/Theory}
+\chapter{Diboson resonances as signature for new physics}
 
 %\chapter{Object and event reconstruction}
 	\input{chapters/Chapter4-Objects/EventReconstruction}
@@ -120,7 +123,9 @@
 %\chapter{Combination of searches for diboson resonances at $\sqrt{s}$ = 8 and 13 TeV}
 	\input{chapters/Chapter10-Combination/Combination}
 
-\part{Optimization and Upgrade of the CMS Pixel Barrel Detector}
+\chapter{Conclusions}
+
+\part{Calibration and Upgrade of the CMS Pixel Barrel Detector}
 
 %\chapter{The CMS Pixel Barrel Detector}
 	\input{chapters/Chapter11-BPixDescription/BPixDescription}
@@ -128,5 +133,8 @@
 %\chapter{Phase I Upgrade of the CMS Pixel Barrel Detector}		
 	\input{chapters/Chapter12-Phase1BPix/Phase1BPix}
 					
+\chapter{Conclusions}
+
+\part{Summary}					
 
 \end{document}

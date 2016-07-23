@@ -83,36 +83,38 @@
 \BOOKMARK [2][-]{subsection.13.3.5}{Significance at 2 TeV}{section.13.3}% 83
 \BOOKMARK [0][-]{chapter.14}{Conclusions}{part.1}% 84
 \BOOKMARK [-1][-]{part.2}{II Calibration and Upgrade of the CMS Pixel Barrel Detector}{}% 85
-\BOOKMARK [0][-]{chapter.15}{The CMS Pixel Barrel Detector}{part.2}% 86
-\BOOKMARK [1][-]{section.15.1}{Design of the CMS Pixel Barrel Detector}{chapter.15}% 87
-\BOOKMARK [1][-]{section.15.2}{Detector modules}{chapter.15}% 88
-\BOOKMARK [2][-]{subsection.15.2.1}{Sensor}{section.15.2}% 89
-\BOOKMARK [2][-]{subsection.15.2.2}{Readout Chip}{section.15.2}% 90
-\BOOKMARK [2][-]{subsection.15.2.3}{Token Bit Manager}{section.15.2}% 91
-\BOOKMARK [1][-]{section.15.3}{Readout and control system}{chapter.15}% 92
-\BOOKMARK [2][-]{subsection.15.3.1}{Analog readout chain}{section.15.3}% 93
-\BOOKMARK [2][-]{subsection.15.3.2}{Front End Driver}{section.15.3}% 94
-\BOOKMARK [2][-]{subsection.15.3.3}{Supply Tube}{section.15.3}% 95
-\BOOKMARK [2][-]{subsection.15.3.4}{Communication and Control Unit}{section.15.3}% 96
-\BOOKMARK [2][-]{subsection.15.3.5}{Front End Controller}{section.15.3}% 97
-\BOOKMARK [1][-]{section.15.4}{Pixel Online Software}{chapter.15}% 98
-\BOOKMARK [0][-]{chapter.16}{Optimization and commissioning for LHC Run II}{part.2}% 99
-\BOOKMARK [1][-]{section.16.1}{Radiation damage after LHC Run I}{chapter.16}% 100
-\BOOKMARK [1][-]{section.16.2}{Optimization for LHC Run II}{chapter.16}% 101
-\BOOKMARK [2][-]{subsection.16.2.1}{Overview of pixel calibrations}{section.16.2}% 102
-\BOOKMARK [2][-]{subsection.16.2.2}{Temperature dependence}{section.16.2}% 103
-\BOOKMARK [1][-]{section.16.3}{Commissioning for LHC Run II}{chapter.16}% 104
-\BOOKMARK [2][-]{subsection.16.3.1}{Installation into CMS}{section.16.3}% 105
-\BOOKMARK [2][-]{subsection.16.3.2}{Check out of optical connections}{section.16.3}% 106
-\BOOKMARK [2][-]{subsection.16.3.3}{Adjustment of readout chain settings}{section.16.3}% 107
-\BOOKMARK [2][-]{subsection.16.3.4}{Optimisation of signal performance}{section.16.3}% 108
-\BOOKMARK [0][-]{chapter.17}{Phase I Upgrade of the CMS Pixel Barrel Detector}{part.2}% 109
-\BOOKMARK [1][-]{section.17.1}{Motivations}{chapter.17}% 110
-\BOOKMARK [1][-]{section.17.2}{Summary of changes}{chapter.17}% 111
-\BOOKMARK [1][-]{section.17.3}{The digital readout chain}{chapter.17}% 112
-\BOOKMARK [1][-]{section.17.4}{The Phase I supply tubes}{chapter.17}% 113
-\BOOKMARK [1][-]{section.17.5}{The test stand}{chapter.17}% 114
-\BOOKMARK [1][-]{section.17.6}{Supply tubes assembly and commissioning}{chapter.17}% 115
-\BOOKMARK [1][-]{section.17.7}{Detector commissioning}{chapter.17}% 116
-\BOOKMARK [0][-]{chapter.18}{Conclusions}{part.2}% 117
-\BOOKMARK [-1][-]{part.3}{III Summary}{}% 118
+\BOOKMARK [0][-]{chapter.15}{introduction chapter: why pixels are so important for physics}{part.2}% 86
+\BOOKMARK [0][-]{chapter.16}{The CMS Pixel Barrel Detector}{part.2}% 87
+\BOOKMARK [1][-]{section.16.1}{Design of the CMS Pixel Barrel Detector}{chapter.16}% 88
+\BOOKMARK [1][-]{section.16.2}{Detector modules}{chapter.16}% 89
+\BOOKMARK [2][-]{subsection.16.2.1}{Sensor}{section.16.2}% 90
+\BOOKMARK [2][-]{subsection.16.2.2}{Readout Chip}{section.16.2}% 91
+\BOOKMARK [2][-]{subsection.16.2.3}{Token Bit Manager}{section.16.2}% 92
+\BOOKMARK [1][-]{section.16.3}{Readout and control system}{chapter.16}% 93
+\BOOKMARK [2][-]{subsection.16.3.1}{Analog readout chain}{section.16.3}% 94
+\BOOKMARK [2][-]{subsection.16.3.2}{Front End Driver}{section.16.3}% 95
+\BOOKMARK [2][-]{subsection.16.3.3}{Supply Tube}{section.16.3}% 96
+\BOOKMARK [2][-]{subsection.16.3.4}{Communication and Control Unit}{section.16.3}% 97
+\BOOKMARK [2][-]{subsection.16.3.5}{Front End Controller}{section.16.3}% 98
+\BOOKMARK [1][-]{section.16.4}{Pixel Online Software}{chapter.16}% 99
+\BOOKMARK [1][-]{section.16.5}{Performance at s = 8 and 13 TeV}{chapter.16}% 100
+\BOOKMARK [0][-]{chapter.17}{Optimization and commissioning for LHC Run II}{part.2}% 101
+\BOOKMARK [1][-]{section.17.1}{Radiation damage after LHC Run I}{chapter.17}% 102
+\BOOKMARK [1][-]{section.17.2}{Optimization for LHC Run II}{chapter.17}% 103
+\BOOKMARK [2][-]{subsection.17.2.1}{Overview of pixel calibrations}{section.17.2}% 104
+\BOOKMARK [2][-]{subsection.17.2.2}{Temperature dependence}{section.17.2}% 105
+\BOOKMARK [1][-]{section.17.3}{Commissioning for LHC Run II}{chapter.17}% 106
+\BOOKMARK [2][-]{subsection.17.3.1}{Installation into CMS}{section.17.3}% 107
+\BOOKMARK [2][-]{subsection.17.3.2}{Check out of optical connections}{section.17.3}% 108
+\BOOKMARK [2][-]{subsection.17.3.3}{Adjustment of readout chain settings}{section.17.3}% 109
+\BOOKMARK [2][-]{subsection.17.3.4}{Optimisation of signal performance}{section.17.3}% 110
+\BOOKMARK [0][-]{chapter.18}{Phase I Upgrade of the CMS Pixel Barrel Detector}{part.2}% 111
+\BOOKMARK [1][-]{section.18.1}{Motivations}{chapter.18}% 112
+\BOOKMARK [1][-]{section.18.2}{Summary of changes}{chapter.18}% 113
+\BOOKMARK [1][-]{section.18.3}{The digital readout chain}{chapter.18}% 114
+\BOOKMARK [1][-]{section.18.4}{The Phase I supply tubes}{chapter.18}% 115
+\BOOKMARK [1][-]{section.18.5}{The test stand}{chapter.18}% 116
+\BOOKMARK [1][-]{section.18.6}{Supply tubes assembly and commissioning}{chapter.18}% 117
+\BOOKMARK [1][-]{section.18.7}{Detector commissioning}{chapter.18}% 118
+\BOOKMARK [0][-]{chapter.19}{Conclusions}{part.2}% 119
+\BOOKMARK [-1][-]{part.3}{III Summary}{}% 120

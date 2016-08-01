@@ -19,7 +19,7 @@
 
 \usepackage{array} %allow commands for the table columns specification
 
-\usepackage{natbib}
+%\usepackage{natbib}
 
 \usepackage{subfigure} %for column figures
 
@@ -30,7 +30,7 @@
 \usepackage[font=small, labelfont=bf]{caption} % Captions
 %\usepackage[width=11cm,font=footnotesize,labelfont=bf, format=default,justification=centerlast]{caption} % Captions\usepackage{fancyhdr} % Change caption style; changes headers and page styles etc.
 \usepackage{url} % Formatting for URL's i.e. http://www.rhizobia.co.nz
-\usepackage{natbib} % The best package for bibliographies
+%\usepackage{natbib} % The best package for bibliographies
 \usepackage{microtype} % makes pdf look better
 
 \usepackage[nottoc]{tocbibind} % Table of contents
@@ -91,22 +91,22 @@
 
 %\chapter{Introduction} %add observational evidence
 	\input{chapters/Chapter1-Introduction/Introduction}
-	
-%\chapter{The CMS Experiment at LHC} %add observational evidence
-	\input{chapters/Chapter2-CMSatLHC/CMSatLHC}
-	
+
 %\chapter{Physics beyond the Standard Model}
 	\input{chapters/Chapter3-Theory/Theory}
+		
+%\chapter{The CMS Experiment at LHC} %add observational evidence
+	\input{chapters/Chapter2-CMSatLHC/CMSatLHC}
 
 \part{Search for diboson resonances with CMS}
 
 \chapter{Diboson resonances as signature for new physics}
 
-%\chapter{Object and event reconstruction}
-	\input{chapters/Chapter4-Objects/EventReconstruction}
-
 %\chapter{Dataset and event simulation}
 	\input{chapters/Chapter5-DataAndSimulation/DataAndSimulation}
+	
+%\chapter{Object and event reconstruction}
+	\input{chapters/Chapter4-Objects/EventReconstruction}
 
 %\chapter{Boosted H->bb and W/Z->qq identification with jet substructure}
 	\input{chapters/Chapter6-JetSubstructure/JetSubstructure}		
@@ -136,5 +136,22 @@
 \chapter{Conclusions}
 
 \part{Summary}					
+
+%\bibliographystyle{plain}
+%\bibliography{Bibliography}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+%\bibliographystyle{plainnat}	% (uses file "plain.bst")
+%\bibliographystyle{plain}
+\bibliographystyle{auto_generated}
+%\bibliographystyle{apsrev}
+%\bibliographystyle{hep}
+%\bibliographystyle{utphys}
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{apsrev}
+\bibliography{Bibliography}
+%\bibliography{thesis_0.2}
+%\bibliography{myrefs}		% expects file "myrefs.bib"
 
 \end{document}

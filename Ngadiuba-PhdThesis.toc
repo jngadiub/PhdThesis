@@ -13,113 +13,113 @@
 \contentsline {subsection}{\numberline {2.3.3}Heavy vector triplet}{2}{subsection.2.3.3}
 \contentsline {chapter}{\numberline {3}The CMS Experiment at the LHC}{3}{chapter.3}
 \contentsline {section}{\numberline {3.1}The Large Hadron Collider}{3}{section.3.1}
-\contentsline {section}{\numberline {3.2}The CMS Detector}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}The Silicon Tracker}{7}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}The Electromagnetic Calorimeter}{7}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}The Hadronic Calorimeter}{7}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}The Muon System}{7}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}The Trigger System}{7}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}The CMS detector simulation}{7}{section.3.3}
-\contentsline {part}{I\hspace {1em}Search for diboson resonances with CMS}{8}{part.1}
-\contentsline {chapter}{\numberline {4}Diboson resonances as signature for new physics}{9}{chapter.4}
-\contentsline {chapter}{\numberline {5}Event simulation}{10}{chapter.5}
-\contentsline {section}{\numberline {5.1}Monte Carlo event generators}{10}{section.5.1}
-\contentsline {section}{\numberline {5.2}Simulation of physics processes}{10}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Simulation of signal processes}{10}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Simulation of background processes}{10}{subsection.5.2.2}
-\contentsline {chapter}{\numberline {6}Object and event reconstruction}{11}{chapter.6}
-\contentsline {section}{\numberline {6.1}Tracks and vertices}{11}{section.6.1}
-\contentsline {section}{\numberline {6.2}Electrons}{11}{section.6.2}
-\contentsline {section}{\numberline {6.3}Muons}{11}{section.6.3}
-\contentsline {section}{\numberline {6.4}Jets}{11}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Identification of b jets}{11}{subsection.6.4.1}
-\contentsline {section}{\numberline {6.5}Missing transverse energy}{11}{section.6.5}
-\contentsline {section}{\numberline {6.6}W$\rightarrow \ell \ensuremath {\nu }$ reconstruction}{11}{section.6.6}
-\contentsline {chapter}{\numberline {7}Boosted H$\rightarrow $\ensuremath {{\mathrm {b}\overline {\mathrm {b}}}}\xspace and W/Z$\rightarrow $\ensuremath {\ensuremath {\mathrm {q}}\ensuremath {\overline {\mathrm {q}}}^({}'^){}}\xspace identification with jet substructure}{12}{chapter.7}
-\contentsline {section}{\numberline {7.1}Jet substructure algorithms}{12}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Jet pruning}{12}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}N-subjettiness}{12}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}W/Z-tagging validation in top enriched sample}{12}{section.7.2}
-\contentsline {section}{\numberline {7.3}H-tagging algorithm}{12}{section.7.3}
-\contentsline {chapter}{\numberline {8}Final event selection and categorization}{13}{chapter.8}
-\contentsline {section}{\numberline {8.1}Search for a WH resonance in the $\ell \ensuremath {\nu }\ensuremath {{\mathrm {b}\overline {\mathrm {b}}}}\xspace $ final state at $\sqrt {s}$ = 8 TeV}{13}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}\ensuremath {{t\overline {t}}}\xspace background rejection}{13}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Final selection and control plots}{13}{subsection.8.1.2}
-\contentsline {section}{\numberline {8.2}Search for WW/WZ resonances in the $\ell \ensuremath {\nu }\ensuremath {\ensuremath {\mathrm {q}}\ensuremath {\overline {\mathrm {q}}}^({}'^){}}\xspace $ final state at $\sqrt {s}$ = 13 TeV}{13}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}W/Z-jet mass categories}{13}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Final selection and control plots}{13}{subsection.8.2.2}
-\contentsline {chapter}{\numberline {9}Background modeling}{14}{chapter.9}
-\contentsline {section}{\numberline {9.1}W+jets background estimate with alpha method}{14}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Description}{14}{subsection.9.1.1}
-\contentsline {subsection}{\numberline {9.1.2}Extraction of the W+jets normalization}{14}{subsection.9.1.2}
-\contentsline {subsection}{\numberline {9.1.3}Extraction of the W+jets shape}{14}{subsection.9.1.3}
-\contentsline {section}{\numberline {9.2}Top quark production}{14}{section.9.2}
-\contentsline {section}{\numberline {9.3}Systematic uncertainties in the background estimation}{14}{section.9.3}
-\contentsline {chapter}{\numberline {10}Signal modeling and statistical treatment}{15}{chapter.10}
-\contentsline {section}{\numberline {10.1}Signal modeling}{15}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Parametrization of the resonance mass}{15}{subsection.10.1.1}
-\contentsline {subsection}{\numberline {10.1.2}Signal efficiency}{15}{subsection.10.1.2}
-\contentsline {section}{\numberline {10.2}Systematic uncertainties in the signal prediction}{15}{section.10.2}
-\contentsline {section}{\numberline {10.3}Testing new resonance hypothesis}{15}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}Profile likelihood procedure}{15}{subsection.10.3.1}
-\contentsline {subsection}{\numberline {10.3.2}The CL$_{s}$ method}{15}{subsection.10.3.2}
-\contentsline {subsection}{\numberline {10.3.3}Treatment of uncertainties}{15}{subsection.10.3.3}
-\contentsline {chapter}{\numberline {11}Results with 8 TeV data}{16}{chapter.11}
-\contentsline {section}{\numberline {11.1}Final $\ensuremath {m_{\rm WH}\xspace }$ distribution}{16}{section.11.1}
-\contentsline {section}{\numberline {11.2}Studies on the excess}{16}{section.11.2}
-\contentsline {section}{\numberline {11.3}Significance of the data}{16}{section.11.3}
-\contentsline {section}{\numberline {11.4}Cross section limits}{16}{section.11.4}
-\contentsline {chapter}{\numberline {12}Results with 13 TeV data}{17}{chapter.12}
-\contentsline {section}{\numberline {12.1}Final $\ensuremath {m_{\rm WV}\xspace }$ distribution}{17}{section.12.1}
-\contentsline {section}{\numberline {12.2}Cross section limits}{17}{section.12.2}
-\contentsline {chapter}{\numberline {13}Combination of searches for diboson resonances at $\sqrt {s}$ = 8 and 13 TeV}{18}{chapter.13}
-\contentsline {section}{\numberline {13.1}Inputs to the combination}{18}{section.13.1}
-\contentsline {subsection}{\numberline {13.1.1}8 TeV VV searches}{18}{subsection.13.1.1}
-\contentsline {subsection}{\numberline {13.1.2}13 TeV VV searches}{18}{subsection.13.1.2}
-\contentsline {subsection}{\numberline {13.1.3}8 TeV VH searches}{18}{subsection.13.1.3}
-\contentsline {subsection}{\numberline {13.1.4}13 TeV VH searches}{18}{subsection.13.1.4}
-\contentsline {section}{\numberline {13.2}Combination procedure}{18}{section.13.2}
-\contentsline {section}{\numberline {13.3}Results}{18}{section.13.3}
-\contentsline {subsection}{\numberline {13.3.1}Limits on W'}{18}{subsection.13.3.1}
-\contentsline {subsection}{\numberline {13.3.2}Limits on Z'}{18}{subsection.13.3.2}
-\contentsline {subsection}{\numberline {13.3.3}Limits on heavy vector triplet (W'+Z')}{18}{subsection.13.3.3}
-\contentsline {subsection}{\numberline {13.3.4}Limits on Bulk Graviton}{18}{subsection.13.3.4}
-\contentsline {subsection}{\numberline {13.3.5}Significance at 2 TeV}{18}{subsection.13.3.5}
-\contentsline {chapter}{\numberline {14}Conclusions}{19}{chapter.14}
-\contentsline {part}{II\hspace {1em}Calibration and Upgrade of the CMS Pixel Barrel Detector}{20}{part.2}
-\contentsline {chapter}{\numberline {15}introduction chapter: why pixels are so important for physics}{21}{chapter.15}
-\contentsline {chapter}{\numberline {16}The CMS Pixel Barrel Detector}{22}{chapter.16}
-\contentsline {section}{\numberline {16.1}Design of the CMS Pixel Barrel Detector}{22}{section.16.1}
-\contentsline {section}{\numberline {16.2}Detector modules}{22}{section.16.2}
-\contentsline {subsection}{\numberline {16.2.1}Sensor}{22}{subsection.16.2.1}
-\contentsline {subsection}{\numberline {16.2.2}Readout Chip}{22}{subsection.16.2.2}
-\contentsline {subsection}{\numberline {16.2.3}Token Bit Manager}{22}{subsection.16.2.3}
-\contentsline {section}{\numberline {16.3}Readout and control system}{22}{section.16.3}
-\contentsline {subsection}{\numberline {16.3.1}Analog readout chain}{22}{subsection.16.3.1}
-\contentsline {subsection}{\numberline {16.3.2}Front End Driver}{22}{subsection.16.3.2}
-\contentsline {subsection}{\numberline {16.3.3}Supply Tube}{22}{subsection.16.3.3}
-\contentsline {subsection}{\numberline {16.3.4}Communication and Control Unit}{22}{subsection.16.3.4}
-\contentsline {subsection}{\numberline {16.3.5}Front End Controller}{22}{subsection.16.3.5}
-\contentsline {section}{\numberline {16.4}Pixel Online Software}{22}{section.16.4}
-\contentsline {section}{\numberline {16.5}Performance at $\sqrt {s}$ = 8 and 13 TeV}{22}{section.16.5}
-\contentsline {chapter}{\numberline {17}Optimization and commissioning for LHC Run II}{23}{chapter.17}
-\contentsline {section}{\numberline {17.1}Radiation damage after LHC Run I}{23}{section.17.1}
-\contentsline {section}{\numberline {17.2}Optimization for LHC Run II}{23}{section.17.2}
-\contentsline {subsection}{\numberline {17.2.1}Overview of pixel calibrations}{23}{subsection.17.2.1}
-\contentsline {subsection}{\numberline {17.2.2}Temperature dependence}{23}{subsection.17.2.2}
-\contentsline {section}{\numberline {17.3}Commissioning for LHC Run II}{23}{section.17.3}
-\contentsline {subsection}{\numberline {17.3.1}Installation into CMS}{23}{subsection.17.3.1}
-\contentsline {subsection}{\numberline {17.3.2}Check out of optical connections}{23}{subsection.17.3.2}
-\contentsline {subsection}{\numberline {17.3.3}Adjustment of readout chain settings}{23}{subsection.17.3.3}
-\contentsline {subsection}{\numberline {17.3.4}Optimisation of signal performance}{23}{subsection.17.3.4}
-\contentsline {chapter}{\numberline {18}Phase I Upgrade of the CMS Pixel Barrel Detector}{24}{chapter.18}
-\contentsline {section}{\numberline {18.1}Motivations}{24}{section.18.1}
-\contentsline {section}{\numberline {18.2}Summary of changes}{24}{section.18.2}
-\contentsline {section}{\numberline {18.3}The digital readout chain}{24}{section.18.3}
-\contentsline {section}{\numberline {18.4}The Phase I supply tubes}{24}{section.18.4}
-\contentsline {section}{\numberline {18.5}The test stand}{24}{section.18.5}
-\contentsline {section}{\numberline {18.6}Supply tubes assembly and commissioning}{24}{section.18.6}
-\contentsline {section}{\numberline {18.7}Detector commissioning}{24}{section.18.7}
-\contentsline {chapter}{\numberline {19}Conclusions}{25}{chapter.19}
-\contentsline {part}{III\hspace {1em}Summary}{26}{part.3}
-\contentsline {chapter}{Bibliography}{28}{chapter*.6}
+\contentsline {section}{\numberline {3.2}The CMS Detector}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Tracking detectors}{8}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}The Electromagnetic Calorimeter}{8}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}The Hadronic Calorimeter}{8}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}The Muon System}{8}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}The Trigger System}{8}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}The CMS detector simulation}{8}{section.3.3}
+\contentsline {part}{I\hspace {1em}Search for diboson resonances with CMS}{10}{part.1}
+\contentsline {chapter}{\numberline {4}Diboson resonances as signature for new physics}{11}{chapter.4}
+\contentsline {chapter}{\numberline {5}Event simulation}{12}{chapter.5}
+\contentsline {section}{\numberline {5.1}Monte Carlo event generators}{12}{section.5.1}
+\contentsline {section}{\numberline {5.2}Simulation of physics processes}{12}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Simulation of signal processes}{12}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Simulation of background processes}{12}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {6}Object and event reconstruction}{13}{chapter.6}
+\contentsline {section}{\numberline {6.1}Tracks and vertices}{13}{section.6.1}
+\contentsline {section}{\numberline {6.2}Electrons}{13}{section.6.2}
+\contentsline {section}{\numberline {6.3}Muons}{13}{section.6.3}
+\contentsline {section}{\numberline {6.4}Jets}{13}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Identification of b jets}{13}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}Missing transverse energy}{13}{section.6.5}
+\contentsline {section}{\numberline {6.6}W$\rightarrow \ell \ensuremath {\nu }$ reconstruction}{13}{section.6.6}
+\contentsline {chapter}{\numberline {7}Boosted H$\rightarrow $\ensuremath {{\mathrm {b}\overline {\mathrm {b}}}}\xspace and W/Z$\rightarrow $\ensuremath {\ensuremath {\mathrm {q}}\ensuremath {\overline {\mathrm {q}}}^({}'^){}}\xspace identification with jet substructure}{14}{chapter.7}
+\contentsline {section}{\numberline {7.1}Jet substructure algorithms}{14}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Jet pruning}{14}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}N-subjettiness}{14}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}W/Z-tagging validation in top enriched sample}{14}{section.7.2}
+\contentsline {section}{\numberline {7.3}H-tagging algorithm}{14}{section.7.3}
+\contentsline {chapter}{\numberline {8}Final event selection and categorization}{15}{chapter.8}
+\contentsline {section}{\numberline {8.1}Search for a WH resonance in the $\ell \ensuremath {\nu }\ensuremath {{\mathrm {b}\overline {\mathrm {b}}}}\xspace $ final state at $\sqrt {s}$ = 8 TeV}{15}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}\ensuremath {{t\overline {t}}}\xspace background rejection}{15}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Final selection and control plots}{15}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}Search for WW/WZ resonances in the $\ell \ensuremath {\nu }\ensuremath {\ensuremath {\mathrm {q}}\ensuremath {\overline {\mathrm {q}}}^({}'^){}}\xspace $ final state at $\sqrt {s}$ = 13 TeV}{15}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}W/Z-jet mass categories}{15}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Final selection and control plots}{15}{subsection.8.2.2}
+\contentsline {chapter}{\numberline {9}Background modeling}{16}{chapter.9}
+\contentsline {section}{\numberline {9.1}W+jets background estimate with alpha method}{16}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Description}{16}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Extraction of the W+jets normalization}{16}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {9.1.3}Extraction of the W+jets shape}{16}{subsection.9.1.3}
+\contentsline {section}{\numberline {9.2}Top quark production}{16}{section.9.2}
+\contentsline {section}{\numberline {9.3}Systematic uncertainties in the background estimation}{16}{section.9.3}
+\contentsline {chapter}{\numberline {10}Signal modeling and statistical treatment}{17}{chapter.10}
+\contentsline {section}{\numberline {10.1}Signal modeling}{17}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Parametrization of the resonance mass}{17}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Signal efficiency}{17}{subsection.10.1.2}
+\contentsline {section}{\numberline {10.2}Systematic uncertainties in the signal prediction}{17}{section.10.2}
+\contentsline {section}{\numberline {10.3}Testing new resonance hypothesis}{17}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Profile likelihood procedure}{17}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}The CL$_{s}$ method}{17}{subsection.10.3.2}
+\contentsline {subsection}{\numberline {10.3.3}Treatment of uncertainties}{17}{subsection.10.3.3}
+\contentsline {chapter}{\numberline {11}Results with 8 TeV data}{18}{chapter.11}
+\contentsline {section}{\numberline {11.1}Final $\ensuremath {m_{\rm WH}\xspace }$ distribution}{18}{section.11.1}
+\contentsline {section}{\numberline {11.2}Studies on the excess}{18}{section.11.2}
+\contentsline {section}{\numberline {11.3}Significance of the data}{18}{section.11.3}
+\contentsline {section}{\numberline {11.4}Cross section limits}{18}{section.11.4}
+\contentsline {chapter}{\numberline {12}Results with 13 TeV data}{19}{chapter.12}
+\contentsline {section}{\numberline {12.1}Final $\ensuremath {m_{\rm WV}\xspace }$ distribution}{19}{section.12.1}
+\contentsline {section}{\numberline {12.2}Cross section limits}{19}{section.12.2}
+\contentsline {chapter}{\numberline {13}Combination of searches for diboson resonances at $\sqrt {s}$ = 8 and 13 TeV}{20}{chapter.13}
+\contentsline {section}{\numberline {13.1}Inputs to the combination}{20}{section.13.1}
+\contentsline {subsection}{\numberline {13.1.1}8 TeV VV searches}{20}{subsection.13.1.1}
+\contentsline {subsection}{\numberline {13.1.2}13 TeV VV searches}{20}{subsection.13.1.2}
+\contentsline {subsection}{\numberline {13.1.3}8 TeV VH searches}{20}{subsection.13.1.3}
+\contentsline {subsection}{\numberline {13.1.4}13 TeV VH searches}{20}{subsection.13.1.4}
+\contentsline {section}{\numberline {13.2}Combination procedure}{20}{section.13.2}
+\contentsline {section}{\numberline {13.3}Results}{20}{section.13.3}
+\contentsline {subsection}{\numberline {13.3.1}Limits on W'}{20}{subsection.13.3.1}
+\contentsline {subsection}{\numberline {13.3.2}Limits on Z'}{20}{subsection.13.3.2}
+\contentsline {subsection}{\numberline {13.3.3}Limits on heavy vector triplet (W'+Z')}{20}{subsection.13.3.3}
+\contentsline {subsection}{\numberline {13.3.4}Limits on Bulk Graviton}{20}{subsection.13.3.4}
+\contentsline {subsection}{\numberline {13.3.5}Significance at 2 TeV}{20}{subsection.13.3.5}
+\contentsline {chapter}{\numberline {14}Conclusions}{21}{chapter.14}
+\contentsline {part}{II\hspace {1em}Calibration and Upgrade of the CMS Pixel Barrel Detector}{22}{part.2}
+\contentsline {chapter}{\numberline {15}introduction chapter: why pixels are so important for physics}{23}{chapter.15}
+\contentsline {chapter}{\numberline {16}The CMS Pixel Barrel Detector}{24}{chapter.16}
+\contentsline {section}{\numberline {16.1}Design of the CMS Pixel Barrel Detector}{24}{section.16.1}
+\contentsline {section}{\numberline {16.2}Detector modules}{24}{section.16.2}
+\contentsline {subsection}{\numberline {16.2.1}Sensor}{24}{subsection.16.2.1}
+\contentsline {subsection}{\numberline {16.2.2}Readout Chip}{24}{subsection.16.2.2}
+\contentsline {subsection}{\numberline {16.2.3}Token Bit Manager}{24}{subsection.16.2.3}
+\contentsline {section}{\numberline {16.3}Readout and control system}{24}{section.16.3}
+\contentsline {subsection}{\numberline {16.3.1}Analog readout chain}{24}{subsection.16.3.1}
+\contentsline {subsection}{\numberline {16.3.2}Front End Driver}{24}{subsection.16.3.2}
+\contentsline {subsection}{\numberline {16.3.3}Supply Tube}{24}{subsection.16.3.3}
+\contentsline {subsection}{\numberline {16.3.4}Communication and Control Unit}{24}{subsection.16.3.4}
+\contentsline {subsection}{\numberline {16.3.5}Front End Controller}{24}{subsection.16.3.5}
+\contentsline {section}{\numberline {16.4}Pixel Online Software}{24}{section.16.4}
+\contentsline {section}{\numberline {16.5}Performance at $\sqrt {s}$ = 8 and 13 TeV}{24}{section.16.5}
+\contentsline {chapter}{\numberline {17}Optimization and commissioning for LHC Run II}{25}{chapter.17}
+\contentsline {section}{\numberline {17.1}Radiation damage after LHC Run I}{25}{section.17.1}
+\contentsline {section}{\numberline {17.2}Optimization for LHC Run II}{25}{section.17.2}
+\contentsline {subsection}{\numberline {17.2.1}Overview of pixel calibrations}{25}{subsection.17.2.1}
+\contentsline {subsection}{\numberline {17.2.2}Temperature dependence}{25}{subsection.17.2.2}
+\contentsline {section}{\numberline {17.3}Commissioning for LHC Run II}{25}{section.17.3}
+\contentsline {subsection}{\numberline {17.3.1}Installation into CMS}{25}{subsection.17.3.1}
+\contentsline {subsection}{\numberline {17.3.2}Check out of optical connections}{25}{subsection.17.3.2}
+\contentsline {subsection}{\numberline {17.3.3}Adjustment of readout chain settings}{25}{subsection.17.3.3}
+\contentsline {subsection}{\numberline {17.3.4}Optimisation of signal performance}{25}{subsection.17.3.4}
+\contentsline {chapter}{\numberline {18}Phase I Upgrade of the CMS Pixel Barrel Detector}{26}{chapter.18}
+\contentsline {section}{\numberline {18.1}Motivations}{26}{section.18.1}
+\contentsline {section}{\numberline {18.2}Summary of changes}{26}{section.18.2}
+\contentsline {section}{\numberline {18.3}The digital readout chain}{26}{section.18.3}
+\contentsline {section}{\numberline {18.4}The Phase I supply tubes}{26}{section.18.4}
+\contentsline {section}{\numberline {18.5}The test stand}{26}{section.18.5}
+\contentsline {section}{\numberline {18.6}Supply tubes assembly and commissioning}{26}{section.18.6}
+\contentsline {section}{\numberline {18.7}Detector commissioning}{26}{section.18.7}
+\contentsline {chapter}{\numberline {19}Conclusions}{27}{chapter.19}
+\contentsline {part}{III\hspace {1em}Summary}{28}{part.3}
+\contentsline {chapter}{Bibliography}{30}{chapter*.6}

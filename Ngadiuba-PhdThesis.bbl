@@ -36,4 +36,19 @@
 \href {https://cds.cern.ch/record/1621583}{F.~Marcastel, ``{CERN's Accelerator
   Complex. La cha√Æne des acc√©l√©rateurs du CERN}'',}. General Photo.
 
+\bibitem{LumiPublicResults}
+\hrefCMSnoop {}{{CMS Collaboration}, ``CMS Public Luminosity Results''.}
+  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults}.
+
+\bibitem{Cartiglia:2013vsa}
+\hrefCMSnoop {}{N.~Cartiglia, ``{Measurement of the proton-proton total,
+  elastic, inelastic and diffractive cross sections at 2, 7, 8 and 57 TeV}'',}
+\href{http://www.arXiv.org/abs/1305.6131}{\texttt{arXiv:1305.6131}}.
+%%CITATION = ARXIV:1305.6131;%%.
+
+\bibitem{Karim‰ki:368412}
+{CMS Collaboration} CollaborationV.~Karim‰ki,  {et~al.}, ``{The CMS tracker
+  system project: Technical Design Report}''.
+\newblock Technical Design Report CMS. CERN, Geneva, 1997.
+
 \end{thebibliography}\endgroup

@@ -1,4 +1,4 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}%
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}%
 \makeatletter
 \providecommand{\hrefCMSnoop }[0]{\@secondoftwo}%
 \makeatother
@@ -50,5 +50,33 @@
 {CMS Collaboration} CollaborationV.~Karimäki,  {et~al.}, ``{The CMS tracker
   system project: Technical Design Report}''.
 \newblock Technical Design Report CMS. CERN, Geneva, 1997.
+
+\bibitem{PixelOffline2015}
+\hrefCMSnoop {}{{CMS Collaboration}, ``CMS Pixel Detector 2015 Offline
+  Performance Results''.}
+  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/PixelOfflineLHCC2015}.
+
+\bibitem{ECALtdr}
+{CMS Collaboration} Collaboration, ``{The CMS electromagnetic calorimeter
+  project: Technical Design Report}''.
+\newblock Technical Design Report CMS. CERN, Geneva, 1997.
+
+\bibitem{HCALtdr}
+{CMS Collaboration} Collaboration, ``{The CMS hadron calorimeter project:
+  Technical Design Report}''.
+\newblock Technical Design Report CMS. CERN, Geneva, 1997.
+
+\bibitem{1748-0221-2-04-P04004}
+\href {http://stacks.iop.org/1748-0221/2/i=04/a=P04004}{P.~Adzic, ``Energy
+  resolution of the barrel of the CMS Electromagnetic Calorimeter'',} \textit{
+  Journal of Instrumentation} \textbf{ 2} (2007), no.~04, P04004.
+
+\bibitem{Khachatryan:2014vla}
+\hrefCMSnoop {}{{CMS} Collaboration, ``{Identification techniques for highly
+  boosted W bosons that decay into hadrons}'',} \textit{ JHEP} \textbf{ 12}
+  (2014) 017,
+  \href{http://dx.doi.org/10.1007/JHEP12(2014)017}{\doi{10.1007/JHEP12(2014)017}},
+\href{http://www.arXiv.org/abs/1410.4227}{\texttt{arXiv:1410.4227}}.
+%%CITATION = ARXIV:1410.4227;%%.
 
 \end{thebibliography}\endgroup

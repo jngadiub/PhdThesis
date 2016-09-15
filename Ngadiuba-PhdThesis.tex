@@ -56,9 +56,24 @@
 %\renewcommand{\headrulewidth}{0pt} % and the line
 %-------------------------------------------------------------------------------------
 
+\providecommand{\FIXME}[1]{\textcolor{red}{{\sffamily{\bfseries{}FIXME:} #1}}}
+\newcommand{\chone}{chapters/Chapter1-Introduction/Figures}
+\newcommand{\chtwo}{chapters/Chapter2-Theory/Figures}
+\newcommand{\chthree}{chapters/Chapter3-CMSatLHC/Figures}
+\newcommand{\chfour}{chapters/Chapter4-DibosonIntro/Figures}
+\newcommand{\chfive}{chapters/Chapter5-DataAndSimulation/Figures}
+\newcommand{\chsix}{chapters/Chapter6-Objects/Figures}
+\newcommand{\chseven}{chapters/Chapter7-JetSubstructure/Figures}
+\newcommand{\cheight}{chapters/Chapter8-EventSelection/Figures}
+\newcommand{\chnine}{chapters/Chapter9-BackgroundModeling/Figures}
+\newcommand{\chten}{chapters/Chapter10-SignalModeling/Figures}
+\newcommand{\cheleven}{chapters/Chapter11-Results8TeV/Figures}
+\newcommand{\chtwelve}{chapters/Chapter12-Results13TeV/Figures}
+\newcommand{\chthirteen}{chapters/Chapter13-Combination/Figures}
+
 \newcommand{\mWH}{\ensuremath{m_{\rm WH}\xspace}}
 \newcommand{\mWV}{\ensuremath{m_{\rm WV}\xspace}}
-
+\newcommand{\mJ}{\ensuremath{m_{\text{jet}}\xspace}} 
 \input{ptdr-definitions.tex}
 %redefine the include macro - no page break with includes (doesn't work)
 %\usepackage{filehook}
@@ -93,48 +108,60 @@
 	\input{chapters/Chapter1-Introduction/Introduction}
 
 %\chapter{Physics beyond the Standard Model}
-	\input{chapters/Chapter3-Theory/Theory}
+	\input{chapters/Chapter2-Theory/Theory}
 		
 %\chapter{The CMS Experiment at LHC} %add observational evidence
-	\input{chapters/Chapter2-CMSatLHC/CMSatLHC}
+	\input{chapters/Chapter3-CMSatLHC/CMSatLHC}
 
 \part{Search for diboson resonances with CMS}
 
-\chapter{Diboson resonances as signature for new physics}
+%\chapter{Diboson resonances as signature for new physics}
+	\input{chapters/Chapter4-DibosonIntro/DibosonIntro}
 
 %\chapter{Dataset and event simulation}
 	\input{chapters/Chapter5-DataAndSimulation/DataAndSimulation}
 	
 %\chapter{Object and event reconstruction}
-	\input{chapters/Chapter4-Objects/EventReconstruction}
+	\input{chapters/Chapter6-Objects/EventReconstruction}
 
 %\chapter{Boosted H->bb and W/Z->qq identification with jet substructure}
-	\input{chapters/Chapter6-JetSubstructure/JetSubstructure}		
+	\input{chapters/Chapter7-JetSubstructure/JetSubstructure}		
 
 %\chapter{Final event selection and categorization}
-	\input{chapters/Chapter7-EventSelection/EventSelection}		
+	\input{chapters/Chapter8-EventSelection/EventSelection}		
 	
-%\chapter{Signal and background modeling}	
-	\input{chapters/Chapter8-SignalAndBackgroundModeling/SignalAndBackgroundModeling}
+%\chapter{Background modeling}
+	\input{chapters/Chapter9-BackgroundModeling/BackgroundModeling}
 
-%\chapter{Final results and statistical interpretation}
-	\input{chapters/Chapter9-Results/Results}
+%\chapter{Signal modeling and statistical treatment}
+	\input{chapters/Chapter10-SignalModeling/SignalModelingAndStatistics}
+	
+%\chapter{Results with 8 TeV data}
+	\input{chapters/Chapter11-Results8TeV/Results8TeV}
 
+%\chapter{Results with 13 TeV data}
+	\input{chapters/Chapter12-Results13TeV/Results13TeV}
+	
 %\chapter{Combination of searches for diboson resonances at $\sqrt{s}$ = 8 and 13 TeV}
-	\input{chapters/Chapter10-Combination/Combination}
+	\input{chapters/Chapter13-Combination/Combination}
 
-\chapter{Conclusions}
-
+%\chapter{Conclusions}
+	\input{chapters/Chapter14-DibosonConclusions/DibosonConclusions}
+	
 \part{Calibration and Upgrade of the CMS Pixel Barrel Detector}
 
+%\chapter{introduction chapter: why pixels are so important for physics}
+	\input{chapters/Chapter15-PixIntro/PixIntro}
+	
 %\chapter{The CMS Pixel Barrel Detector}
-	\input{chapters/Chapter11-BPixDescription/BPixDescription}
+	\input{chapters/Chapter16-BPixDescription/BPixDescription}
 
 %\chapter{Phase I Upgrade of the CMS Pixel Barrel Detector}		
-	\input{chapters/Chapter12-Phase1BPix/Phase1BPix}
+	\input{chapters/Chapter17-Phase1BPix/Phase1BPix}
 					
-\chapter{Conclusions}
-
+%\chapter{Conclusions}
+	\input{chapters/Chapter18-PixConclusions/PixConclusions}
+	
 \part{Summary}					
 
 %\bibliographystyle{plain}

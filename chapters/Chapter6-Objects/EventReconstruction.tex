@@ -1,10 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Object and event reconstruction}
 \label{ch:EventReconstruction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Tracks and vertices}
-\section{Electrons}
-\section{Muons}
-\section{Jets}
-\subsection{Identification of b jets}
-\section{Missing transverse energy}
-\section{W$\rightarrow\ell\Pgn$ reconstruction}
+In the proton-proton collisions at the LHC a large number of particles are produced which must be properly reconstructed and identified. These particles travel through the CMS detector and they are classified in objects depending on their specific signature in each subdetector. This chapter covers the reconstruction of physics objects that are needed for the identification of signal events in the lepton plus jet event topology as described in Chapter~\ref{ch:dibosonIntro}.
+
+The measurement of a track in the tracker detector for charged particles and the reconstruction of the primary vertices represent key aspects of the reconstruction of the various objects and are detailed in Sec.~\ref{sec:tracksandvtx}. In this analysis $\tau$-leptons are reconstructed as electrons (Sec.~\ref{sec:electrons}) or muons (Sec.~\ref{sec:muons}) and accounted to the respective channel if they decay leptonically, or as jets (Sec.~\ref{sec:jets}) if they decay hadronically. Only the leptonic decay mode contributes to the analysis since at least one muon or electron has to be reconstructed in the event. However, the resulting gain in sensitivity is limited by the small branching ratios. In addition to leptons and jets, the last type of particle present in the final state is the neutrino, whose presence can be inferred from an imbalance of the transverse energy (Sec.~\ref{sec:met}). The Identified lepton and the missing transverse energy in the event are associated with the W$\rightarrow\ell\Pgn$ candidate which is entirely reconstructed through the algorithm described in Sec.~\ref{sec:leptonicW}.
+
+\FIXME{Particle Flow}
+
+%%%%%%%%%%
+%\section{Tracks and vertices}\label{sec:tracksandvtx}
+ \input{chapters/Chapter6-Objects//TracksAndVertices.tex}
+ 
+%%%%%%%%%%
+%\section{Electrons}\label{sec:electrons}
+ \input{chapters/Chapter6-Objects//Electrons.tex}
+ 
+%%%%%%%%%%
+%\section{Muons}\label{sec:muons}
+ \input{chapters/Chapter6-Objects//Muons.tex}
+
+%%%%%%%%%%
+%\section{Jets}\label{sec:jets}
+ \input{chapters/Chapter6-Objects//Jets.tex}
+
+%%%%%%%%%%
+\section{Missing transverse energy}\label{sec:met}
+
+%%%%%%%%%%
+\section{W$\rightarrow\ell\Pgn$ reconstruction}\label{sec:leptonicW}

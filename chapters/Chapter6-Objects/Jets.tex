@@ -211,7 +211,14 @@ This allows the algorithm to avoid limitations due to inefficiencies in the seco
 
 \begin{itemize}
 \item the secondary vertex category;
-\item the 2D flight distance significance of the secondary vertex;\item the number of tracks in the jet\item the number of tracks associated to the secondary vertex;\item the secondary vertex mass;\item the ratio of the energy carried by tracks at the vertex with respect to all tracks in the jet;\item the $\eta$ of the tracks at the vertex with respect to the jet axis;\item the 2D impact parameter significance of the first track that raises the invariant mass above the charm threshold of 1.5\GeV when subsequently summing up tracks ordered by decreasing impact parameter significance;\item the 3D signed impact parameter significance for each track in the jet.
+\item the 2D flight distance significance of the secondary vertex;
+\item the number of tracks in the jet
+\item the number of tracks associated to the secondary vertex;
+\item the secondary vertex mass;
+\item the ratio of the energy carried by tracks at the vertex with respect to all tracks in the jet;
+\item the $\eta$ of the tracks at the vertex with respect to the jet axis;
+\item the 2D impact parameter significance of the first track that raises the invariant mass above the charm threshold of 1.5\GeV when subsequently summing up tracks ordered by decreasing impact parameter significance;
+\item the 3D signed impact parameter significance for each track in the jet.
 \end{itemize}
 
 Two likelihood ratios are built from these variables used to discriminate between b and c jets and between b and light-flavor jets and combined with prior weights of 0.25 and 0.75, respectively. Figure~\ref{fig:csv_813TeV_a} shows the distribution of the CSV discriminator value in a multijet sample for data collected at 8\TeV and for simulation, for jets reconstructed with the AK5 algorithm.
@@ -229,8 +236,6 @@ The CSV algorithm was further optimized for LHC Run 2 and the new version is ref
 
 The performance of the CSVv2 tagger is presented in Fig.~\ref{fig:btagalgo} as the b jet identification efficiency versus the misidentification probability for jets in simulated \ttbar events requiring a jet $\pt > 30\GeV$. A comparison is shown with the Run 1 version of the CSV algorithm, without retraining this algorithm. The CSV algorithm was trained on 7\TeV pp collisions using AK5 jets. The absolute improvement of the CSVv2 (AVR) algorithm with respect to the CSV algorithm is of the order of 2 to 4\% in b jet identification efficiency when comparing at the same misidentification probability for light-flavour jets. The improvement of using IVF vertices with respect to using AVR vertices in the CSVv2 algorithm is of the order of 1 to 2\%. For light-flavour jets, the absolute efficiency improves by about 4\% with respect to the CSVv2 algorithm.
 
-The value of the discriminator threshold for each algorithm and the corresponding efficiencies are summarized in Table~\ref{tab:btagwp}.
-
 \begin{figure}[!htb]
  \begin{center}
   \includegraphics[width=0.45\textwidth]{\chsix/btagalgo-ak4jets.pdf}
@@ -239,9 +244,12 @@ The value of the discriminator threshold for each algorithm and the correspondin
  \label{fig:btagalgo}
 \end{figure}
 
+The value of the discriminator threshold for the b tagging algorithms used in this analysis and the corresponding efficiencies are summarized in Table~\ref{tab:btagwp}. 
+In this analysis the medium working point is used to identify and reject \ttbar events where a real b jet is expected in addition to the large-cone jet used to reconstruct the hadronically deaying high-\pt V or H jet candidate representing instead the signal. The same b tagging algorithm but together with the loose working point is used to identify whether the CA8 jet comes from a Higgs boson decaying into bottom quarks, as described in Section~\ref{sec:htagging}.
+
 \begin{table}[!htb]
 \centering
-\caption{Taggers, discriminator threshold for Run 1 and Run 2 and corresponding efficiency for b jets with $\pt > 30\GeV$ in simulated \ttbar events.}
+\caption{Taggers, discriminator threshold for Run 1 and Run 2 and corresponding efficiency for b jets with $\pt > 30\GeV$ in simulated \ttbar events. }
 \resizebox{\textwidth}{!}{
 \begin{tabular}{ l | c | c | c}
 Algorithm & operating point & discriminator value & b tagging efficiency (\%)\\ 
@@ -256,3 +264,24 @@ Algorithm & operating point & discriminator value & b tagging efficiency (\%)\\
 \end{tabular}}
 \label{tab:btagwp}
 \end{table}
+
+The mismodelling of the b tagging variables in simulation is taken into account by reweighting simulation event-by-event with the ratio of the b tagging efficiency in data and simulation, determined in a sample enriched with b jets and depending on the jet \pt and $\eta$. The correction factors as a function of the b jet \pt  are shown in Fig.~\ref{fig:btag_sfb_a} and~\ref{fig:btag_sfb_b} for the CSVM and CSVv2M operating points respectively, as measured in 8 and 13\TeV data. In a similar way, correction factors are also derived and applied to correct the misidentification probability in simulation. These factors are shown in Fig.~\ref{fig:btag_sfl_a} and~\ref{fig:btag_sfl_b} as a function of the jet \pt for the CSVM and CSVv2M operating points, as measure in 8 and 13\TeV data.
+%The average scale factors are reported in Table~\ref{tab:btagwp} for the two b tagging algorithms used in this analysis. The average values of the correction factors $SF_\mathrm{b}$ are 0.95 and 0.93 for the CSVM, and CSVv2M algorithms, respectively. While average values of 1.17 for are obtained for $SF_\mathrm{light}$ for the CSVM algorithm.
+
+\begin{figure}[!htb]
+\begin{center}
+\subfigure[]{\label{fig:btag_sfb_a}\includegraphics[width=0.45\textwidth]{\chsix/btag-sfb-pt-csvm-run1.pdf}}
+\subfigure[]{\label{fig:btag_sfb_b}\includegraphics[width=0.45\textwidth]{\chsix/btag-sfb-pt-csvv2m-run2.pdf}}
+\end{center} 
+\caption{Data-to-simulation correction factors for the b tagging efficiency for the CSVM (a) and CSVv2M (b) algorithms as a function of the b jet \pt as measured in 8 and 13\TeV data, respectively~\cite{CMS:BTV13001,CMS-PAS-BTV-15-001}.}
+\label{fig:btag_sfb}
+\end{figure}
+
+\begin{figure}[!htb]
+\begin{center}
+\subfigure[]{\label{fig:btag_sfl_a}\includegraphics[width=0.45\textwidth]{\chsix/btag-SFlight-csvm-run1.pdf}}
+\subfigure[]{\label{fig:btag_sfl_b}\includegraphics[width=0.45\textwidth]{\chsix/btag-SFlight-csvv2m-run2.pdf}}
+\end{center} 
+\caption{Data-to-simulation correction factors for the misidentification probability for the CSVM (a) and CSVv2M (b) algorithms as a function of the jet \pt as measured in 8 and 13\TeV data, respectively~\cite{CMS:BTV13001,CMS-PAS-BTV-15-001}.}
+\label{fig:btag_sfl}
+\end{figure}

@@ -63,7 +63,7 @@ The momentum resolution obtained with the Tune P algorithm for muons with \pt in
 %To further improve the resolution at high \pt, mainly by reducing the tails of the momentum resolution distribution, combinations of the above can be used. In particular, the Tune P al- gorithm chooses, on a muon-by-muon basis, between the tracker-only, TPFMS, and Picky fits. The algorithm starts with the Picky fit, then switches to the tracker-only fit if the goodness of fit of the latter is significantly better. Then it compares the goodness of fit of the chosen track with that of TPFMS; TPFMS is chosen if it is found to be better. For high-pT muons, TPFMS and Picky algorithms are selected by Tune P in most of the cases, in approximately equal amounts, while the tracker-only fit is selected only in a few percent of events
 
 %%%%%%%%
-\subsection{Muon trigger}
+\subsection{Muon trigger}\label{subsec:mutrigger}
 %%%%%%%%
 
 The Level-1 muon trigger uses signals from all three CMS muon detector systems: DT, CSC, and RPC. It has a latency of 3.2 $\mu$s and reduces the rate of inclusive muon candidate events read-out from detector front-end electronics to a few kHz by applying selections on the estimated muon \pt and quality.
@@ -122,7 +122,8 @@ Trigger & Name & Selections\\
 \label{fig:mu_L1trigg}
 \end{figure}
 
-The offline reconstructed \pt of the muons must be greater than 50 (53) GeV for the 8 (13) TeV analysis, where the trigger reaches the plateau. Furthermore the selected muon must be reconstructed within $|\eta|$ < 2.1 as a consequence of the trigger criteria. The efficiency for a muon passing the high-\pt selections described in Section~\ref{subsec:muonid} to fire the HLT single-muon triggers have been measured in data with T\&P method and are summarized in Tables~\ref{tab:hltMueff8TeV} and~\ref{tab:hltMueff13TeV}. 
+%The offline reconstructed \pt of the muons must be greater than 50 (53) GeV for the 8 (13) TeV analysis, where the trigger reaches the plateau. Furthermore the selected muon must be reconstructed within $|\eta|$ < 2.1 as a consequence of the trigger criteria.
+The efficiency for a muon passing the high-\pt selections described in Section~\ref{subsec:muonid} to fire the HLT single-muon triggers have been measured in data with T\&P method and are summarized in Tables~\ref{tab:hltMueff8TeV} and~\ref{tab:hltMueff13TeV}. 
 
 \begin{table}[!htb]
 \centering

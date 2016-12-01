@@ -1,0 +1,27 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}
+\begin{document}
+\[\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(110,60)
+    \fmfleft{i1,i2} 
+    \fmfright{o1,o2,o3}
+    \fmf{curly}{i1,v1}
+    \fmflabel{$g$}{i1}
+    \fmf{fermion}{i2,v1}
+    \fmflabel{$q$}{i2}
+    \fmf{fermion,label=$q$}{v1,v2} 
+    \fmf{photon,label=$W^{+}$}{v2,v3} 
+    \fmf{fermion}{v2,o1}
+    \fmflabel{$q^\prime$}{o1}
+    \fmf{fermion}{o3,v3} 
+    \fmf{fermion}{v3,o2}
+    \fmflabel{$\ell^{+}$}{o3}
+    \fmflabel{$\nu_\ell$}{o2}
+  \end{fmfgraph*}
+\end{fmffile}
+\]
+\end{document}

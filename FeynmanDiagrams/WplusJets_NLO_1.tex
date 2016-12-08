@@ -7,9 +7,9 @@
 \begin{document}
 \[\begin{fmffile}{feyngraph}
   \begin{fmfgraph*}(150,90)
-    \fmfpen{thick}
+    %\fmfpen{thick}
     \fmfleftn{i}{2}
-    \fmfrightn{o}{4}
+    \fmfrightn{o}{3}
     %particelle entranti
     \fmf{fermion}{i1,v1}
     \fmf{fermion}{v2,i2}
@@ -18,20 +18,15 @@
     %mediatore
     \fmf{fermion,label=$q^\prime$}{v1,v2}
     %%% produzione Z
-    \fmf{photon,label=$W^-$}{v2,v4}
+    \fmf{photon,label=$W^-$}{v2,v3}
     % produzione l l
-    \fmf{fermion}{v4,o4}
-    \fmf{fermion}{o3,v4}
-    \fmflabel{$\ell^-$}{o4}
-    \fmflabel{$\bar{\nu}_\ell$}{o3}
+    \fmf{fermion}{v3,o3}
+    \fmf{fermion}{o2,v3}
+    \fmflabel{$\ell^-$}{o3}
+    \fmflabel{$\bar{\nu}_\ell$}{o2}
     %%% produzione glume
-    \fmf{gluon,label=$g$}{v1,v3}
-    %produzione b b
-    \fmf{fermion}{v3,o2}
-    \fmf{fermion}{o1,v3}
-    \fmflabel{$q$}{o2}
-    \fmflabel{$\bar{q}$}{o1}
+    \fmf{gluon}{v1,o1}
+    \fmflabel{$g$}{o1}
   \end{fmfgraph*}
-\end{fmffile}
-\]
+\end{fmffile}\]
 \end{document}

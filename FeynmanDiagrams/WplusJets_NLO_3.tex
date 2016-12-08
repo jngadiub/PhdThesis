@@ -1,0 +1,25 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\[\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(110,60)
+   \fmfleft{i1,i2}
+   \fmfright{o1,o2}
+   \fmf{plain,tension=0.8}{v4,i2}
+   \fmf{fermion,tension=0.5}{v3,v4}
+   \fmf{plain,tension=0.8}{v2,v3}
+   \fmf{gluon,right,tension=0,label=$g$,label.dist=15}{v3,v4}
+   \fmf{fermion,tension=1/4}{i1,v2}
+   \fmf{boson,label=$W^{-}$,tension=1/4}{v2,v1}   
+   \fmflabel{$q^\prime$}{i1} 
+   \fmflabel{$\bar{q}$}{i2}
+   \fmf{fermion,tension=1/4}{v1,o2}
+   \fmf{fermion,tension=1/4}{o1,v1}
+   \fmflabel{$\bar{\nu}_\ell$}{o1} 
+   \fmflabel{$\ell^{-}$}{o2}
+  \end{fmfgraph*}
+\end{fmffile}\]
+\end{document}

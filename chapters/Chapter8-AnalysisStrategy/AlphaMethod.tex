@@ -1,0 +1,231 @@
+%%%%%%%%%
+\section{W+jets background estimate with $\alpha$ ratio method}\label{sec:alpha}
+%%%%%%%%%
+
+The $\mlvj$ distribution observed in data is dominated by SM background processes where single
+quark or gluon jets are falsely identified as V jets. The dominant
+processes is inclusive W boson production. 
+Since both normalization and shape discrepancies are visibile between data and simulation~\cite{Chatrchyan:2013vbb},
+a data driven method has been developed to estimate this background component, as described in the following.
+Sub-dominant backgrounds include \ttbar, single top quark, and non resonant diboson SM production,
+which are estimated from MC, after applying correction factors for residual data-to-simulation disagreement measured in control samples selected in data.
+
+\subsection{Description}
+
+The W+jets background is estimated through the so called $\alpha$ ratio method.
+This method assumes that the correlation between \mJ and $\mlvj$ for the dominant W+jets background can be adequately modelled by simulation.
+A signal-depleted control region (sideband) is defined by requiring the mass of the V or H jet to lie below or above the nominal selection; the
+$\mlvj$ distribution observed in this region is then extrapolated to the nominal region through
+a transfer function estimated from simulation. Other minor sources of background, such as
+\ttbar, single top quark, and SM diboson production, are estimated using simulated events after
+applying correction factors based on control regions in data, as described in Sections~\ref{sec:vtagging} and~\ref{sec:ttbar}.
+The sideband region is defined around the jet mass window described in Section~\ref{sec:finalselection}.
+The lower and upper sidebands for the two analyses are summarized in Table~\ref{tab:sidebands}.
+For the 13\TeV analysis a ``gap'' is introduced between the signal region and the upper sideband, since the
+range defined by $105 < \mJ < 135$ might include contribution from signals with highly Lorentz-boosted Higgs bosons in the final state.
+Since these types of searches at 13\TeV~\cite{Khachatryan:2016cfx} have been performed simultaneously with the one described in this work,
+this region has been discarded to avoid introducing a bias in the shape and normalization extrapolation due to a possible signal.
+On the other hand, the lower sideband of the 8\TeV $\ell\Pgn$+H-jet analysis includes the region where signals from highly Lorentz-boosted V bosons might occur.
+In fact, this analysis has been performed after the search for X $\rightarrow$ WV resonances at 8\TeV discovered the signal region,
+where no deviation from the predicted SM background have been observed~\cite{Khachatryan:2014gha}.
+
+\begin{table}[!htb]
+\centering
+\caption{Sidebands}
+\begin{tabular}{ l | c | c |}
+{\bf \mJ sideband} &\multicolumn{2}{c|}{{\bf final state}}\\
+ & $\ell\Pgn$+H-jet (8\TeV) & $\ell\Pgn$+V-jet (13\TeV)\\
+\hline
+\hline
+Low sideband (LSB) & 40--110\GeV & 40--65\GeV\\ 
+High sideband (HSB) & 135--150\GeV & 135--150\GeV\\ 
+\end{tabular}
+\label{tab:sidebands}
+\end{table}
+
+\subsection{Extraction of the W+jets normalization}
+
+The overall normalization of the W+jets background in the signal region is determined from a
+fit to the \mJ distribution in the lower and upper sidebands of the data. The analytical form
+of the fitting function is chosen from simulation studies, as are the contributions from minor backgrounds. 
+%Figure 3 shows the result of this fit for the low- and high-mass `n+jet channels.
+A summary of the empirical functional forms used to parametrize each background contribution are listed in Table~\ref{tab:mjfunct}, and defined as follows:
+
+\footnotesize
+\begin{equation}
+\begin{gathered}
+   F_{\rm Exp}(x)=e^{cx}\\
+   F_{\rm ErfExp}(x)=e^{cx} \cdot \frac{1 + {\rm Erf}((x-a)/b)}{2} \\
+   F_{\rm ExpGaus}(x) = c_{0} \cdot e^{cx} + c_{1} \cdot \mathrm{Gaus}(x,x_{1},\sigma_{1})\\
+   F_{\rm 4Gaus}(x) = c_{1} \cdot \mathrm{Gaus}(x,x_{1},\sigma_{1}) + c_{2} \cdot \mathrm{Gaus}(x,x_{2},\sigma_{2}) + c_{3} \cdot \mathrm{Gaus}(x,x_{3},\sigma_{3}) + c_{4} \cdot \mathrm{Gaus}(x,x_{4},\sigma_{4}) \\
+   F_{\rm ErfExp2Gaus}(x) = e^{cx} \cdot \frac{1 + {\rm Erf}((x-a)/b)}{2} + c_{1} \cdot \mathrm{Gaus}(x,x_{1},\sigma_{1}) + c_{2}\cdot \mathrm{Gaus}(x,x_{2},\sigma_{2})\\
+\end{gathered}
+\label{eqn:mjfunct}
+\end{equation}
+
+\normalsize
+\begin{table}[!htb]
+\centering
+\caption{Summary of the functional forms used for fit the \mJ spectra of each background component in each final state.}
+\begin{tabular}{ l | c | c | c | c}
+Final state & W+jets & \ttbar & single top quark & diboson\\
+\hline
+\hline
+$\ell\Pgn$+H-jet & $F_{\rm ErfExp}(x)$ & $F_{\rm Exp}(x)$ & $F_{\rm Exp}(x)$ & $F_{\rm ExpGaus}(x)$\\
+$\ell\Pgn$+V-jet & $F_{\rm ErfExp}(x)$ & $F_{\rm ErfExp2Gaus}(x)$ & $F_{\rm ExpGaus}(x)$ & $F_{\rm 4Gaus}(x)$
+\end{tabular}
+\label{tab:mjfunct}
+\end{table}
+
+Figure~\ref{fig:mcfits_mj} shows the functional forms listed in Table~\ref{tab:mjfunct} for the $\ell\Pgn$+V-jet channel, after fitting the simulation data of each background component,
+demonstrating that the chosen functions well reproduce the expected \mJ spectra.
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:mcfits_mj_a}\includegraphics[width=0.45\textwidth]{\cheight/HP_mj_fitting-mu-WJets.pdf}}
+\subfigure[]{\label{fig:mcfits_mj_b}\includegraphics[width=0.45\textwidth]{\cheight/HP_mj_fitting-mu-TTbar.pdf}}\\
+\subfigure[]{\label{fig:mcfits_mj_c}\includegraphics[width=0.45\textwidth]{\cheight/HP_mj_fitting-mu-STop.pdf}}
+\subfigure[]{\label{fig:mcfits_mj_d}\includegraphics[width=0.45\textwidth]{\cheight/HP_mj_fitting-mu-VV.pdf}}
+\caption{Functional forms describing the \mJ spectra for each background contribution after fitting the simulation data: (a) W+jets. (b) \ttbar. (c) Single top quark. (d) Diboson.}
+\label{fig:mcfits_mj}
+\end{figure}
+
+The results of this fit procedure to extract the W+jets normalization are shown in Figures~\ref{fig:mjfit8TeV} and~\ref{fig:mjfit13TeV}
+for the $\ell\Pgn$+H-jet and the $\ell\Pgn$+V-jet channels, respectively.
+The factors for correcting the simulated W-peak position and resolution to represent the observed data, taken from the top quark enriched control sample as described in Section~\ref{sec:vtagging}, are included in the \mJ spectra of Fig.~\ref{fig:mjfit13TeV}. 
+
+\begin{figure}[!htb]
+\centering     %%% not \center
+\subfigure[]{\label{fig:mjfit8TeV_a}\includegraphics[width=0.45\textwidth]{\cheight/m_j_sideband_WJets0_MU_ALLP.pdf}}
+\subfigure[]{\label{fig:mjfit8TeV_b}\includegraphics[width=0.45\textwidth]{\cheight/m_j_sideband_WJets0_ELE_ALLP.pdf}}
+\caption{Distributions of the pruned jet mass \mJ in the muon (a) and electron (b) channels for the $\ell\Pgn$+H-jet analysis at 8\TeV. All selections are applied except the requirement on the \mJ signal window. The signal region lies between the dashed vertical lines. The hatched region indicates the statistical uncertainty of the fit. At the bottom of each plot, the bin-by-bin fit residuals, ($N_{\rm data}$ - $N_{\rm fit}$)/$\sigma_{\rm data}$, are shown.}
+\label{fig:mjfit8TeV}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering     %%% not \center
+\subfigure[]{\label{fig:mjfit13TeV_a}\includegraphics[width=0.45\textwidth]{\cheight/HP_mj_fitting-mu-m_j_sideband_WJets0_xww__with_pull.pdf}}
+\subfigure[]{\label{fig:mjfit13TeV_b}\includegraphics[width=0.45\textwidth]{\cheight/HP_mj_fitting-el-m_j_sideband_WJets0_xww__with_pull.pdf}}
+\caption{Distributions of the pruned jet mass \mJ in the muon (a) and electron (b) channels for the $\ell\Pgn$+V-jet analysis at 13\TeV. All selections are applied except the requirement on the \mJ signal window. The signal regions and \mJ categories of the analysis are indicated by the vertical dotted lines. The shaded \mJ region 105--135\GeV is not used in the analysis. At the bottom of each plot, the bin-by-bin fit residuals, ($N_{\rm data}$ - $N_{\rm fit}$)/$\sigma_{\rm data}$, are shown together with the uncertainty band of the fit normalized by the statistical uncertainty of data, $\sigma_{\rm data}$.}
+\label{fig:mjfit13TeV}
+\end{figure}
+
+%%%%%%%%%%%
+\subsection{Extraction of the W+jets shape}~\label{subsec:wjetshape}
+%%%%%%%%%%%
+
+The form of the $\mlvj$ distribution for the W+jets background in the signal region (SR) is determined from the lower \mJ sideband, through the transfer function $\alpha_\mathrm{MC}(\mlvj)$ obtained from the W+jets simulation, and defined as:
+
+\begin{equation}
+\alpha_\mathrm{MC}(\mlvj) = \frac{F_\mathrm{MC, SR}^{\mathrm{W+jets}}(\mlvj)}{F_\mathrm{MC, SB}^{\mathrm{W+jets}}(\mlvj)},
+\end{equation}
+
+where $F_\mathrm{MC, SB}^{\mathrm{W+jets}}$ and $F_\mathrm{MC, SR}^{\mathrm{W+jets}}$ are the probability density functions used to describe the simulated $\mlvj$ spectrum in the lower \mJ sideband and signal region, respectively.
+The upper \mJ sideband is not considered since the W+jets shape is different here compared to what expected in the lower sideband. Furthermore, the upper sideband suffers from a larger \ttbar background contamination.
+
+Since the lower sideband region does not represent a perfectly pure sample of W+jets events in data, the presence of minor backgrounds is subtracted from the observed diboson invariant mass distribution
+to obtain an estimation of the W+jets contribution in the sideband control region of the data, $F_\mathrm{data, SB}^{\mathrm{W+jets}}(\mlvj)$.
+
+The \mlvj range used in the estimate of the background distribution determines the region of masses probed by these searches.
+This range is chosen to ensure a smoothly falling background spectrum, and therefore far enough from the kinematic turn-on at low masses generated by the acceptance selections,
+allowing for a good stability and a robust control of the background estimation.
+For this reason the low edge of the range is chosen at 0.7\TeV while the high edge is chosen such that it is not too far from the last value where data are still present.
+Therefore, the fits are performed in the range $0.7 < \mlvj 4\TeV$ for the 13\TeV analysis, while at 8\TeV no data are present above \mlvj = 3\TeV and the the chosen range is $0.7 < \mlvj 3\TeV$.
+
+To describe the smoothly falling W+jets background distribution, a parametrization of the form of a leveled exponential is adopted, defined as
+
+\begin{equation}\label{eqn:mVVfunct}
+   F_{\rm ExpTail}(x) = e^{-\frac{x}{a+bx}}.
+\end{equation}
+
+This functional form is found to adequately describe the simulation in both the signal region and the low sideband as shown in Figure~\ref{fig:mcfits_mlvj}. Tests are performed with alternative functional forms, and the background prediction is found to agree with the one of the default function within the uncertainties.
+The minor background contributions are parametrized with a simple exponential functional form, except for the diboson contribution for which the $F_{\rm ExpTail}(x)$ defined above is used.
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:mcfits_mlvj_a}\includegraphics[width=0.32\textwidth]{\cheight/HP_mlvj_fitting_sb_lo-mu-WJets.pdf}}
+\subfigure[]{\label{fig:mcfits_mlvj_b}\includegraphics[width=0.32\textwidth]{\cheight/HPW_mlvj_fitting_signal_region-mu-WJets.pdf}}
+\subfigure[]{\label{fig:mcfits_mlvj_c}\includegraphics[width=0.32\textwidth]{\cheight/HPZ_mlvj_fitting_signal_region-mu-WJets.pdf}}
+\caption{Functional form describing the \mWV spectrum of the W+jets background after fitting the simulation data, for the $\mu\Pgn$+V-jet channel. The distributions for the lower \mJ sideband (a), and the WW-enriched (b) and WZ-enriched (c) signal regions are shown.}
+\label{fig:mcfits_mlvj}
+\end{figure}
+
+Figure~\ref{fig:alphasWV_13TeV} shows the transfer functions $\alpha_\mathrm{MC}(m_\mathrm{WV})$ for the WW-enriched and WZ-enriched categories in the $\mu\Pgn$+V-jet channel obtained from a simultaneous fit of W+jets simulated events in the lower sideband and in the signal region using the parametrization defined in Equation~\ref{eqn:mVVfunct}.
+The blue and the red lines represents the probability density functions describing the W+jets background with \mJ in the lower sideband and signal region, respectively, and given by the leveled-exponential function of Eq.~\ref{eqn:mVVfunct}. A simultaneous fit is performed of the two distributions, where the parameters used to model the shape in the signal region are correlated with the ones used to model the shape in the sideband.
+The transfer function $\alpha_\mathrm{MC}(m_\mathrm{WV})$  is shown as a solide black line, while the dark (light) shaded region corresponds to the 1$\sigma$ (2$\sigma$) statistical uncertainty of the fit.
+These uncertainties only represent the uncertainty in the modelling of the W+jets shape. The bands have a size $\approx$ 0 around 2\TeV as the $\alpha_\mathrm{MC}(m_\mathrm{WV})$ is the ratio of two probability density functions which have in order to cross to conserve the total probability. Similar results are obtained for the $\ell\Pgn$+H-jet analysis.
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:alphasWV_13TeV_a}\includegraphics[width=0.45\textwidth]{\cheight/alpha_HPW-mu.pdf}}
+\subfigure[]{\label{fig:alphasWV_13TeV_b}\includegraphics[width=0.45\textwidth]{\cheight/alpha_HPZ-mu.pdf}}
+\caption{The transfer functions $\alpha_\mathrm{MC}(m_\mathrm{WV})$ from the lower \mJ sideband to the signal region for the WW-enriched (a) and WZ-enriched (b) categories in the $\mu\Pgn$+V-jet channel. The grey area represents the statistical uncertainty of the fit. The blue and the red lines represents the probability density functions describing the W+jets background with \mJ in the lower sideband and signal region, respectively. The $\alpha_\mathrm{MC}(m_\mathrm{WV})$ obtained fitting the W+jets with and alternative function is shown as yellow line.}
+\label{fig:alphasWV_13TeV}
+\end{figure}
+
+In Figure~\ref{fig:sbfitmlvj13TeV}, the result of the fit to the \mWV distribution of the data with \mJ in the lower sideband is shown for the electron and muon channels of the $\ell\Pgn$+V-jet analysis.
+From this fit, an estimation of $F_\mathrm{data, SB}^{\mathrm{W+jets}}(\mlvj)$ is obtained.
+Finally, the W+jets background distribution in the signal region is then extrapolated by rescaling $F_\mathrm{data, SB}^{\mathrm{W+jets}}$ by $\alpha_\mathrm{MC}(\mlvj)$.
+The minor backgrounds are then added to the W+jets background to obtain the total SM prediction in the signal region, which is given by
+
+\begin{equation}\label{eqn:alpha_totalBkg}
+N_\mathrm{SR}^\mathrm{bkg}(\mlvj) = N_\mathrm{SR}^\mathrm{W+jets} \times \alpha_\mathrm{MC}(\mlvj) \times F_\mathrm{data, SB}^{\mathrm{W+jets}}(\mlvj) + \sum_{k} N_\mathrm{SR}^k \times F_\mathrm{MC,SR}^k(\mlvj).
+\end{equation}
+
+where the sum runs over the products of the normalization $N_\mathrm{MC,SR}^k$ and shape $F_\mathrm{MC,SR}^k(\mlvj)$ of each minor background contribution $k$, while $N_\mathrm{SR}^\mathrm{W+jets}$ and $F_\mathrm{data, SB}^{\mathrm{W+jets}}(\mlvj)$ represent the normalization and shape of the W+jets background derived from data as described previously in this chapter. The transfer function $\alpha_\mathrm{MC}(\mlvj)$ accounts for small kinematic differences between the signal region and the sideband one.
+
+Results of the final background extraction in the signal region will be presented in Sections~\ref{ch:results8} and~\ref{ch:results13} or the $\ell\Pgn$+H-jet and $\ell\Pgn$+V-jet analysis, respectively.
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:sbfitmlvj13TeV_a}\includegraphics[width=0.45\textwidth]{\cheight/HP_m_lvj_sb_lo-mu.pdf}}
+\subfigure[]{\label{fig:sbfitmlvj13TeV_b}\includegraphics[width=0.45\textwidth]{\cheight/HP_m_lvj_sb_lo-el.pdf}}
+\caption{Results of the fit to the \mWV distribution of the data with \mJ in the lower sideband to estimate $F_\mathrm{data, SB}^{\mathrm{W+jets}}$ for both muon (a) and electron (b) channels of the $\ell\Pgn$+V-jet analysis. Minor backgrounds are estimated from simulation, while the W+jets contribution is the result of the fit to the data.}
+\label{fig:sbfitmlvj13TeV}
+\end{figure}
+
+%%%%%%%%%%%
+\subsection{Validation of the $\alpha$ method}
+%%%%%%%%%%%
+
+To test the validity and the robustness of the data driven method for the W+jets described previously in this section, a closure test is performed.
+In this test, the background is extracted to a signal free control region that allows to check the compatibility with data for both the distribution and normalization.
+In order to achieve this, the low mass sideband defined in Table~\ref{tab:sidebands} is divided into two regions:
+$40 < \mJ < 55\GeV$, referred to as "region A" is used as sideband, while $55 < \mJ < 65\GeV$, referred to as "region B" is used as signal region.
+The W+jets background normalization is then predicted in region B by performing a fit to the \mJ distribution of the data in region A and in the upper sideband (Table~\ref{tab:sidebands}),
+while its distribution in \mlvj is extrapolated in region B with a fit of the data in region A and a suitable transfer function $\alpha_\mathrm{MC}(\mlvj)$.
+In this test, the $\alpha_\mathrm{MC}(\mlvj)$ is defined as the ratio between the simulated W+jets background distributions in \mlvj in region B and A.
+%The W+jets background normalization and \mlvj distribution is predicted in region B by performing a fit of the data in region A, following the procedure described previously in this section.
+
+Figure~\ref{fig:mj_closureTest} shows the results of the fit to the \mJ distribution of the data for $\mu\Pgn$+V-jet events inside the region A and the HSB, performed to extract the W+jets prediction inside the region B.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.5\textwidth]{\cheight/closureTest_HP_mu_mjetpruned.pdf}
+\caption{blabla}
+\label{fig:mj_closureTest}
+\end{figure}
+
+Figure~\ref{fig:mlvjSBandAlpha_closureTest_a} shows the transfer function $\alpha_\mathrm{MC}(\mlvj)$ obtained from a simultaneous fit of W+jets simulated events in the region A and in the region B, using the leveled-exponential parametrization defined in Equation~\ref{eqn:mVVfunct}. In Fig.~\ref{fig:mlvjSBandAlpha_closureTest_b}, the result of the fit to the \mlvj distribution of the data with \mJ in the lower sideband is shown for $\mu\Pgn$+V-jet events, where the W+jets shape is modelled through the same leveled-exponential function.
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:mlvjSBandAlpha_closureTest_a}\includegraphics[width=0.45\textwidth]{\cheight/closureTest_HP_mu_alpha.pdf}}
+\subfigure[]{\label{fig:mlvjSBandAlpha_closureTest_b}\includegraphics[width=0.45\textwidth]{\cheight/closureTest_HP_mu_regionA_mlvj.pdf}}
+\caption{blabla}
+\label{fig:mlvjSBandAlpha_closureTest}
+\end{figure}
+
+Finally, Fig.~\ref{fig:mlvjSR_closureTest} shows a comparison between the total predicted background, obtained through Equation~\ref{eqn:alpha_totalBkg}, and the data inside the signal free region B.
+A good agreement is found over the whole \mlvj range.
+The test has been performed for both lepton flavours for the $\ell\nu$+V-jet analysis, as well as for the $\ell\nu$+H-jet analysis where slightly different definitions for region A and B are used.
+In all the cases, consistency between the predicted background and the data is observed, thus validating the proposed strategy for the W+jets background estimation.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.5\textwidth]{\cheight/closureTest_HP_mu_regionB_mlvj.pdf}
+\caption{blabla}
+\label{fig:mlvjSR_closureTest}
+\end{figure}
+
+\FIXME{consider adding results with dijet function in the appendix}

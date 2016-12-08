@@ -1,0 +1,29 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{align*}\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(150,80)
+    \fmfleft{i1,i2} 
+    \fmfright{o1,o2,o3,o4}
+    \fmflabel{$q^\prime$}{i1} 
+    \fmflabel{$\bar{q}$}{i2} 
+    \fmflabel{$\bar{\nu}_\ell$}{o1} 
+    \fmflabel{$\ell^{-}$}{o2}
+    \fmflabel{$q$}{o4}
+    \fmflabel{$\bar{q}$}{o3}
+    \fmf{fermion}{i1,v1,i2}
+    \fmf{zigzag,label=$W^{\prime-}$,label.side=left,label.dist=10}{v1,v2} 
+    \fmf{boson,label=$Z$,label.side=left}{v2,v3}
+    \fmf{boson,label=$W^-$,label.side=right,label.dist=2.5}{v2,v4}
+    \fmf{fermion}{o3,v3}
+    \fmf{fermion}{v3,o4}
+    \fmf{fermion}{o1,v4}
+    \fmf{fermion}{v4,o2}
+    %\fmf{fermion}{o3,v3,o4} 
+    %\fmf{fermion}{o1,v4,o2} 
+  \end{fmfgraph*}
+\end{fmffile}\end{align*}
+\end{document}

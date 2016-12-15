@@ -4,11 +4,11 @@
 
 The purpose of this analysis is to infer a constraint on the existence of a new resonance decaying into diboson for a set of different signal mass hypotheses.
 The comparison between the diboson invariant mass distribution observed in data and the SM background prediction is used to check for the presence of the new resonance.
-A hypothesis test is built to decide between a null hypothesis given by the predicted SM background only against an alternative hypothesis which includes both background as well as the sought after signal.
+A hypothesis test is built to decide between a null hypothesis given by the predicted SM background only, against an alternative hypothesis which includes both background as well as the sought after signal.
 In principle one can either test the background-only hypothesis and exclude it if there is a large deviation of the data from the SM background prediction,
 or test the signal hypothesis and exclude it if there is a large deviation of the data from the expected signal model.
 In particular, if no significant deviation from the SM background prediction is observed in data, compatible with the signal hypothesis, an upper limit on 
-production cross section of such resonances is usually set, up to a certain degree of belief.
+production cross section of such signal is usually set, up to a certain degree of belief.
 %From the statistical analysis of the reconstructed diboson invariant mass, one can infer that there is 95\% confidence level (CL) that the signal $\sigma\times\cal B$ is not larger than some value $?_\mathrm{95\%}$;
 %otherwise, if the cross section was above this value, a statistically-significant excess of data would have emerged over the background.
 %If the upper limit $?_\mathrm{95\%}$ is as large as the $\sigma\times\cal B$ predicted by some specific theoretical model $?_\mathrm{th}$ or smaller, it can be inferred that a resonance of that mass is excluded at 95\% C.L..
@@ -22,39 +22,39 @@ The procedure to establish the exclusion of a given signal hypothesis is based o
 In order to construct the test statistic a likelihood function is defined as
 
 \begin{equation}\label{eqn:likelihood}
-{\cal L}( data | \mu,\theta) = \mathrm{Poisson}(data | \mu\cdot s(\theta) + b(\theta))\cdot p(\tilde{\theta}|\theta)
+{\cal L}( data | \mu,\theta) = \mathrm{Poisson}(data | \mu\cdot s(\theta) + b(\theta))\cdot p(\tilde{\theta}|\theta).
 \end{equation}
 
 In this definition, $s$ and $b$ denote the expected signal and background event yields, respectively,
-which prior to the scrutiny of the observed data entering the statistical analysis, are subject to multiple uncertainties that are handled by introducing nuisance parameters $\theta$,
-so that signal and background expectations become functions of the nuisance parameters: $s(\theta)$ and $b(\theta)$.
+which, before the scrutiny of the observed data entering the statistical analysis, are subject to multiple uncertainties that are treated by introducing nuisance parameters $\theta$,
+so that signal and background expectations depend on these parameters as $s(\theta)$ and $b(\theta)$.
 The exclusion of a signal hypothesis is generally expressed as an upper limit on the {\itshape signal strength modifier} $\mu$
-on the cross section used as input in the evaluation of the expected signal yields.
+which scales the cross section used as input in the evaluation of the expected signal yields.
 With this definition, the likelihood represents the Poisson probability of observing a certain amount of data when the expected yield is $\mu\cdot s(\theta) + b(\theta)$
 and given the probability $p(\tilde{\theta}|\theta)$ of measuring a value $\tilde{\theta}$ for the nominal nuisance parameter $\theta$.
 Note that, in this likelihood definition, ``data'' stands for a generic dataset, either experimental or a pseudo-data generated randomly.
 
-The likelihood can be either binned or unbinned. In the first case the $\mathrm{Poisson}(data | \mu\cdot s + b)$ in Equation~\ref{eqn:likelihood} is the product of Poisson probabilities
+The likelihood can be either binned or unbinned. In the first case the function $\mathrm{Poisson}(data | \mu\cdot s + b)$ in Eq.~\ref{eqn:likelihood} is the product of Poisson probabilities
 for observing $n_i$ events in each bin $i$ of the signal+background model
 
 \begin{equation}\label{eqn:binned}
 \prod_i \frac{(\mu s_{i} +b_{i})^{n_i}}{n_i!}e^{-(\mu s_i + b_i)}.
 \end{equation}
 
-For the unbinned case each even enters the calculation
+For the unbinned case each event enters the calculation as follows
 
 \begin{equation}\label{eqn:unbinned}
 k^{-1}\prod_i (\mu S f_s(x_i) + Bf_b(x_i))e^{-(\mu S + B)},
 \end{equation}
 
-where $f_s(x)$ and $f_b(x)$ are the probability density functions of signal and background of the observable $x$, while S and B are total event rates expected for signal and backgrounds.
-In this analysis the unbinned likelihood is used, where the observable $x$ coincides with the reconstructed diboson invariant mass.\\
+where $f_s(x)$ and $f_b(x)$ are the probability density functions of signal and background of the observable $x$, while S and B are the total event rates expected for signal and background.
+In this analysis the unbinned form for the likelihood is used, where the observable $x$ coincides with the reconstructed diboson invariant mass.\\
 
 To compare the compatibility of the data with the background-only and signal+background hypotheses, where the prediction for the signal is allowed to be scaled by some factor $\mu$,
 the test statistic $\tilde{q}_\mu$ is constructed based on the profile likelihood ratio as
 
 \begin{equation}\label{eqn:testStatistic}
-\tilde{q}_\mu = -2\ln\frac{{\cal L}(data | \mu,\hat{\theta}_\mu)}{{\cal L}( data | \hat{\mu},\hat{\theta})},\qquad \mathrm{with} \qquad 0 \leq \hat{\mu} \leq \mu
+\tilde{q}_\mu = -2\ln\frac{{\cal L}(data | \mu,\hat{\theta}_\mu)}{{\cal L}( data | \hat{\mu},\hat{\theta})},\qquad \mathrm{with} \qquad 0 \leq \hat{\mu} \leq \mu.
 \end{equation}
 
 Here $\hat{\theta}_\mu$ denotes the value of $\theta$ that maximizes the likelihood for the hypothesized $\mu$,
@@ -68,8 +68,8 @@ The lower constraint for $\hat{\mu}$ in the denominator excludes the possibility
 The upper constraint is introduced to avoid that data with $\hat{\mu} > \mu$ (upward fluctuations) are considered as representing less compatibility with $\mu$ than what obtained with data.
 
 The observed value of the test statistic, $\tilde{q}_\mu^\mathrm{obs}$ for the given signal strength modifier $\mu$ under test is computed,
-as well as the nuisance parameters $\hat{\theta}_0^\mathrm{obs}$ and $\hat{\theta}_\mu^\mathrm{obs}$ maximising the likelihood (Equation~\ref{eqn:likelihood}) under the background-only and signal+background hypothesis, respectively.
-Furthermore, the p.d.f.'s of the chosen test statistic $\tilde{q}_\mu$ under the signal+background hypothesis, $f(\tilde{q}_\mu|\mu,\hat{\theta}_\mu^\mathrm{obs})$,
+as well as the nuisance parameters $\hat{\theta}_0^\mathrm{obs}$ and $\hat{\theta}_\mu^\mathrm{obs}$ maximizing the likelihood under the background-only and signal+background hypothesis, respectively.
+Furthermore, the probability density functions of the chosen test statistic $\tilde{q}_\mu$ under the signal+background hypothesis, $f(\tilde{q}_\mu|\mu,\hat{\theta}_\mu^\mathrm{obs})$,
 and the background-only hypothesis, and $f(\tilde{q}_\mu|0,\hat{\theta}_0^\mathrm{obs})$, are constructed by means of ensembles of toy MC pseudo-experiments
 generated according to the same Poisson probabilities used to build the likelihood. In this process the nuisance parameters 
 are fixed to the values $\hat{\theta}_0^\mathrm{obs}$ and $\hat{\theta}_\mu^\mathrm{obs}$ obtained by fitting the observed data.
@@ -87,7 +87,7 @@ p_0 \equiv \mathrm{CL}_{b} = P(\tilde{q}_\mu \geq \tilde{q}_\mu^\mathrm{obs}|b(\
 
 The two probabilities are shown in the example in Fig.~\ref{fig:CLs-ex_a}.
 In the classical frequentist approach, the level of agreement between the data and hypothesized $\mu$ is evaluated by using the $\mathrm{CL}_{s+b}$ probability only,
-and one says that the hypothesized signal $\mu$ is excluded at 95\% C.L. if $\mathrm{CL}_{s+b} \leq 0.05$.
+and one says that the hypothesized signal $\mu$ is excluded at 95\% CL if $\mathrm{CL}_{s+b} \leq 0.05$.
 
 However, such a definition as a caveat. If the distributions of the test statistic for the signal+background and background-only hypotheses have a not negligible overlap as in the plot (c) of Fig.~\ref{fig:CLs-ex_b},
 the experiment would tend to exclude the hypothesized signal $\mu$ even if the experiment in this case has little sensitivity to discriminate it against the background.
@@ -99,13 +99,13 @@ In this approach, the level of agreement between the data and hypothesized $\mu$
 \mathrm{CL}_s = \frac{\mathrm{CL}_{s+b}}{\mathrm{CL}_b},
 \end{equation}
 
-and the hypothesized signal $\mu$ is excluded at 95\% confidence level if $\mathrm{CL}_s \leq 0.05$.
+and the hypothesized signal $\mu$ is excluded at 95\% confidence level (CL) if $\mathrm{CL}_s \leq 0.05$.
 It is straightforward to see from plot (a) of Fig.~\ref{fig:CLs-ex_b} that, if the distribution of the test statistic for the signal+background hypothesis
 is well separated from the background-only distribution, then $\mathrm{CL}_s \sim \mathrm{CL}_{s+b}$ and there is no risk of misinterpretation.
 
-In order to quote, as conventionally done, 95\% C.L. observed upper limits, the full procedure is iterated for different values of $\mu$, until $\mathrm{CL}_s = 0.05$ is found.
+In order to quote, as conventionally done, 95\% CL observed upper limits, the full procedure is iterated for different values of $\mu$, until $\mathrm{CL}_s = 0.05$ is found.
 This value of $\mu$ is denoted as $\mu_{95\%}$, and one can infer that the hypothesized resonance X$\rightarrow$WV/VH with a cross section $\mu$-times larger than the one predicted 
-by some specific theoretical model $\sigma_{th}$ used as input to the statistical analysis, is excluded at 95\% C.L..
+by some specific theoretical model $\sigma_{th}$ used as input to the statistical analysis, is excluded at 95\% CL.
 In this analysis, model-independent limits on the cross section are set by rescaling the $\mu^{95\%} = \sigma_{95\%}/\sigma_{th}$ by the input cross section in order to obtain $\sigma_{95\%}$.
 
 \begin{figure}[!htb]
@@ -131,9 +131,9 @@ are extracted from the values of the 16\% (2.5\%) and 84\% (97.5\%) quantiles.
 
 \subsection{The asymptotic approximation}\label{subsec:AsymptCLs}
 
-In order to compute the $\mathrm{CL}_s$ the sampling distributions of the test statistics are required.
-In particular, one needs the p.d.f.'s $f(\tilde{q}_\mu|\mu^\prime)$, where $\mu^\prime = 0$ or $\mu^\prime = \mu$,
-which are obtained from MC toys which requiring very expensive computational resources.
+In order to compute the $\mathrm{CL}_s$ the probability density functions of the test statistics are required.
+In particular, one needs the probability density functions $f(\tilde{q}_\mu|\mu^\prime)$, where $\mu^\prime = 0$ or $\mu^\prime = \mu$,
+which are obtained from MC toys requiring very expensive computational resources.
 An approximation for the $\mathrm{CL}_s$ method, valid in the large sample limit, also referred to as ``asymptotic approximation'' has been proposed in Ref.~\cite{AsymptCLs}
 and it is briefly described in the following.\\
 
@@ -143,7 +143,7 @@ By using the Wald approximation~\cite{10.2307/1990256} the desired distribution 
 \tilde{q}_\mu = \frac{(\mu-\hat{\mu})^2}{\sigma^2} + \mathcal{O}(1/\sqrt{N}),
 \end{equation}
 
-where $\hat{mu}$ follows a Gaussian distribution with a mean $\mu^\prime$ and standard deviation $\sigma$, and $N$ represents the data sample size.
+where $\hat{\mu}$ follows a Gaussian distribution with a mean $\mu^\prime$ and standard deviation $\sigma$, and $N$ represents the data sample size.
 For large data samples ($N\rightarrow\infty$), the $\mathcal{O}(1/\sqrt{N})$ can be neglected and it can be shown~\cite{wilks1938} that the distribution $f(\tilde{q}_\mu|\mu^\prime)$ of the test statistic $\tilde{q}_\mu$
 follows a {\itshape noncentral chi-square} distribution for one degree of freedom with noncentrality parameter
 
@@ -153,8 +153,8 @@ follows a {\itshape noncentral chi-square} distribution for one degree of freedo
 
 For the special case $\mu^\prime = \mu$ one has $\Lambda = 0$ and the test statistic is distributed as a chi-square for one degree of freedom.
 For the general case in which $\mu^\prime \neq \mu$, the standard deviation $\sigma$ of $\hat{\mu}$ has to be evaluated, which depends on the MLE estimator of the nominal nuisance parameters.
-The evaluation of $\sigma$ is greatly simplified considering a special, artificial data set that we call the ``Asimov data set'' where all statistical fluctuations are suppressed and the estimators for all parameters
-are replaced by their expectation values:
+The evaluation of $\sigma$ is greatly simplified considering a special, artificial data set, referred to as the ``Asimov data set'', where all statistical fluctuations are suppressed and the estimators for all parameters
+are replaced by their expectation values as follows:
 
 \begin{equation}
 \hat{\mu} = \mu^\prime \qquad\qquad \mathrm{and} \qquad\qquad \hat{\theta} = \theta.
@@ -163,33 +163,33 @@ are replaced by their expectation values:
 With these assumptions the test statistic $\tilde{q}_{\mu,A}$ for the Asimov dataset is given by 
 
 \begin{equation}
-\tilde{q}_{\mu,A} \approx \frac{(\mu-\mu^\prime)^2}{\sigma^2} = \Lambda
+\tilde{q}_{\mu,A} \approx \frac{(\mu-\mu^\prime)^2}{\sigma^2} = \Lambda.
 \end{equation}
 
-That is, from the Asimov data set one obtains an estimate of the noncentrality parameter $\Lambda$ that characterizes the distribution $f(\tilde{q}_\mu|\mu^\prime)$.
-Equivalently, the above equation can be used to obtain the variance $\sigma^2$ which characterizes the distribution of $\hat{mu}$, namely,
+From the Asimov data set one therefore obtains an estimate of the noncentrality parameter $\Lambda$ that characterizes the distribution $f(\tilde{q}_\mu|\mu^\prime)$.
+Equivalently, the above equation can be used to obtain the variance $\sigma^2$ which characterizes the distribution of $\hat{\mu}$, namely,
 
 \begin{equation}
 \sigma_A^2 = \frac{(\mu-\mu^\prime)^2}{\tilde{q}_{\mu,A}},
 \end{equation}
 
-and the distribution obtained by using $\sigma_A^2$ has a median given by the corresponding Asimov value $\tilde{q}_{\mu,A}$. 
-Using these formulae asymptotic relations are derived which are easily solved for the observed upper limits with the $\mathrm{CL}_s$ method,
+so that the distribution obtained by using $\sigma_A^2$ has a median given by the corresponding Asimov value $\tilde{q}_{\mu,A}$. 
+Using these formulae, asymptotic relations are derived which are easily solved for the observed upper limits with the $\mathrm{CL}_s$ method,
 as well as for the expected median and error bands.
 
 \subsection{Quantifying an excess of events}~\label{subsec:pvalue}
 
 The presence of the signal is quantified by the background-only p-value, i.e. the probability for the background to fluctuate
 and give an excess of events as large or larger than the observed one.
-As for the upper limits, this evaluation requires defining a test statistic and the construction of its sampling distribution.
-For a given resonance mass hypothesis $M_X$, the test statisti used in this case is $\tilde{q}_0$:
+As for the upper limits, this evaluation requires defining a test statistic and the construction of its probability density function.
+For a given resonance mass hypothesis $M_X$, the test statistic used in this case is $\tilde{q}_0$, defined as
 
 \begin{equation}
 \tilde{q}_0 = -2\ln\frac{{\cal L}(data | 0,\hat{\theta}_0)}{{\cal L}( data | \hat{\mu},\hat{\theta})},\qquad \mathrm{with} \qquad \hat{\mu} \geq 0.
 \end{equation}
 
 %The constraint $\hat{\mu} \geq 0$ gives an accumulation of the test statistic at zero for events with downward fluctuations, since we are not interested in interpreting a deficit of events with respect to the expected background on an equal footing with an excess.
-The sampling distribution $f(\tilde{q}_0|0,\hat{\theta}_0^{obs})$ is built by generating toy MC pseudo-data under the assumption of the background-only hypothesis.
+The probability density function $f(\tilde{q}_0|0,\hat{\theta}_0^{obs})$ is built by generating toy MC pseudo-data under the assumption of the background-only hypothesis.
 From this distribution, the p-value corresponding to a given experimental observation $q_0^{obs}$ is evaluated:
 
 \begin{equation}
@@ -199,20 +199,20 @@ p_0 = P(\tilde{q}_0 \geq \tilde{q}_0^\mathrm{obs}|b(\hat{\theta}_0^\mathrm{obs})
 This probability is converted into a {\itshape significance}, also referred to as {\itshape Z value}, as follows
 
 \begin{equation}
-Z = \Phi^{-1} (1-p_0)
+Z = \Phi^{-1} (1-p_0).
 \end{equation}
 
-A significance of 5$\sigma$, corresponding to a p-value of 2.87$\times$10$^{-7}$ is conventionally used in high energy physics to claim a discovery,
+A significance of 5$\sigma$, corresponding to a p-value of 2.87$\times$10$^{-7}$, is conventionally used in high energy physics to claim a discovery,
 and 3$\sigma$ for an evidence.
 
 It can be demonstrated that in the asymptotic approximation (Section~\ref{subsec:AsymptCLs}), the likelihood ratio test statistic $\tilde{q}_0$
 follows a chi-square distribution for one degree of freedom, and a fair estimate of the p-value and of the significance can be obtained from the observed value $\tilde{q}_0^\mathrm{obs}$ itself,
-without the need for generating pseudo-data
+without the need for generating pseudo-data, as follows
 
 \begin{equation}
 \begin{gathered}
 p_0 = \frac{1}{2} [ 1 - \mathrm{erf}(\sqrt{\tilde{q}_0^\mathrm{obs}/2}) ] \\
-Z = \sqrt{\tilde{q}_0^\mathrm{obs}}
+Z = \sqrt{\tilde{q}_0^\mathrm{obs}}.
 \end{gathered}
 \end{equation}
 
@@ -228,7 +228,7 @@ In the asymptotic approximation the trial factor grows linearly with the local s
 that is related to the ratio between the mass range under consideration divided by its resolution. In particular, it can be shown that
 
 \begin{equation}\label{eqn:trials}
-trial\# = \frac{p_{global}}{p_{local}} \approx \frac{1}{3}\frac{mass\ range}{mass\ resolution}Z_{local}
+trial\# = \frac{p_{global}}{p_{local}} \approx \frac{1}{3}\frac{mass\ range}{mass\ resolution}Z_{local}.
 \end{equation}
 
 The trial factor is best estimated through MC methods as it will be shown in Section~\ref{sec:signif8TeV}. However, a good agreement with the equation above is obtained.

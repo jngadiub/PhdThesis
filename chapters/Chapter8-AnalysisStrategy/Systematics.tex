@@ -9,8 +9,8 @@ observed in the data. %The uncertainties described below are all included as nui
 
 \subsection{Systematic uncertainties in the background estimation}\label{subsec:uncBkg}
 
-The uncertainty on the W+jets background normalization is mainly due to the uncertainties on the parameters extracted from the fit of the data in the pruned jet mass sideband. This contribution is statistical in nature since it depends on the amount of data in the \mJ sideband regions, and it is evaluated varying the fit parameters from the final fit values by random amounts sampled from the covariance matrix.
-An additional effect due to the difference arising from alternative parametrization of the W+jets \mJ distribution is taken into account and added in quadrature to the pure statistical contribution. This contribution is found to constitute up to 15\% of the total uncertainty. The total uncertainty on the W+jets yields remains below 10\% in the $\ell\Pgn$+V-jet channel, while uncertainties above 40\% are obtained for the $\ell\Pgn$+H-jet channel where the amount of data in the sidebands is largely reduced by the tight b tagging requirements.
+The uncertainty in the W+jets background normalization is mainly due to the uncertainties in the parameters extracted from the fit of the data in the pruned jet mass sideband. This contribution is statistical in nature since it depends on the amount of data in the \mJ sideband regions, and it is evaluated varying the fit parameters from the final fit values by random amounts sampled from the covariance matrix.
+An additional effect due to the difference arising from alternative parametrization of the W+jets \mJ distribution is taken into account and added in quadrature to the pure statistical contribution. This contribution is found to constitute up to 15\% of the total uncertainty. The total uncertainty on the W+jets yields remains below 10\% in the $\ell\Pgn\qqbar$ channel, while uncertainties above 40\% are obtained for the $\ell\Pgn\bbbar$ channel where the amount of data in the sidebands is largely reduced by the tight b tagging requirements.
 %lv+jet
 %mu HPW 5.1% - el HPW 7.3% - mu HPZ 8.4% - el HPZ 9.1%
 %contribution from shape:
@@ -18,44 +18,46 @@ An additional effect due to the difference arising from alternative parametrizat
 %lv+Hjet
 %mu 41.9% - el 59%
 
-As described in Section~\ref{subsec:wjetshape} the extrapolated background shape in the signal region is computed from the product of $F_\mathrm{data, SB}^{\mathrm{W+jets}}(\mlvj)$ and $\alpha_\mathrm{MC}(\mlvj)$.
-Thus, the shape uncertainty comes from both uncertainties in the W+jets \mlvj shape obtained from the fit of the data in the lower \mJ sideband region and in the modelling of the transfer function $\alpha_\mathrm{MC}(\mlvj)$.
+As described in Section~\ref{subsec:wjetshape} the extrapolated background shape in the signal region is computed from the product of $F_\mathrm{data, SB}^{\mathrm{W+jets}}$ and $\alpha_\mathrm{MC}$.
+Thus, the shape uncertainty comes from both uncertainties in the W+jets \mlvj shape obtained from the fit of the data in the lower \mJ sideband region and in the modelling of the transfer function $\alpha_\mathrm{MC}$.
 Both contributions are mainly statistical in nature, as they are driven by the available amount of data in the sideband and by the number of simulated W+jets events passing the analysis requirements, respectively.
 %The first contribution depends on the amount of data in the lower sideband region and it is estimated from the covariance matrix of the fit.
 These effects are estimated from the covariance matrix of the fit and included in the final limit and p-value calculations after a procedure which diagonalizes the matrix to decorrelate the fitted parameters.
 In this procedure, the new parameters are defined in such a way to be centered at zero and with error equal to unity. The background fit parameterization is then redefined as a function of these new, uncorrelated parameters.
-This new fit function together with the uncertainties on the fitted parameter is used to describe the background distribution in the limit and p-value calculations explained in Section~\ref{sec:stat}.
-As shown in Fig.~\ref{fig:alphasWV_13TeV}, the $\alpha_\mathrm{MC}(\mlvj)$ presents variations due to the choice of the parametrization used to model the W+jets \mlvj distribution.
-Previous studies showed that additional variations of about the same size are due to the use of different parton showering algorithms~\cite{Khachatryan:2014gha}. This effect has been evaluated comparing the $\alpha$ obtained with simulated samples with parton showering implemented through \HERWIG{++} and \PYTHIA{}. These variations are found to be equal or slightly smaller than the statistical uncertainties on the $\alpha$, and hence the associated systematic effect is taken into account by enlarging the errors on the decorellated fit parameters by a factor $\sqrt{2}$. This is sufficiently conservative to cover all the shape variations.
+This new fit function together with the uncertainties in the fitted parameter is used to describe the background distribution in the limit and p-value calculations explained in Section~\ref{sec:stat}.
 
-In a similar way, variations in the $F_\mathrm{data, SB}^{\mathrm{W+jets}}(\mlvj)$ due to the same effects, are as well taken into account.
+Additionally, the $\alpha_\mathrm{MC}$ (Fig.~\ref{fig:alphasWV_13TeV}) is affected by variations due to the choice of the parametrization used to model the W+jets distribution.
+Previous studies showed that additional variations of about the same size are due to the use of different parton showering algorithms~\cite{Khachatryan:2014gha}. This effect has been evaluated comparing the $\alpha$ obtained with simulated samples with parton showering implemented through \HERWIG{++} and \PYTHIA{}. All these variations are found to be equal or slightly smaller than the statistical uncertainties on the $\alpha$, and hence the associated systematic effect is taken into account by enlarging the errors on the decorrelated fit parameters by a factor $\sqrt{2}$. This is sufficiently conservative to cover all the shape variations.
+In a similar way, variations in the $F_\mathrm{data, SB}^{\mathrm{W+jets}}$ due to the same effects, are as well taken into account.
 
-The uncertainties in the W+jets normalization are treated as uncorrelated among the different lepton flavor channels and $\mJ$ mass categories while the uncertainties on the W+jets \mlvj distribution are partially correlated
+The uncertainties in the W+jets normalization are treated as uncorrelated among the different lepton flavor channels and $\mJ$ categories, while the uncertainties in the W+jets distribution are partially correlated
 according to the following scheme:
 
 \begin{itemize}
-\item uncertainties on the $F_\mathrm{data, SB}^{\mathrm{W+jets}}(\mlvj)$ parameters are correlated;
-\item uncertainties on the $\alpha_\mathrm{MC}(\mlvj)$ parameters are uncorrelated.
+\item uncertainties in the $F_\mathrm{data, SB}^{\mathrm{W+jets}}$ parameters are correlated;
+\item uncertainties in the $\alpha_\mathrm{MC}$ parameters are uncorrelated.
 \end{itemize}
 
-This solution takes into account the fact that in the different \mJ categories the same data are used to estimate the W+jets \mlvj distribution in the sideband, while the transfer function is used to predict the shape in the two orthogonal signal regions given defined by the categories.\\
+This solution takes into account the fact that in the different \mJ categories the same data in the sideband are used to estimate the W+jets distribution, while the transfer function is used to predict the shape in the two orthogonal signal regions defined by the categories.\\
 
-The systematic uncertainty in the normalization of the \ttbar/single top quark backgrounds is driven by the uncertainties in the data-to-simulation scale factors estimated in the top quark enriched control sample (see Section~\ref{sec:ttbar}). In the $\ell\Pgn$+V-jet analysis these uncertainties are measured to be 4.6\% and 8.4\% in the muon and electron channel, respectively. For the $\ell\Pgn$+H-jet analysis, this uncertainty amounts to 5.6\%.
+The systematic uncertainty in the normalization of the \ttbar/single top quark backgrounds is driven by the uncertainties in the data-to-simulation scale factors estimated in the top quark enriched control sample (Section~\ref{sec:ttbar}). In the $\ell\Pgn\qqbar$ channel these uncertainties are measured to be 4.6\% and 8.4\% in the muon and electron channel, respectively. For the $\ell\Pgn\bbbar$ channel, this uncertainty amounts to 5.6\%.
 %For the single top quark background an additional systematic uncertainty of 5\% in the NLO cross section calculation is assigned.
-For the single top quark background an additional systematic uncertainty related to the cross section calculations is assigned to be 15\% and 5\%, for the 8 and 13\TeV analysis respectively~\cite{Chatrchyan:2012ep,Kant:2014oha}.
+For the single top quark background an additional systematic uncertainty related to the cross section calculations is assigned to be 15\% and 5\%, for the 8 and 13\TeV data analysis respectively~\cite{Chatrchyan:2012ep,Kant:2014oha}.
 
 The \ttbar background distribution in \mlvj is taken from simulation and this choice is found to be reasonable given the
-agreement between data and simulation in the top quark enriched control sample as shown in Section~\ref{sec:ttbar}.
+agreement between data and simulation in the top quark enriched control sample (Fig.~\ref{fig:tt-mtop8TeV_a}).
 However, previous studies~\cite{Khachatryan:2014gha} showed that variations in the shape occur due to the choices of regularization or factorization scales (varied up and down by a factor of 2),
-to the matching scales in the \MADGRAPH{} simulation, and to different generators (\MADGRAPH{} or \textsc{POWHEG}).
-In order to cover all these effects, the errors on the decorellated fit parameters for the \ttbar background distribution in \mlvj is enlarged by a factor of 2.
+to the matching scales in the \MADGRAPH{} simulation, and to different generators (\MADGRAPH{} or \POWHEG{}).
+In order to cover all these effects, the errors on the decorellated fit parameters for the \ttbar distribution is enlarged by a factor of 2.\\
 
-The systematic uncertainties in the diboson normalization is due to the uncertainty in the inclusive cross sections, which are assigned to be 10\%~\cite{Chatrchyan:2013oev} and 3\%~\cite{Gehrmann:2014fva} for the 8 and 13\TeV analysis, respectively.
+The systematic uncertainties in the diboson background normalization is due to the uncertainty in the inclusive cross sections, which are assigned to be 10\%~\cite{Chatrchyan:2013oev} and 3\%~\cite{Gehrmann:2014fva} for the 8 and 13\TeV data analysis, respectively.
 %EXO-14-010: The systematic uncertainties in the WW, WZ, and ZZ inclusive cross sections are assigned to be 10%, taken from the relative difference in the mean value between the CMS WW cross section measurement at $\sqrt{s} = 8\TeV$ and the SM expectation~\cite{www.arxiv.org/abs/1301.4698}.
 %EXO-13-009 and Raffaele say 20% and cite same reference.
-For the $\ell\Pgn$+V-jet analysis, the uncertainty in the diboson background normalization is as well due to the uncertainty of 3\% in the measured data-to-simulation scale factors for the V tagging efficiency derived in the top quark enriched control sample as described in Section~\ref{sec:vtagging}.
+For the $\ell\Pgn\qqbar$ channel, the uncertainty in the diboson background normalization is as well due to the uncertainty of 3\% in the measured data-to-simulation scale factors for the V tagging efficiency derived in the top quark enriched control sample (Section~\ref{sec:vtagging}).\\
 
-Additional source of systematic uncertainties in the background normalization are due to the uncertainty in the integrated luminosity, and in the measured data-to-simulation scale factors for the efficiency of lepton trigger and identification, described in the following section. A summary of the systematic uncertainties in the normalization of the predicted background is provided in Tables~\ref{tab:uncBkg8TeV} and~\ref{tab:uncBkg13TeV} for the 8 and 13\TeV analysis, respectively.
+Additional sources of systematic uncertainties in the background normalization are due to the uncertainty in the integrated luminosity, and in the measured data-to-simulation scale factors for the efficiency of lepton trigger and identification, described in the following section.
+
+A summary of the systematic uncertainties in the normalization of the predicted background is provided in Tables~\ref{tab:uncBkg8TeV} and~\ref{tab:uncBkg13TeV} for the $\ell\nu\qqbar$ and $\ell\nu\bbbar$ analysis channel, respectively.
 
 \begin{table}[!htb]
 \begin{center}
@@ -71,7 +73,7 @@ Lepton identification ($\mu$/e) & -           & 1\% / 3\% & 1\% / 3\% & 1\% / 3\
 \hline
 \end{tabular}
 \end{center}  
-\caption{Summary of the systematic uncertainties in the normalization of the predicted background in the $\ell\Pgn$+H-jet analysis at 8\TeV.}
+\caption{Summary of the systematic uncertainties in the normalization of the predicted background in the $\ell\Pgn\bbbar$ analysis at 8\TeV.}
 \label{tab:uncBkg8TeV}
 \end{table}
 
@@ -90,50 +92,51 @@ Lepton identification ($\mu$/e) & -           & 1\% / 3\% & 1\% / 3\% & 1\% / 3\
 \hline
 \end{tabular}
 \end{center}  
-\caption{Summary of the systematic uncertainties in the normalization of the predicted background in the $\ell\Pgn$+V-jet analysis at 13\TeV.}
+\caption{Summary of the systematic uncertainties in the normalization of the predicted background in the $\ell\Pgn\qqbar$ analysis at 13\TeV.}
 \label{tab:uncBkg13TeV}
 \end{table}
 
 \subsection{Systematic uncertainties in the signal prediction}\label{subsec:uncSig}
 
 Systematic uncertainties affecting the predicted signal efficiency (or normalization) and \mlvj distribution arise from several sources as described in the following and summarized in Tables~\ref{tab:sigUnc8TeV} and~\ref{tab:sigUnc13TeV}.
-The effect of each source is evaluated for each considered simulated signal hypothesis as a function of the resonance mass.
+The effect of each source is evaluated for each considered simulated signal hypothesis as a function of the resonance mass.\\
 
 %vtagging sf and mJ scale/resolution
-One the primary sources affecting the signal normalization for the $\ell\Pgn$+V-jet channel is due to uncertainties in data-to-simulation scale factors for the V tagging efficiency, derived from top quark enriched control sample as described in Section~\ref{sec:vtagging}. These uncertainties include separately the uncertainty of 3\% on the scale factor measured in \ttbar events with an average \pt $\approx$ 200\GeV, and the uncertainty due to the extrapolation of the scale factor to higher momenta, which is assigned to be 6--10\% depending on the signal mass. Additional uncertainties are assigned due to the pruned jet mass scale and resolution measured in \ttbar events (Table~\ref{tab:Wmass13TeV}). These are computed by rescaling or smearing the \mJ value according to the uncertainties in the respective \mJ scale or resolution. The selection efficiencies are recalculated on these modified events, with the resulting changes taken as systematic uncertainties that depend on the resonance mass.
+One the primary sources affecting the signal normalization for the $\ell\Pgn\qqbar$ channel is due to uncertainties in data-to-simulation scale factors for the V tagging efficiency, derived from top quark enriched control sample as described in Section~\ref{sec:vtagging}. These uncertainties include separately the uncertainty of 3\% on the scale factor measured in \ttbar events with an average \pt $\approx$ 200\GeV, and the uncertainty due to the extrapolation of the scale factor to higher momenta, which is assigned to be 6--10\% depending on the signal mass. Additional uncertainties are assigned due to the pruned jet mass scale and resolution measured in \ttbar events (Table~\ref{tab:Wmass13TeV}). These are computed by rescaling or smearing the \mJ value according to the uncertainties in the respective \mJ scale or resolution. The selection efficiencies are recalculated on these modified events, with the resulting changes taken as systematic uncertainties that depend on the resonance mass.
 
 %htagging (btagging + mJ scale/resolution)
-In a similar way, systematic uncertainties are assigned in the $\ell\Pgn$+H-jet due to the uncertainty in the H tagging efficiency. This contribution arises from both uncertainties in the data-to-simulation scale factors for the pruned jet mass scale and resolution, derived from the top quark enriched control sample with 8\TeV data (Table~\ref{tab:Wmass8TeV}), and for b-tagged jet identification efficiencies (Section~\ref{subsec:bjets}). These sources introduce a systematic uncertainty in the mass tagging and b tagging of the Higgs boson of 2--10\% and 2--8\%, respectively, depending on the signal mass.
+In a similar way, systematic uncertainties are assigned in the $\ell\Pgn\bbbar$ channel due to the uncertainty in the H tagging efficiency. This contribution arises from both uncertainties in the data-to-simulation scale factors for the pruned jet mass scale and resolution, derived from the top quark enriched control sample with 8\TeV data, and for b-tagged jet identification efficiencies (Section~\ref{subsec:bjets}). These sources introduce a systematic uncertainty in the mass tagging and b tagging of the Higgs boson of 2--10\% and 2--8\%, respectively, depending on the signal mass.\\
 
 %jes/jer + lepton momentum/energy scale and resolution
 The accuracy on energy and momentum measurements for leptons and jets represents an important source of systematic uncertainties in the signal efficiency.
 In particular, the muon momentum scale and resolution, the electron energy scale and resolution, and the jet energy scale and resolution are considered.
 The event selection is applied to the signal samples after varying the lepton four-momenta within one standard deviation of the corresponding uncertainty
 in the muon momentum scale~\cite{Chatrchyan:2012xi} or electron energy scale~\cite{Chatrchyan:2013dga}, or applying an appropriate Gaussian momentum/energy smearing in case of resolution uncertainties.
-The same procedure is also applied for the jet four-momenta using the corresponding energy scale and resolution uncertainties (Section~\ref{subsec:jetsreco}).
-In this process, variations in the lepton and jet four-momenta are propagated consistently to the \VEtmiss vector.
+The same procedure is also applied for the jet four-momenta using the corresponding energy scale and resolution uncertainties.
+In this process, variations in the lepton and jet four-momenta are propagated consistently to the \ptvecmiss vector.
 The signal efficiency is then recalculated using modified lepton and jet four-momenta separately for each source of systematic uncertainties.
 The largest relative change in the signal efficiency compared to the default value is taken as the systematic uncertainty for that specific source.
-The induced relative migration among V jet mass categories is evaluated for the $\ell\Pgn$+V-jet channel, but do not affect the overall signal efficiency. The muon, electron, and jet uncertainties are assumed to be uncorrelated. 
-Finally, the resulting changes on the reconstructed resonances are propagated on the reconstructed \mlvj signal shape, resulting in a small effect on both peak position and width of the Gaussian core. 
+The induced relative migration among V jet mass categories is evaluated for the $\ell\Pgn\qqbar$ channel, but do not affect the overall signal efficiency. The muon, electron, and jet uncertainties are assumed to be uncorrelated. 
+Finally, the resulting changes on the reconstructed resonances are propagated on the reconstructed \mlvj signal distribution, resulting in a small effect on both peak position and width of the Gaussian core.\\ 
 %Raffaele: JES/JER 3% on the width - unclustered energy scale 1-3% on the width - lepton scales and resolutions < 1% on the peak - JES up to 1.5% on the peak
 %EXO-13-009 same as Raffaele except: The uncertainty in the peak position of the signal is estimated to be less than 1%.
 %WH: same as EXO-13-009
 %WV 13TeV: JES mean 1.3% - JES width 2--3% - JER mean 0.1 - JER width 4%
 
 %lepton trigger/identification 
-The systematic uncertainties in the lepton trigger, identification, and isolation efficiencies are derived using a dedicated T\&P analysis in Z$\rightarrow\ell^+\ell^-$ events.
+The systematic uncertainties in the lepton trigger, identification, and isolation efficiencies are derived using a dedicated T\&P analysis in $\PZ\rightarrow\ell^+\ell^-$ events.
 For both analysis channels, an uncertainty of 1\% is assigned to the trigger efficiency for both lepton flavors,
-while for lepton identification and isolation efficiency, the systematic uncertainty is estimated to be 1\% for the muon and 3\% for electron flavors.
+while for lepton identification and isolation efficiency, the systematic uncertainty is estimated to be 1\% for the muon and 3\% for electron flavors.\\
 
 %lumi and PDFs
-The 2.7\% and 2.6\% uncertainty in the integrated luminosity affects to the normalization of both signal and backgrounds in the $\ell\Pgn$+V-jet and $\ell\Pgn$+H-jet, respectively, as obtained in measurements performed for the 2015 and 2012 data taking periods~\cite{CMS-PAS-LUM-15-001,CMS:LUM13001}. 
-For the $\ell\Pgn$+V-jet channel, uncertainties on the signal yield due to variations in the parton distribution function and the choice of factorization ($\mu_{f}$) and renormalization ($\mu_{r}$) scales are also taken into account.
-The PDF uncertainties are evaluated using the NNPDF 3.0~\cite{Ball:2011mu} PDFs.
+The 2.7\% and 2.6\% uncertainty in the integrated luminosity affects to the normalization of both signal and backgrounds in the $\ell\Pgn\qqbar$ and $\ell\Pgn\bbbar$ channel, respectively, as obtained in measurements performed for the 2015 and 2012 data taking periods~\cite{CMS-PAS-LUM-15-001,CMS:LUM13001}. 
+
+For the $\ell\Pgn\qqbar$channel, uncertainties on the signal yield due to variations in the parton distribution function and the choice of factorization ($\mu_{f}$) and renormalization ($\mu_{r}$) scales are also taken into account.
+The PDF uncertainties are evaluated using the NNPDF 3.0~\cite{Ball:2011mu} PDF set.
 The uncertainty related to the choice of $\mu_{f}$ and $\mu_{r}$ scales is evaluated following the proposal in Refs.~\cite{Cacciari:2003fi,Catani:2003zt} by varying the default choice of scales in the following 6 combinations of factors:
 $(\mu_{f}$, $\mu_{r})$ $\times$ $(1/2, 1/2)$, $(1/2, 1)$, $(1,1/2)$, $(2, 2)$, $(2, 1)$, and $(1, 2)$.
 The uncertainty in the signal cross section from the choice of PDFs and of factorization and renormalization scales ranges from 4 to 77\%, and from 1 to 22\%, respectively, depending on the resonance mass, particle type and its production mechanism.
-For the $\ell\Pgn$+H-jet channel, only the impact of the proton PDF uncertainties on the signal efficiency is evaluated with the PDF4LHC prescription~\cite{Botje:2011sn,Alekhin:2011sk}, using the MSTW2008~\cite{MSTW} and NNPDF2.1~\cite{NNPDF} PDF sets. This effect is found to be $< 0.5\%$.
+For the $\ell\Pgn\bbbar$ channel, only the impact of the proton PDF uncertainties on the signal efficiency is evaluated with the PDF4LHC prescription~\cite{Botje:2011sn,Alekhin:2011sk}, using the MSTW2008~\cite{MSTW} and NNPDF 2.1~\cite{NNPDF} PDF sets. This effect is found to be $< 0.5\%$.
 
 %pileup
 Finllay, the systematic uncertainty due to the modelling of pileup is estimated by reweighting the signal simulation samples such that the distribution of the number of interactions per bunch crossing is shifted according to the uncertainty in the inelastic proton-proton cross section compared with that found in data. This contribution is found to be 0.5\% in both channels.
@@ -141,7 +144,7 @@ Finllay, the systematic uncertainty due to the modelling of pileup is estimated 
 %An additional systematic, affecting the normalization of non data driven background, is repre-sented by the uncertainty in the data-to-simulation scale factors for b-jet identification, derived following [125].
 
 \begin{table}[!htb]
-\caption{Summary of the signal systematic uncertainties for the $\ell\Pgn$+H-jet analysis and their impact on the event yield in the signal region and on the reconstructed \mWH shape (mean and width) for both muon and electron channels.}
+\caption{Summary of the systematic uncertainties in the signal prediction for the $\ell\Pgn\bbbar$ analysis channel and their impact on the event yield in the signal region and on the reconstructed \mWH shape (mean and width) for both muon and electron channels.}
 \centering
 \begin{tabular}{lccc}
 Source                                   & Relevant quantity          & Uncertainty (\%)\\
@@ -173,8 +176,7 @@ Lepton \pt scale                        & Resonance shape (width)	 & 2.5\\
 \end{table}
 
 \begin{table}[!htb]
-\caption{Summary of the signal systematic uncertainties for the $\ell\Pgn$+V-jet analysis and their impact on the event yield in the signal region and on the reconstructed \mWV shape (mean and width) for both muon and electron channels.
-The last uncertainty results in migrations between event categories, but does not affect the overall signal efficiency.}
+\caption{Summary of the systematic uncertainties in the signal prediction for the $\ell\Pgn\qqbar$ analysis and their impact on the event yield in the signal region and on the reconstructed \mWV shape (mean and width) for both muon and electron channels. The last uncertainty results in migrations between event categories, but does not affect the overall signal efficiency.}
 \centering
 \begin{tabular}{lccc}
 Source                                   & Relevant quantity          & Uncertainty (\%)\\

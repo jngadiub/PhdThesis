@@ -2,20 +2,26 @@
 \chapter{Analysis strategy}\label{ch:strategy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\section{Final event selection and categorization}
+This chapter describes in details the strategy followed in this search, that starting from the physics objects and identification algorithms described in the previous chapters, leads to the final results of the analysis.
+Although preliminary selections on the objects expected in the final state have already been discussed, tighter requirements and a categorization of the events are applied as described in Section~\ref{sec:finalselection} to maximize the analysis sensitivity to the signals under study. The final discriminating observable used to search for the signal is represented by the invariant mass of the diboson system. In fact, a possible signal would appear as a localized excess of data in one of the bins on the top of a smooth background. An accurate description of the expected background and signal distributions is therefore fundamental. A background estimation method for the main W+jets component, which makes use of data in sideband regions is used and described in Section~\ref{sec:alpha}. Another important source of background is represented by top quark production, which is estimated from data in a dedicated control region as discussed in Section~\ref{sec:ttbar}. The background model together with the signal model presented in Section~\ref{sec:signalModel} is used to perform a maximum likelihood fit of the data in the statistical analysis.
+The systematic uncertainties in the signal and background predictions discussed in Section~\ref{sec:systUnc} are treated as nuisance parameters in the statistical interpretation.
+Finally, Section~\ref{sec:stat} describes the standard procedure for the statistical test of the new signal hypothesis commonly used by LHC experiments and originally developed for the Higgs boson search.
+The final results are presented in the next chapters.
+
+%\section{Final event selection and categorization}\label{sec:finalselection}
  \input{chapters/Chapter8-AnalysisStrategy/EventSelection.tex}
- 
-%\section{Modelling of top quark production}
- \input{chapters/Chapter8-AnalysisStrategy/TopQuarkBackground.tex}
- 
- %\section{W+jets background estimate with $\alpha$ ratio method}
+  
+ %\section{W+jets background estimate with $\alpha$ ratio method}\label{sec:alpha}
  \input{chapters/Chapter8-AnalysisStrategy/AlphaMethod.tex}
+ 
+ %\section{Modelling of top quark production}\label{sec:ttbar}
+ \input{chapters/Chapter8-AnalysisStrategy/TopQuarkBackground.tex}
  
 %\section{Signal modeling}\label{sec:signalModel}
  \input{chapters/Chapter8-AnalysisStrategy/SignalModeling.tex}
  
- %\section{Systematic uncertainties}
+ %\section{Systematic uncertainties}\label{sec:systUnc}
  \input{chapters/Chapter8-AnalysisStrategy/Systematics.tex}
 
-%\section{Testing new resonance hypothesis}
+%\section{Testing new resonance hypothesis}\label{sec:stat}
  \input{chapters/Chapter8-AnalysisStrategy/Statistics.tex}

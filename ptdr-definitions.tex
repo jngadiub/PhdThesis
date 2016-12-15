@@ -66,13 +66,13 @@
 \providecommand{\TOPREX} {\textsc{TopReX}\xspace}
 \providecommand{\XDAQ} {{\textsc{xdaq}}\xspace}
 
-%  Experiments
+%%%%%%%%%% Experiments %%%%%%%%%%%%%%%%%%
+
 \newcommand {\DZERO}{D\O\xspace}     %etc.
 
+%%%%%%%%%% Measurements and units %%%%%%%%%%%%%%%%%%
 
-% Measurements and units...
-
-\newcommand{\de}{\ensuremath{^\circ}}
+\newcommand{\de}{\ensuremath{^\circ}\xspace}
 \newcommand{\ten}[1]{\ensuremath{\times \text{10}^\text{#1}}}
 \newcommand{\unit}[1]{\ensuremath{\text{\,#1}}\xspace}
 \newcommand{\mum}{\ensuremath{\,\mu\text{m}}\xspace}
@@ -109,107 +109,98 @@
 \newcommand{\LHigh}  {\ensuremath{\mathcal{L}=\text{10}^\text{34}\,\text{cm}^\text{$-$2}\,\text{s}^\text{$-$1}}\xspace}
 \newcommand{\hilumi} {\ensuremath{\mathcal{L}=\text{10}^\text{34}\,\text{cm}^\text{$-$2}\,\text{s}^\text{$-$1}}\xspace}
 
-% Some usual physics terms
 
-
-% SM (still to be classified)
+%%%%%%%%%% Some usual physics terms/symbols %%%%%%%%%%%%%%%%%%
 
 \newcommand{\kt}{\ensuremath{k_{\mathrm{T}}}\xspace}
+\newcommand{\wangle}{\ensuremath{\sin^{2}\theta_{\text{eff}}^\text{lept}(M^2_\mathrm{Z})}\xspace}
+\newcommand{\stat}{\ensuremath{\,\text{(stat.)}}\xspace}
+\newcommand{\syst}{\ensuremath{\,\text{(syst.)}}\xspace}
+\newcommand{\AFB}{\ensuremath{A_\text{FB}}\xspace}
+\newcommand{\MD}{\ensuremath{{M_\mathrm{D}}}\xspace}% ED mass
+\newcommand{\Mpl}{\ensuremath{{M_\mathrm{Pl}}}\xspace}% Planck mass
+\newcommand{\Rinv} {\ensuremath{{R}^{-1}}\xspace}
+
+\providecommand{\Em}{\ensuremath{E\hspace{-0.6em}/}\xspace}
+\providecommand{\Pm}{\ensuremath{p\hspace{-0.5em}/}\xspace}
+\providecommand{\PTm}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
+\newcommand{\PT}{\ensuremath{p_{\mathrm{T}}}\xspace}
+\newcommand{\pt}{\ensuremath{p_{\mathrm{T}}}\xspace}
+\newcommand{\Vpt}{\ensuremath{{\vec p}_{\mathrm{T}}}\xspace}
+\newcommand{\ET}{\ensuremath{E_{\mathrm{T}}}\xspace}
+\newcommand{\et}{\ensuremath{E_{\mathrm{T}}}\xspace}
+\newcommand{\HT}{\ensuremath{H_{\mathrm{T}}}\xspace}
+\newcommand{\Etmiss}{\ensuremath{E_{\mathrm{T}\!{\rm miss}}}}
+\newcommand{\ETm}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
+\newcommand{\MET}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
+\newcommand{\ETmiss}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
+\newcommand{\VEtmiss}{\ensuremath{{\vec E}_{\mathrm{T}}^{\;\text{miss}}}\xspace}
+\newcommand{\ptvecmiss}{\ensuremath{{\vec p}_{\mathrm{T}}^{\kern1pt\text{miss}}}\xspace}
+\providecommand{\PTslash}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
+\providecommand{\ETslash}{\ensuremath{E_{\mathrm{T}}\hspace{-1.1em}/}\xspace}
+
+%%%%%%%%%% SM particles %%%%%%%%%%%%%%%%%%
+
 \newcommand{\BC}{\ensuremath{{B_{\mathrm{c}}}}\xspace}
-\newcommand{\bbarc}{\ensuremath{{\overline{b}c}}\xspace}
-\newcommand{\bbbar}{\ensuremath{{\mathrm{b}\overline{\mathrm{b}}}}\xspace}
-\newcommand{\ccbar}{\ensuremath{{c\overline{c}}}\xspace}
+\newcommand{\JPsi}{\ensuremath{{J}\hspace{-.08em}/\hspace{-.14em}\psi}\xspace}
+\providecommand{\cPJgy}{\JPsi} % J/Psi (no mass)
+\newcommand{\bspsiphi}{\ensuremath{B_s \to \JPsi\, \phi}\xspace}
+\providecommand{\JPsi}{\ensuremath{\mathrm{J}\hspace{-.08em}/\hspace{-.14em}\psi}\xspace}
+
+%quarks
+\newcommand{\cPg}{\ensuremath{\\mathrm{g}}} % generic gluon
 \newcommand{\cPq}{\ensuremath{\mathrm{q}}}
 \newcommand{\cPaq}{\ensuremath{\overline{\mathrm{q}}}}
 \newcommand{\qqbarpr}{\ensuremath{\cPq\cPaq^({}'^){}}\xspace}
 \newcommand{\qqbar}{\ensuremath{\cPq\cPaq}\xspace}
-%\newcommand{\ell}{\textit{l}\xspace}
-\newcommand{\Pgn}{\ensuremath{\nu}}
-\newcommand{\JPsi}{\ensuremath{{J}\hspace{-.08em}/\hspace{-.14em}\psi}\xspace}
-\newcommand{\bspsiphi}{\ensuremath{B_s \to \JPsi\, \phi}\xspace}
-%\newcommand{\ttbar}{\ensuremath{{t\overline{t}}}\xspace}
-\newcommand{\AFB}{\ensuremath{A_\text{FB}}\xspace}
+\newcommand{\cPqt}{\ensuremath{\\mathrm{t}}} % t for t quark
+\newcommand{\cPqb}{\ensuremath{\\mathrm{b}}} % b for b quark
+\newcommand{\bbarc}{\ensuremath{{\overline{b}c}}\xspace}
+\newcommand{\bbbar}{\ensuremath{{\mathrm{b}\overline{\mathrm{b}}}}\xspace}
+\newcommand{\ccbar}{\ensuremath{{c\overline{c}}}\xspace}
+\providecommand{\ttbar}{\ensuremath{\mathrm{t}\overline{\mathrm{t}}}\xspace}
+
+%leptons/neutrinos
+\newcommand{\Pgn}{\ensuremath{\nu}}%neutrino
+\providecommand{\cPgn}{\ensuremath{\nu}\xspace} % generic neutrino
 \newcommand{\EE}{\ensuremath{e^+e^-}\xspace}
 \newcommand{\MM}{\ensuremath{\mu^+\mu^-}\xspace}
 \newcommand{\TT}{\ensuremath{\tau^+\tau^-}\xspace}
-\newcommand{\wangle}{\ensuremath{\sin^{2}\theta_{\text{eff}}^\text{lept}(M^2_\mathrm{Z})}\xspace}
-%\newcommand{\ttbar}{\ensuremath{{t\overline{t}}}\xspace}
-\newcommand{\stat}{\ensuremath{\,\text{(stat.)}}\xspace}
-\newcommand{\syst}{\ensuremath{\,\text{(syst.)}}\xspace}
-% these moved to similar defs
-\newcommand{\Etmiss}{\ensuremath{E_{\mathrm{T}\!{\rm miss}}}}
-%\newcommand{\VEtmiss}{\ensuremath{{\vec E}_{\mathrm{T}\!{\rm miss}}}}
-\newcommand{\ptvecmiss}{\ensuremath{{\vec p}_{\mathrm{T}}^{\kern1pt\text{miss}}}\xspace}
 
-%%%  E-gamma definitions
+%bosons
+\providecommand{\PZ}{\ensuremath{\mathrm{Z}}\xspace}
+\providecommand{\cPZ}{\Z} % plain Z (no superscript 0)
+\providecommand{\PW}{\ensuremath{\mathrm{W}}\xspace}
+\providecommand{\PV}{\ensuremath{\mathrm{V}}\xspace}
+\providecommand{\PH}{\ensuremath{\mathrm{H}}\xspace}
+
+%%%%%%%%%% BSM particles %%%%%%%%%%%%%%%%%%
+
+\providecommand{\Zpr}{\ensuremath{\mathrm{Z}^\prime}\xspace}
+\providecommand{\cPZpr}{\Zpr} % plain Z'
+\providecommand{\PZpr}{\ensuremath{\mathrm{Z}^\prime}\xspace} % plain Z' using prime
+\providecommand{\Wpr}{\ensuremath{\mathrm{W}^\prime}\xspace}
+\providecommand{\cPWpr}{\Wpr} % plain W'
+\providecommand{\PWpr}{\ensuremath{\mathrm{W}^\prime}\xspace} % plain W' using prime
+\providecommand{\PVpr}{\ensuremath{\mathrm{V}^\prime}\xspace} % plain V' using prime
+\providecommand{\BulkG}{\ensuremath{\mathrm{G}_\mathrm{bulk}}\xspace}
+
+%%%%%%%%%%%%%  E-gamma definitions %%%%%%%%%%%%%%
 \newcommand{\HGG}{\ensuremath{\mathrm{H}\to\gamma\gamma}}
 \newcommand{\gev}{\GeV}
 \newcommand{\GAMJET}{\ensuremath{\gamma + \text{jet}}}
 \newcommand{\PPTOJETS}{\ensuremath{\mathrm{pp}\to\text{jets}}}
 \newcommand{\PPTOGG}{\ensuremath{\mathrm{pp}\to\gamma\gamma}}
-\newcommand{\PPTOGAMJET}{\ensuremath{\mathrm{pp}\to\gamma +
-\mathrm{jet}
-}}
+\newcommand{\PPTOGAMJET}{\ensuremath{\mathrm{pp}\to\gamma + \mathrm{jet}}}
 \newcommand{\MH}{\ensuremath{\mathrm{M_{\mathrm{H}}}}}
 \newcommand{\RNINE}{\ensuremath{\mathrm{R}_\mathrm{9}}}
 \newcommand{\DR}{\ensuremath{\Delta\mathrm{R}}}
 
-
-
-% Physics symbols ...
-
-\newcommand{\PT}{\ensuremath{p_{\mathrm{T}}}\xspace}
-\newcommand{\pt}{\ensuremath{p_{\mathrm{T}}}\xspace}
-\newcommand{\ET}{\ensuremath{E_{\mathrm{T}}}\xspace}
-\newcommand{\HT}{\ensuremath{H_{\mathrm{T}}}\xspace}
-\newcommand{\et}{\ensuremath{E_{\mathrm{T}}}\xspace}
-\providecommand{\Em}{\ensuremath{E\hspace{-0.6em}/}\xspace}
-\providecommand{\Pm}{\ensuremath{p\hspace{-0.5em}/}\xspace}
-\providecommand{\PTm}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
-\providecommand{\PTslash}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
-\newcommand{\ETm}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
-\providecommand{\ETslash}{\ensuremath{E_{\mathrm{T}}\hspace{-1.1em}/}\xspace}
-\newcommand{\MET}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
-\newcommand{\ETmiss}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
-\newcommand{\VEtmiss}{\ensuremath{{\vec E}_{\mathrm{T}}^{\;\text{miss}}}\xspace}
-\newcommand{\Vpt}{\ensuremath{{\vec p}_{\mathrm{T}}}\xspace}
-
-% roman face derivative
+%%%%%%%%%%%%%%% other stuff %%%%%%%%%%%%
 \providecommand{\dd}[2]{\ensuremath{\frac{\mathrm{d} #1}{\mathrm{d} #2}}}
-% Particle names which will track the italic/non-italic face convention
-%\providecommand{\zp}{\ensuremath{\mathrm{Z}^\prime}\xspace}
-\providecommand{\Zpr}{\ensuremath{\mathrm{Z}^\prime}\xspace}
-\providecommand{\Wpr}{\ensuremath{\mathrm{W}^\prime}\xspace}
-\providecommand{\BulkG}{\ensuremath{\mathrm{G}_\mathrm{bulk}}\xspace}
-
-\providecommand{\JPsi}{\ensuremath{\mathrm{J}\hspace{-.08em}/\hspace{-.14em}\psi}\xspace}
-\providecommand{\Z}{\ensuremath{\mathrm{Z}}\xspace}
-\providecommand{\ttbar}{\ensuremath{\mathrm{t}\overline{\mathrm{t}}}\xspace}
-% Extensions for missing names in PENNAMES
-\providecommand{\cPgn}{\ensuremath{\nu}\xspace} % generic neutrino
-\providecommand{\cPJgy}{\JPsi} % J/Psi (no mass)
-\providecommand{\cPZ}{\Z} % plain Z (no superscript 0)
-\providecommand{\cPZpr}{\Zpr} % plain Z'
-\providecommand{\cPWpr}{\Wpr} % plain W'
-\providecommand{\PWpr}{\ensuremath{\mathrm{W}^\prime}\xspace} % use prime like pennames2
-\providecommand{\PZpr}{\ensuremath{\mathrm{Z}^\prime}\xspace} % plain Z' using prime
-\providecommand{\PVpr}{\ensuremath{\mathrm{V}^\prime}\xspace} % plain Z' using prime
-% SymbolFace not yet available in trunk version
-%\providecommand{\cPqb}{\ensuremath{\cmsSymbolFace{b}}\xspace} % b for b quark
-%\providecommand{\cPqt}{\ensuremath{\cmsSymbolFace{t}}\xspace} % t for t quark
-%\providecommand{\cPqc}{\ensuremath{\cmsSymbolFace{c}}\xspace} % c for c quark
-%\providecommand{\cPaqb}{\ensuremath{\overline{\cmsSymbolFace{b}}\xspace}} % b for b anti-quark
-%\providecommand{\cPaqt}{\ensuremath{\overline{\cmsSymbolFace{t}}}\xspace} % t for t anti-quark
-%\providecommand{\cPaqc}{\ensuremath{\overline{\cmsSymbolFace{c}}}\xspace} % c for c anti-quark
-%%%%%%
-% From Albert
-%
 
 \newcommand{\ga}{\ensuremath{\gtrsim}}
 \newcommand{\la}{\ensuremath{\lesssim}}
-%\def\ga{\mathrel{\rlap{\raise.6ex\hbox{$>$}}{\lower.6ex\hbox{$\sim$}}}}
-%\def\la{\mathrel{\rlap{\raise.6ex\hbox{$<$}}{\lower.6ex\hbox{$\sim$}}}}
-%
 \newcommand{\swsq}{\ensuremath{\sin^2\theta_W}\xspace}
 \newcommand{\cwsq}{\ensuremath{\cos^2\theta_W}\xspace}
 \newcommand{\tanb}{\ensuremath{\tan\beta}\xspace}
@@ -305,11 +296,6 @@
 \newcommand{\Lampp}{\ensuremath{\lambda''}\xspace}
 %
 \newcommand{\spinbd}[2]{\ensuremath{\bar{#1}_{\dot{#2}}}\xspace}
-
-\newcommand{\MD}{\ensuremath{{M_\mathrm{D}}}\xspace}% ED mass
-\newcommand{\Mpl}{\ensuremath{{M_\mathrm{Pl}}}\xspace}% Planck mass
-\newcommand{\Rinv} {\ensuremath{{R}^{-1}}\xspace}
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

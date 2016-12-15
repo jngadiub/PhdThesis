@@ -1,23 +1,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{W$\rightarrow\ell\Pgn$ reconstruction}\label{sec:leptonicW}
+\section{$\PW\to\ell\Pgn$ reconstruction}\label{sec:leptonicW}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The identified muon or electron (see Section~\ref{subsec:eleid} and~\ref{subsec:muonid}) is associated with the W$\rightarrow\ell\nu$ candidate. 
-The \pt of the undetected neutrino is assumed to be equal to the \ETmiss. The longitudinal momentum of the neutrino ($p_z$) is obtained by solving a quadratic equation that sets the $\ell\nu$ invariant
+The identified muon or electron (see Section~\ref{subsec:eleid} and~\ref{subsec:muonid}) is associated with the $\PW\to\ell\nu$ candidate. 
+The \Vpt of the undetected neutrino is assumed to be equal to the \ptvecmiss. The longitudinal momentum of the neutrino ($p_z$) is obtained by solving a quadratic equation that sets the $\ell\nu$ invariant
 mass to the known W boson mass~\cite{Agashe:2014kda}:
 
 \begin{equation}\label{eqn:pzv}
 M_\mathrm{W}^2 = m_\ell^2   + 2(E_\ell E_\nu - p_{x_\ell}p_{x_\nu} - p_{y_\ell}p_{y_\nu} - p_{z_\ell}p_{z_\nu} ) = (80.4)^2
 \end{equation}
 
-In the case of two real solutions, the one with the smaller absolute value is chosen
+In the case of two real solutions, the one with the smaller absolute value is chosen.
+If the discriminant becomes negative, or equivalently the W boson transverse mass $M_\mathrm{T}$ is larger than $M_\PW$ used in the constraint, the solutions have an imaginary part. This happens because of the finite resolution of \ETmiss.
+Several schemes exist to deal with this situation. One technically simple method consists of taking the real part of the complex solutions but it leads to the wrong W boson mass. This method is used for the reconstruction of the $\PW\to\ell\nu$ candidate in the 13\TeV data analysis described in this work.
+A second method has been studied, which eliminates the imaginary component by modifying the components of the missing transverse energy such to give $M_\mathrm{T} =  M_\PW$, still respecting equation~\ref{eqn:pzv}~\cite{BauerPhd10}. This method is used in the 8\TeV data analysis for the reconstruction of the $\PW\to\ell\nu$ candidate and for the reconstruction of the mass of the leptonically decaying top quark in \ttbar events. The performance of the two methods are equivalent in terms of resolution of the reconstructed diboson or top quark invariant mass.
 
-In the case of two real solutions, the one with the smaller absolute value is chosen. 
-If the discriminant becomes negative, or equivalently $M_\mathrm{T}$ is larger than $M_\mathrm{W}$ used in the constraint, the solutions have an imaginary part. This happens because of the finite resolution of \ETmiss.
-Several schemes exist to deal with this situation. One technically simple method consists of taking the real part of the complex solutions but it leads to the wrong W boson mass. This method is used for the reconstruction of the W$\rightarrow\ell\nu$ candidate in the 13\TeV analysis described in this work.
-
-A second method is also studied here, which eliminates the imaginary component by modifying the components of the missing transverse energy such to give $M_\mathrm{T} =  M_\mathrm{W}$, still respecting equation~\ref{eqn:pzv}~\cite{BauerPhd10}. This method is used in the 8\TeV analysis described in this work for the reconstruction of the W$\rightarrow\ell\nu$ candidate and for the reconstruction of the mass of the leptonically decaying top quark in \ttbar events. The performance of the two methods are equivalent in terms of resolution of the reconstructed diboson invariant mass.
-
-The four-momentum of the neutrino is used to reconstruct the four-momentum of the W$\rightarrow\ell\nu$ candidate.
-The same procedure is applied for W$\rightarrow\tau\nu$ candidates, where the $\tau$ decays to one muon or electron and two neutrinos.
-In this case, the \Etmiss represents the \pt of the three-neutrino system.
+The four-momentum of the neutrino is used to reconstruct the four-momentum of the $\PW\to\ell\nu$ candidate.
+The same procedure holds also for the cases where the W boson decays to $\tau\nu$ and the $\tau$ decays to one muon or electron and two neutrinos.
+In this case, the \ptvecmiss represents the \Vpt of the three-neutrino system.

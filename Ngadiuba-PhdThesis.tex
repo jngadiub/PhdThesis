@@ -23,9 +23,10 @@
 \usepackage{url} % Formatting for URL's i.e. http://www.rhizobia.co.nz
 \usepackage{microtype} % makes pdf look better
 \usepackage[nottoc]{tocbibind} % Table of contents
-\usepackage[hyperindex=true,pdftitle={Search for diboson resonances with CMS and Pixel Barrel Detector  Calibration and Upgrade},pdfauthor={Jennifer Ngadiuba},colorlinks=false,pagebackref=false,citecolor=blue,plainpages=false,filecolor=blue,linkcolor=blue,urlcolor=blue,pdfpagelabels]{hyperref} % colourlinks=false for printing 
+\usepackage[hyperindex=true,pdftitle={Search for diboson resonances with CMS and pixel barrel detector  calibration and upgrade},pdfauthor={Jennifer Ngadiuba},colorlinks=false,pagebackref=false,citecolor=blue,plainpages=false,filecolor=blue,linkcolor=blue,urlcolor=blue,pdfpagelabels]{hyperref} % colourlinks=false for printing 
 \usepackage{xspace}
 \usepackage{fancyhdr}
+\usepackage{wrapfig}
 %\usepackage[colorlinks=true,citecolor=blue,filecolor=blue,linkcolor=blue,urlcolor=blue,pdftex]{hyperref}
 %\usepackage{capt-of} % needed to put table next to a figure and have captions
 %\usepackage{natbib} % The best package for bibliographies
@@ -63,6 +64,9 @@
 \newcommand{\chnine}{chapters/Chapter9-Results8TeV/Figures}
 \newcommand{\chten}{chapters/Chapter10-Results13TeV/Figures}
 \newcommand{\cheleven}{chapters/Chapter11-Combination/Figures}
+\newcommand{\chfourteen}{chapters/Chapter14-BPixDescription/Figures}
+\newcommand{\chfifteen}{chapters/Chapter15-BPixCalibrations/Figures}
+\newcommand{\chsixteen}{chapters/Chapter16-Phase1BPix/Figures}
 \newcommand{\mWH}{\ensuremath{m_{\rm WH}}\xspace}
 \newcommand{\mWV}{\ensuremath{m_{\rm WV}}\xspace}
 \newcommand{\mlvj}{\ensuremath{m_{\ell\nu+{\rm jet}}}\xspace}
@@ -93,8 +97,8 @@
 %-------------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------------
-\usepackage{lineno}
-\linenumbers
+%\usepackage{lineno}
+%\linenumbers
 
 \begin{document}
 
@@ -149,7 +153,7 @@
 %\chapter{Conclusions}
 	\input{chapters/Chapter12-DibosonConclusions/DibosonConclusions}
 	
-\part{Calibration and Upgrade of the CMS Pixel Barrel Detector}
+\part{Calibration and upgrade of the CMS pixel barrel detector}
 
 %\chapter{introduction chapter: why pixels are so important for physics}
 	\input{chapters/Chapter13-PixIntro/PixIntro}
@@ -157,11 +161,14 @@
 %\chapter{The CMS Pixel Barrel Detector}
 	\input{chapters/Chapter14-BPixDescription/BPixDescription}
 
+%\chapter{Optimization and commissioning for LHC Run 2}
+	\input{chapters/Chapter15-BPixCalibrations/BPixCalibrations}
+	
 %\chapter{Phase I Upgrade of the CMS Pixel Barrel Detector}		
-	\input{chapters/Chapter15-Phase1BPix/Phase1BPix}
+	\input{chapters/Chapter16-Phase1BPix/Phase1BPix}
 					
 %\chapter{Conclusions}
-	\input{chapters/Chapter16-PixConclusions/PixConclusions}
+	\input{chapters/Chapter17-BPixConclusions/BPixConclusions}
 	
 \part{Summary}					
 

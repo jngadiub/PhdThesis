@@ -1,0 +1,227 @@
+\chapter{Phase I upgrade of the CMS pixel barrel detector}
+\label{ch:Phase1Intro}
+
+The present pixel detector will be replaced with a new pixel system in order to maintain the excellent tracking performance of CMS with the upcoming higher luminosity conditions at the LHC.
+This project is referred to as ``Phase I pixel upgrade'' and it was defined in 2012~\cite{Dominguez:1481838}. The new upgraded detector comprises four barrel layers and three forward disks to provide on average one more spatial point measurement per track compared to the present system, in the whole detector acceptance range. It also provides improved track impact parameter resolution reducing the radius of the innermost layer and increasing radial acceptance. 
+Further improvement is obtained thanks to optimized engineering of the mechanical design and services of the detector, that provide a substantial reduction of the passive material in the tracking volume despite the addition of one barrel layer. Since the innermost sensitive layer is closer to the interaction point compared to the current detector, faster front-end electronics has been developed to operate with high hit efficiency and low dead-time.
+%Details on the main features of the new barrel pixel system will be given in the following.
+In this chapter, the main features of the new barrel pixel system are introduced.\\
+%This chapter provides a description of the main features of the new barrel pixel system.
+
+During LS1 eight prototype Phase-1 pixel modules were installed in the CMS detector, on the third unpopulated disk. This so-called pilot system was commissioned and integrated into the central DAQ and control system, and took data in 2015--2016, with the aim of gaining operation experience under realistic conditions.
+
+As for the current barrel pixel detector, the supply tubes have been assembled and tested at the University of Zurich, while the modules have been mounted on the detector mechanical structure at PSI. The integration of the supply tubes with the detector is currently ongoing and the installation into CMS and commissioning of the complete system is planned for March 2017.
+
+Several procedures for testing the new system have been developed over the last three years, thanks to a test stand assembled at the University of Zurich. The test stand, described in this chapter, includes a slice of the CMS pixel data-acquisition system and all components of the upgraded read out chain, together with a number of detector modules. It allowed for detailed evaluation and verification of the components placed on the supply tubes before their integration.
+I have contributed to the assembly of the test system and I implemented some of its functionalities. Furthermore, I employed the system to develop in POS a new calibration procedure to be used for the upgraded detector assembly and commissioning. This work, detailed in the following, has been crucial to gain experience with the new barrel pixel system and to understand the changes that had to be applied to the software to be able to operate with it.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Motivations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The proposed upgrade of the CMS pixel detector aims at maintaining the excellent performance of the current detector up to and beyond an instantaneous luminosity of $2\times10^{34}\percms$ and a pileup of 50.
+The limitations of the current detector for increasing luminosity and pileup can be seen in Fig.~\ref{fig:PixEff}, which shows the hit efficiency for the various layers of the current pixel detector in collisions during 2016.
+The leading effect is a dynamic data loss in the readout chip which increases with instantaneous luminosity and trigger rate. This loss of data depends on both the occupancy and trigger rates and comes primarily from two sources, buffer size and readout speed. Between L1 triggers pixel hits are stored in a finite sized buffer before being readout at the next L1 trigger, if this buffer is full the ROC cannot record any more hits and subsequent hits are lost. When a L1 triggers the readout, double columns that are being read out are blocked from having hits recorded and the buffer is cleared after the readout; thus, data can be lost if the readout is slow or the L1 trigger rate is high.
+Simulation studies showed that for an instantaneous luminosity of $2\times10^{34}\percms$ and a bunch crossing time of 25\unit{ns} (50\unit{ns}),
+the expected dynamic inefficiency for the current pixel detector increases up to 15\% (50\%) for ROCs in the first barrel layer.
+The track reconstruction efficiency is also affected by the finite size of the buffers on the readout chip. This effect can be seen in Fig.~\ref{fig:trackEffPix}, which shows the track reconstruction efficiency for muons coming from the Z boson decay as a function of the number of primary vertices, as measured in 2016 data with a T\&P method. The efficiency is high and well described in the simulation, but slowly degrades as the number of pileup events increases.
+A new ROC for the upgrade pixel detector will largely reduce these effects.\\
+
+\begin{figure}[!htb]
+ \begin{center}
+ \subfigure[]{\label{fig:PixEff_a}\includegraphics[width=0.45\textwidth]{\chsixteen/HitEfficiency_vs_InstLumi_LayersDisks_2016Data.png}}
+ \subfigure[]{\label{fig:PixEff_b}\includegraphics[width=0.45\textwidth]{\chsixteen/HitEfficiency_vs_Pileup_LayersDisks_2016Data.png}}
+ \end{center}
+ \caption{Hit efficiency for the various layers of the current pixel detector for 2016 collisions as a function of (a) the instantaneous luminosity and (b) the average number of inelastic pp collisions~\cite{PixelOffline}.}
+ \label{fig:PixEff}
+\end{figure}
+
+Further effects contributing to inefficiencies in the track reconstruction arise from failures in the tracking algorithms for events with a large number of hits. In fact, with more interactions per crossing giving rise to additional hits in the tracking detectors, the pattern recognition becomes more difficult. Under these conditions, the CPU time required for tracking largely increases in both the HLT and offline processing. In addition, keeping the same level of tracking efficiency results in a higher level of fake tracks; alternatively, the tracking can be tuned for lower fake rate at the expense of reduced efficiency.
+In order to keep both the CPU time and fake rate under control for luminosities of $2\times10^{34}\percms$, the tracking has to be tuned to have generally lower efficiency that at lower luminosities. This is obtained requiring hits in 3 pixel barrel layers. With an extra pixel layer negative effects of pileup can be partly mitigated.\\
+
+Degradation in the performance of the current detector are further due to radiation damage resulting in reduced charge collection and hence, in degradation of hit detection efficiency and resolution.
+Although the degradation can initially be mitigated mostly with increase in voltage, and modification of the pixel cluster hit templates, eventually the reduced collected charge cannot be compensated. The hit efficiency is expected to be less affected but the reduced charge sharing and eventual breaking up of clusters will degrade the hit resolution. Although the upgrade pixel sensor would suffer similar radiation damage, such effects can be compensated by a much lower charge threshold for the new readout chip. This improvement would largely mitigates the effects of reduced collected charge, so degradation in hit resolution should be much reduced comparing to the same radiation fluence.\\
+
+The passive material in the tracking volume is known to lead to tracking inefficiencies.
+In particular, a significant portion of material is present in the region near $|\eta| = 1.5$ where the bulkhead with services from BPix meets the FPix.
+This material also contribute to additional complications for track pattern recognition in a high pileup environment.
+The upgrade pixel detector, even with an extra layer features less passive material in the tracking volume, due to a new lightweight construction, cooling, and relocation of passive material out of the tracking region.
+
+Details on the new detector layout and front-end electronics are given in the next chapter.
+
+\begin{figure}[!htb]
+ \begin{center}
+ \includegraphics[width=0.45\textwidth]{\chsixteen/eff_vtx_dr030e030_corr.png}
+ \end{center}
+ \caption{Track reconstruction efficiency for 2016 data and simulation for muons coming from the Z decay as a function of the number of primary vertices~\cite{TrkCMSPublicResults}.}
+ \label{fig:trackEffPix}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Detector layout}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The proposed upgraded pixel detector consists of four barrel layers and three disk on either side of the interaction point. The layout of the upgrade pixel system is compared to the current pixel system in Fig.~\ref{fig:Phase1Layout}.
+The barrel layers have a length of 548.8 mm and are placed at radii of 30, 68, 109, and 160\mm. Compared to the present BPix, there is one new layer at high radius.
+The radius of the innermost layer is reduced by 10\mm while layers 2 and 3 are almost unchanged. 
+
+\begin{figure}[!htb]
+ \begin{center}
+ \subfigure[]{\label{fig:Phase1Layout_a}\includegraphics[width=0.26\textwidth]{\chsixteen/phase0-vs-phase1-3D.pdf}}\hspace{0.2cm}
+ \subfigure[]{\label{fig:Phase1Layout_b}\includegraphics[width=0.65\textwidth]{\chsixteen/phase0-vs-phase1-layout.pdf}}
+ \end{center}
+ \caption{(a) Layout of the proposed upgraded pixel detector compared to the current detector layout in longitudinal view. (b) Three-dimensional view of the upgraded and current BPix detectors.}
+ \label{fig:Phase1Layout}
+\end{figure}
+
+The total number of BPix modules will increase to 1,184 compared to 768 modules in the present detector, with an increase in the pixel count from 48 million to 79 million.
+The modules are mounted on lightweight mechanical structures built from carbon fiber.
+The modules design and composition is almost equal in the whole pixel detector, except for the innermost layer where a considerable higher data rate is expected.
+Furthermore half modules are no longer used to join the two halves, while a slightly more complex design of the mechanical support structure enables the use of full modules throughout.
+The pixel detector modules will be described in more details in the next section.
+
+The cooling pipes diameter is significantly reduced with respect to the present detector thanks to the usage of a two-phase CO$_2$ cooling system which requires a much smaller mass flow than C$_6$F$_{14}$.
+This reduces substantially the amount of material in the tracking region. A further, significant reduction is achieved by moving the module connector area from the detector bulkheads to higher $z$, outside of the tracker acceptance, by using longer and more flexible module cables. As a replacement, micro twisted pair cables made of copper are used. They have a diameter of only 127\mum and are able to transmit the 400\unit{Mbit/s} readout signal. Multiple twisted pairs are used to transmit the different signals, including clock, I$^2$C, trigger, data, etc. Power is conducted in parallel through multiple copper clad aluminium wires with a diameter of 90\mum. Signal and power cables are braided into a single strand. They are about 95\unit{cm} in length for all modules. Each wire of the strand is soldered onto a custom made board that fits into a commercial connector. The connector on the module side is soldered to the HDI.
+The obtained reduction in the material budget can bee seen in Fig.~\ref{fig:Phase1Budget}, which shows a comparison of the radiation length and nuclear interaction length of the present and upgrade pixel detectors as a function of $\eta$.
+
+\begin{figure}[!htb]
+ \begin{center}
+ \subfigure[]{\label{fig:Phase1Budget_a}\includegraphics[width=0.45\textwidth]{\chsixteen/ch2_PIX_leta_428r30.png}}
+ \subfigure[]{\label{fig:Phase1Budget_b}\includegraphics[width=0.45\textwidth]{\chsixteen/ch2_PIX_xeta_428r30.png}}
+ \end{center}
+ \caption{Material budget in the pixel detector shown in units of radiation length (a), and in units of nuclear interaction length (b) as a function of $\eta$; this is given for the current (green histogram) and upgraded (black points) pixel detector. The shaded region at high $\eta$ is outside the region for track reconstruction~\cite{Dominguez:1481838}.}
+ \label{fig:Phase1Budget}
+\end{figure}
+
+The overall layout of the system is unchanged. The detector barrel is complemented with four supply tubes on the $+z$ and $-z$ sides. The supply tubes carry electrical connections and cooling lines from the patch panels to the barrel bulkheads, and house auxiliary front-end electronics. However, the upgrade system has to fit in the same mechanical envelope as the current system and reuse existing services, power cables and optical fibers. This puts strong constraints on the design of the new system. In particular, higher bandwidth electronics is need. Since the upgrade detector has 1.9 times more channels than the current detector, the power consumption increases accordingly. The upgrade system uses DC-DC power converters~\cite{1748-0221-10-01-C01052} to supply the necessary current to the modules while reusing the existing infrastructure.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Pixel modules}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The pixel modules for the upgrade are of similar configuration compared to the ones employed in the present detector. The main changes concern the design of the ROCs and the TBMs as described in the following.
+Fig.~\ref{fig:Phase1Mod} shows a drawing of the pixel module employed for the outer barrel layers.
+The innermost barrel layer features a different ROC that allows to cope with even more extreme conditions at such small radii, while its modules differ mostly by the way they are mounted and by the cables used.
+%Modules of the other parts of the detector differ mostly by the way they are mounted and by the cables used.
+From top to bottom, the figure shows the cables with a connector print, the HDI with the TBM mounted in the center, the silicon pixel sensor, $2\times8$ ROCs and base strips for mounting.
+
+The sensor used in the upgrade is the same technology as the one used in the current detector. For the innermost layer, where the close proximity to the interaction point leads to the highest radiation damage, the sensor is expected to operate up to an integrated luminosity of 250\fbinv. For this reason it is planned to exchange this layer once during the detector's expected lifetime of 500\fbinv. The sensors in the rest of the detector can sustain for the entire duration because of the greater distance from the interaction point.
+
+\begin{figure}[!htb]
+ \begin{center}
+ \includegraphics[width=0.3\textwidth]{\chsixteen/phase1module.png}
+ \end{center}
+ \caption{Exploded view of the the digital pixel module employed for the outer barrel layers of the upgraded BPix detector.}
+ \label{fig:Phase1Mod}
+\end{figure}
+
+\subsection*{The digital ROC}
+
+The ROC for the upgraded detector~\cite{Kastli201388} is not a completely new development but rather an evolution of the well-proven ROC operating in CMS since its commissioning.
+It is designed in the same 250\unit{nm} CMOS technology and the well understood core of its double-column architecture is mostly unaltered.
+However, to cope with the higher data bandwidth the readout protocol has been changed from a 40\unit{MHz} analog to a 160\unit{MBit/s} digital readout. An ADC digitizes the analog pulse height information in the ROC periphery
+The key additional elements are an 8-bit successive approximation current ADC running at 80\unit{MHz} with a programmable range and a PLL which generates the 160 and 80\unit{MHz} for the serial readout links and the ADC respectively, from the 40\unit{MHz} LHC master clock.
+To reduce data losses, the number of hit buffer cells in each double column has been increased from 32 to 80 and the time stamp buffers have been increased from 12 to 24.
+To limit the increase of the area used by the buffers the layout has been redone completely.
+An additional readout buffer stage has been introduced in the ROC periphery to reduce dead time during the column readout: the data is transferred (after being digitized) into the new readout buffer immediately after the trigger arrives and the double columns go live again.
+Improved performance of the analog amplifier and the discriminator in the pixel unit cell allow for operation at lower threshold, which is reduced from about 3500 electrons in the current detector to under 2000 electrons after the upgrade. This guarantees higher radiation tolerance and hence, a longer lifetime of the detector.
+
+The chip just described is suitable for the whole upgraded pixel detector except for the innermost barrel layer, where the data rates up to 600\unit{MHz/cm$^2$} are expected, four times higher compared to the second layer.
+In order to cope with such extreme conditions the newly developed PROC600~\cite{Starodumov:2227967} readout chip is used in the innermost layer. The new chip features a new 40\unit{MHz} Dynamic Cluster Column Drain mechanism based on dynamic cluster ($2\times2$ pixels) finding in the double column.
+
+\subsection*{The TBM and readout}
+
+Differently to the present detector, for the upgrade all barrel modules use at least two data channels in order to improve the bandwidth of the readout.
+Because of the limited number of fibres available for this purpose, two channels are always multiplexed into one data stream through a DataKeeper multiplexer and encoder.
+For this purpose few modifications have been applied to the TBM.
+In particular, it combines the digital 160\unit{Mbit/s} readout from the ROCs from two buses into a 320\unit{Mbit/s} signal to which it then applies 4-to-5 bit encoding. This results in a 400\unit{Mbit/s} data stream.
+The readout scheme is adapted to the different barrel layers.
+Figure~\ref{fig:Phase1TBMRO} provides an illustration of the readout scheme described in the following.
+Layers 3 and 4 employ a dual core TBM, referred to as TBM08, that passes two tokens simultaneously to achieve the parallel readout of two groups of 8 ROCs, called Port 0 (or Channel $\alpha$) and Port 1 (or Channel $\beta$). 
+The data are then combined into one data stream as described above, requiring one fibre. Except for the multiplexing step, this is very similar to the method used for the first two layers of the present detector (Fig.~\ref{fig:TBMreadout}).
+Layer 2 employs a different TBM, called TBM09, which is the equivalent of two TBM08s (TBM A and TBM B in Fig.~\ref{fig:Phase1TBMRO}), each equipped with its own DataKeeper. This TBM is capable of issuing four tokens simultaneously so that the 16 ROCs are therefore divided into four groups that are readout in parallel. The two DataKeepers then produce one 400\unit{Mbit/s} data stream each and two fibers are required for the readout.
+For the innermost layer two identical TBM09 chips per module are employed and identified by two different HUB addresses. In this case eight tokens are passed in parallel on these modules, resulting in four 400\unit{Mbit/s} data streams and hence, four fibers for transmission.
+
+An extensive set of control registers have been built into the TBM, which allow various functions and operating modes of the TBM to be controlled by issuing commands to the TBM through the communication control HUB.
+For the TBM09 the commands have to be issued to both TBM08s controlled by one unique HUB.
+
+\begin{figure}[!htb]
+ \begin{center}
+ \includegraphics[width=\textwidth]{\chsixteen/AllTBMs.pdf}
+ \end{center}
+ \caption{Readout scheme of the different TBMs used in the BPix layers.}
+ \label{fig:Phase1TBMRO}
+\end{figure}
+
+As for the present detector the module output signal is characterized by TBM header and trailer, ROC headers and pixel hit information, which are now encoded in binary data as shown in Fig.~\ref{fig:digTBMRO}.
+A TBM readout begins by transmitting a twelve clock cycle (160\unit{MHz}) header sequence.
+The next sixteen clock cycles of the header are used to transmit the 8-bit event counter, 2 bits of error information, and a 6-bit stack count value.
+Coincident with the next to last clock cycle, the token is transmitted to the ROCs. The TBM now goes into standby mode, waiting for the last ROC in the chain to return the token to the TBM.
+At this stage, the TBM transmits a twelve clock cycle trailer sequence. This contains 8 bits of error status, and 8 bits encoding the data contained in the last 8-bit TBM register accessed.
+The TBM also contains a timeout on the token returning. It the token fails to return, before the timer expires, the TBM will automatically issue a ROC reset, ending the token pass.
+The data contained in the ROCs are deleted, and error bits are returned in the TBM trailer 8 clock cycles later.
+The ROC data consist of 12 bits for the header, 16 bits give the pixel hit address and the final 8 bits tell the pulse height.\\
+
+In order to readout the new fully digital pixel system a VME-digital FED has been firstly designed.
+It is a hybrid solution with new daughter boards on the existing FED and it has been used at the beginning of the operation with the pilot system and in the test stands.
+This solution will be replaced by a $\mu$TCA system with high-speed signal links providing data rates up to 10\unit{Gbits/sec}. 
+Since the results presented in this work are based on the VME-digital FED system, only this is described in the following.
+
+The ADC daughter boards of the analog FED are not needed anymore for digital transmission. A plug-in replacement board has been designed holding a new receiver modified to operate at a higher wavelength,
+as well as an FPGA which will be used for synchronization and deserialization of the incoming data in a way that is transparent to the subsequent electronics.
+Thanks to this modular approach, the other parts of the FED did not require any hardware modification allowing for a quick start of the tests with the new upgraded pixel system.
+
+As shown in Fig.~\ref{fig:Phase1TBMRO}, the signal from each fiber is split at the FED into two channels whose content is buffered and processed in the FIFOs.
+Each channel will then correspond to the data from half of the initial number of ROCs present in one fiber.
+
+\begin{figure}[!htb]
+ \begin{center}
+ \includegraphics[width=\textwidth]{\chsixteen/digitalTBMreadout.png}
+ \end{center}
+ \caption{TBM readout encoded in binary data.}
+ \label{fig:digTBMRO}
+\end{figure}
+
+\FIXME{add picture of tbm readout from oscilloscope}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Supply tubes}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As for the present detector, the power, readout and control circuits as well as the cooling lines are housed by four half-cylinder supply tubes.
+The mechanical structure of the service cylinders is made from layers of carbon fiber composites.
+Each cylinder is divided in sectors which hold the electronics for one readout group of detector modules.
+Figure~\ref{fig:phase1SC} shows the layout of one half cylinder together with some of the new electronic components.
+Each sector includes DOHs as well as the auxiliary chips (PLL, Delay25, Gate-Keeper) for the transmission of control, clock and trigger signals.
+So-called pixel opto-hybrids (POHs)~\cite{1748-0221-7-01-C01113} are used for the transmission of the module readout data as a replacement of the AOHs used for the present detector.
+The change from analog to digital module readout in the upgrade system also requires the adoption of new optical links.
+POHs are built from four transmitter optical subassemblies (TOSA), linear laser-driver and level-translator chips and have been designed specifically for their use in the pixel upgrade system.
+All other components used in the control and readout chain are identical to the ones used in the current system. CCU chips are used for slow control, monitoring and timing distribution.
+Furthermore, pairs of DC-DC converters are mounted on the service cylinders.
+Each sector consists of a stack of boards, DC-DC converters, optical links and cooling loops, resulting in tight space constraints and a non-trivial assembly procedure.
+%The DC- DC converters operate at an input voltage of 10 V with an output voltage of 2.4 V and 3.3 V for the analog and the digital voltage supply of the modules, respectively, with an efficiency of about 80%. The choice of the converter output voltage takes into account the voltage drop across the service cylinder and guarantees a minimum supply voltage of 1.6 V and 2.4 V for the analog and digital nodes of the modules, respectively. Each converter can provide up to 3 A of current and a total of 1184 DC-DC converters is used for the full detector system. The service cylinders of the BPIX and the FPIX are shown schematically in Figure 3.  
+
+The complete supply tube system has been integrated and tested sector by sector at the University of Zurich.\FIXME{add nice picture from UZH}
+
+\begin{figure}[!htb]
+ \begin{center}
+ \includegraphics[width=0.7\textwidth]{\chsixteen/SC-layout.pdf}
+ %\subfigure[]{\label{fig:phase1SC_b}\includegraphics[width=0.4\textwidth]{\chsixteen/SC-stack.pdf}}
+ \end{center}
+ \caption{Layout of one of the four service half cylinders for BPix together with some of the new electronic components. Each SC is divided into 8 sectors.}
+ \label{fig:phase1SC}
+\end{figure} 
+ 
+\section{A new calibration procedure}
+
+%The synchronization between the 160\unit{Mbit/s} ROC data and the 400\unit{Mbit/s} final output data stream has to be adjusted in order to be able to readout the full output signal just described.
+%The data alignment can be adjusted by programming several TBM internal registers which control:
+%\begin{itemize}
+%\item the phases of the 160\unit{MHz} and 400\unit{MHz} PLLs integrated in the TBM; these phases can be changed in the range 0--7\unit{ns} in steps of 1\unit{ns};
+%\item the delay in the ROC data signals in the range 0--7\unit{ns} in steps of 1\unit{ns}; %this change can be applied to each of the two readout groups of ROCs of Fig.~\ref{fig:Phase1TBMRO}, called Port0 and Port1;
+%\item the delay in the TBM header/trailer by one 160\unit{MHz} clock cycle (6.25\unit{ns});
+%\item the delay in the token return by 6.25\unit{ns}.
+%\end{itemize}
+%The first parameter corresponds to one 8-bit register of which only 6 bits are used, while the other three parameters are all included in another 8-bit register.
+\subsection{The test stand}
+\subsection{Detector commissioning}

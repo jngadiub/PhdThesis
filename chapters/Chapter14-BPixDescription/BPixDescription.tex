@@ -15,7 +15,7 @@ The calibration procedure and the results obtained for the detector commissionin
 \section{Design}\label{sec:BPix_design}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The CMS BPix detector~\cite{Kastli2007724} consists of three cylindrical layers at mean radii of 4.4, 7.3 and 10.2\cm from the centre of the detector and with a length of 53\cm.
+The CMS BPix detector~\cite{Kastli2007724} consists of three cylindrical layers at mean radii of 4.4, 7.3 and 10.2\cm from the center of the detector and with a length of 53\cm.
 A three dimensional representation of the detector can be seen in Fig.~\ref{fig:PixLayout_a}.
 The layers are composed of 768 modular detector units that consist of thin segmented silicon sensors, with a pixel size of $100\times150$\unit{m$^2$} providing about 48 million readout channels.
 The pixels are almost square shaped in order to achieve a similar track resolution in both the $r\phi$ and $z$ direction.
@@ -160,7 +160,7 @@ A slightly smaller size of 100\mum was chosen to maintain charge sharing, and he
 The area of a pixel must be large enough to accommodate the readout electronics.
 With one dimension fixed by the Lorentz drift, this leads to a more or less quadratic shape of $100\mum(r\phi)\time150\mum(z)$, resulting in comparable resolution in both directions.
 
-\subsection{Readout chip}
+\subsection{Readout chip}\label{subsec:BPix_ROC}
 
 The readout chip is responsible for measuring the charge deposited by a particle in the sensor's pixel.
 It amplifies and samples the signal with a time resolution of 25\unit{ns}, which is the time between two LHC bunch crossings.
@@ -261,7 +261,7 @@ The individual electronic devices of the pixel readout and control system are de
 \end{figure}
 
 %\subsection{Analog readout}
-\subsection{Readout of the analog signal}
+\subsection{Readout of the analog signal}\label{subsec:BPixReadout}
 
 An example of an analog readout signal of a module with a single pixel hit is shown in Fig.~\ref{fig:ModuleReadout}.
 The TBM header uses eight clock cycles and starts with three ultra black levels (UBL). An UBL is simply a large negative signal level well outside of the range of pixel data.

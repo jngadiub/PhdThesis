@@ -1,5 +1,7 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Phase I upgrade of the CMS pixel barrel detector}
 \label{ch:Phase1Intro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The present pixel detector will be replaced with a new pixel system in order to maintain the excellent tracking performance of CMS with the upcoming higher luminosity conditions at the LHC.
 This project is referred to as ``Phase I pixel upgrade'' and it was defined in 2012~\cite{Dominguez:1481838}. The new upgraded detector comprises four barrel layers and three forward disks to provide on average one more spatial point measurement per track compared to the present system, in the whole detector acceptance range. It also provides improved track impact parameter resolution reducing the radius of the innermost layer and increasing radial acceptance. 
@@ -13,7 +15,7 @@ During LS1 eight prototype Phase-1 pixel modules were installed in the CMS detec
 As for the current barrel pixel detector, the supply tubes have been assembled and tested at the University of Zurich, while the modules have been mounted on the detector mechanical structure at PSI. The integration of the supply tubes with the detector is currently ongoing and the installation into CMS and commissioning of the complete system is planned for March 2017.
 
 Several procedures for testing the new system have been developed over the last three years, thanks to a test stand assembled at the University of Zurich. The test stand, described in this chapter, includes a slice of the CMS pixel data-acquisition system and all components of the upgraded read out chain, together with a number of detector modules. It allowed for detailed evaluation and verification of the components placed on the supply tubes before their integration.
-I have contributed to the assembly of the test system and I implemented some of its functionalities. Furthermore, I employed the system to develop in POS a new calibration procedure to be used for the upgraded detector assembly and commissioning. This work, detailed in the following, has been crucial to gain experience with the new barrel pixel system and to understand the changes that had to be applied to the software to be able to operate with it.
+I have contributed to the assembly of the test system and I implemented some of its functionalities. Furthermore, I employed the system to test a new calibration procedure that I developed in POS. The aim of the procedure is to guarantee a check out of the detector functionalities during assembly and commissioning. This work, detailed in the following, has been crucial to gain experience with the new barrel pixel system and to understand the changes that had to be applied to the software to be able to operate with it.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Motivations}
@@ -115,7 +117,7 @@ The sensor used in the upgrade is the same technology as the one used in the cur
  \label{fig:Phase1Mod}
 \end{figure}
 
-\subsection*{The digital ROC}
+\subsection{The digital ROC}
 
 The ROC for the upgraded detector~\cite{Kastli201388} is not a completely new development but rather an evolution of the well-proven ROC operating in CMS since its commissioning.
 It is designed in the same 250\unit{nm} CMOS technology and the well understood core of its double-column architecture is mostly unaltered.
@@ -129,7 +131,7 @@ Improved performance of the analog amplifier and the discriminator in the pixel 
 The chip just described is suitable for the whole upgraded pixel detector except for the innermost barrel layer, where the data rates up to 600\unit{MHz/cm$^2$} are expected, four times higher compared to the second layer.
 In order to cope with such extreme conditions the newly developed PROC600~\cite{Starodumov:2227967} readout chip is used in the innermost layer. The new chip features a new 40\unit{MHz} Dynamic Cluster Column Drain mechanism based on dynamic cluster ($2\times2$ pixels) finding in the double column.
 
-\subsection*{The TBM and readout}
+\subsection{The TBM and readout}\label{subsec:Phase1TBM}
 
 Differently to the present detector, for the upgrade all barrel modules use at least two data channels in order to improve the bandwidth of the readout.
 Because of the limited number of fibres available for this purpose, two channels are always multiplexed into one data stream through a DataKeeper multiplexer and encoder.
@@ -165,28 +167,30 @@ The ROC data consist of 12 bits for the header, 16 bits give the pixel hit addre
 In order to readout the new fully digital pixel system a VME-digital FED has been firstly designed.
 It is a hybrid solution with new daughter boards on the existing FED and it has been used at the beginning of the operation with the pilot system and in the test stands.
 This solution will be replaced by a $\mu$TCA system with high-speed signal links providing data rates up to 10\unit{Gbits/sec}. 
-Since the results presented in this work are based on the VME-digital FED system, only this is described in the following.
+Since the results presented in this work are based on the VME back-end system, only this is described in the following.
 
-The ADC daughter boards of the analog FED are not needed anymore for digital transmission. A plug-in replacement board has been designed holding a new receiver modified to operate at a higher wavelength,
-as well as an FPGA which will be used for synchronization and deserialization of the incoming data in a way that is transparent to the subsequent electronics.
+The ADC daughter boards of the analog FED are not needed anymore for digital transmission.
+For the purpose of system development, a special add-on board was produced which is mounted on the current VME module for data readout, receives the 400\unit{Mbit/s} digitized data, and passes the data to the VME module in the same format as the current system.
+%A plug-in replacement board has been designed holding a new receiver modified to operate at a higher wavelength,
+%as well as an FPGA which will be used for synchronization and deserialization of the incoming data in a way that is transparent to the subsequent electronics.
 Thanks to this modular approach, the other parts of the FED did not require any hardware modification allowing for a quick start of the tests with the new upgraded pixel system.
 
 As shown in Fig.~\ref{fig:Phase1TBMRO}, the signal from each fiber is split at the FED into two channels whose content is buffered and processed in the FIFOs.
 Each channel will then correspond to the data from half of the initial number of ROCs present in one fiber.
 
+\clearpage
+
 \begin{figure}[!htb]
  \begin{center}
- \includegraphics[width=\textwidth]{\chsixteen/digitalTBMreadout.png}
+ \includegraphics[width=\textwidth]{\chsixteen/digitalTBMreadout.pdf}
  \end{center}
- \caption{TBM readout encoded in binary data.}
+ \caption{Decoding of the TBM output data.}
  \label{fig:digTBMRO}
 \end{figure}
 
-\FIXME{add picture of tbm readout from oscilloscope}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Supply tubes}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 As for the present detector, the power, readout and control circuits as well as the cooling lines are housed by four half-cylinder supply tubes.
 The mechanical structure of the service cylinders is made from layers of carbon fiber composites.
@@ -208,20 +212,271 @@ The complete supply tube system has been integrated and tested sector by sector 
  \includegraphics[width=0.7\textwidth]{\chsixteen/SC-layout.pdf}
  %\subfigure[]{\label{fig:phase1SC_b}\includegraphics[width=0.4\textwidth]{\chsixteen/SC-stack.pdf}}
  \end{center}
- \caption{Layout of one of the four service half cylinders for BPix together with some of the new electronic components. Each SC is divided into 8 sectors.}
+ \caption{Layout of one of the four supply tube half cylinders for BPix equipped with the new electronic components. Each half cylinder is divided into 8 sectors.}
  \label{fig:phase1SC}
-\end{figure} 
- 
-\section{A new calibration procedure}
+\end{figure}
 
-%The synchronization between the 160\unit{Mbit/s} ROC data and the 400\unit{Mbit/s} final output data stream has to be adjusted in order to be able to readout the full output signal just described.
-%The data alignment can be adjusted by programming several TBM internal registers which control:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The test stand}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In order to test the performance of the complete upgrade pixel system and gain experience in its operations, a test stand for BPix has been set up at the University of Zurich in 2013.
+The setup includes a slice of the full CMS pixel DAQ system together with prototypes of all components of the upgrade power system, control and readout chain as well as a number of detector modules.
+The system test was operated until November 2016 when the integration of the supply tubes started.
+Its main goals included:
+\begin{itemize}
+\item test all components of the detector system prior to full production;
+\item test all final components before and after integration on the supply tubes;
+\item establish test and calibration procedures for the assembly and commissioning (Section~\ref{sec:Phase1Calib});
+\item exercise the transition from the VME- to the $\mu$TCA-based DAQ system.
+\end{itemize}
+
+Figure~\ref{fig:TestStandUZH} shows a picture of the test stand,
+which consists of several sensor modules, electronics for their operation, a CAEN power supply and a VME back-end system to control and readout the modules.
+The test stand is also equipped with a linux PC connected to the VME and used to run and control the system through the installed XDAQ applications.
+%say that we do have computers to run and control the system
+%say that the supply tubes testing is done with BPixTools. contributed to find and apply changes to this software to make it work with the new configurations.
+%say that afterwards I installed POS and that I had to make foundamental changes to make it work with the test system.
+
+\begin{figure}[!htb]
+ \begin{center}
+ \includegraphics[width=\textwidth]{\chsixteen/UZHteststand.pdf}
+ \end{center}
+ \caption{Test stand setup at UZH including all components of one BPix sector together with a few pixel modules. The CAEN power supply and the VME back-end system are also indicated.}
+ \label{fig:TestStandUZH}
+\end{figure} 
+
+Most of the tests that have been conducted with this system make use of a standalone software based on the socket technology provided by the \textsc{Python} framework.
+that allow for a direct communication with the hardware. 
+%Through the Python socket interface the user can send messages to the control processes and receive the answers.
+These tools have been firstly developed for the testing of the present pixel detector prior to assembly\cite{Caminada:2010gsa} and necessitated many fundamental changes to be able to operate with the upgraded system.
+I implemented part of this transition and I was able to perform the first tests with the POHs.
+In the example shown in Fig.~\ref{fig:TestPOH} the POH laser bias setting is varied from 0 to 40 and for each value the ADC counts (or optical power) at the analog VME FED are checked.
+This scan is performed for different values of POH laser gain setting.
+The optical power sharply increases until the saturation of the receiver at the FED is reached.
+This test firstly ensured the slow I$^2$C communication with the auxiliary electronic components of the system.
+Other tests have been performed after pixel modules have been added to the system and  aimed at establishing the functionality of the fast I$^2$C communication to/from the TBM.
+This was checked by verifying for instance the presence of the TBM signal at the corresponding POH output through an optical probe plugged into the oscilloscope.
+If the fast I$^2$C communication through the digital circuit is functional, the TBM sends the 400\unit{Mbit/s} data stream upon the arrival of a trigger as shown in Fig.~\ref{fig:TestTBM}.
+
+\begin{figure}[!htb]
+ \begin{center}
+  \includegraphics[width=0.45\textwidth]{\chsixteen/POH-bias-scan.png}
+ \end{center}
+ \caption{Typical result of the scan of a POH laser bias and gain. For each value of the laser settings, the optical power is readout at the VME-analog FED.}
+ \label{fig:TestPOH}
+\end{figure} 
+
+\begin{figure}[!htb]
+ \begin{center}
+  \includegraphics[width=0.7\textwidth]{\chsixteen/TBMsignalOscilloscope.png}
+ \end{center}
+ \caption{Module output signal initialized by a trigger sent by the TTC. The signal is acquired at the oscilloscope with an optical probe connected to the POH laser output. The 400\unit{Mbit/s} signal contains TBM trailer and header, and the header from 8 ROCs.}
+ \label{fig:TestTBM}
+\end{figure} 
+
+These kinds of test are not suitable when dealing with a large number of channels. For detector assembly and commissioning the full functionality of each module has to be checked and calibrations have to be performed over the whole detector. In order to achieve this in a reasonable amount of time the full pixel online software (Section~\ref{sec:BPix_POS}) has to be used and upgraded to be able to operate with the new system.
+Many fundamental changes to the software have been firstly applied for the pilot system as well as for operations with the FPix test stand at CERN.
+These changes mainly concerned the \texttt{FEDInterface} class where the new features of the digital VME-FED had to be implemented.
+In order to test and debug the new developments I installed POS and applied the modifications required to run it with the system test at UZH.
+After establishing the basic functionalities, I developed new calibrations for the upgraded detector as described in the next section.
+%This work has been crucial to understand, implement and test new features for the software needed to be able to operate specifically with the BPix detector.
+This work represents the first attempt to operate the upgraded BPix system with POS and hence, has been crucial to understand, implement and test new BPix specific developments.
+
+In mid-2016 a separate table has been setup in the same laboratory to operate the upgraded electronics with the $\mu$TCA DAQ system as this became available only at a later time.
+A new $\mu$TCA-based version of POS was developed in the meantime by the FPix group and the second test stand has been very useful to gain expertise with the new developments.
+Several of the new features for the upgraded system that I included in the VME-POS have been easily exported to the $\mu$TCA-POS.
+The transition has been straightforward since I developed the new code such that it is transparent with respect to the parts of the software handling the $\mu$TCA or VME communication.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section{Testing and calibration}\label{sec:Phase1Calib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Since the upgraded system features a new digital readout some of the steps of the calibration procedures for the current detector become obsolete while new kind of tests are needed.
+In particular, the adjustment of the FED receiver offset, of the UB and address levels are dropped for obvious reasons.
+Furthermore, since the digital FED is not able to register the optical power, it is not possible to perform a laser bias scan (Fig.~\ref{fig:AOHBias}).
+In this section a calibration procedure for the Phase 1 detector is described with main focus on the new developments.
+This procedure is suitable for testing each sector of the detector after assembly at PSI as well as for the commissioning of the whole detector at CERN.
+It is implemented in several steps, each aimed at testing one particular functionality. 
+Each step produces new detector settings, such as POH bias and gain or TBM and ROCs DACs, after a dedicated scan of a set of parameters.
+The procedure has been fully tested with the table top system at UZH and few pixel modules and results will be presented and discussed in the following.
+Only modules equipped with TBM08 and TBM09 have been used for these tests,
+since the TBM10 was not available at the time of this work.
+Additionally, since the TBM10 features slightly different readout and programming mechanisms, further modifications to the software were required.
+Further improvements to this preliminary version of the procedure have been implemented later on by the BPix group in order to have a finalized version for detector commissioning
+that also include specific developments to operate with the TBM10.
+
+\subsection{Delay adjustments}\label{subsec:TBMPLLROCDelays}
+
+The synchronization between the 160\unit{Mbit/s} ROC data and the 400\unit{Mbit/s} final output data stream has to be adjusted in order to be able to correctly readout the module output signal.
+%The data alignment can be adjusted by programming several TBM internal registers which control
 %\begin{itemize}
-%\item the phases of the 160\unit{MHz} and 400\unit{MHz} PLLs integrated in the TBM; these phases can be changed in the range 0--7\unit{ns} in steps of 1\unit{ns};
+%\item the phases of the 160\unit{MHz} and 400\unit{MHz} PLLs integrated in the TBM: they can be changed in the range 0--7\unit{ns} in steps of 1\unit{ns};
 %\item the delay in the ROC data signals in the range 0--7\unit{ns} in steps of 1\unit{ns}; %this change can be applied to each of the two readout groups of ROCs of Fig.~\ref{fig:Phase1TBMRO}, called Port0 and Port1;
 %\item the delay in the TBM header/trailer by one 160\unit{MHz} clock cycle (6.25\unit{ns});
 %\item the delay in the token return by 6.25\unit{ns}.
 %\end{itemize}
-%The first parameter corresponds to one 8-bit register of which only 6 bits are used, while the other three parameters are all included in another 8-bit register.
-\subsection{The test stand}
-\subsection{Detector commissioning}
+The data alignment can be adjusted by programming two 8-bit registers internal to the TBM.
+The first register controls the phases of the 160\unit{MHz} and 400\unit{MHz} PLLs integrated in the TBM.
+For the TBM09 only one of the two cores (TBM A and TBM B in Fig.~\ref{fig:Phase1TBMRO}) has to be programmed since the PLLs are common to both.
+The second register controls the delay in the data stream of the two readout groups of ROCs (Port 0 and Port 1 in Fig.~\ref{fig:Phase1TBMRO}) and for TBM09 it has to be programmed for each core.
+These 4 parameters can be varied in the range 0--7\unit{ns} in steps of 1\unit{ns} so that 3 bits are sufficient for each of them.
+
+After a calibration of the Delay25 chip that ensures communication between the pxFEC and the modules (Fig.~\ref{fig:Delay25}), the first step is to perform a scan of the TBM PLLs' phases.
+For each set of values the digital data are readout at the FED and it is checked that the TBM had sent header and trailer. This is done for a large number of triggers and for each FED channel corresponding to the same module (Fig.~\ref{fig:Phase1TBMRO}).
+The TBM header and trailer are only available in the FIFO1 which can be accessed only if the normal data flow to the other FIFOs is interrupted. This is achieved by programming a FED register.
+An example of such scan for one module is shown in Fig.~\ref{fig:TBMROCdelays_a} where the efficiency for TBM header and trailer to be recorded is measured as a function of the two phases.
+The efficiency is averaged over all the FED channels.
+At the end of the test new settings for the TBM are produced, corresponding to a pair of phase values with 100\% efficiency. Since there might be more than one bin corresponding to 100\% efficiency only the first one is chosen. However, this algorithm can be improved by picking a bin from a region that presents small variations. If no 100\% efficiency bins are found, the bin corresponding to the maximum is picked and a error flag is saved in the output file. The histogram with the resulting scan is also saved for each module.
+%The presence of bins corresponding to 100\% efficiency indicates that clock, trigger and programming signals are correctly arriving at the pixel modules verifying the functionality of the related lines and electronic components. 
+This test ensures that the TBM settings are correct to be able to readout the signal. It is also very useful to have a feedback on the status of the detector, for instance after installation, similarly to the FED baseline calibration for the present detector (Fig.~\ref{fig:FEDBaseline}). In fact, it is verified that clock, trigger and programming signals are correctly arriving at the pixel modules and that the TBM can programmed.
+In addition, low efficiency might indicate poor optical connections and the problem can be immediately solved by cleaning the fibers.
+Issues in the mapping between modules and FED channels, as well as possible broken channels, can also be identified at this stage.\\
+
+The second step consists of scanning the ROC delays and for each set of values it is checked that each ROC had sent the header.
+As for the scan of the scan of the TBM PLLs' phases, this is done for a large number of trigger and the efficiency is measured for each ROC.
+For the TBM09 the same value is programmed for the two cores.
+A histogram is produced with the efficiency averaged over all ROCs and FED channels for each pair of delay values, as shown in Fig.~\ref{fig:TBMROCdelays_b}.
+New settings for the TBM are also produced, corresponding to the delay values giving 16 ROC headers recorded at the FED.
+The choice of the best settings follows the same strategy described above for the TBM PLLs' phases.
+This test ensures that the TBM settings are correct to be able to readout the signal and it also verifies the functionality of the token passage.
+%Furthermore, during detector assembly and testing, it is a useful test to check that the number of ROCs per FED channel indicated in the mapping is correct.
+
+\begin{figure}[!htb]
+ \begin{center}
+  \subfigure[]{\label{fig:TBMROCdelays_a}\includegraphics[width=0.45\textwidth]{\chsixteen/TBMPLLDelayCalib.png}}
+  \subfigure[]{\label{fig:TBMROCdelays_b}\includegraphics[width=0.45\textwidth]{\chsixteen/ROCDelayCalib.png}}
+ \end{center}
+ \caption{(a) Example of scan of the 2 TBM PLLs' phases for one module. For each pair of values the module signal is readout several times at the digital FED and the presence of TBM header and trailer is verified.
+ An efficiency is obtained by dividing by the number of times the signal has been readout.
+ (b) Example of scan of the delay in the ROC data for the two ROC readout groups. For each pair of values the presence of each ROC header in the readout data is verified. The average number of ROCs that sent the header is obtained by dividing by the number of times the signal has been readout.}
+ \label{fig:TBMROCdelays}
+\end{figure} 
+
+\subsection{POH bias and gain}
+
+The tests described in the previous section assume that the POH laser settings are good enough to allow for a correct readout of the signal.
+In fact, a too low laser bias and gain result in a small difference between the 0 and 1 levels of the digital signal and consequently to a large error bit rate.
+It has been found with the test stand that a bias of 40 and a gain of 3 are sufficient to be able to correctly readout the signal so that the tests of the previous section can be safely run with such values.
+However, once the functionality of the TBM has been verified a scan of the POH setting should be run to obtain a finer adjustment aimed at minimizing the power consumption.
+As already mentioned, measuring the optical power as a function of the laser settings is not possible with the digital FED
+while an approximate indication of the error bit rate can be obtained by measuring the known TBM signal.
+A scan of the POH bias and gain is performed and for each value it is checked that the TBM had sent header and trailer. An example of such scan is shown in Fig.~\ref{fig:POHBiasCalib}.
+At the end of this calibration new settings are produced corresponding to a safe area (5 units above the beginning of the plateau).
+
+\begin{figure}[!htb]
+ \begin{center}
+  \includegraphics[width=0.45\textwidth]{\chsixteen/POHBiasCalib.png}
+ \end{center}
+ \caption{Example of scan of a POH laser bias and gain. For each value of the laser settings the module signal is readout several times at the digital FED and the presence of TBM header and trailer is verified.}
+ \label{fig:POHBiasCalib}
+\end{figure} 
+
+\subsection{Read back test}
+
+As discussed in Section~\ref{subsec:Phase1TBM}, the ROC header is followed by 3 bits where the first one is always a 0 and the other 2 contains the so called read back data.
+These data contain different information depending on the value programmed in the ROC read back register. For instance, for a value equal to 12 the ROC analog current is returned.
+It has been found after several tests that not all delay settings allow for a correct readout of the information contained in the ROC data stream.
+Hence, another scan of the TBM PLLs' phases and ROC delays is performed and for each value the information in the read back data is verified, as explained in the following.
+
+The read back word is encoded in 16 bits (Table~\ref{tab:ReadBack}) which cannot be sent at once given the limited size of the ROC data stream.
+As mentioned above there are 2 bits available for the read back data and sent every time the readout is initialized by a trigger.
+Of these two, only one belongs to the actual information, so that 16 triggers have to be sent before the entire word can be decoded.
+The second bit is used to indicate the start of the word.
+Of the 16 bits collected, the first 8-bits are used for the required information (for instance the analog current),
+4 bits contain the value written to the read back register (for instance 12 for the analog current),
+and the last 4 bits encode the ROC I$^2$C address (from 0 to 15).
+
+%The only a priori known information contained in this word is the ROC I$^2$C address (from 0 to 16) that can be verified.
+In order to ensure that the TBM settings chosen by the previous algorithms allow for a correct read back,
+a scan is performed over the TBM PLLs phases and ROC delays
+and for each value it is checked that the ROC address in the read back word is the expected one.
+This is indeed known from the mapping of FED channels and ROCs specified in the detector configuration database.
+%For instance, for a TBM09 it is known that 4 ROCs are readout at a specific FED channel and it is also known which ones of the 16 ROCs.
+At the end of the scan, it is checked if the current settings from previous calibrations give a correct read back of the ROC address for each ROC, otherwise new settings are produced.
+Examples of such scans are shown in Fig.~\ref{fig:TBMROCdelaysRB}.
+In order to acquire statistics the 16-bit word is read several times.
+The algorithm to chose the optimal phases or delays is the same as for the tests described in Section~\ref{subsec:TBMPLLROCDelays}.
+
+It has to be noted that this test gives better results if charge is injected in at least one pixel in each of the ROCs.
+%In order to perform this test charge has to be injected in at least one pixel per ROC.
+In fact, without a pixel hit, the read back bit is the last bit being sent before the TBM trailer.
+%So the TBM gets the data from the ROCs back and attaches the trailer.
+If the timing of the data stream is not optimal, this bit might get lost and the read back word would not be meaningful.
+However, if a pixel hit is added after the ROC header, the last bit being sent before the TBM trailer belongs to the pulse height information and the read back word would be unaffected.
+On the other hand, in order to be able to readout the pixel hit the settings for the comparator threshold ($VcThr$) and the delay ($CalDel$) in the charge injection have to be correct.
+It is then fundamental to run a $VcThrCalDel$ scan (Fig.~\ref{fig:VcThrCalDel}) before performing the read back test.
+This calibration is also useful to verify the functionality of the charge injection mechanism.
+
+\begin{table}[!htb]
+  \caption{Mechanism used by the ROC to send read back data. Sixteen triggers are needed to read the full 16-bit word. One bit is used to indicate the start of the message.
+  In this example, the ROC 2 is readout, and the value written in the read back register is 12 allowing for the readout of the analog current. The latter is equal to 88 ADC counts.}
+  \centering
+  \begin{tabular}{|l|*{16}{c|}}
+    \hline
+    Trigger \#        & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16\\
+    \hline
+    Message start & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0   & 0  & 0   & 0   & 0   & 0   & 1\\
+    \hline
+    Message data & 0 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 0 & 1   & 0  & 1   & 1   & 0   & 0   & 0\\
+    \hline
+    Comment        & \multicolumn{4}{p{2cm}|}{\footnotesize ROC I$^2$C address} & \multicolumn{4}{p{2cm}|}{\footnotesize last value written to the read back register} & \multicolumn{8}{p{4cm}|}{\footnotesize Analog current}\\
+    %Comment        & \multicolumn{4}{|c|}{ROC I$^2$C} & \multicolumn{4}{|c|}{last value} & \multicolumn{8}{|c|}{Analog current}\\
+     %                       & \multicolumn{4}{|c|}{address}        & \multicolumn{4}{|c|}{written to}  & \multicolumn{8}{|c|}{}\\
+    %                        & \multicolumn{4}{|c|}{}                     & \multicolumn{4}{|c|}{read back} & \multicolumn{8}{|c|}{}\\
+    %                        & \multicolumn{4}{|c|}{}                     & \multicolumn{4}{|c|}{register}     & \multicolumn{8}{|c|}{}\\
+
+    \hline    
+  \end{tabular}
+  \label{tab:ReadBack}
+\end{table}
+
+\begin{figure}[!htb]
+ \begin{center}
+  \subfigure[]{\label{fig:TBMROCdelaysRB_a}\includegraphics[width=0.45\textwidth]{\chsixteen/TMPLLDelayReadbackCalib.png}}
+  \subfigure[]{\label{fig:TBMROCdelaysRB_b}\includegraphics[width=0.45\textwidth]{\chsixteen/ROCDelayReadbackCalib.png}}
+ \end{center}
+ \caption{(a) Example of scan of the 2 TBM PLLs' phases (a) and ROC delays (b) for one module. For each pair of values it is verified that the message data obtained with the read back mechanism contain the expected ROC I$^2$C address. If the timing is correct, 16 ROCs per module have to be correctly identified.}
+ \label{fig:TBMROCdelaysRB}
+\end{figure} 
+
+\subsection{ROC analog current and digital voltage}
+
+The read back mechanism described in the previous section allows to assess the ROC analog current information ($I_{ana}$).
+For the present detector it is possible to access only the total current of a large number of ROCs provided by a reading of the power supply, so that only an average value per ROC can be obtained.
+As discussed in Chapter~\ref{ch:BPixCalib}, the analog current increases with irradiation and a re-calibration of the ROC analog voltage setting $V_{ana}$
+is necessary to bring back the current in the safe range and recover the optimal ROC performance (Fig.~\ref{fig:PixRadDamag_b}).
+The $V_{ana}$ calibration for each ROC is a time consuming procedure that converges after a large number of iterations of the S-curve test,
+that allows for a measurement of the threshold every time the settings have been changed (Section~\ref{subsec:calibPart2}).
+A much more simple procedure has been developed for the upgraded ROCs, since the measurement of the analog current is directly provided in the read back data.
+The value is returned in ADC units and a conversion curve measured per each ROC during module testing is applied to obtain the corresponding value in mA.
+The curve is of the form
+
+\begin{equation}
+I_{ana} (\mathrm{ADC}) = a + b \times I_{ana} (\mathrm{mA}) + c \times I_{ana}^2 (\mathrm{mA}),
+\end{equation}
+
+and its parameters are saved for each ROC in the detector configuration database.
+As shown in Fig.~\ref{fig:ROCIanaCalib}, for each value of the $V_{ana}$ setting the analog current is readout from the ROC read back bits
+and the conversion curve above applied to the original value in ADC.
+At the end of the scan, a $V_{ana}$ setting corresponding to the target $I_{ana}$ value of 25\unit{mA} is chosen.
+
+The same calibration code can be also configured to perform a measurement of the digital voltage $V_d$ per each ROC.
+This parameter is controlled by a corresponding DAC and it is useful to monitor it as well during operations.
+Its value can be returned by using the same read back mechanism but by changing the value written in the read back register.
+As for the analog current, a ADC/mV conversion curve has been measured per each ROC during module testing
+and it is applied in the final result of this measurement.
+
+\begin{figure}[!htb]
+ \begin{center}
+  \includegraphics[width=0.5\textwidth]{\chsixteen/ROCIanaCalib.png}
+  %\subfigure[]{\label{fig:ROCIanaCalib_b}\includegraphics[width=0.39\textwidth]{\chsixteen/AllROCsIana.png}}
+ \end{center}
+ \caption{ROC analog current as readout with the ROC read back mechanism as a function of the analog voltage regulator setting.}
+ \label{fig:ROCIanaCalib}
+\end{figure} 
+
+%\subsection{Other tests}
+%\subsection{The test stand}
+%\subsection{Detector commissioning}
+

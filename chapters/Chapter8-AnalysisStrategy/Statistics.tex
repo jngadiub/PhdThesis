@@ -28,7 +28,7 @@ In order to construct the test statistic a likelihood function is defined as
 In this definition, $s$ and $b$ denote the expected signal and background event yields, respectively,
 which, before the scrutiny of the observed data entering the statistical analysis, are subject to multiple uncertainties that are treated by introducing nuisance parameters $\theta$,
 so that signal and background expectations depend on these parameters as $s(\theta)$ and $b(\theta)$.
-The exclusion of a signal hypothesis is generally expressed as an upper limit on the {\itshape signal strength modifier} $\mu$
+The exclusion of a signal hypothesis is generally expressed as an upper limit on the \textit{signal strength modifier} $\mu$
 which scales the cross section used as input in the evaluation of the expected signal yields.
 With this definition, the likelihood represents the Poisson probability of observing a certain amount of data when the expected yield is $\mu\cdot s(\theta) + b(\theta)$
 and given the probability $p(\tilde{\theta}|\theta)$ of measuring a value $\tilde{\theta}$ for the nominal nuisance parameter $\theta$.
@@ -145,7 +145,7 @@ By using the Wald approximation~\cite{10.2307/1990256} the desired distribution 
 
 where $\hat{\mu}$ follows a Gaussian distribution with a mean $\mu^\prime$ and standard deviation $\sigma$, and $N$ represents the data sample size.
 For large data samples ($N\rightarrow\infty$), the $\mathcal{O}(1/\sqrt{N})$ can be neglected and it can be shown~\cite{wilks1938} that the distribution $f(\tilde{q}_\mu|\mu^\prime)$ of the test statistic $\tilde{q}_\mu$
-follows a {\itshape noncentral chi-square} distribution for one degree of freedom with noncentrality parameter
+follows a \textit{noncentral chi-square} distribution for one degree of freedom with noncentrality parameter
 
 \begin{equation}
 \Lambda = \frac{(\mu-\mu^\prime)^2}{\sigma^2}.
@@ -196,7 +196,7 @@ From this distribution, the p-value corresponding to a given experimental observ
 p_0 = P(\tilde{q}_0 \geq \tilde{q}_0^\mathrm{obs}|b(\hat{\theta}_0^\mathrm{obs})) = \int_{\tilde{q}_0^\mathrm{obs}}^{+\infty} f(\tilde{q}_0|0,\hat{\theta}_0^\mathrm{obs})d\tilde{q}_0.
 \end{equation}
 
-This probability is converted into a {\itshape significance}, also referred to as {\itshape Z value}, as follows
+This probability is converted into a \textit{significance}, also referred to as \textit{Z value}, as follows
 
 \begin{equation}
 Z = \Phi^{-1} (1-p_0).
@@ -217,11 +217,11 @@ Z = \sqrt{\tilde{q}_0^\mathrm{obs}}.
 \end{equation}
 
 %\sqrt{\tilde{q}_0^\mathrm{obs}/2}
-The p-value discussed above is evaluated at a fixed resonance mass $M_X$ and can be referred to as a {\itshape local p-value}.
+The p-value discussed above is evaluated at a fixed resonance mass $M_X$ and can be referred to as a \textit{local p-value}.
 In this search, a scan is performed over a wide range of resonance mass hypotheses with the aim of finding
 the minimum local p-value, which describes the probability of a background fluctuation for that particular resonance mass hypothesis.
 However, it is important to distinguish the probability of finding a fluctuation in some particular location from the probability of finding such a fluctuation anywhere else.
-The former is associated to the so called {\itshape local significance}, whereas the latter is referred to as the {\itshape global significance}.
+The former is associated to the so called \textit{local significance}, whereas the latter is referred to as the \textit{global significance}.
 The fact that the global significance is usually smaller than the largest local one is often referred to as the ``look-elsewhere effect'' (LEE).
 As demonstrated in Ref.~\cite{Gross:2010qma}, the global and local p-values are related to each other by a multiplicative factor, usually referred to as ``trial factor'', proportional to the number of independent search regions.
 In the asymptotic approximation the trial factor grows linearly with the local significance, through a proportional constant

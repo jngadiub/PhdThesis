@@ -1,0 +1,24 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(150,100)
+   \fmfright{o1,o2}
+   \fmfleft{i1}
+   \fmf{gluon}{i1,v1}
+   \fmflabel{$\mathcal{A}^a_\mu$}{i1}
+   %\fmf{gluon}{o1,v1,o2}
+   \fmf{gluon}{v1,o1}
+   \fmf{gluon}{o2,v1}
+   \fmflabel{$\mathcal{A}^c_\sigma$}{o1}
+   \fmflabel{$\mathcal{A}^b_\nu$}{o2}
+   \fmfv{decor.shape=circle,decor.filled=full,decor.size=4thick}{v1}
+  \end{fmfgraph*}
+\end{fmffile}\\
+\centering
+$-g_sf_{abc}$
+
+\end{document}

@@ -1,0 +1,17 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{align*}\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(200,100)
+   \fmfleft{i}
+   \fmfright{o}
+   \fmf{dashes}{i,v1,o}
+   \fmflabel{$H$}{i}
+   \fmflabel{$H$}{o}
+   \fmf{dashes,right,tension=0.5,label=$H$}{v1,v1}
+  \end{fmfgraph*}
+\end{fmffile}\end{align*}
+\end{document}

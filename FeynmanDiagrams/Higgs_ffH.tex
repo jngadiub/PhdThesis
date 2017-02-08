@@ -1,0 +1,26 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{fmffile}{feyngraph}
+\begin{equation*}
+\begin{gathered}
+  \begin{fmfgraph*}(120,100)
+    \fmfleft{i1}
+    \fmfright{o1,o2}
+    \fmf{dashes}{i1,v1}
+    \fmf{fermion}{v1,o2}
+    \fmf{fermion}{o1,v1}
+    \fmflabel{H}{i1}
+    \fmflabel{$f$}{o2}
+    \fmflabel{$\bar{f}$}{o1}
+    \fmfv{decor.shape=circle,decor.filled=full,decor.size=4thick}{v1}
+  \end{fmfgraph*}
+\end{gathered}
+-3i\frac{m_f}{v}
+\end{equation*}
+\end{fmffile}
+
+\end{document}

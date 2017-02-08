@@ -1,0 +1,28 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{fmffile}{feyngraph}
+\begin{equation*}
+\begin{gathered}
+  \begin{fmfgraph*}(150,100)
+    \fmfleft{i1,i2}
+    \fmfright{o1,o2}
+    \fmf{boson}{i1,v1}
+    \fmf{boson}{v1,i2}
+    \fmf{dashes}{v1,o1}
+    \fmf{dashes}{o2,v1}
+    \fmflabel{W$^+$}{i1}
+    \fmflabel{W$^-$}{i2}
+    \fmflabel{H}{o1}
+    \fmflabel{H}{o2}
+    \fmfv{decor.shape=circle,decor.filled=full,decor.size=4thick}{v1}
+  \end{fmfgraph*}
+\end{gathered}
+2ig\frac{M^2_W}{v^2}
+\end{equation*}
+\end{fmffile}
+
+\end{document}

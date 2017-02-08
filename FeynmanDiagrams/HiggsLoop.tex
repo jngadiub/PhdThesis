@@ -1,0 +1,18 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(200,100)
+   \fmfleft{i}
+   \fmfright{o}   \fmf{dashes}{i,v1}
+   \fmf{dashes}{v2,o}
+   \fmflabel{$H$}{i}
+   \fmflabel{$H$}{o}
+   \fmf{fermion,left,tension=0.5,label=$f$}{v1,v2,v1}
+  \end{fmfgraph*}
+\end{fmffile}
+
+\end{document}

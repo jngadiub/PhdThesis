@@ -1,0 +1,34 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(280,100)
+    \fmfset{arrow_len}{15}
+    \fmfset{curly_len}{12}
+    \fmfset{dash_len}{15}
+    \fmfstraight
+    \fmfleft{i1,i2}
+    \fmfright{o1,m,o2}
+    % gluons
+    \fmf{gluon}{i1,t1}
+    \fmf{gluon}{t2,i2}
+    \fmflabel{$g$}{i1}
+    \fmflabel{$g$}{i2}
+    \fmf{phantom,tension=0.4}{t1,o1}
+    \fmf{phantom,tension=0.4}{t2,o2}
+    \fmffreeze
+    % top loop
+    \fmf{fermion,tension=1,label=$t$}{t1,t2,t3,t1}
+    \fmf{phantom,tension=1.4}{t3,m}
+    \fmffreeze
+    % Higgs boson
+    \fmf{dashes,tension=1.4}{t3,h}
+    \fmflabel{$H$}{h}
+    \fmf{phantom,tension=1}{h,o1}
+    \fmf{phantom,tension=1}{h,o2}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{document}

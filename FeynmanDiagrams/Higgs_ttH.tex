@@ -1,0 +1,26 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{align*}\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(200,100)
+   \fmfright{o1,o2,o3}
+   \fmfleft{i1,i2}
+   \fmf{gluon}{i1,v1}
+   \fmflabel{$g$}{i1}
+   \fmf{gluon}{i2,v3}
+   \fmflabel{$g$}{i2}
+   \fmf{fermion}{o1,v1}
+   \fmflabel{$\bar{t}$}{o1}
+   \fmf{fermion}{v3,o3}  
+   \fmflabel{$t$}{o3}
+   \fmf{fermion}{v1,v2}
+   \fmf{fermion}{v2,v3}
+   \fmffreeze
+   \fmf{dashes}{v2,o2}
+   \fmflabel{$H$}{o2}
+  \end{fmfgraph*}
+\end{fmffile}\end{align*}
+\end{document}

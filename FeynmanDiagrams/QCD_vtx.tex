@@ -1,0 +1,44 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(130,110)
+   \fmfright{o1,o2}
+   \fmfleft{i1,i2}
+   \fmf{fermion}{i1,v1,o1}
+   \fmflabel{$q_\alpha$}{i1}
+   \fmflabel{$q_\beta$}{o1}
+   \fmf{phantom}{i2,v2,o2}
+   \fmfv{decor.shape=circle,decor.filled=full,decor.size=4thick,label=$g_s$,label.dist=5thick}{v1}
+   \fmf{gluon,tension=0.3}{v1,v2}
+   \fmflabel{$\mathcal{A}^a_\mu$}{v2}
+  \end{fmfgraph*}
+  \begin{fmfgraph*}(140,100)
+   \fmfright{o1,o2}
+   \fmfleft{i1}
+   \fmf{gluon}{i1,v1}
+   \fmflabel{$\mathcal{A}^a_\mu$}{i1}
+   \fmf{gluon}{v1,o1}
+   \fmf{gluon}{o2,v1}
+   \fmflabel{$\mathcal{A}^c_\sigma$}{o1}
+   \fmflabel{$\mathcal{A}^b_\nu$}{o2}
+   \fmfv{decor.shape=circle,decor.filled=full,decor.size=4thick,label=$g_s$,label.dist=5thick}{v1}
+  \end{fmfgraph*}\hspace{1cm}
+  \begin{fmfgraph*}(140,100)
+   \fmfright{o1,o2}
+   \fmfleft{i1,i2}
+   \fmf{gluon}{i1,v1,i2}
+   \fmflabel{$\mathcal{A}^d_\sigma$}{i1}
+   \fmflabel{$\mathcal{A}^a_\mu$}{i2}
+   %\fmf{gluon}{o1,v1,o2}
+   \fmf{gluon}{v1,o1}
+   \fmf{gluon}{o2,v1}
+   \fmflabel{$\mathcal{A}^c_\rho$}{o1}
+   \fmflabel{$\mathcal{A}^b_\nu$}{o2}
+   \fmfv{decor.shape=circle,decor.filled=full,decor.size=4thick,label=$g^2_s$,label.dist=9thick}{v1}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{document}

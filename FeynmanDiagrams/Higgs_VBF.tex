@@ -1,0 +1,24 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}\begin{document}
+\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(200,100)
+   \fmfright{o1,o2,o3}
+   \fmfleft{i1,i2}
+   \fmf{fermion}{i1,v1,o1}
+   \fmflabel{$q$}{i1}
+   \fmflabel{$q$}{o1}
+   \fmf{fermion}{i2,v3,o3}
+   \fmflabel{$q^\prime$}{i2}
+   \fmflabel{$q^\prime$}{o3}
+   \fmf{boson,label=$W/Z$,label.side=left}{v1,v2}
+   \fmf{boson,label=$W/Z$,label.side=left}{v2,v3}
+   \fmffreeze
+   \fmf{dashes}{v2,o2}
+   \fmflabel{$H$}{o2}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{document}

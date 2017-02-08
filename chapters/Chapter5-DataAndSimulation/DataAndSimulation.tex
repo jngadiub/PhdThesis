@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The simulation of pp collisions is usually performed by means of Monte Carlo (MC) event generators, providing an accurate modelling of the event kinematics and topology at parton and hadron level.
-The hard inelastic scattering has to be fully calculated: from the hard interaction between the partons inside the protons, where perturbative QCD calculations (\FIXME{point to theory}) can be used, to the formation of particle jets from the outgoing partons.
+The hard inelastic scattering has to be fully calculated: from the hard interaction between the partons inside the protons, where perturbative QCD calculations (Section~\ref{subsec:QCD}) can be used, to the formation of particle jets from the outgoing partons.
 Furthermore, it is fundamental to understand the exact response of the detector to the outgoing particles produced in pp collisions. 
 Consequently, the stable outgoing particles are fed to a full detector simulation that models the interaction of those particles with the detector material and the corresponding detector response.
 The raw detector data are then subject to the same reconstruction algorithms that are also used for real data.
@@ -196,12 +196,12 @@ The full simulation of the detector has been done privately following the standa
 This emulation has been validated comparing the private production with samples from the MC production campaign carried out centrally for the whole collaboration.
 
 The following parameters are used to compute the cross sections: $g_\mathrm{V}$ = 3, $c_\mathrm{H} \simeq -1$, and $c_\mathrm{F} \simeq 1$
-in the HVT model B (\FIXME{point to theory}) and cot2$\theta$ = 2.3, cot$\theta$ = -0.20799 in the LH model, where $\theta$ is a mixing
-angle parameter that determines \Wpr couplings (\FIXME{point to theory}) such that cot2$\theta$ and cot$\theta$ can be directly related to $c_\mathrm{H}$ and $c_\mathrm{F}$.
+in the HVT model B (Section~\ref{subsec:hvt}) and $\cot 2 \theta$ = 2.3, cot$\theta$ = -0.20799 in the LH model, where $\theta$ is a mixing
+angle parameter that determines \Wpr couplings (Section~\ref{subsec:composite}) such that $\cot 2 \theta$ and $\cot\theta$ can be directly related to $c_\mathrm{H}$ and $c_\mathrm{F}$.
 
 The intrinsic width and cross section for both models are listed in Table~\ref{tab:gamma_xsec_LH_HVT} for the resonance masses considered.
-The widths for the HVT model B are computed by means of Equation (2.31) in Ref.~\cite{Pappadopulo:2014qza},
-while the cross sections were obtained using the online tools provided by the authors of Ref.~\cite{Pappadopulo:2014qza}. (\FIXME{point to theory})
+The widths for the HVT model B are computed by means of Eq.~\ref{eqn:HVT_3},
+while the cross sections were obtained using the online tools provided by the authors of the simplified model described in Section~\ref{subsec:hvt}.
 
 \begin{table}[!htb]
 \caption{

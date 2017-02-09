@@ -3,3 +3,57 @@
 \label{ch:Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+The current understanding of the fundamental constituents of matter and the interactions between them dates back to the middle of the 1970's and is summarized in a theory called the \textit{standard model} (SM) of particle physics. 
+Although the SM has demonstrated remarkable and continued successes in providing experimental predictions and describing the observations, 
+it does leave some phenomena unexplained. Thus, it is believed to be only an approximation to a more complete theory.
+The SM does not incorporate the full theory of gravitation as described by general relativity,
+or account for the accelerating expansion of the Universe (as possibly described by dark energy).
+The model does not contain any viable dark matter particle that possesses all of the required properties deduced from observational cosmology.
+Furthermore, it is not yet understood why gravitation is sixteen orders of magnitudes weaker than electroweak interaction. 
+
+In order to obtain conditions in which production of elementary particles can be studied, particle accelerators are used.
+The start-up of the Large Hadron Collider (LHC) at CERN in 2009 marked the beginning of a new era in particle physics.
+Being the highest energy collider ever built, it allows one to probe particle physics in an energy domain out of reach so far.
+A first milestone was already recently reached, in 2012, when the last unproven prediction of the SM, namely the existence of the scalar Higgs boson through the interaction of which the elementary particles can acquire mass,
+was finally confirmed by the LHC experiments, ATLAS and CMS.
+Despite this last remarkable confirmation of the SM, a major effort is ongoing to verify the existence of new physics exploiting the frontier energies achievable by the LHC.
+An important example of such quest is provided by the work described in this thesis. In fact, a search is presented for new massive particles decaying to pairs of W, Z, and Higgs bosons performed with the CMS detector.
+Several theories of new physics predict the existence of heavy particles that preferentially decay to such final states.
+These models usually aim to clarify open questions in the SM such as the apparently aforementioned large difference between the electroweak and the gravitational scales.
+Notable examples of such models include theories of extra dimensions and scenarios with composite Higgs bosons.
+
+First, a study has been conducted focused on the search for a $\PW\PH$ resonance in the $\ell\nu\bbbar$ final state and based on data recorded in proton-proton (pp) collisions at a center-of-mass energy $\sqrt{s} = 8\TeV$ during 2012 (Run~1). This is one of the first searches for new physics with the Higgs boson in the final state, being made possible only after its discover and measurement of its mass.
+A second study has then been performed focused on a $\PW\PW$ or $\PW\PZ$ resonance in the $\ell\nu\qqbar$ final state and based on 2015 data corresponding to pp collisions at $\sqrt{s} = 13\TeV$ (Run~2).
+These final states are particularly challenging because for large resonance masses the bosons are highly energetic and the hadronization products from their decay overlap in the detector, preventing their identification as resolved jets.
+Thus, they are accessible only through novel jet reconstruction techniques, called ``V tagging'' or ``H tagging'', which exploit the substructure of such objects and help to resolve the collimated decay products.
+Furthermore, additional sensitivity is achieved in the $\ell\nu\bbbar$ search channel combining jet substructure algorithms with the specific characteristics of jets arising from the hadronization of bottom quarks (b jets).
+
+The search in the $\ell\nu\bbbar$ final state performed with data collected during Run~1, reported a deviation of 2.2 standard deviations with respect to the SM expectations at a reconstructed WH invariant mass of 1.8 TeV, arousing large interest in the physics community. The excitement was further enhanced by the deviation reported in the same mass range by the ATLAS collaboration in a search for heavy diboson resonances in the all-hadronic final state. 
+Therefore, when LHC resumed physics collisions at higher energy in 2015, a major effort has been put to explore the mass region of the excess with the first new data. The results of the second search described in this thesis and based on 2015 data did not confirm the excess. However, in order to fully understand the compatibility of the excess, a statistical combination is performed of these results together with limits derived in similar CMS searches for resonances decaying to a pair of bosons in several different final states, with data collected in both LHC Run~1 and Run~2. This is the first combined search for high mass resonances with both WW/WZ and WH/ZH signatures.\\
+
+The CMS pixel barrel detector constitutes the central part of the CMS detector with about 48 million readout channels. Thanks to its capability of measuring secondary vertices with high precision,
+it plays a key role in the identification of events with long-lived objects such as bottom quarks. 
+Its excellent performances are thus fundamental to access physical processes with a low cross section and b quarks in the final states, which is one of the main features of the analysis described in this thesis.
+The barrel part of the CMS pixel detector was developed, designed and built at PSI in cooperation with ETH Zurich and the University of Zurich.
+In the framework of this thesis important contributions were made. These include calibrations and testing of the detector after it has been heavily irradiated during the first LHC data-taking period.
+This work has been carried out during the two years (2013--2014) of shut down of the LHC after Run~1. Furthermore, after the re-installation of the pixel detector into CMS in December 2014,
+a large effort has been put in commissioning and calibration. The detector was then successfully operated during pp collision data-taking in 2015 and 2016.
+
+My contributions have additionally been focused on the upgrade of the barrel pixel detector, required to fulfill the continuous increment of the LHC luminosity and the consequent increment of the event rate per collision.
+The project, referred to as ``Phase 1 Pixel Upgrade'', was defined in 2012. The new system is currently under assembly and testing and it will be installed into CMS in Spring 2017.
+During the design and prototyping phase of the upgrade barrel system, the University of Zurich has been responsible for the testing of the complete system.
+For this purpose, a test stand has been setup, which includes a slice of the full readout chain consisting of a group of pixel detector modules connected through optical links to the front-end boards for readout and control and powered using a set of DC-DC converters. The main goal of the system test was to test all components of the detector system prior to full production, as well as establish test and calibration procedures for the assembly and commissioning.
+I have contributed to the assembly of the test system and I implemented some of its functionalities. Furthermore, I employed the system to test new calibration procedures
+aimed at guaranteeing a quick verification of the detector functionality during assembly and commissioning, as well as stable operations at the beginning of the 2017 data-taking period.\\
+
+This thesis is organized in two parts. The first part is dedicated to the search for diboson resonances introduced above. 
+In particular, in Chapter~\ref{ch:theory} a review of the standard model of particle physics is given, together with a discussion about its limitations and an introduction on scenarios of new physics predicting the existence of massive resonances decaying to pairs of W, Z, and Higgs bosons.
+Chapter~\ref{ch:CMS} summarises the experimental setup, focusing on the Large Hadron Collider and the CMS detector, that was used to collect the data analyzed in this work.
+A brief overview of the signals under study and of the analysis strategy is given in Chapter~\ref{ch:dibosonIntro}.
+The description of proton-proton collisions and their generation using Monte Carlo simulations is the topic of Chapter~\ref{ch:dataAndSim}, while Chapter~\ref{ch:EventReconstruction} is devoted to a description of the methods used in CMS to reconstruct the event and the physics objects relevant for this analysis. The algorithms used to identify the substructure inside highly energetic jet present in the decay of massive resonances represent a key aspect of this analysis and are reviewed in Chapter~\ref{ch:vtagging}. Chapter~\ref{ch:strategy} contains the main steps of the analysis, including details on the final event selection, the estimation of the SM background, the modelling of the signal, systematic uncertainties and statistical methods. The final results for the two independent searches are presented in Chapter~\ref{ch:results8} and Chapter~\ref{ch:results8} for the 8\TeV and 13\TeV data analyses, respectively.
+In Chapter~\ref{ch:combination} the aforementioned statistical combination of all CMS searches for diboson resonances is presented. Finally, Chapter~\ref{ch:summary1} provides a brief summary of this work.\\
+
+The second part of the thesis concentrates on hardware related work including the various aspects of my contributions to the CMS pixel barrel detector.
+An overview of the project is first given in Chapter~\ref{ch:BPixIntro}, followed by a description of the design and main features of the present detector.
+Chapter~\ref{ch:BPixCalib} is dedicated to the efforts put during LS1 in optimizing and maintaining the detector, as well as the steps of the re-installation into CMS and commissioning for LHC Run~2. Since most of the work has been focused on calibrating the detector, and overview of the calibration procedure is provided together with the results from commissioning. Furthermore, the performance of the detector at the start up of Run~2 are discussed.
+The design and main features of the upgraded system and of the test stand at the University of Zurich are described in Chapter~\ref{ch:Phase1Intro}, where the new calibration procedure developed for the commissioning of the new detector are also detailed. Finally, a summary of this work is provided in Chapter~\ref{ch:summary2}.

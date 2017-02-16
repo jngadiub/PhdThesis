@@ -2,13 +2,12 @@
 \label{ch:BPix}
 
 This chapter provides an introduction to the design and functionality of the present CMS pixel barrel detector.
-It was developed, designed and built at the Paul Scherrer Institute (PSI) in cooperation with Eidgen{\"o}ssische Technische Hochschule Zurich (ETH) and the University of Zurich (UZH).
+It was developed, designed and built at the Paul Scherrer Institute (PSI) in cooperation with the Eidgen{\"o}ssische Technische Hochschule Zurich (ETH) and the University of Zurich (UZH).
 %In this chapter, the main components of the detector are introduced. In particular,
-The detector was installed in 2008 and it has been in operation for the entire first LHC run.
-During the first long shut-down it was temporarily installed in the clean room at the CMS experimental site, LHC-P5.
-The detector has been re-installed in December 2014 and commissioned for Run~2 in January 2015.
-
-Section~\ref{sec:BPix_design} provides an overview of the detector design and mechanical structure, followed by a description of the detector module and its main building blocks (Section~\ref{sec:BPix_modules}).
+%The detector was installed in 2008 and it has been in operation for the entire first LHC run.
+%During the first long shut-down it was temporarily installed in the clean room at the CMS experimental site, LHC-P5.
+%The detector has been re-installed in December 2014 and commissioned for Run~2 in January 2015.
+Section~\ref{sec:BPix_design} gives an overview of the detector design and mechanical structure, followed by a description of the detector module and its main building blocks (Section~\ref{sec:BPix_modules}).
 In Section~\ref{sec:BPix_DAQ}, the detector readout and control system are described.
 The last section provides an introduction to the structure and functionality of the pixel online software (POS) used for controlling and calibrating the detector.
 The detector calibration and its performance at the re-start of collisions in 2015 are discussed in the next chapter.
@@ -19,7 +18,7 @@ The detector calibration and its performance at the re-start of collisions in 20
 
 The CMS BPix detector~\cite{Kastli2007724} consists of three cylindrical layers at mean radii of 4.4, 7.3 and 10.2\cm from the center of the detector and with a length of 53\cm.
 A three dimensional representation of the detector can be seen in Fig.~\ref{fig:PixLayout_a}.
-The layers are composed of 768 modular detector units that consist of thin segmented silicon sensors, with a pixel size of $100\times150$\unit{m$^2$} providing about 48 million readout channels.
+The layers are composed of 768 modular detector units that consist of thin segmented silicon sensors, with a pixel size of $100\times150\mum^2$ providing about 48 million readout channels.
 The pixels are almost square shaped in order to achieve a similar track resolution in both the $r\phi$ and $z$ direction.
 
 \begin{figure}[!htb]
@@ -27,7 +26,7 @@ The pixels are almost square shaped in order to achieve a similar track resoluti
  \subfigure[]{\label{fig:PixLayout_a}\includegraphics[width=0.6\textwidth]{\chfourteen/PixLayout.jpg}}
  \subfigure[]{\label{fig:PixLayout_b}\includegraphics[width=0.35\textwidth]{\chfourteen/BPixLadders.png}}
  \end{center}
- \caption{(a) Layout of the CMS pixel detector with three barrel layers (green) and four forward disks (red). (b) Detailed view in $r\phi$ of the geometric layout.}
+ \caption{(a) Layout of the CMS pixel detector with three barrel layers (green) and two forward disks at each endcap (red). (b) Detailed view in $r\phi$ of the geometric layout.}
  \label{fig:PixLayout}
 \end{figure}
 
@@ -47,6 +46,8 @@ The detector and the supply tubes are connected via a six layer printed circuit 
 The final BPix system consists of two independent half cylinders placed at $+x$ (inner) and $-x$ (outer) coordinates,
 with each half shell connected to two supply tubes placed at $+z$ and $-z$ coordinates.
 
+A liquid cooling system based on C$_6$F$_{14}$ is used to cool down the sensors and the electronics.
+The cooling plant is located outside the CMS detector and the fluid is guided along the ladders inside the aluminum pipes (Fig.~\ref{fig:PixLayout_b}).
 %but the achieved hit resolution is better because the hit reconstruction determines the barycentre of the charge that is deposited in multiple pixels. Charge sharing is ensured even when charge deposition occurs in only a single pixel by exploiting the Lorentz drift of the charge carriers in the magnetic field of CMS. The detector employs zero suppression of pixel hits using a detection threshold to reduce the required bandwidth. Additionally, data are only read out for events that are selected by the CMS trigger. This means that the detector has to buffer the data for the duration of the trigger latency.
 %Multiple scattering of particles affects the momentum and impact parameter resolution of the reconstructed tracks. Because of the close proximity to the interaction point, it is fundamental that the detector contributes as little as possible to this effect. For this reason it is designed with a material budget that minimizes its effective radiation length. 
 %Furthermore, the sensor and front-end electronics are designed to achieve high radiation hardness.
@@ -56,12 +57,12 @@ with each half shell connected to two supply tubes placed at $+z$ and $-z$ coord
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The BPix modules are made of a thin, segmented silicon sensor~\cite{Allkofer200825} with a dimension of $66.6\times18.6\mm^2$ that enables the detection of particles that pass through it by measuring the ionization charge that they produce.
-The charge measurement is performed by readout chips (ROCs)~\cite{Kastli:2005jj} that are connected to the sensor using the bump bonding technique with Indium solder.
+The charge measurement is performed by readout chips (ROCs)~\cite{Kastli:2005jj} that are connected to the sensor using the bump-bonding technique with Indium solder.
 Full modules consist of two rows of 8 ROCs, while half modules use a smaller sensor with $1\times8$ ROCs.
-Each ROC has a size of $8\times8\mm^2$ and reads a matrix of 4160 pixel readout channels.
+Each ROC has a size of $7.9\times9.8\mm^2$ and reads a matrix of 4160 pixel readout channels.
 Table~\ref{tab:Nmodules} summarizes the configuration of full and half modules on the three different BPix detector layers.
-The ROCs are wire-bonded to a three layer high density interconnect (HDI) flex printed circuit glued onto the backside of the sensor.
-Mounted on the top of the HDI, a token bit manager (TBM) chip~\cite{Bartz:920426} controls the readout of the ROCs, receives all external control signals and distributes them to the chips.
+The ROCs are wire-bonded to a three-layer high-density interconnect (HDI) flex printed circuit glued onto the backside of the sensor.
+A token bit manager (TBM) chip~\cite{Bartz:920426}, mounted on the top of the HDI, controls the readout of the ROCs, receives all external control signals, and distributes them to the ROCs.
 Base-strips made of 250\mum thick silicon nitride (Si$_3$N$_4$) are glued underneath the ROCs allowing the module to be mounted on the mechanical support structure.
 A power cable consisting of 6 copper coated aluminum wires is soldered to the HDI and brings analog, digital and high voltage to the module.
 The control and readout signals are sent through a two layer Kapton signal cable which is wire-bonded to the HDI.
@@ -69,7 +70,7 @@ Additionally, the HDI distributes the signals and the voltages to the ROCs.
 The signal cables from the modules are plugged into the end flange that exists on both sides of the barrel and connects the three layers to the detector supply tubes. 
 The modules are attached to cooling frames, with the cooling tubes being an integral part of the mechanical structure.
 The size of a full module is $66.6\times26\mm^2$ and the weight is up to 3.5\unit{g} depending on the length of the signal and power cables.
-The average power consumption of a full module is 2\unit{W}. An exploded view of the BPix module is shown in Fig.~\ref{fig:BpixMod}.
+The average power consumption of a full module is 2\unit{W}. A view of each component of the BPix module is shown in Fig.~\ref{fig:BpixMod}.
 
 \begin{table}[!htb]
   \caption{\small Number of modules, readout chips and pixel channels for the three detector layers.}
@@ -89,9 +90,9 @@ The average power consumption of a full module is 2\unit{W}. An exploded view of
 
 \begin{figure}[!htb]
  \begin{center}
- \includegraphics[width=0.6\textwidth]{\chfourteen/pixelModule.jpg}
+ \includegraphics[width=0.7\textwidth]{\chfourteen/pixelModule.jpg}
  \end{center}
- \caption{Picture of a BPix half module (left) and full module (right). In the center, the components of the module are shown. From top to bottom: the Kapton signal cable, the power cable, the HDI, the silicon sensor, the 16 ROCs and the base strips.}
+ \caption{Picture of a BPix half module (left) and full module (right). In the center, the components of the module are shown. From top to bottom: the Kapton signal cable, the power cable, the HDI with the TBM, the silicon sensor, the 16 ROCs and the base strips~\cite{Konig200662}.}
  \label{fig:BpixMod}
 \end{figure}
 
@@ -140,9 +141,9 @@ Electrons drift toward n$^+$ implants while holes drift toward the back of the s
 In Fig.~\ref{fig:PixSensor}, the bulk of the silicon is p-type because of the type inversion occurring in the bulk after prolonged exposure to high fluences of radiation.
 In fact, the effective concentration of impurities gradually decreases with exposure, until a transition to the the other type material behavior occurs.
 At this stage, the depletion zone grows from the pixel implants toward the back of the sensor, enabling the collection of electrons even when the sensor is only partially depleted.
-Extremely high operating voltages can therefore be avoided, reducing the problems of leakage currents and high voltage breakdowns.
+Extremely high operating voltages can therefore be avoided, reducing the problems of leakage currents and high-voltage breakdowns.
 Furthermore, the double-sided processing of n$^+$-in-n detectors allows a guard ring concept which keeps all sensor edges at ground potential
-and avoids the risk of disruptive discharges to the very closely spaced front-end chip.
+and avoids the risk of disruptive discharges to the very closely spaced ROCs.
 
 Additional processing is needed on the readout side to electrically isolate the n$^+$ implants from each other.
 The electron accumulation layer induced by ionizing radiation otherwise tends to short-circuit the pixel implants.
@@ -158,24 +159,26 @@ A moderated p-spray technique is used, which consists of a medium dose p-type Bo
 
 The position resolution of single-pixel hits is given by the pixel pitch divided by the $\sqrt{12}$.
 However, the spatial resolution can be improved exploiting charge sharing among adjacent pixels. A group of pixels collecting a signal from the same particle is usually called ``cluster''.
-Significant charge sharing is a consequence of the Lorentz drift in the strong magnetic field of 4\unit{T} inside CMS.
+Significant charge sharing is a consequence of the Lorentz drift in the strong magnetic field of 3.8\unit{T} inside CMS.
 In fact, charge carriers released by the ionizing particle in the silicon sensor do not follow the electric field lines to the collection electrodes, but are deflected by the Lorentz force (Fig.~\ref{fig:PixSensor}).
-Furthermore, the analog readout of the CMS pixel detector allows for an interpolation of the amounts of collected charge for each of the pixels in the cluster.
-This effect influenced the choice of the barrel pixels size which have been optimized to achieve the optimal spatial resolution.
+Furthermore, the readout of the pulse height allows for an interpolation of the amounts of collected charge for each of the pixels in the cluster.
+This effect influenced the choice of the barrel pixel size which have been optimized to achieve optimal spatial resolution.
 Two-pixel clusters and the interpolation allow a much better resolution, limited only by fluctuations of the charge deposition.
 Since division of the signal charge among more than two pixels increases the data rate and reduces the signal charge per pixel without an improvement of the resolution, an ideal choice of the pixel size in the direction perpendicular to the magnetic field ($r\phi$) is therefore given by the length over which charges are spread when they reach the surface of the sensor.
-For the usual $\sim300\mum$ sensor thickness and a Lorentz angle of $28^\circ$ this amounts to $\sim150\mum$.
+For a $\sim300\mum$ sensor thickness and a Lorentz angle of $28^\circ$ this amounts to $\sim150\mum$.
 A slightly smaller size of 100\mum was chosen to maintain charge sharing, and hence resolution, after irradiation.
 The area of a pixel must also be large enough to accommodate the readout electronics.
 With one dimension fixed by the Lorentz drift, this leads to a more or less quadratic shape of $100\mum(r\phi)\times150\mum(z)$, resulting in comparable resolution in both directions.
+The typical pixel resolutions are 9\mum in $r\phi$ and 24\mum in $z$ (Section~\ref{sec:BPixPerf2015}).
 
 \subsection{Readout chip}\label{subsec:BPix_ROC}
 
 The readout chip is responsible for measuring the charge deposited by a particle in the sensor's pixel.
 It amplifies and samples the signal with a time resolution of 25\unit{ns}, which is the time between two LHC bunch crossings.
-The pixel hit information have to be stored on-chip during the CMS Level-1 trigger latency of 3.2\mus after which they are either read out or discarded.
+The pixel hit information has to be stored on-chip during the CMS Level-1 trigger latency of 3.2\mus after which they are either read out or discarded.
 Each pixel sensor is connected via a bump bond to its own readout circuit on the ROC, referred to as \textit{Pixel Unit Cell} (PUC). 
-The PUCs are arranged in $26\times80$ double columns. Each double column represents an independent readout unit controlled by a circuit sitting in the column periphery from where the PUC is controlled, data are buffered and global functions common to all pixels are located.
+The PUCs are arranged in $26\times80$ double columns. Each double column represents an independent readout unit controlled by a circuit sitting in the column periphery.
+The ROC periphery controls the PUC, buffers data and houses global functions common to all pixels.
 %Local bus lines connect all PUCs of a double column with the column periphery, one of them being the Column OR which combines all PUCs in the double column into a global OR.
 %The PUC can be divided into an analog part and the digital logic. The signal from the sensor enters a two stage charge sensitive pre-amplifier/shaper system. The shaper is a band-pass filter that limit the bandwidth of the preamplifier output signal. This is beneficial for a reduction of high- and low- frequency noise contributions introduced in particular by the sensor leakage current and by the input device. The pre-amplifier input is DC coupled to the sensor pixels. Its feedback must absorb the expected sensor leakage current of 10 nA per pixel. This introduces a DC-offset at the preamplifier output bringing the circuit out of its operation regime. A globally programmable current source at the input node compensates for sensor leakage current.
 
@@ -188,7 +191,7 @@ Since variations of the threshold of the individual pixels caused by transistor 
 each pixel has a 4-bit DAC to trim the threshold. Furthermore, a mask bit allows to disable noisy pixels.
 When the rising edge of the signal has passed the threshold, the signal height is sampled after some delay and stored in the sample-and-hold capacitance until the readout mechanism is started from the periphery. During this time the pixel becomes insensitive.
 
-Since the L1 trigger latency time in CMS is 3.2\mus (128 bunch crossings), the information of a hit pixel, including the associated bunch crossing number and the analog signal, can not be kept on the pixel itself during this time without introducing a significant inefficiency. In the {\itshape Column Drain Architecture} chosen for the CMS pixel readout, all pixel hits occurring in a pixel double column are immediately and quickly copied into the column periphery in order to free the pixels for the next hit. In this case the probability of having a second hit in the pixel during the latency is significantly reduced.
+Since the L1 trigger latency time in CMS is 3.2\mus (128 bunch crossings), the information of a hit pixel, including the associated bunch crossing number and the analog pulse height signal, can not be kept on the pixel itself during this time without introducing a significant inefficiency. In the {\itshape Column Drain Architecture} chosen for the CMS pixel readout, all pixel hits occurring in a pixel double column are immediately and quickly copied into the column periphery in order to free the pixels for the next hit. In this case the probability of having a second hit in the pixel during the latency is significantly reduced.
 Each double column informs the column periphery immediately of any hits that have been occurred by sending to the periphery a current with adjustable intensity.
 The column periphery writes the value of the bunch crossing counter into a time stamp buffer and initiates a token scan of the double column passing a readout token from cell to cell.
 Once the hit pixel is found, in the readout block of the PUC the token signal initiates the transfer of pixel address and analog pulse-height information, which are stored in a data buffer located in the periphery waiting for the L1 trigger. The hit pixels remain inactive until their hit information has been transferred.
@@ -266,7 +269,7 @@ The individual electronic devices of the detector readout and control system are
  \begin{center}
  \includegraphics[width=0.7\textwidth]{\chfourteen/ReadoutAndControl.png}
  \end{center}
- \caption{Overview of the BPix readout and control system.}
+ \caption{Overview of the BPix readout and control system~\cite{Kotlinski200673}.}
  \label{fig:BPixSystem}
 \end{figure}
 
@@ -286,10 +289,10 @@ the pixel addresses are not sent in a common binary fashion, but the available s
 The readout is terminated by the TBM trailer, containing two UBLs, two BLs, and four clock cycles with the TBM status information.
 
 The data stream which contains all hit information belonging to a single trigger is sent out by the TBM through the module Kapton cable.
-%The Kapton cable consists of differential analog lines separated by quiet lines from the lines for the fast digital signals.
-%The analog signals are split from the digital signals on the end ring PCB.
+The Kapton cable consists of differential analog lines separated by quiet lines from the lines for the fast digital signals.
+The analog signals are split from the digital signals on the end flange boards that drive the signals to the PCB on which the analog optical hybrids (AOHs)~\cite{1221923} are plugged.
 %The TBM sends the data over kapton and PCB traces to the Analog Optohybrids [5], where levels are amplified and shifted and then converted to a laser drive current with adjustable gain and threshold.
-Kapton cables bring the analog signals to the PCB on which the analog optical hybrids (AOHs)~\cite{1221923} are plugged.
+%The Kapton cables bring the analog signals to the end flange PCB on which the analog optical hybrids (AOHs)~\cite{1221923} are plugged.
 The electric analog signals are amplified in an Analog Level Translator (ALT) chip and converted into 40\unit{MHz} analog optical signals in the AOHs.
 Each AOH is equipped with 6 lasers with adjustable gain and threshold, which drive the signal through optical fibers to the front-end drivers.
 
@@ -323,7 +326,7 @@ The FED can also be operated in a transparent mode making unprocessed ADC output
 
 \subsection{Detector control and programming}
 
-The detector control and programming is performed through front-end control modules (pixel FECs or pxFEC) located in the underground counting room.
+The detector control and programming is performed through front-end control modules (pixel FECs or pxFECs) located in the underground counting room.
 The function of the pixel control system is to send the 40\unit{MHz} clock, the trigger and control signals (e.g. resets) to the front-end electronics,
 and to program all front-end devices (TBMs and ROCs).
 All the signals are sent through optical fibers and converted to electrical signals by digital optical hybrids (DOHs)~\cite{1221923} mounted on the supply tube before forwarding them to the pixel modules.
@@ -341,14 +344,14 @@ A DOH is connected to four optical fibers, two for receiving and two for sending
 A modified version of the common I$^2$C protocol has been developed to cope with the required volume of the data that have to be downloaded to configure the detector modules.
 The main modifications include the increase of the clock speed to 40\unit{MHz} and dropping the requirement of an acknowledge signal.
 Each DOH contains two laser drivers and two PIN diodes. The DOH is mounted on the digital opto-board together with other electronic devices needed by the system.
-In particular, a phase locked loop (PLL) chip~\cite{PLLmanual} is used to split the clock from the trigger, and the Delay25 chips~\cite{Delay25manual} adjust the relative phases of all control signals.
+In particular, a phase-locked loop (PLL) chip~\cite{PLLmanual} is used to split the clock from the trigger, and the Delay25 chips~\cite{Delay25manual} adjust the relative phases of all control signals.
 The Gate-Keeper chip converts the LVDS signals used by PLLs and Delay25s to low current differential signals (LCDS) used by the pixel front-end chips.
 Finally, the LCDS-driver chips mounted on the end flange PCB are used to drive the signals on the Kapton cables to each detector module.
 In addition, these chips are used to compensate the signal phases for the different Kapton cable lengths.\\
 
 The electronics on the supply tubes (DOHs, PLLs, Delay25s, AOHs, and so on) have to be controlled and programmed.
 %In addition to the pixel specific devices several other components like PLLs, AOHs, and others, have to be controlled and programmed.
-This is achieved through a system of four CCU (Communication and Control Unit) boards equipped with 9 CCU chips~\cite{Paillard:593914}.
+This is achieved through a system of four CCU (Communication and Control Unit) boards equipped with 9 CCU chips each~\cite{Paillard:593914}.
 This is indicated in Fig.~\ref{fig:BPixSystem} as ``slow I$^2$C'', since the standard I$^2$C protocol is implemented for this task.
 The boards are mounted on the supply tubes and each of them supervises one quarter of the detector.
 
@@ -398,7 +401,7 @@ The temperature sensors are placed on the CCU boards, the analog opto-board and 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %This section describes the design and implementation of the pixel online software, used for controlling and calibrating the CMS pixel detector.
-The pixel online software is the framework used for controlling and calibrating the CMS pixel detector and that runs on the PCs of the CMS control room at LHC-P5.
+The pixel online software~\cite{POSCalib} is the framework used for controlling and calibrating the CMS pixel detector and that runs on the PCs of the CMS control room at LHC-P5.
 Its main functionalities are to configure the detector, perform calibrations, analyze calibration data and monitor the detector during data taking.
 The pixel online software is based on the XDAQ toolkit~\cite{Brigljevic:2003kg} and is written in C++. It has a very complex structure built from a large number of different applications and packages.
 The dependencies among the main applications and packages is presented in Fig.~\ref{fig:POS}.

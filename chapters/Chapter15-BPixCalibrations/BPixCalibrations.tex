@@ -3,13 +3,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The CMS pixel detector was designed to cope with the high radiation environment of LHC and to operate with the highest performance even after the accumulation of significant radiation doses.
-Nevertheless, radiation damage affects hit efficiency and resolution and hence, it is necessary to monitor its effects during operations.
+Nevertheless, radiation damage affects hit efficiency and resolution and hence, it is necessary to monitor its effects during operation.
 As described in this chapter, throughout Run~1, re-calibrations of the detector have been performed to compensate for these effects and recover full performance.
 
 During LS1, both BPix and FPix were extracted from CMS for maintenance with the purpose to recover broken channels.
-In this period, the calibration procedure has been exercised and improved in view of commissioning and operations for Run~2.
+In this period, the calibration procedure has been exercised and improved in view of commissioning and operation for Run~2.
 
-The pixel detector has been operated with a coolant temperature of 7.4\unit{$^\circ$C} in 2008--2011 and 0\unit{$^\circ$C} in 2012, which for the pixel sensors translates to values $\approx10$\unit{$^\circ$C} higher.
+The pixel detector has been operated with a coolant temperature of 7.4\unit{$^\circ$C} in 2008--2011 and 0\unit{$^\circ$C} in 2012, which for the pixel sensors translates to values of about 10\unit{$^\circ$C} higher.
 In order to limit the impact of radiation damage, during Run~2 the detector has been operated at much lower temperature, down to -10\unit{$^\circ$C}.
 This has been made possible thanks to a major effort during the long shut-down to implement a tracker wide sealing that ensures minimal humidity levels.
 The flow of dry gas into the tracker volume was increased and a new safety system was developed that shuts down the detector safely in case a sudden increase of temperature, electric current or humidity is detected. 
@@ -29,15 +29,19 @@ This process is called \textit{annealing}, with a beneficial part reducing the d
 During beneficial annealing, with a time constant of a few days at room temperature, the leakage current decreases, while later it rises due to reverse annealing process until it finally saturates at a value which is significantly above the initial level. At temperatures below 0\unit{$^\circ$C} however, both effects can be frozen and the detector current remains constant.
 Thus, irradiated detectors should be operated and stored at low temperature, while it is favorable to shortly expose them to room temperature to take advantage of the beneficial annealing.
 
-Figure~\ref{fig:PixLeakageCurrent} shows the increase of the leakage current during Run~1 for the pixel barrel layers measured from readings of the high voltage power supplies as a function of the integrated luminosity.
+Figure~\ref{fig:PixLeakageCurrent} shows the increase of the leakage current for the pixel barrel layers measured from readings of the high voltage power supplies as a function of the integrated luminosity and of time in 2011-2012.
 The damage was only partially recovered by beneficial annealing that took place during a longer shut-down after about 6\fbinv and a shorter technical stop after about 13\fbinv delivered integrated luminosity.
-Between the end of 2011 and the beginning of 2012 the operating temperature was decreased from 7.4\unit{$^\circ$C} to 0\unit{$^\circ$C} achieving a reduction in leakage current by a factor two and preventing reverse annealing which would eventually require too high depletion voltages.\\
+Between the end of 2011 and the beginning of 2012 the operating temperature was decreased from 7.4\unit{$^\circ$C} to 0\unit{$^\circ$C} achieving a reduction in leakage current by a factor two and preventing reverse annealing which would eventually require too high depletion voltages.
+The data are compared to a parametrization that accounts for accumulated damage and for annealing, whose input is the fluence as predicted by a model of the CMS detector.
+The overall trend of the measurements is in agreement with this model except for the normalization.
+The reasons for this discrepancy in scale remain under investigation, with possibilities including uncertainties in the operational temperature and incorrect inputs to the model of the CMS detector.
 
 \begin{figure}[!htb]
  \begin{center}
- \includegraphics[width=0.45\textwidth]{\chfifteen/PixelLeakageCurrent.png}
+ \subfigure[]{\label{fig:PixLeakageCurrent_a}\includegraphics[width=0.45\textwidth]{\chfifteen/PixelLeakageCurrent-1.png}}
+ \subfigure[]{\label{fig:PixLeakageCurrent_b}\includegraphics[width=0.43\textwidth]{\chfifteen/PixelLeakageCurrent-2.png}}
  \end{center}
- \caption{Leakage current scaled to 0\unit{$^\circ$C} operational temperature for the barrel layers as a function of the integrated luminosity delivered in Run~1 that represents the accumulated irradiation~\cite{PixelOffline}.}
+ \caption{Leakage current scaled to 0\unit{$^\circ$C} operational temperature for the barrel layers as a function of the integrated luminosity (a) and time (b) in 2011-2012~\cite{Zenz:2013rva}.}
  \label{fig:PixLeakageCurrent}
 \end{figure}
 
@@ -56,8 +60,8 @@ The presence of a minimum for the layer 1 and layer 2 is evidence for type inver
 
 \begin{figure}[!htb]
  \begin{center}
- \subfigure[]{\label{fig:PixBiasV_a}\includegraphics[width=0.45\textwidth]{\chfifteen/hv_l1_eff.png}}
- \subfigure[]{\label{fig:PixBiasV_b}\includegraphics[width=0.45\textwidth]{\chfifteen/hvturnon_totlumi.png}}
+ \subfigure[]{\label{fig:PixBiasV_a}\includegraphics[width=0.3\textwidth]{\chfifteen/hv_l1_eff.png}}
+ \subfigure[]{\label{fig:PixBiasV_b}\includegraphics[width=0.3\textwidth]{\chfifteen/hvturnon_totlumi.png}}
  \end{center}
  \caption{(a) Scans of the bias voltage performed on the innermost barrel layer. (b) Bias voltage corresponding to full single hit efficiency for all barrel layers and forward disks as a function of the integrated luminosity delivered in Run~1~\cite{PixelOffline}.}
  \label{fig:PixBiasV}
@@ -104,7 +108,8 @@ In Summer 2013, after the first LHC run, the BPix and FPix detectors were extrac
 At the end of Run~1, the fraction of operational channels in the barrel pixel detector was 97.7\% and the long shut-down was used to recover the faulty channels.
 The main reasons were broken wire-bond connections between the ROC and the HDI as well as issues with the lasers on few AOHs.
 Furthermore, some modules had an old ROC design, which caused operational problems, and were therefore disabled.
-Replacements were attempted only for the barrel layer 3 outer shell, which made up 52\% of the faulty channels, since the other layers and the inner shell of layer 3 were considered too risky to touch without breaking further parts.
+Replacements were attempted only for the barrel layer 3 outer shell, since the other layers and the inner shell of layer 3 were considered too risky to touch without breaking further parts.
+The defects in layer 3 made up 52\% of the faulty channels.
 Two AOHs were found with disconnected wire bonds between the laser and the AOH PCB, and they were also replaced. Figure~\ref{fig:AOHreplace} shows pictures from the laboratory in LHC-P5 during this operation.
 In order to proceed with the replacement one of the two cold boxes was opened and the half shell of interest extracted using a support equipped with rails.
 The shields covering the AOHs were unscrewed and all the AOHs of the sector in the outside direction had to be unplugged in order to replace the two malfunctioning ones.
@@ -115,12 +120,12 @@ Before restoring the detector in its original position inside the box, the two n
  \includegraphics[width=0.7\textwidth]{\chfifteen/AOHReplacement.pdf}
  \end{center}
  \caption{Pictures of the operations conducted in the clean room at LHC-P5 to replace the broken AOHs. The support with rails used to extract one half shell from the box is visible.
- The AOHs are mounted on the on the supply tube and covered by metal shields. A picture of an AOH is shown on the top right.}
+ The AOHs are mounted on the supply tube and covered by metal shields. A picture of an AOH is shown on the top right.}
  \label{fig:AOHreplace}
 \end{figure}
 
 There was, however, a serious incident in mid-August 2014. After having replaced a BPix module, tests of the corresponding quadrant showed severe damage: 55 new unresponsive modules were found.
-It was decided to take that part of the detector to PSI for further tests and repairs. Shorts were discovered at the ROCs and in several modules between the TBM and cable pads. Eventually, the detector was repaired using 40 new modules and 19 repaired ones within three months. The shorts were suspected to be caused by humidity due to unobserved condensation in the cold box. 
+It was decided to take that part of the detector to PSI for further tests and repairs. Shorts were discovered at the ROCs and in several modules between the TBM and cable pads. Eventually, the detector was repaired within three months using 40 new modules and 19 repaired ones. The shorts were suspected to be caused by humidity due to unobserved condensation in the cold box. 
 After being repaired, the functionalities of the new modules were successfully confirmed and at the end of LS1 the good detector fraction was 99\%.
 
 Part of the time available during LS1 have been employed to exercise and improve calibration procedures in view of commissioning and operations for Run~2.
@@ -130,21 +135,22 @@ An overview of the calibration procedure is given in the following.
 \section{Overview of pixel calibrations}
 %%%%%%%%%%%
 
-Detector functioning and performance depend on proper calibrations of readout chain parameters.
+Detector functionality and performance depend on proper calibrations of readout chain parameters.
 Most of these parameters are quite stable unless major changes occur, such as the detector operating temperature.
 Other parameters are more sensitive to environmental variations.
 For these parameters a re-calibration on a regular basis was necessary during Run~1 operations.
 
-Further expertise in the calibration procedure was achieved during LS1 and used 
+Further expertise in the calibration procedure was achieved during LS1 and it has been fundamental 
 for the re-commissioning of the detector to prepare it for a successful data-taking in 2015--2016.
 In addition, the detector was fully re-calibrated at low temperature after re-installation.
 As for Run~1, in these two years, re-calibrations have been performed during technical stops, and in particular in mid-2016 when the analog current drawn by the ROCs of the innermost layer reached critical values ($\approx6$\unit{A}) that led to the trip of the power supplies in several occasions.
 
-The calibrations are performed with POS which was as well installed and run on the computers available in the clean room.
-As described in the following, there are a large number of different calibration tasks that need to be executed sequentially and sometimes iterated.
+The calibrations are performed with POS which was installed and run on the computers available in the clean room.
+There are a large number of different calibration tasks that need to be executed sequentially and sometimes iterated.
+While a detailed description of each calibration as well as the implementation in POS can be found in Ref.~\cite{POSCalib}, an overview of the most important steps is given in the following.
 The calibration process consists first of a part where the readout chain settings are adjusted. It is meant to put the detector in a state in which it can correctly reconstruct hits and involves tuning of the settings of the FED,
 of the electronic components placed on the supply tubes, as well as the threshold and timing settings of the ROCs, which are controlled by programmable DACs (Section~\ref{subsec:BPix_ROC}).
-In the second part of the process the signal performance are optimized. The steps involved here are lengthy and require several iterations to reach the target signal rise speed as well as the lowest practical value for the threshold of each ROC. In the final step, an optimization of the analog pulse height is performed.
+In the second part of the process the pulse height information is optimized. The steps involved here are lengthy and require several iterations to reach the target signal rise speed as well as the lowest practical value for the threshold of each ROC. In the final step, an optimization of the analog signal response is performed.
 Most of the calibrations produce directly new optimal settings which can then be used in subsequent runs.
 Other calibrations write binary data files which have to be analyzed offline, these include the pixel alive test, the threshold and noise measurement and the gain calibration.
 
@@ -195,7 +201,7 @@ The calibration also produces an output file with the analog signal for each mod
 It runs quickly and provides an information on the data buffer for each FED channel. It is therefore very useful as a debugging tool since it provides a feedback on the basic functionalities of optical links, AOHs, TBMs and ROCs, needed to assess the status of the detector.
 
 If this step fails to converge, for instance when part of the analog signal is not visible, a calibration can be run that adjusts the timing of the signal digitization in the FED by changing the phase of the ADC clock.
-This calibration is usually very stable, and needs to be repeated only when the FEDs, fibers, or other parts of the detector are touched, or if modifications of the fine phase of the global clock occurs.
+This calibration is usually very stable, and needs to be repeated only when the FEDs, fibers, or other parts of the detector are touched, or if modifications of the fine phase of the global clock occur.
 
 \begin{figure}[!htb]
  \begin{center}
@@ -282,7 +288,7 @@ For real data, only the trigger delay has to be known and programmed into the so
 The trigger delay basically sets the bunch crossing in which data is read out and is estimated from the known cable/fiber lengths and delays introduced by the electronics.
 
 An example of \textit{VcThr} versus \textit{CalDel} scan is shown in Fig.~\ref{fig:VcThrCalDel_a}.
-For large \textit{VcThr} values, which correspond to low thresholds, a large number of pixel fire due to noise such that to block a double column (cross-talk).
+For large \textit{VcThr} values, which correspond to low thresholds, a large number of pixel fire due to noise such that to block a double column.
 For lower values, hits are collected in the \textit{CalDel} range that corresponds to the \textit{WBC} used.
 The curve bends to smaller delay values as the \textit{VcThr} decreases. The explanation for this behavior is illustrated in Fig.~\ref{fig:VcThrCalDel_b}.
 Since a low \textit{VcThr} value corresponds to a higher threshold, the signal reaches the threshold later and hence a smaller delay is needed for the signal, i.e. the signal is injected earlier.
@@ -295,7 +301,7 @@ The optimal working point is also chosen such that it is sufficiently far away f
  \subfigure[]{\label{fig:VcThrCalDel_a}\includegraphics[width=0.5\textwidth]{\chfifteen/VcThrCalDel.pdf}}
  \subfigure[]{\label{fig:VcThrCalDel_b}\includegraphics[width=0.4\textwidth]{\chfifteen/VcThrCalDelPulses.pdf}}
  \end{center}
- \caption{(a) Efficiency for detecting a hit as a function of the comparator threshold (\textit{VcThr}) and delay (\textit{CalDel}) settings for one ROC. Large values of \textit{VcThr}, corresponding to a low threshold, generates much noise that saturates the digital circuit and no hits are detected. The optimal point is indicated in black while the blue point indicates the old settings. For small values of \textit{VcThr} the signal reaches the threshold later and hence a smaller delay is needed for the signal. This behavior is illustrated in (b).}
+ \caption{(a) Efficiency for detecting a hit as a function of the comparator threshold (\textit{VcThr}) and delay (\textit{CalDel}) settings for one ROC. Large values of \textit{VcThr}, corresponding to a low threshold, generate much noise that saturates the digital circuit and no hits are detected. The optimal point is indicated in black while the blue point indicates the old settings. For small values of \textit{VcThr} the signal reaches the threshold later and hence a smaller delay is needed for the signal. This behavior is illustrated in (b).}
  \label{fig:VcThrCalDel}
 \end{figure}
 
@@ -336,7 +342,7 @@ For the case on the left all cells are functioning, whereas on the right an exam
 
 \subsection*{8) Measurement of threshold and noise}
 
-This is the last step of the calibration chain aimed at verifying and adjusting the basic functionalities of the detector.
+This is the last step of the calibration chain aimed at verifying and adjusting the basic functionality of the detector.
 At this stage it is important to perform a measurement of the threshold and noise of each pixel, which will be afterwards optimized in the second part of the procedure as described in the next section.
 In fact, the detection thresholds are an important parameter of the pixel detector since they influence the hit position resolution (Fig.~\ref{fig:PixRelvsLumi}).
 
@@ -354,14 +360,14 @@ An example of such scan is shown in Fig.~\ref{fig:SCurve_a} for a test conducted
  \label{fig:SCurve}
 \end{figure}
 
-Due to the finite rise-time of the signals the threshold measurement is somewhat more complicated. 
+The finite rise-time of the signal complicates the threshold measurement. 
 One should distinguish the \textit{absolute threshold} defined as the comparator level above which the signal is accepted and the pixel hit is available for readout, and the \textit{in-time threshold} where the signal is fast enough to be correctly labeled by the right bunch crossing.
 The difference between the two is due to \textit{time-walk} and is related to the speed of the pixel amplifier.
 The absolute threshold is relevant when discussing noise and cross-talk, that is the optimum conditions under which the ROC still works. It also determines the pixel detector hit occupancy.
 The in-time threshold determines the lowest amplitude signals useful for hit reconstruction and affects the position resolution.
 Both thresholds can be measured using the S-curve method: for the in-time measurement the \textit{WBC} (or trigger delay) is set to the nominal value; for the absolute threshold measurement the \textit{WBC} is shifted down by one unit making the readout of the lowest amplitude (i.e. slowest) signal possible. By definition the in-time threshold is higher than the absolute. This behavior is illustrated in Fig.~\ref{fig:SCurve_b}.\\
 
-The noise can also be measured with the S-curve method since it is proportional to the width of the region where the signal efficiency switches from 0 to 100\%.
+The noise can also be measured with the S-curve method since it is proportional to the width of the region where the signal efficiency rises from 0 to 100\%.
 Both noise and threshold are measured in \textit{Vcal} units, representing the parameter which determines the magnitude of the injected charge.
 The calibration of the \textit{Vcal} unit itself was done during module testing using data from X-ray sources of known energies, and it varies from pixel to pixel and from ROC to ROC.
 On the average, one \textit{Vcal} unit corresponds to 65.5 electrons, representing the slope of the calibration curve, whereas the average offset is -414 electrons.
@@ -371,7 +377,7 @@ Running this method for the whole detector is very time consuming. Instead, for 
 The results of the noise and threshold measurements performed in 2015 during commissioning for Run~2 will be discussed in Section~\ref{sec:commissioning}.
 
 %%
-\subsection{Optimization of signal performance}\label{subsec:calibPart2}
+\subsection{Optimization of the pulse height information}\label{subsec:calibPart2}
 %%
 
 \subsection*{1) Signal rise speed}
@@ -383,23 +389,6 @@ During module testing the optimal \textit{Vana} setting was determined for each 
 In fact, this value for the current has been found optimal to avoid exceeding the limit of the power supply.
 Nevertheless, the radiation damage affects the ROC analog current and a re-calibration is necessary during operations (Fig.~\ref{fig:PixRadDamag_b}). 
 
-Once the detector is fully assembled, it is no longer possible to access the value of the analog current for each ROC, since at this stage the only available information is the total current drawn from a single power supply, which services more than one-hundred ROCs. Thus, a procedure has been developed in the past to optimize \textit{Vana} that does not make use of this information.
-The analog current can indeed be directly related to the time-walk, whose value DT can be obtained by the difference between the in-time and absolute thresholds.
-The higher \textit{Vana}, the faster is the detector (smaller DT), but also the higher the current drawn by the ROC.
-The target value of DT is then chosen such that the average analog current per ROC in each power group is near the optimal value of 26--28\unit{mA}.
-However, the correct target for DT depends on radiation damage and temperature, so that a fixed number to target cannot be given.
-Instead, one should tune the target based on the average analog current per ROC as read from the power supply.
-Figure~\ref{fig:VanaCalib2012} shows the DT distributions for both BPix and FPix measured in 2012, as well as the corresponding average analog current per ROC.
-For BPix, a target DT value of 14 \textit{Vcal} was found to be sufficient to reach the optimal current.
-
-%\begin{figure}[!htb]
- %\begin{center}
-%\includegraphics[width=0.45\textwidth]{\chfifteen/TimeWalk_vs_Vana.png}
- %\end{center}
- %\caption{Evolution of the DT, defined as difference between the in-time and absolute thresholds of the pixels on a ROC as a function the change in \textit{Vana} applied in the FPix \textit{Vana} calibration. As \textit{Vana} was increased (decreased), the DT decreased (increased) due to the change in time-walk~\cite{Kreis:2011zw}.}
- %\label{fig:Timewalk}
-%\end{figure}
-
 \begin{figure}[!htb]
  \begin{center}
  \subfigure[]{\label{fig:VanaCalib2012_b}\includegraphics[width=0.45\textwidth]{\chfifteen/FinalDT2012.pdf}}
@@ -409,9 +398,18 @@ For BPix, a target DT value of 14 \textit{Vcal} was found to be sufficient to re
  \label{fig:VanaCalib2012}
 \end{figure}
 
+Once the detector is fully assembled, it is no longer possible to access the value of the analog current for each ROC, since at this stage the only available information is the total current drawn from a single power supply, which services more than one-hundred ROCs. Thus, a procedure has been developed in the past to optimize \textit{Vana} that does not make use of this information.
+The analog current can indeed be directly related to the time-walk, whose value DT can be obtained by the difference between the in-time and absolute thresholds.
+The higher \textit{Vana}, the faster is the detector (smaller DT), but also the higher the current drawn by the ROC.
+The target value of DT is then chosen such that the average analog current per ROC in each power group is near the optimal value of 26--28\unit{mA}.
+However, the correct target for DT depends on radiation damage and temperature, so that a fixed number to target cannot be given.
+Instead, one should tune the target based on the average analog current per ROC as read from the power supply.
+Figure~\ref{fig:VanaCalib2012} shows the DT distributions for both BPix and FPix measured in 2012, as well as the corresponding average analog current per ROC.
+For BPix, a target DT value of 14 \textit{Vcal} was found to be sufficient to reach the optimal current.
+
 In order to optimize the DT, the calibration is implemented as an iterative procedure, which makes use of the in-time and absolute threshold measurements given by the S-curve method.
-For each iteration, using the relation $\Delta(\mathrm{DT}) = \mathrm{DT} - \mathrm{DT}_{target} \simeq \Delta{Vana}$, the new \textit{Vana} settings are computed to be downloaded to the ROCs in the next iteration.
-In each iteration, the absolute threshold and charge injection timing has to be re-calibrated (step 5 in Section~\ref{subsec:calibPart1}) because of their dependence from \textit{Vana}. 
+It has been found from calibrations performed during Run~1 that the relation $\Delta(\mathrm{DT}) = \mathrm{DT} - \mathrm{DT}_{target} \simeq \Delta{Vana}$ holds~\cite{Gaz:2013pja}.
+Using this relation, the new \textit{Vana} settings are computed for each iteration and then downloaded to the ROCs for the next iteration. In each iteration, the absolute threshold and charge injection timing has to be re-calibrated (step 5 in Section~\ref{subsec:calibPart1}) because of their dependence on \textit{Vana}. 
 Figure~\ref{fig:VanaCalib} illustrates the evolution of the \textit{Vana} settings with the iterations showing how these converge to the value corresponding to the target DT.
 
 \begin{figure}[!htb]
@@ -425,9 +423,9 @@ Figure~\ref{fig:VanaCalib} illustrates the evolution of the \textit{Vana} settin
 \subsection*{2) Threshold minimization}
 
 This step is meant to set the threshold of each ROC at the lowest practical value, so that the threshold is low enough to detect low amplitude signals and ensure high hit resolution,
-but above the noise level at which cross-talk occurs.
-The procedure for minimizing the threshold starts setting a large value of the comparator threshold (for instance 50 \textit{Vcal}) in each ROC such that it is above the level of cross-talk.
-The threshold is then lowered by 2 units and a pixel alive test or S-curve is run to check wether a ROC is failing because the threshold is too low and cross-talk occur.
+but above the noise level.
+The procedure for minimizing the threshold starts setting a large value of the comparator threshold (for instance 50 \textit{Vcal}) in each ROC such that it is above the level of noise.
+The threshold is then lowered by 2 units and a pixel alive test or S-curve is run to check wether a ROC is failing because the threshold is too low and noise occurs.
 The procedure is iterated until all ROCs reach the minimum achievable value. For each iteration the charge injection timing has to be re-optimized as well.
 Several scripts have been implemented during LS1 to automatize this time consuming procedure. An example of the results from tests conducted in the clean room during LS1 is shown in Fig.~\ref{fig:ThrCalibLS1}.
 The final threshold and noise distributions for the whole detector obtained with this method before the start of data-taking in 2015 are discussed in Section~\ref{sec:commissioning}.
@@ -447,13 +445,13 @@ In fact, the hit position is interpolated from the charge information of all pix
 %Furthermore, a linear response is preferable in order to simplify its modeling and hence, reduce uncertainties in the position resolution.
 The response curve is measured by injecting signals with increasing amplitudes to each pixel and measuring the analog pulse height.
 Before this calibration, the linearity of the response curve is optimized by adjusting few DAC registers in the ROC.
-The linearity is required for two reasons. On one hand the non linear behavior in the low range does not allow to reconstruct the charge of the signal, on the other hand fewer parameters have to be stored in the data base.
+The linearity is required for two reasons. On one hand the non-linear behavior in the low range does not allow to reconstruct the charge of the signal, on the other hand fewer parameters have to be stored in the data base.
 The \textit{VhldDel} register controls the delay that is applied to each pulse before its height is sampled and stored in the sample and hold capacitance until the readout mechanism is started from the periphery.
 The supply voltage of the sample and hold circuit is regulated by the \textit{Vsf} register.
 
 Figure~\ref{fig:VhldDel} shows the pulse height as a function of \textit{VhldDel} settings at low, medium, and high values of \textit{Vsf}, for a fixed injected signal amplitude.
 A good \textit{Vsf} value is one for which this curve rises and then falls so that the pulse heights at the two endpoints (lowest and highest \textit{VhldDel}) are equal.
-The figure also includes a plot of these endpoints as a function of \textit{Vsf}; the rightmost intersection point is the \textit{Vsf} value chosen. Low values of \textit{Vsf}, below $\sim 90$ are discarded because found to be not optimal for a correct readout. After choosing the \textit{Vsf} value, \textit{VhldDel} is set to the value that maximizes the pulse height.
+The figure also includes a plot of these endpoints as a function of \textit{Vsf}; the rightmost intersection point is the \textit{Vsf} value chosen. Low values of \textit{Vsf}, below $\sim 90$ are discarded because they are found to be not optimal for a correct readout. After choosing the \textit{Vsf} value, \textit{VhldDel} is set to the value that maximizes the pulse height.
 %When charge is injected with Vcal = 250 on the low scale, these Vsf and VHldDel settings are found to give good linearity in pulse height vs. injected charge, while not drawing too much power.
 
 \begin{figure}[!htb]
@@ -466,13 +464,13 @@ The figure also includes a plot of these endpoints as a function of \textit{Vsf}
  \label{fig:VhldDel}
 \end{figure}
 
-A number of ROC DAC settings also affect the scaling of the pulse height signal that is sent out to the FED. The difference in recorded pulse height between a small and large amounts of collected charge should be preferably large.
-However, the pulse height signal should not go low enough to be confused with the UB level, nor high enough to exceed the FED's dynamic range.
+Several ROC DAC settings also affect the scaling of the pulse height signal that is sent out to the FED. The difference in recorded pulse height between a small and large amount of collected charge should be preferably large.
+However, the pulse height signal should not go too low to be confused with the UB level, nor too high to exceed the FED's dynamic range.
 Hence, a calibration is run to optimize these settings as well.
 
 After these fine adjustments, the measurement of the response curve for each pixel is performed. For each pixel about 30 charge values are injected. 
 During the scan, the acquired data is stored in binary files and is later analyzed offline. All pixels have to be calibrated, therefore, the procedure is time consuming and takes about 8 hours for the whole detector.
-An example of such measurement for one pixel is shown in Fig.~\ref{fig:GainCalib}. For comparison, an example exhibiting a non-linear behavior for a not optimal \textit{Vsf} setting is also shown.
+An example of such measurement for one pixel is shown in Fig.~\ref{fig:GainCalib}. For comparison, an example exhibiting a non-linear behavior for a non optimal \textit{Vsf} setting is also shown.
 The saturation in the high range is less important since it occurs for charges of more than 30-40 ke.
 
 \begin{figure}[!htb]
@@ -509,7 +507,7 @@ The operations, described in Section~\ref{sec:BPixInst}, were coordinated by the
 After that, the FPix detector was also installed following a similar check out procedure as for BPix so that most work was already completed before Christmas.
 The full pixel detector was re-commissioned in January 2015 within about a fortnight using the procedure described in the previous section.
 Section~\ref{sec:FinalBPixCalib} presents the results of the detector calibrations performed for the whole detector at low temperature after the installation.
-Finally, in Section~\ref{sec:BPixPerf2015}, the detector performance at the beginning of the new LHC run are discussed.
+Finally, in Section~\ref{sec:BPixPerf2015}, the detector performance at the beginning of the LHC Run~2 are discussed.
 
 \begin{figure}[!htb]
  \begin{center}
@@ -546,7 +544,7 @@ A picture of the detector in the final position with all power and control cable
  \begin{center}
  \includegraphics[width=0.8\textwidth]{\chfifteen/BPixInstallation2015.png}
  \end{center}
- \caption{Pictures illustrating the steps of the BPix re-installation in December 2014. The operations have been completed in 2 days.}
+ \caption{Pictures illustrating the steps of the BPix re-installation in December 2014. The operation has been completed in 2 days.}
  \label{fig:BPixInst2}
 \end{figure}
 
@@ -554,7 +552,7 @@ A picture of the detector in the final position with all power and control cable
  \begin{center}
  \includegraphics[width=0.8\textwidth]{\chfifteen/BPixInstallation2015-2.pdf}
  \end{center}
- \caption{View of the barrel pixel detector in its final position inside CMS. The central beam pipe and the detector end-flanges with cooling lines and power and signal cables can be seen.}
+ \caption{View of half of the barrel pixel detector in its final position inside CMS. The central beam pipe and the detector end-flanges with cooling lines and power and signal cables can be seen.}
  \label{fig:BPixInst3}
 \end{figure}
 
@@ -578,8 +576,8 @@ The check out procedure was repeated after the insertion of the FPix.
 
 As discussed at the beginning of this chapter, it was planned to operate the detector at -10\unit{$^\circ$C} since low temperatures
 are favorable to mitigate the effects of radiation damage and guarantee excellent performance.
-Since the detector settings largely depend on the temperature a full calibration of the detector under the new conditions have to be performed.
-Because of the limited amount of time, it was not possible to achieve this during LS1, and tests were conducted for only few sectors aimed at verifying some basic functionalities at such low temperatures.
+Since the detector settings largely depend on the temperature, a full calibration of the detector under the new conditions has to be performed.
+Because of the limited amount of time, it was not possible to achieve this before the re-installation, and tests were conducted for only few sectors aimed at verifying some basic functionalities at such low temperatures.
 %However, it was not possible to perform the full calibration at low temperature was never been performed except for the tests conducted in the clean room during LS1
 %for only few sectors and aimed at ensuring basic functionalities under such conditions.
 The full calibration procedure was instead run in January 2015 and completed in only 8 days, including the final optimization of the signal performance (Section~\ref{subsec:calibPart2}).
@@ -637,7 +635,7 @@ The distribution of the linearity parameter of the response curve as extracted f
 \section{Performance at the start of Run 2}\label{sec:BPixPerf2015}
 %%%%%%%%%%%%%%%%%%%%%
 
-The detector re-calibration discussed in the previous section have been crucial to ensure excellent performance during the start-up of data-taking in 2015.
+The detector re-calibration discussed in the previous section has been crucial to ensure excellent performance during the start-up of data-taking in 2015.
 Figure~\ref{fig:ThrVsLumi2015} shows the average threshold, RMS and noise in units of 1 ke for each barrel pixel layer as a function of the integrated luminosity delivered in 2015.
 Due to the different levels of irradiation, the old and new modules have been monitored separately.
 The threshold of the new modules rapidly increased with irradiation as was observed also in Run~1 (Fig.~\ref{fig:PixRadDamag}).
@@ -682,8 +680,8 @@ This behavior was also observed for old modules in Run~1 in the beginning of the
  \label{fig:ClusterSizeVsLumi}
 \end{figure}
 
-Finally, the hit resolution have also been measured by the pixel group for layer 2 with tracks that have hits on layer 1 and layer 3.
-The tracks are then re-fitted without the hit in the middle, and the residual between the original and the interpolated hit positions are measured.
+Finally, the hit resolution has also been measured by the pixel group for layer 2 with tracks that have hits on layer 1 and layer 3.
+The tracks are re-fitted without the hit in the middle, and the residual between the original and the interpolated hit positions are measured.
 The residual distribution is then fitted with a student-t function. Figure~\ref{fig:RelVsLumi2015} shows the hit resolution as a function of the delivered luminosity in 2015.
 A large improvement was observed with respect to the measurements performed at the end of Run~1 (Fig.~\ref{fig:PixRelvsLumi}).
 

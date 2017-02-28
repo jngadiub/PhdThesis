@@ -6,36 +6,37 @@ As pointed out in Chapter~\ref{ch:theory}, the remarkable compatibility of the d
 force physicists to deeply understand the role of naturalness in the dynamics of this particle.
 Several theoretical extensions to the SM have been proposed offering a concrete realization of naturalness,
 where new particles with masses in the TeV range generate loop corrections with the necessary cancellations to stabilize the Higgs boson mass.
-This means that the attention can be restricted to direct experimental manifestations of new physics represented by the production of reasonably narrow new particles.
-More natural solutions can therefore be probed at the LHC through the direct discovery of these new particles in final states with SM objects with known properties.
-The research described in this work follows exactly this approach and it is focused on the direct search for new massive resonances ($\mathrm{M}_\mathrm{X} > 800\GeV$) decaying to
-pairs of vector bosons (WW, WZ, or ZZ)
-or to a vector boson and a Higgs boson (WH or ZH).
+%This means that particular attention can be payed to direct experimental manifestations of new physics represented by the production of these heavy particles.
+More natural solutions can therefore be probed at the LHC through the direct discovery of these new, heavy particles in final states with SM objects with known properties.
+The research described in this work follows exactly this approach and it is focused on the direct search for new massive resonances decaying to
+pairs of vector bosons (WW, WZ, or ZZ) or to a vector boson and a Higgs boson (WH or ZH).
 These decay modes can have large branching fractions in several BSM models. 
-Popular examples include the bulk scenario of the Randall--Sundrum warped extra-dimensions described in Section~\ref{subsec:graviton},
-as well as the composite Higgs and Littlest Higgs models discussed in Section~\ref{subsec:composite}.
-Furthermore, the HVT model (Section~\ref{subsec:hvt}) generalizes a large class of explicit theories that predict new heavy spin-1 vector bosons,
-adopting a simplified model strategy.
+Popular examples include the bulk scenario of the Randall--Sundrum warped extra-dimentions model described in Section~\ref{subsec:graviton},
+as well as the composite Higgs and littlest Higgs models discussed in Section~\ref{subsec:composite}.
+Furthermore, the heavy vector triplet model (Section~\ref{subsec:hvt}) generalizes a large class of explicit theories that predict new heavy spin-1 vector bosons,
+adopting a simplified model strategy. The two HVT models A and B are considered, which correspond, respectively, to a weakly- and a strongly-coupled theoretical option.
+In this context, spin-1 resonances are studied that couple both as a vector triplet ($\PVpr = \Wpr$ and \Zpr) and as singlets (\Wpr or \Zpr), i.e. only a charged or a neutral resonance is expected at a given mass.
 The properties of the above benchmark models studied in this thesis are summarized in Table~\ref{tab:models}.\\
 
 \begin{table}[!htb]
 \centering
-\caption{Summary of the properties of the heavy resonance models considered in this work. The polarization of the produced W/Z boson in all considered models is mostly longitudinal.}
+\caption{Summary of the properties of the heavy-resonance models considered in the combination. The polarization of the produced W and Z bosons in these models is mostly longitudinal, as decays to transverse polarizations are suppressed.}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{c|c|c|c|c|c}
-model & particles & spin & charge & main production & main decay \\
+\begin{tabular}{cccccc}
 \hline
+Model & Particles & Spin & Charge & Main production & Main decay \\
 \hline
-HVT model A, $g_{V} = 1$ & \Wpr singlet & 1 & $\pm1$ & $\qqbarpr$ & $\qqbarpr$ \\ 
-HVT model A, $g_{V} = 1$ & \Zpr singlet & 1 & 0 & $\qqbar$ &  $\qqbar$\\
-HVT model A, $g_{V} = 1$ & \Wpr+\Zpr triplet & 1 & 0,$\pm1$ & $\qqbar$/$\qqbarpr$ &  $\qqbar$/$\qqbarpr$\\
+\multirow{3}{*}{HVT model A, $g_\mathrm{V} = 1$} & W' singlet & 1 & $\pm1$ & $\qqbar^\prime$ & $\qqbar^\prime$ \\ 
+                                                                                 & Z' singlet & 1 & 0 & $\qqbar$ &  $\qqbar$\\
+                                                                                 & W' and Z' triplet & 1 & $\pm1$,0 & $\qqbar^\prime$,$\qqbar$ & $\qqbar^\prime$,$\qqbar$\\
 \hline
-HVT model B, $g_{V} = 3$ & \Wpr singlet & 1 & $\pm1$ & $\qqbarpr$ & WZ,WH \\ 
-HVT model B, $g_{V} = 3$ & \Zpr singlet & 1 & 0& $\qqbar$ &  WW,ZH \\
-HVT model B, $g_{V} = 3$ & \Wpr+\Zpr triplet & 1 & 0,$\pm1$ & $\qqbar$/$\qqbarpr$ &  WW,WZ,WZ,ZH\\
+\multirow{3}{*}{HVT model B, $g_\mathrm{V} = 3$} & W' singlet & 1 & $\pm1$ & $\qqbar^\prime$ & WZ,WH \\ 
+                                                                                 & Z' singlet & 1 & 0& $\qqbar$ &  WW,ZH \\
+                                                                                 & W' and Z' triplet & 1 & $\pm1$,0 & $\qqbar^\prime$,$\qqbar$ & WZ,WH,WW,ZH\\
 \hline
 %2 / neutral / $G_{\text{RS1}}$ & subdominantly WW, ZZ & mainly $\qqbar$ and $gg$ \\
-RS bulk scenario, $\tilde{k}=0.5$ & $\rm G_{bulk}$ & 2 & 0 & $gg$ & WW, ZZ \\
+RS bulk, $\tilde{k}=0.5$ & $\rm G_{bulk}$ & 2 & 0 & $gg$ & WW, ZZ \\
+\hline
 \end{tabular}}
 \label{tab:models}
 \end{table}
@@ -47,11 +48,13 @@ This assumption allows a ``model-independent'' type of search, where the descrip
 independently from the chosen benchmark model.
 
 The semi-leptonic final states are considered, where one of the two bosons is a W decaying into a charged lepton ($\ell$) and a neutrino ($\Pgn$).
-The lepton can be either a muon ($\mu$) or an electron (e), however, the results include the $\PW\to\tau\Pgn$ contribution from the decay $\tau\to\ell\Pgn\bar{\Pgn}$.
+The lepton can be either a muon ($\mu$) or an electron (e), although the results include the $\PW\to\tau\Pgn$ contribution from the decay $\tau\to\ell\Pgn\bar{\Pgn}$.
 However, the gain in sensitivity from $\tau$ leptons is limited by the small branching fractions involved.
-The second boson in the final state decays into hadrons, and can be either a vector boson V = W or Z,
-or a Higgs boson. In the first case, the final state is labelled as $\ell\Pgn\qqbar$ including $\PW\to\qqbarpr$ and $\PZ\to\qqbar$ decays (Figures~\ref{fig:FDsignals_a},~\ref{fig:FDsignals_b} and~\ref{fig:FDsignals_c}).
+The second boson in the final state decays into quarks, and can be either a vector boson V = W or Z,
+or a Higgs boson. In the first case, the final state is labelled as $\ell\Pgn\qqbar$ including $\PW\to\qqbar^\prime$ and $\PZ\to\qqbar$ decays (Figures~\ref{fig:FDsignals_a},~\ref{fig:FDsignals_b} and~\ref{fig:FDsignals_c}).
 For the Higgs boson, the final state is labeled as $\ell\Pgn\bbbar$ referring to the Higgs boson decay into a bottom quark-antiquark pair (Fig.~\ref{fig:FDsignals_d}).
+Each quark from the V or H boson decays results in a shower of hadrons in the final state called a \textit{jet}. These particles are collected through a jet algorithm which allows to reconstruct the kinematics of the original quark.
+These final states provide high sensitivity to this search as the presence of the lepton in the final state highly suppresses the QCD background, while the large branching fractions of the dominant $\PV\to\qqbarpr$ and $\PH\to\bbbar$ decay modes allow to maintain high signal cross sections.
 
 \begin{figure}[!htb]
 \centering
@@ -59,42 +62,41 @@ For the Higgs boson, the final state is labeled as $\ell\Pgn\bbbar$ referring to
 \subfigure[]{\label{fig:FDsignals_b}\includegraphics[width=0.3\textwidth]{\chfour/ZprimeWW_LO.pdf}}\\
 \subfigure[]{\label{fig:FDsignals_c}\includegraphics[width=0.3\textwidth]{\chfour/WprimeWH_LO.pdf}}\hspace{1cm}
 \subfigure[]{\label{fig:FDsignals_d}\includegraphics[width=0.3\textwidth]{\chfour/WprimeWZ_LO.pdf}}
-\caption{Feynman diagrams for the production of a neutral spin-2 $G$ (a), and a neutral $\Zpr$ (b) and charged \Wpr (c and d) spin-1 resonances.
-All resonances decay to a pair of bosons (WW, WZ, or WH) with their subsequent semi-leptonic decay.}
+\caption{Feynman diagrams for the production of a neutral spin-2 $G$ (a), and a neutral \Zpr (b) and charged \Wpr (c and d) spin-1 resonances.
+All resonances decay to a pair of bosons (WW, WZ, or WH) with their subsequent semi-leptonic decay. Charge conjugate modes for \Wpr production and decay are implied.}
 \label{fig:FDsignals}
 \end{figure}
 
 The search in the $\ell\Pgn\bbbar$ final state is based pp collision data at $\sqrt{s} = 8\TeV$ collected in 2012 and corresponding to an integrated luminosity of 19.7\fbinv.
-The second analysis described in this thesis and focused on the $\ell\Pgn\qqbar$ final state is instead based on the pp collision data at $\sqrt{s} = 13\TeV$ collected in 2015 and corresponding to an integrated luminosity of 2.3\fbinv.
+The second analysis described in this thesis and focused on the $\ell\Pgn\qqbar$ final state is instead based on the pp collision data at $\sqrt{s} = 13\TeV$
+collected in 2015 and corresponding to an integrated luminosity of 2.3\fbinv.
 Although different algorithms are used for the reconstruction and identification of the hadronically decaying boson, the analysis strategy is similar in the two searches.\\
 
 The key challenge of these analyses is the reconstruction of the highly energetic decay products.
 Since the resonances under study have masses of $\approx$~TeV, their decay products, i.e. the bosons,
 have on average transverse momenta of several hundred GeV or more.
 As a consequence, the particles emerging from the boson decays are very collimated.
-In particular, the jet-decay products of the bosons cannot be resolved using the standard algorithms,
+In particular, the decay products of the bosons cannot be resolved using the standard algorithms,
 but are instead reconstructed as a single jet object. Dedicated techniques, so-called jet ``V tagging'' and ``H tagging'' techniques,
-are applied to exploit the substructure of such jet objects, and can help resolve jet decays of massive bosons.
+are applied to exploit the substructure of such jet objects, and can help resolve jet signatures of massive bosons.
+In particular, the jet is tagged as coming from a V or H boson through the estimation of its invariant mass.
 These techniques also help to suppress SM background, which mainly originates from the production of W bosons in association with jets (W+jets).
 Further discrimination is achieved in the $\ell\Pgn\bbbar$ analysis channel exploiting the specific characteristics of jets arising from the hadronization of bottom quarks.\\
 
-The aim is to reconstruct the full event to be able to search for a localized enhancement in the invariant mass of the WV or WH system
-on the top of a smoothly falling SM background distribution.
-The background mainly comprises W+jets production, altough another significant contribution is represented by 
-events involving pair produced top quarks (\ttbar).
-Other minor backgrounds are represented by single top quark and SM diboson (WW, WZ or ZZ) production processes.\\
-
+The aim is to reconstruct the full event to be able to search for a localized enhancement in the invariant mass of the WV or WH system on the top of a smoothly falling SM background distribution.
 The invariant mass of the WV and WH system is determined by estimating the neutrino transverse momentum with the measured missing transverse energy in the event,
 while an estimate of the neutrino longitudinal momentum is derived by imposing the constraint of the W mass on the invariant mass of the $\ell\Pgn$ system.
 In the following, the diboson invariant mass will be labelled either \mlvj, or \mWV and \mWH for the $\ell\Pgn\qqbar$ and $\ell\Pgn\bbbar$ final states, respectively.
-The mass spectrum for the dominant W+jets background is determined from observed events with a reconstructed jet mass not compatible with the V or H hypothesis. 
-This strategy partially relies on the simulation of the background processes.
-Furthermore, simulated events are used for the optimization of the analysis selection aimed at maximizing the discrimination of the signal against the background and hence the analysis sensitivity.\\
+The SM background mainly comprises W+jets production, although another significant contribution is represented by the production of top quark-antiquark pairs (\ttbar).
+Other minor backgrounds are represented by single top quark and SM diboson (WW, WZ or ZZ) production processes.
+The mass spectrum for the dominant W+jets background is estimated from observed events with a reconstructed jet mass not compatible with the V or H hypothesis.\\ 
+%This strategy partially relies on the simulation of the background processes.
+%Furthermore, simulated events are used for the optimization of the analysis selection aimed at maximizing the discrimination of the signal against the background and hence the analysis sensitivity.\\
 
 This part of the thesis is organized as follows.
 Chapter~\ref{ch:dataAndSim} gives an overview of the methods used to simulate the physics processes happening in pp collisions at the LHC
 together with a description of the specific simulated background and signal events used in this analysis, as well as a discussion about the data sets analyzed.
-Chapter~\ref{ch:EventReconstruction} provides a detailed description of the algorithms used in CMS for the reconstruction of the event and of the physics objects expected in the semi-leptonic final states under investigation.
+Chapter~\ref{ch:EventReconstruction} provides a detailed description of the algorithms used in CMS for the reconstruction of the event and of the physics objects expected in the lepton+jet final states under investigation.
 Particular attention is given to the V and H tagging algorithms representing the key feature of this analysis and therefore, separately discussed in Chapter~\ref{ch:vtagging}.
 The analysis strategy, already outlined here, is explained in details in Chapter~\ref{ch:strategy}.
 This includes the final event selection and categorization optimized to enhance the analysis sensitivity,
@@ -102,5 +104,5 @@ as well as the strategy for the estimation of the expected background, the model
 which will be used as input to the statistical analysis of the diboson invariant mass distribution observed in data.
 The final results are discussed in Chapters~\ref{ch:results8} and~\ref{ch:results13} for the 8 and 13\TeV data analysis, respectively. 
 Eventually, these results are combined with limits derived in companion CMS searches for resonances decaying to a pair of bosons in several different final states, with data collected in both LHC Run~1 and Run~2.
-These analyses use the same V and H tagging techniques as presented here to separate the signal from the large multijet or V+jets background.
+%These analyses use the same V and H tagging techniques as presented here to separate the signal from the large multijet or V+jets background.
 The statistical combination represent the last piece of this work and it is presented in Chapter~\ref{ch:combination}.

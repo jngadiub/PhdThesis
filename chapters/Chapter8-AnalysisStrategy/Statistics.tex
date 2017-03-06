@@ -13,7 +13,7 @@ production cross section of such signal is usually set, up to a certain degree o
 %otherwise, if the cross section was above this value, a statistically-significant excess of data would have emerged over the background.
 %If the upper limit $?_\mathrm{95\%}$ is as large as the $\sigma\times\cal B$ predicted by some specific theoretical model $?_\mathrm{th}$ or smaller, it can be inferred that a resonance of that mass is excluded at 95\% C.L..
 The CMS community has agreed upon a procedure for computing upper limits, which is based on the modified frequentist method, often referred to as $\mathrm{CL}_s$.
-While a detailed description of such method can be found in Refs.~\cite{CLs1,Junk:1999kv}, the basic ingredients will be summarized Section~\ref{subsec:CLs}.
+While a detailed description of this method can be found in Refs.~\cite{CLs1,Junk:1999kv}, the basic ingredients will be summarized Section~\ref{subsec:CLs}.
 A description of the procedure followed to quantify an excess of events is provided in Section~\ref{subsec:pvalue}. A summary of the final results will be given in the next chapter.
 
 \subsection{Limit setting procedure}~\label{subsec:CLs}
@@ -47,7 +47,7 @@ For the unbinned case each event enters the calculation as follows
 k^{-1}\prod_i (\mu S f_s(x_i) + Bf_b(x_i))e^{-(\mu S + B)},
 \end{equation}
 
-where $f_s(x)$ and $f_b(x)$ are the probability density functions of signal and background of the observable $x$, while S and B are the total event rates expected for signal and background.
+\noindent where $k$ is the number of events, $f_s(x)$ and $f_b(x)$ are the probability density functions of signal and background of the observable $x$, while S and B are the total event rates expected for signal and background.
 In this analysis the unbinned form for the likelihood is used, where the observable $x$ coincides with the reconstructed diboson invariant mass.\\
 
 To compare the compatibility of the data with the background-only and signal+background hypotheses, where the prediction for the signal is allowed to be scaled by some factor $\mu$,
@@ -70,7 +70,7 @@ The upper constraint is introduced to avoid that data with $\hat{\mu} > \mu$ (up
 The observed value of the test statistic, $\tilde{q}_\mu^\mathrm{obs}$ for the given signal strength modifier $\mu$ under test is computed,
 as well as the nuisance parameters $\hat{\theta}_0^\mathrm{obs}$ and $\hat{\theta}_\mu^\mathrm{obs}$ maximizing the likelihood under the background-only and signal+background hypothesis, respectively.
 Furthermore, the probability density functions of the chosen test statistic $\tilde{q}_\mu$ under the signal+background hypothesis, $f(\tilde{q}_\mu|\mu,\hat{\theta}_\mu^\mathrm{obs})$,
-and the background-only hypothesis, and $f(\tilde{q}_\mu|0,\hat{\theta}_0^\mathrm{obs})$, are constructed by means of ensembles of toy MC pseudo-experiments
+and the background-only hypothesis, and $f(\tilde{q}_\mu|0,\hat{\theta}_0^\mathrm{obs})$, are constructed by means of ensembles of MC pseudo-experiments
 generated according to the same Poisson probabilities used to build the likelihood. In this process the nuisance parameters 
 are fixed to the values $\hat{\theta}_0^\mathrm{obs}$ and $\hat{\theta}_\mu^\mathrm{obs}$ obtained by fitting the observed data.
 
@@ -89,7 +89,7 @@ The two probabilities are shown in the example in Fig.~\ref{fig:CLs-ex_a}.
 In the classical frequentist approach, the level of agreement between the data and hypothesized $\mu$ is evaluated by using the $\mathrm{CL}_{s+b}$ probability only,
 and one says that the hypothesized signal $\mu$ is excluded at 95\% CL if $\mathrm{CL}_{s+b} \leq 0.05$.
 
-However, such a definition as a caveat. If the distributions of the test statistic for the signal+background and background-only hypotheses have a not negligible overlap as in the plot (c) of Fig.~\ref{fig:CLs-ex_b},
+However, such a definition has a caveat. If the distributions of the test statistic for the signal+background and background-only hypotheses have a not negligible overlap as in the plot (c) of Fig.~\ref{fig:CLs-ex_b},
 the experiment would tend to exclude the hypothesized signal $\mu$ even if the experiment in this case has little sensitivity to discriminate it against the background.
 In fact, in this case the experimental data are highly contaminated with background and a statement about the signal would be a mistake of interpretation.
 To prevent the inference of a signal in such cases, the so-called modified frequentist approach has been introduced at the time of LEP~\cite{CLs1,Junk:1999kv}.
@@ -111,8 +111,9 @@ In this analysis, model-independent limits on the cross section are set by resca
 \begin{figure}[!htb]
 \centering
 \subfigure[]{\label{fig:CLs-ex_a}\includegraphics[width=0.55\textwidth]{\cheight/CLs_fig1.pdf}}
-\subfigure[]{\label{fig:CLs-ex_b}\includegraphics[width=0.35\textwidth]{\cheight/CLs_fig2.pdf}}
-\caption{blabla}
+\subfigure[]{\label{fig:CLs-ex_b}\includegraphics[width=0.35\textwidth]{\cheight/CLs_fig2-1.pdf}}
+\caption{(a) Distributions of the test statistic $Q$ (defined in the text as $\tilde{q}_\mu$) for the combined Higgs search at LEP for the background (right) and signal+background hypotheses (left) for $m_\PH = 115.6\GeV$.
+The light grey region to the left of the observation is $1-\mathrm{CL}_b$ and the dark grey region to the right of the observation is $\mathrm{CL}_{s+b}$. (b) Illustration of the evolution of the test statistic distributions with falling search sensitivity from (1) to (3)~\cite{CLs1}.}
 \label{fig:CLs-ex}
 \end{figure}
 
@@ -131,9 +132,9 @@ are extracted from the values of the 16\% (2.5\%) and 84\% (97.5\%) quantiles.
 
 \subsection{The asymptotic approximation}\label{subsec:AsymptCLs}
 
-In order to compute the $\mathrm{CL}_s$ the probability density functions of the test statistics are required.
+In order to compute $\mathrm{CL}_s$ the probability density functions of the test statistics are required.
 In particular, one needs the probability density functions $f(\tilde{q}_\mu|\mu^\prime)$, where $\mu^\prime = 0$ or $\mu^\prime = \mu$,
-which are obtained from MC toys requiring very expensive computational resources.
+which are obtained from MC pseudo-experiments requiring very expensive computational resources.
 An approximation for the $\mathrm{CL}_s$ method, valid in the large sample limit, also referred to as ``asymptotic approximation'' has been proposed in Ref.~\cite{AsymptCLs}
 and it is briefly described in the following.\\
 
@@ -189,7 +190,7 @@ For a given resonance mass hypothesis $M_X$, the test statistic used in this cas
 \end{equation}
 
 %The constraint $\hat{\mu} \geq 0$ gives an accumulation of the test statistic at zero for events with downward fluctuations, since we are not interested in interpreting a deficit of events with respect to the expected background on an equal footing with an excess.
-The probability density function $f(\tilde{q}_0|0,\hat{\theta}_0^{obs})$ is built by generating toy MC pseudo-data under the assumption of the background-only hypothesis.
+The probability density function $f(\tilde{q}_0|0,\hat{\theta}_0^{obs})$ is built by generating MC pseudo-experiments under the assumption of the background-only hypothesis.
 From this distribution, the p-value corresponding to a given experimental observation $q_0^{obs}$ is evaluated:
 
 \begin{equation}
@@ -220,7 +221,7 @@ Z = \sqrt{\tilde{q}_0^\mathrm{obs}}.
 The p-value discussed above is evaluated at a fixed resonance mass $M_X$ and can be referred to as a \textit{local p-value}.
 In this search, a scan is performed over a wide range of resonance mass hypotheses with the aim of finding
 the minimum local p-value, which describes the probability of a background fluctuation for that particular resonance mass hypothesis.
-However, it is important to distinguish the probability of finding a fluctuation in some particular location from the probability of finding such a fluctuation anywhere else.
+However, it is important to distinguish the probability of finding a fluctuation in some particular location from the probability of finding such a fluctuation anywhere else in the spectrum.
 The former is associated to the so called \textit{local significance}, whereas the latter is referred to as the \textit{global significance}.
 The fact that the global significance is usually smaller than the largest local one is often referred to as the ``look-elsewhere effect'' (LEE).
 As demonstrated in Ref.~\cite{Gross:2010qma}, the global and local p-values are related to each other by a multiplicative factor, usually referred to as ``trial factor'', proportional to the number of independent search regions.

@@ -1,0 +1,30 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\usepackage{feynmp}
+\begin{document}
+\begin{align*}\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(200,100)
+   \fmfset{arrow_len}{8}
+   \fmfleft{iqpr,iqbar}
+   \fmfright{bbar,nu,lep,b}
+   \fmf{fermion}{iqpr,v1,iqbar}
+   \fmflabel{$q^\prime$}{iqpr}
+   \fmflabel{$\bar{q}$}{iqbar}
+   \fmf{boson,label=$W^+$,label.side=left,tension=1.4}{v1,v2}
+   \fmf{fermion}{bbar,v2}
+   \fmflabel{$\bar{b}$}{bbar}
+   \fmf{fermion,label=$t$}{v2,v3}
+   \fmf{fermion}{v3,b}
+   \fmflabel{$b$}{b}
+   \fmf{boson,label=$W^+$,tension=0.5}{v3,v4}
+   \fmf{fermion}{lep,v4,nu}
+   \fmflabel{$\ell^+$}{lep}
+   \fmflabel{$\nu_\ell$}{nu}
+  \end{fmfgraph*}
+\end{fmffile}
+\end{align*}
+
+\end{document}

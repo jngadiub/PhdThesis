@@ -1,10 +1,10 @@
 \chapter{Identification of highly boosted $\PW/\PZ\to\qqbarpr$ and $\PH\to\bbbar$}
 \label{ch:vtagging}
 
-Large-cone jets (Section~\ref{sec:jets}), also referred to as ``fat jets'', are used to reconstruct the W jet, Z jet, and H jet candidates resulting after the hadronization of the two quarks from the decay of highly boosted W, Z, and Higgs boson, respectively. In fact, for the resonance mass range considered in this search, the two quarks from the V or Higgs boson decay would be separated by a small angle, resulting in the detection of a single ``merged'' jet after hadronization, instead of two separated jets.
-To discriminate against multijet backgrounds, the analysis exploits both the reconstructed jet mass, which is required to be close to the boson mass, and the jet substructure arising from the two jet cores that correspond to the two high-\pt decay quarks. The techniques used to identify jets arising from the merged decay products of a single V or Higgs boson are referred to as ``V tagging" or ``H tagging", respectively. They employ novel jet substructure algorithms, which are described in Section~\ref{sec:jetsubalgo}. The features of the V tagging algorithm are described in Section~\ref{sec:vtagging} and its performance in both data and simulation are discussed. 
+Large-cone jets (Section~\ref{sec:jets}), also referred to as ``fat jets'', are used to reconstruct the W jet, Z jet, and H jet candidates resulting after the hadronization of the two quarks from the decay of highly boosted W, Z, and Higgs boson, respectively. For the resonance mass range considered in this search, the two quarks from the V or Higgs boson decay are separated by a small angle, resulting in the detection of a single ``merged'' jet after hadronization, instead of two separated jets.
+To discriminate against multijet background comprising of QCD jets originated from quark or gluon fragmentation, the analysis exploits both the reconstructed jet mass, which is required to be close to the boson mass, and the jet substructure arising from the two jet cores that correspond to the two high-\pt decay quarks. The techniques used to identify jets arising from the merged decay products of a single V or Higgs boson are referred to as ``V tagging" or ``H tagging", respectively. They employ novel jet substructure algorithms, which are described in Section~\ref{sec:jetsubalgo}. The features of the V tagging algorithm are described in Section~\ref{sec:vtagging} and its performance in both data and simulation are discussed. 
 %Discrepancies between data and simulation in the jet substructure observables used to identify the signal jets are studied through a measurement in a top quark enriched sample of data, as discussed in Section~\ref{sec:vtagging}.
-Finally, in Section~\ref{sec:htagging}, a procedure tuned to the specific properties of the Higgs boson decay into a bottom quark-antiquark pair is presented.
+Finally, in Section~\ref{sec:htagging}, an algorithm tuned to the specific properties of the Higgs boson decay into a bottom quark-antiquark pair is presented.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jet substructure observables}
@@ -14,7 +14,8 @@ Finally, in Section~\ref{sec:htagging}, a procedure tuned to the specific proper
 \subsection{Pruned jet mass}
 \label{subsec:pruning}
 
-As the mass of the V or Higgs boson is larger than the mass of a typical QCD jet, the jet mass is the primary observable that distinguishes them from a QCD jet. The bulk of the signal jet mass arises from the kinematics of the two jet cores that correspond to the two decay quarks. In contrast, the QCD jet mass arises mostly from large-angle and soft gluon radiation.
+%As the mass of the V or Higgs boson is larger than the mass of a typical QCD jet of similar momentum, the jet mass is the primary observable that distinguishes them from the multijet background.
+The bulk of the signal jet mass arises from the kinematics of the two jet cores that correspond to the two decay quarks. In contrast, the QCD jet mass arises mostly from large-angle and soft quark or gluon radiation.
 As a first step in exploring potential substructure, the jet constituents are subjected to a jet grooming algorithm that improves the resolution in the jet mass and reduces the effect of pileup~\cite{Chatrchyan:2013vbb,Khachatryan:2014vla}. The goal of jet grooming is to recluster the jet constituents, while applying additional requirements that eliminate soft, large-angle QCD radiation. This procedure shifts the jet mass of QCD jets to smaller values, while maintaining the mass for signal jets close to the boson mass. Furthermore, soft contributions from the underlying event and pileup, usually present in all jets, are removed.
 Different jet grooming algorithms have been explored at CMS and their performance on jets in multijet processes has been studied in detail~\cite{Chatrchyan:2013vbb,Khachatryan:2014vla}. In this analysis, the \emph{jet pruning} algorithm~\cite{jetpruning1,Ellis:2009me} is used, as it was found to provide the best discrimination against QCD background as discussed in Ref.~\cite{Chatrchyan:2013vbb,Khachatryan:2014vla}.\\
 
@@ -26,8 +27,10 @@ z_{ij} \equiv \frac{\mathrm{min}(p_{Ti} + p_{Tj})}{p_{Ti} + p_{Tj}} < z_{cut}\:\
 \Delta R_{ij} > D_{cut} \equiv \alpha\frac{m_j}{p_T}
 \end{equation}
 
-where $m_j$ and $p_T$ are the mass and transverse momentum of the originally-clustered jet, and $z_{cut}$ and $\alpha$ are parameters of the algorithm, chosen to be 0.1 and 0.5, respectively. In this particular choice of parameters, the algorithm removes the largest number of jet constituents, and can therefore be regarded as the most aggressive jet grooming technique. The resulting jet is the \emph{pruned jet}. The pruned jet mass, \mJ, is computed from the sum of the four-momenta of the constituents that survive the pruning; it is then corrected by the same factor used to correct the jet \pt (Section~\ref{sec:jets}).
-Figure~\ref{fig:mass_pr_a} illustrates the effect of pruning on AK8 jets: the \mJ spectrum of the W jet candidate from the decay of highly boosted and longitudinally polarized W bosons is shown together with the distribution in \mJ for the simulated background of W+jets. Dashed and solid lines correspond to the distributions before and after the application of the pruning algorithm, respectively. Fully merged jets reconstructed from the W boson decay generate a distinctive peak around the W boson mass, which is narrowed by the pruning, while background jets acquire a smaller mass on average, enhancing the discrimination. Figure~\ref{fig:mass_pr_b} compares the distributions in \mJ for W, Z and H jet candidates from the decay of highly boosted W, Z and Higgs bosons, respectively. The distribution in \mJ for the W+jets background is also shown. Not-full-merged signal jets give rise to a peak at low masses. 
+\noindent where $p_{Ti}$ and $p_{Tj}$ are the momenta of the particles $i$ and $j$, $m_j$ and $p_T$ are the mass and transverse momentum of the originally-clustered jet, and $z_{cut}$ and $\alpha$ are parameters of the algorithm, chosen to be 0.1 and 0.5, respectively. 
+%In this particular choice of parameters, the algorithm removes the largest number of jet constituents., and can therefore be regarded as the most aggressive jet grooming technique.
+The resulting jet is the \emph{pruned jet}. The pruned jet mass, \mJ, is computed from the sum of the four-momenta of the constituents that survive the pruning; it is then corrected by the same factor used to correct the jet \pt (Section~\ref{sec:jets}).
+Figure~\ref{fig:mass_pr_a} illustrates the effect of pruning on AK8 jets: the \mJ spectrum of the W jet candidate from the decay of highly boosted and longitudinally polarized W bosons is shown together with the distribution in \mJ for the simulated background of W+jets. Dashed and solid lines correspond to the distributions before and after the application of the pruning algorithm, respectively. Fully merged jets reconstructed from the W boson decay generate a distinctive peak around the W boson mass, which is narrowed by the pruning, while background jets acquire a smaller mass on average, enhancing the discrimination. Figure~\ref{fig:mass_pr_b} compares the distributions in \mJ for W, Z and H jet candidates from the decay of highly boosted W, Z and Higgs bosons, respectively. The distribution in \mJ for the W+jets background is also shown. Not-full-merged signal jets give rise to a small peak at low masses. 
 %The \mJ distributions for W jets and QCD jets are shown in Fig.~\ref{fig:mass_pr} at generator level and reconstruction level with pileup. Comparing the generator level predictions for the \mJ of W jets with those at detector level with pileup, the widening of the peak due to detector resolution can be observed.
 
 \begin{figure}[!htb]
@@ -52,9 +55,12 @@ Figure~\ref{fig:mass_pr_a} illustrates the effect of pruning on AK8 jets: the \m
 \subsection{N-subjettiness}
 \label{subsec:nsubj}
 
-In addition to the pruned jet mass, additional information about the jet shape is used to discriminate the signal against jets from gluon and single-quark hadronization. This information can be obtained from the quantity called \emph{N-subjettiness}~\cite{Thaler:2010tr}. It takes advantage of the multi-body kinematics in the decay pattern of boosted hadronic objects, and it can be used to effectively ``count'' the number of subjets in a given jet. 
-
-The N-subjettiness is a generalized jet shape observable which defines a measure, $\tau_N$, for a jet to have $N$ subjets. The constituents of the jet before the pruning procedure are reclustered using the $k_T$ algorithm (Section~\ref{sec:jets}), until $N$ joint objects (subjets) remain in the iterative combination procedure of the algorithm. The observable $\tau_N$ is then defined as
+In addition to the pruned jet mass, additional information about the jet shape is used to discriminate the signal against QCD jets.
+%This information can be obtained from the quantity called \emph{N-subjettiness}~\cite{Thaler:2010tr}. 
+A generalized jet shape observable called \emph{N-subjettiness}~\cite{Thaler:2010tr} has shown the best performance in terms of the required signal and background discrimination~\cite{Khachatryan:2014vla}.
+This observable takes advantage of the multi-body kinematics in the decay pattern of boosted hadronic objects and define a measure, $\tau_N$, to quantify the compatibility of the jet clustering with the hypothesis that exactly $N$ subjets are present.
+%The N-subjettiness is a generalized jet shape observable which defines a measure, $\tau_N$, for a jet to have $N$ subjets.
+The constituents of the jet before the pruning procedure are reclustered using the $k_T$ algorithm (Section~\ref{sec:jets}), until $N$ joint objects (subjets) remain in the iterative combination procedure of the algorithm. The observable $\tau_N$ is then defined as
 
 \begin{equation}
 \tau_N = \frac{1}{d_0} \sum_{k} p_{T,k}~\mathrm{min} \{\Delta R_{1,k},\Delta R_{2,k},\cdots,\Delta R_{N,k}\},
@@ -93,10 +99,12 @@ Figure~\ref{fig:tau21} shows the $N$-subjettiness ratio $\tau_{21}$ distribution
 The jet substructure observables described in the previous section are employed for identifying, or ``tagging'', W and Z jets (``V jets''). The V tagging of the jets is obtained combining selections on both the pruned jet mass \mJ and N-subjettiness ratio \nsubj observables. %If the conditions are met the jet is referred to as ``V jets''. 
 
 The selection criteria have been optimized in the context of searches for resonances decaying into diboson in the \lnujet and dijet final states~\cite{Khachatryan:2014gha,Khachatryan:2014hpa,CMS-PAS-EXO-15-002}. The optimization, based on simulation, aims at maximizing the analysis sensitivity and it leads to slightly different working points for each analysis. In particular, the baseline selection values have been changed from Run~1 to Run~2. Typical signal efficiencies and mistagging rates of QCD jets obtained, respectively, from simulations and measurements with 8 and 13\TeV data are summarized in Table~\ref{tab:vtagging}, for jets with $\pt = 500\GeV$.
+The $\ell\Pgn\qqbar$ analysis described in this work makes use of a looser \nsubj working point of 0.6 resulted from an optimization which takes into account signal efficiency and background rejection over a large jet \pt range.
+In fact, this channel is characterized by a low background rate and a \nsubj selection providing a higher signal efficiency over the whole jet \pt range is therefore preferred.\\
 
 \begin{table}[!htb]
 \centering
-\caption{Typical selection criteria for V tagging used in Run~1 and Run~2. The corresponding signal efficiency and mistagging rate of QCD jets are also reported for jets with $\pt = 500\GeV$, obtained from 8 and 13\TeV data and from simulation.}
+\caption{Typical selection criteria for V tagging used in Run~1 and Run~2. The corresponding signal efficiency for W jets and mistagging rate of QCD jets are also reported for jets with $\pt = 500\GeV$, obtained from 8 and 13\TeV data and from simulation.}
 \begin{tabular}{c|c|c|c}
 Data sets                     & V tagging selections      & signal efficiency          & mistagging rate\\
 \hline
@@ -106,18 +114,18 @@ Data sets                     & V tagging selections      & signal efficiency   
 \hline
 \multirow{2}{*}{13\TeV} & 65 $< \mJ <$ 105\GeV  & \multirow{2}{*}{0.55}   & \multirow{2}{*}{0.03}\\
                                      & \nsubj $<$ 0.45              &                                    & \\
+\hline
+\multirow{2}{*}{13\TeV} & 65 $< \mJ <$ 105\GeV  & \multirow{2}{*}{0.76}   & \multirow{2}{*}{0.05}\\
+                                     & \nsubj $<$ 0.6                &                                    & \\
 \end{tabular}
 \label{tab:vtagging}
 \end{table}
 
-The $\ell\Pgn\qqbar$ analysis described in this work makes use of a looser \nsubj working point of 0.6 resulted from an optimization which takes into account signal efficiency and background rejection over a large jet \pt range.
-In fact, this channel is characterized by a low background rate and a \nsubj selection providing a higher signal efficiency over the whole jet \pt range is therefore preferred. This working point corresponds to a signal efficiency of 65\% and a mistagging rate of 5\%.\\
-
 %behaviour with pt of mjet
-The V tagging performance at 8\TeV hs been studied in detail in Ref.~\cite{Khachatryan:2014vla}. From simulation studies it is observed that the efficiency of the \mJ selection increases with \pt up to about 600\GeV since at higher \pt the showers from the W decay quarks are more likely to be reconstructed within a single fat jet. Above 600\GeV, the efficiency begins to decrease as a function of jet \pt, since at very large values the PF candidate reconstruction degrades in resolving the jet substructure, and the pruning algorithm therefore removes too large a fraction of the jet mass. For Run~2, the PF reconstruction has been optimized by exploiting the full potential of the CMS ECAL granularity to resolve jet substructure and a constant efficiency is maintained up to at least \pt = 2.5\TeV~\cite{CMS-PAS-JME-14-002,JME-16-003}.
+The V tagging performance at 8\TeV has been studied in detail in Ref.~\cite{Khachatryan:2014vla}. From simulation studies it is observed that the efficiency of the \mJ selection increases with \pt up to about 600\GeV since at higher \pt the showers from the W decay quarks are more likely to be reconstructed within a single fat jet. Above 600\GeV, the efficiency begins to decrease as a function of jet \pt, since at very large values the PF candidate reconstruction degrades in resolving the jet substructure, and the pruning algorithm therefore removes too large a fraction of the jet mass. For Run~2, the PF reconstruction has been optimized by exploiting the full potential of the CMS ECAL granularity to resolve jet substructure and a constant efficiency is maintained up to at least \pt = 2.5\TeV~\cite{CMS-PAS-JME-14-002,JME-16-003}.
 
 %behaviour with pt of tau21
-The efficiency of the additional \nsubj selection also drops as a function of \pt, thus a fixed working point will degrade the efficiency with increasing \pt. Howevere, the same efficiency at an equivalent background rejection rate can be reached by adjusting the \nsubj selection as a function of \pt. This possibility has not been explored yet in any of the searches which employ V tagging.
+The efficiency of the additional \nsubj selection also drops as a function of \pt, thus a fixed working point will degrade the efficiency with increasing \pt. However, the same efficiency at an equivalent background rejection rate can be reached by adjusting the \nsubj selection as a function of \pt. This possibility has not been explored yet in any of the searches which employ V tagging.
 
 %behaviour with PU
 The efficiency of the V tagging selection as a function of the number of reconstructed primary vertices (PV) has also been studied~\cite{JME-16-003}. It is observed that the efficiency of the \mJ selection is constant as a function of PV, whereas the additional \nsubj selection efficiency drops from 60\% at 0 PV to 40\% at 30 PV. However, the mistagging of the background also decreases with pileup for the same selection, yielding similar discrimination. Efficiency and mistagging rate are affected by pileup in the same way, since additional pileup shifts the \nsubj distribution towards higher values (towards background like) for both signal and background (Fig.~\ref{fig:tau21}). Therefore, the same signal efficiency can be reached at the same background rejection rate for up to 30 reconstructed vertices by merely adjusting the \nsubj selection.
@@ -131,9 +139,9 @@ Scale factors for the \nsubj selection efficiency are extracted by estimating th
 %The pruned jet mass distribution is used to discriminate the pure W jet signal from background contributions.
 The generated W boson in the \ttbar simulation provides a model of the contribution from the W jet peak in the pruned jet mass. The contribution from combinatorial background is derived from \ttbar simulation as well. This signal plus background model is fitted directly in the distributions of data and in their simulation.
 
-The pruned jet mass distribution of events that pass and fail the \nsubj selection are fitted simultaneously to extract the selection efficiency on the pure W jet component. The ratio of data and simulation efficiencies are taken as the V tagging efficiency scale factor. Figure~\ref{fig:wtagging-13TeV} shows the fits obtained with 13\TeV data for the \nsubj $<$ 0.45 selection and similar results are obtained for the looser \nsubj $<$ 0.6 selection used in the $\ell\Pgn\qqbar$ analysis presented in this work. 
+The pruned jet mass distribution of events that pass and fail the \nsubj selection are fitted simultaneously to extract the selection efficiency on the pure W jet component. The ratio of data and simulation efficiencies are taken as the scale factor to correct the efficiency of the \nsubj selection. Figure~\ref{fig:wtagging-13TeV} shows the fits obtained with 13\TeV data for the $\nsubj < 0.6$ selection. 
 %In this method, a simultaneous fit is performed to the jet mass distributions for the \nsubj selection to separate the W boson signal from the combinatorial components in the top quark enriched sample in both data and simulation as shown in Fig.~\ref{fig:wtagging-13TeV}.
-The extracted scale factor for this selection is $1.01 \pm 0.03$ and it is used to correct the total signal efficiency and the VV background normalization predicted by the simulation.
+The extracted scale factor is $1.01 \pm 0.03$ and it is used in the $\ell\nu\qqbar$ analysis to correct the total signal efficiency and the VV background normalization predicted by the simulation.
 The quoted uncertainty includes two systematic effects. One comes from the modelling of the nearby jets and \pt spectrum in \ttbar MC events, obtained by comparing the selection efficiency estimated from LO and NLO \ttbar simulation. %This uncertainty amounts to 3-17\%.
 %The uncertainties quoted on the scale factor include different sources of systematic effects. The leading ones are due to the simulation of the \ttbar topology used to derive the data-to-simulation scale factors. An uncertainty is evaluated due to the modelling of the nearby jets and \pt spectrum in \ttbar MC events, by comparing the selection efficiency estimated from LO and NLO \ttbar simulation. This uncertainty amounts to 3-17\%.
 %This is not our case! In addition, an uncertainty is calculated due to parton showering by comparing the selection efficiency estimated in \ttbar samples generated with POWHEG and interfaced with PYTHIA 8 with samples generated with POWHEG but interfaced with HERWIG++. This uncertainty amounts to 8.6\% and quantifies the discrepancy between the jet substructure modeling of PYTHIA8 and HERWIG++.
@@ -145,11 +153,10 @@ The other is due to the choice of the models used to fit signal and background.
 %model, the signal is modelled by a Gaussian peak with tails including the non-peaking part of
 %the W jets obtained from generator matched \ttbar simulation. The estimated efficiencies obtained
 %with those two methods, corrected for the fraction of W jets in the tails, agree within 0.3-12\%.
-The quadratic sum of these systematic uncertainties is found to be smaller than half of the statistical uncertainty on the scale factor. An additional uncertainty is calculated to account for the extrapolation of the scale factor from \ttbar events with an average jet \pt $\sim$ 200\GeV to higher momenta. This is estimated from the difference between \PYTHIA{8} and \HERWIG{++}~\cite{Bahr:2008pv} showering models with a resulting factor of 
-$4.53\% \times \displaystyle \ln(\pt/200\GeV)$.
+The quadratic sum of these systematic uncertainties is found to be smaller than half of the statistical uncertainty on the scale factor. An additional uncertainty is calculated to account for the extrapolation of the scale factor from \ttbar events with an average jet \pt $\sim$ 200\GeV to higher momenta. This is estimated from the difference between \PYTHIA{8} and \HERWIG{++}~\cite{Bahr:2008pv} showering models resulting in an uncertainty of $4.53\% \times \displaystyle \ln(\pt/200\GeV)$.
 
-The peak position in the W jet mass and its resolution are also extracted to obtain data-to-simulation corrections on the pruned jet mass listed in Table~\ref{tab:Wmass13TeV}, as obtained from13\TeV data and from simulation. The quoted uncertainties are statistical. The W jet mass scale in data is $\approx1\%$ smaller than in simulation while its resolution is found to be larger by about 5\%.
-In the simulation \mJ must therefore be shifted and enlarged by the above quantities to correct for the difference between data and simulation.
+The peak position in the W jet mass and its resolution are also extracted to obtain data-to-simulation corrections on the pruned jet mass listed in Table~\ref{tab:Wmass13TeV}, as obtained from 13\TeV data and simulation. The quoted uncertainties are statistical. The W jet mass scale in data is $\approx1\%$ smaller than in simulation while its resolution is found to be larger by about 5\%.
+In the simulation \mJ must therefore be shifted and smeared by the above quantities to correct for the difference between data and simulation.
 %In 8\TeV data both the W jet mass scale and resolution in data are larger than that in simulation.
 %In the simulation \mJ must therefore be shifted by 1.7 $\pm$ 0.6\% and $\sigma$ be enlarged by 11 $\pm$ 9\% to correct for the difference between data and simulation.
 %To extract corrections to the jet mass scale and resolution, we use the mean $<$m$>$ and resolution
@@ -163,18 +170,18 @@ Because the kinematic properties of W jets and Z jets are very similar, the same
 
 \begin{figure}[!htb]
 \centering     %%% not \center
-\subfigure[]{\label{fig:wtagging-13TeV_a}\includegraphics[width=0.45\textwidth]{\chseven/JME-16-003_HP0v45powheg_76X_em_pTbin_200_5000.pdf}}
-\subfigure[]{ \label{fig:wtagging-13TeV_b}\includegraphics[width=0.45\textwidth]{\chseven/JME-16-003_HP0v45powheg_76X_em_fail_pTbin_200_5000.pdf}}
- \caption{Distribution in pruned jet mass for events that (a) pass and (b) fthe \nsubj $<$ 0.45 selection in the \ttbar control sample. The result of the fit to data and simulation are shown, respectively, by the solid and long-dashed line and the background components of the fit are shown as dashed- dotted and short-dashed line~\cite{JME-16-003}.}
+\subfigure[]{\label{fig:wtagging-13TeV_a}\includegraphics[width=0.45\textwidth]{\chseven/JME-16-003_HP0v60powheg_76X_em_pTbin_200_5000.pdf}}
+\subfigure[]{ \label{fig:wtagging-13TeV_b}\includegraphics[width=0.45\textwidth]{\chseven/JME-16-003_HP0v60powheg_76X_em_fail_pTbin_200_5000.pdf}}
+ \caption{Distribution in pruned jet mass for events that (a) pass and (b) fail the $\nsubj < 0.6$ selection in the \ttbar control sample. The results of the fits to data and simulation are indicated, respectively, by the solid and long-dashed line. The background components of the fit are shown as dashed-dotted and short-dashed lines.}
  \label{fig:wtagging-13TeV}
 \end{figure}
 
 \begin{table}[!htb]
    \centering
-   \caption{W jet mass peak position and resolution, as extracted from top quark enriched sample in 8\TeV data and from simulation, after applying the $\nsubj < 0.5$ selection~\cite{Khachatryan:2014vla}.}
+   \caption{W jet mass peak position and resolution, as extracted from top quark enriched sample in 13\TeV data and from simulation~\cite{Khachatryan:2014vla}.}
    \begin{tabular}{lcc}
    \hline
-   $\nsubj < 0.45$ & \mJ{} [\GeV] & Standard deviation~[\GeV]\\
+                     & \mJ{} [\GeV] & Standard deviation~[\GeV]\\
    \hline
    Data          & 84.1 $\pm$ 0.4 & 8.4 $\pm$ 0.6\\
    Simulation & 82.7 $\pm$ 0.3 & 7.6 $\pm$ 0.4\\
@@ -293,7 +300,7 @@ ranges from a few percent at a jet \pt of 400\GeV
 and increases to 40\% at a jet \pt of 700\GeV and to 80\% at a jet \pt of 1\TeV.
 Because of track sharing, the b tagging probabilities for individual subjets deteriorate at large jet \pt and the subjet b tagging performance approach the
 fat jet b tagging one as can be seen in Fig.~\ref{fig:htagging8TeV}.
-The lost in efficiency is then recovered applying the two approaches depending on the $\Delta R$ between the two subjets.
+The loss in efficiency is then recovered applying the two approaches depending on the $\Delta R$ between the two subjets.
 In particular, the analysis involving boosted Higgs bosons such as the one presented in this work
 apply subjet b tagging and fat jet b tagging if $\Delta R > 0.3$ and $< 0.3$, respectively. 
 The distribution of the angular separation $\Delta R$ of the two subjets reconstructed within the fat jet for different jet \pt ranges 

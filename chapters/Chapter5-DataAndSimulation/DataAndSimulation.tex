@@ -233,8 +233,8 @@ The $\PW\PH\to\ell\Pgn\bbbar$ branching fraction is not included in the calculat
 \end{center}
 \end{table}
 
-Figure~\ref{fig:WHmodelsWidth} shows the ratio between the resonance's natural width and mass for a \Wpr in the LH and the HVT model B.
-The relative width is less than 5\% for masses below 4\TeV for the following parameter values:
+Figure~\ref{fig:WHmodelsWidth} shows the ratio of the natural width to the mass of a \Wpr resonance in the LH and the HVT model B.
+The relative width is less than 5\% for the following parameter values:
 $0.95 < g_\mathrm{V} < 3.76$, $c_\mathrm{H}$ = -1, and $c_\mathrm{F}$ = 1;
 $g_\mathrm{V} < 3.9$, $c_\mathrm{H}$ = -1, and $c_\mathrm{F}$ = 0;
 or $g_\mathrm{V} < 7.8$, $c_\mathrm{H}$ =0.5, and $c_\mathrm{F}$ = 0.
@@ -245,12 +245,12 @@ for values of $0.084 < |\mathrm{cot}\theta| < 1.21$. Hence, in both models the r
 \centering
 \subfigure[]{\label{fig:WHmodelsWidth_a}\includegraphics[width=0.45\textwidth]{\chfive/HVT.pdf}}
 \subfigure[]{\label{fig:WHmodelsWidth_b}\includegraphics[width=0.45\textwidth]{\chfive/LH.pdf}}
-\caption{Ratio between the resonance's natural width and mass for a \Wpr in the LH and the HVT model B.}
+\caption{Ratio of the natural width to the mass of a \Wpr resonance in the LH and the HVT model B.}
 \label{fig:WHmodelsWidth}
 \end{figure}
 
 For the 13\TeV data analysis, the bulk graviton model and HVT models are used as benchmark signal processes.
-In these models, a resonance is simulated which decays only to pairs of vector gauge bosons in the $\ell\Pgn\qqbarpr$ final state, with $\ell$ = e, $\mu$, and $\tau$.
+In these models, a resonance is simulated which decays only to pairs of vector gauge bosons in the $\ell\Pgn\qqbar$ final state, with $\ell$ = e, $\mu$, and $\tau$.
 The vector gauge bosons are produced with a longitudinal polarization in more than 99\% of the cases.
 For each resonance hypothesis, masses are considered in the range 0.6 to 4.0\TeV.
 Simulated signal events are generated at LO accuracy with \amcatnlo{} with a relative resonance width of 0.1\%.
@@ -333,6 +333,8 @@ The simulated samples used in the 8\TeV data analysis described in this work are
 %https://twiki.cern.ch/twiki/bin/view/LHCPhysics/TtbarNNLO#Top_quark_pair_cross_sections_at
 
 For the 13\TeV analysis, the W+jets SM process is simulated with \amcatnlo{} at LO accuracy.
+A set of W+jets samples are used, each containing generated events where the scalar \pt sum of all jets (\HT) is in a given range.
+This splitting provides the analyses with large MC statistics for a wide range of jet transverse momenta.
 The \ttbar, single top quark and diboson events are generated with both \POWHEG{} and \amcatnlo{} at NLO accuracy.
 Parton showering and hadronization are implemented through \PYTHIA{8} using the CUETP8M1 tune~\cite{Skands:2014pea,Khachatryan:2015pea}.
 The NNPDF 3.0 PDFs with $\alpha_S$ at NLO, are used for all simulated samples. 
@@ -388,51 +390,55 @@ The simulated samples used in the 13\TeV data analysis described in this work ar
 \section{Data sets}\label{sec:data set}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Two independent data sets are analyzed in this work to search for diboson resonances decaying to two different final states.\\
+Two independent data sets are analyzed in this work to search for diboson resonances decaying to two different final states.
 
 The analysis focused on the $\ell\Pgn\bbbar$ final state is performed with the complete set of data recorded in 2012 by the CMS detector
-and corresponding to an integrated luminosity of 19.7\fbinv of pp collisions at $\sqrt{s} = 8\TeV$.\\
+and corresponding to an integrated luminosity of 19.7\fbinv of pp collisions at $\sqrt{s} = 8\TeV$.
 %The recorded events are divided into 4 run periods (runs A, B, C, D).\\
 
 The second analysis described in this work in focused on the $\ell\Pgn\qqbarpr$ final state and it is performed with only the largest part of the full set of data recorded in 2015 by the CMS detector
 corresponding to an integrated luminosity of 2.3\fbinv of pp collisions at $\sqrt{s} = 13\TeV$.
 During 2015, there have been three running periods labeled from B to D. In fact, after a short period of 50\unit{ns} operation (period B), the machine collected data with a bunch spacing of 25\unit{ns} (period C and D).
-However, since the first two periods only add a tiny contribution to the total integrated luminosity of 2015 collisions, the analysis is based on period D only, corresponding to the largest data set.\\
-
-All events that are accepted by a specific set of high level triggers enter one specific data set, so that the choice of a trigger for the analysis defines which data set has to be used.
-As discussed in the next chapter (Sections~\ref{subsec:mutrigger} and~\ref{subsec:eletrigger}), events are collected with a trigger requiring either one muon or one electron passing given \pt and $\eta$ selections.
-Hence, the data sets used in these analyses are the so called ``SingleMuon'' and "SingleElectron" primary data sets listed in Table~\ref{tab:data set}.
+However, since the first two periods include data taken under different detector and LHC conditions and only add a tiny contribution to the total integrated luminosity of 2015 collisions, the analysis is based on period D only, corresponding to the largest data set.
 
 Even though run periods of stable LHC collisions are chosen for the analyses, not all runs can be used.
 This analysis requires the whole detector to be functional since the objects employed are reconstructed from all parts of the detector as described in the next chapter.
 Therefore, only data-taking runs and luminosity blocks during which the detector was in a state sufficiently good for further analysis are used.
+In 2015, additional data equivalent of 0.37\fbinv of integrated luminosity were collected with the HF running in suboptimal conditions.
+The analysis relies on the measurement of the missing transverse energy as an estimate of the kinematics of the original neutrino,
+requiring the detector to provide complete geometric coverage. Events without fully operational HF calorimeter are therefore not considered for this analysis.
+However, these additional data are included in the search for diboson resonances in the all-jet final state detailed in Ref.~\cite{CMS-PAS-EXO-15-002} and included in the combination described in Chapter~\ref{ch:combination}.
+In this case, the jets reconstructed online and used for the trigger decision are in the range $|\eta| < 3$, and hence not falling in the acceptance of the HF.
 
-\begin{table}[!htb]
-\caption{Data sets used in this analysis.}
-\label{tab:data set}
-\begin{center}
-\begin{tabular}{c|c|cccc}
-$\sqrt{s}$ & Year & Data set & Run period & Run range & $\mathcal{L}$~[pb]$^{-1}$]\\
-\hline
-\hline
-\multirow{10}{*}{8\TeV} & \multirow{10}{*}{2012} & \multirow{5}{*}{SingleMuon} & A & 190456--193621 & 889.362 \\
-& & & B & 193833--196531 & 4424    \\
-& & & C & 198022--203742 & 7144    \\
-& & & D & 203777--208686 & 7307    \\
-\cline{4-6}
-& & & Total & 190456--208686 & 19764   \\
-\cline{3-6}
-& & \multirow{5}{*}{SingleElectron} & A & 190456--193621 & 889.362 \\
-& & & B & 193833--196531 & 4422    \\
-& & & C & 198022--203742 & 7080    \\
-& & & D & 203777--208686 & 7314    \\
-\cline{4-6}
-& & & Total & 190456--208686 & 19705   \\
-\hline
-\hline
-\multirow{2}{*}{13\TeV} & \multirow{2}{*}{2015} & SingleMuon & D & 256630--260627 & 2320 \\
-\cline{3-6}
- & & SingleElectron & D & 256630--260627 & 2320 \\
-\end{tabular}
-\end{center}
-\end{table}
+%All events that are accepted by a specific set of high level triggers enter one or more specific data set, so that the choice of a trigger for the analysis defines which data set has to be used.
+%As discussed in the next chapter (Sections~\ref{subsec:mutrigger} and~\ref{subsec:eletrigger}), events are collected with a trigger requiring either one muon or one electron passing given \pt and $\eta$ selections.
+%Hence, the data sets used in these analyses are the so called ``SingleMuon'' and "SingleElectron" primary data sets listed in Table~\ref{tab:data set}.
+%\begin{table}[!htb]
+%\caption{Data sets used in this analysis.}
+%\label{tab:data set}
+%\begin{center}
+%\begin{tabular}{c|c|cccc}
+%$\sqrt{s}$ & Year & Data set & Run period & Run range & $\mathcal{L}$~[pb]$^{-1}$]\\
+%\hline
+%\hline
+%\multirow{10}{*}{8\TeV} & \multirow{10}{*}{2012} & \multirow{5}{*}{SingleMuon} & A & 190456--193621 & 889.362 \\
+%& & & B & 193833--196531 & 4424    \\
+%& & & C & 198022--203742 & 7144    \\
+%& & & D & 203777--208686 & 7307    \\
+%\cline{4-6}
+%& & & Total & 190456--208686 & 19764   \\
+%\cline{3-6}
+%& & \multirow{5}{*}{SingleElectron} & A & 190456--193621 & 889.362 \\
+%& & & B & 193833--196531 & 4422    \\
+%& & & C & 198022--203742 & 7080    \\
+%& & & D & 203777--208686 & 7314    \\
+%\cline{4-6}
+%& & & Total & 190456--208686 & 19705   \\
+%\hline
+%\hline
+%\multirow{2}{*}{13\TeV} & \multirow{2}{*}{2015} & SingleMuon & D & 256630--260627 & 2320 \\
+%\cline{3-6}
+% & & SingleElectron & D & 256630--260627 & 2320 \\
+%\end{tabular}
+%\end{center}
+%\end{table}

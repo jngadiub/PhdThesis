@@ -26,13 +26,13 @@ The properties of the above benchmark models studied in this thesis are summariz
 \hline
 Model & Particles & Spin & Charge & Main production & Main decay \\
 \hline
-\multirow{3}{*}{HVT model A, $g_\mathrm{V} = 1$} & W' singlet & 1 & $\pm1$ & $\qqbar^\prime$ & $\qqbar^\prime$ \\ 
-                                                                                 & Z' singlet & 1 & 0 & $\qqbar$ &  $\qqbar$\\
-                                                                                 & W' and Z' triplet & 1 & $\pm1$,0 & $\qqbar^\prime$,$\qqbar$ & $\qqbar^\prime$,$\qqbar$\\
+\multirow{3}{*}{HVT model A, $g_\mathrm{V} = 1$} & \Wpr singlet & 1 & $\pm1$ & $\qqbar^\prime$ & $\qqbar^\prime$ \\ 
+                                                                                 & \Zpr singlet & 1 & 0 & $\qqbar$ &  $\qqbar$\\
+                                                                                 & \Wpr and \Zpr triplet & 1 & $\pm1$,0 & $\qqbar^\prime$,$\qqbar$ & $\qqbar^\prime$,$\qqbar$\\
 \hline
-\multirow{3}{*}{HVT model B, $g_\mathrm{V} = 3$} & W' singlet & 1 & $\pm1$ & $\qqbar^\prime$ & WZ,WH \\ 
-                                                                                 & Z' singlet & 1 & 0& $\qqbar$ &  WW,ZH \\
-                                                                                 & W' and Z' triplet & 1 & $\pm1$,0 & $\qqbar^\prime$,$\qqbar$ & WZ,WH,WW,ZH\\
+\multirow{3}{*}{HVT model B, $g_\mathrm{V} = 3$} & \Wpr singlet & 1 & $\pm1$ & $\qqbar^\prime$ & WZ,WH \\ 
+                                                                                 & \Zpr singlet & 1 & 0& $\qqbar$ &  WW,ZH \\
+                                                                                 & \Wpr and \Zpr triplet & 1 & $\pm1$,0 & $\qqbar^\prime$,$\qqbar$ & WZ,WH,WW,ZH\\
 \hline
 %2 / neutral / $G_{\text{RS1}}$ & subdominantly WW, ZZ & mainly $\qqbar$ and $gg$ \\
 RS bulk, $\tilde{k}=0.5$ & $\rm G_{bulk}$ & 2 & 0 & $gg$ & WW, ZZ \\
@@ -81,7 +81,12 @@ but are instead reconstructed as a single jet object. Dedicated techniques, so-c
 are applied to exploit the substructure of such jet objects, and can help resolve jet signatures of massive bosons.
 In particular, the jet is tagged as coming from a V or H boson through the estimation of its invariant mass.
 These techniques also help to suppress SM background, which mainly originates from the production of W bosons in association with jets (W+jets).
-Further discrimination is achieved in the $\ell\Pgn\bbbar$ analysis channel exploiting the specific characteristics of jets arising from the hadronization of bottom quarks.\\
+Further discrimination is achieved in the $\ell\Pgn\bbbar$ analysis channel exploiting the specific characteristics of jets arising from the hadronization of bottom quarks.
+As these algorithms aim at tagging V and H bosons of large Lorentz-boost in the final state, a lower limit is placed on the resonance mass hypothesis.
+In fact, for values of the resonance mass below 0.6\TeV, the jets arising from the hadronization of the two quarks are not collimated enough to be reconstructed as a single jet,
+such that the gain in sensitivity becomes significantly lower. In such cases, analysis techniques exploiting the kinematics of the two resolved jets provide higher sensitivity.
+Specifically, the searches in the $\ell\nu\qqbar$ and $\ell\nu\bbbar$ final states are restricted to masses of the mother particle with values above 0.6 and 0.8\TeV, respectively.
+A higher value is chosen for the $\ell\nu\bbbar$ search because, being the H boson slightly heavier than the W and Z bosons, it acquires a smaller boost for a given resonance mass.\\
 
 The aim is to reconstruct the full event to be able to search for a localized enhancement in the invariant mass of the WV or WH system on the top of a smoothly falling SM background distribution.
 The invariant mass of the WV and WH system is determined by estimating the neutrino transverse momentum with the measured missing transverse energy in the event,
@@ -89,9 +94,47 @@ while an estimate of the neutrino longitudinal momentum is derived by imposing t
 In the following, the diboson invariant mass will be labelled either \mlvj, or \mWV and \mWH for the $\ell\Pgn\qqbar$ and $\ell\Pgn\bbbar$ final states, respectively.
 The SM background mainly comprises W+jets production, although another significant contribution is represented by the production of top quark-antiquark pairs (\ttbar).
 Other minor backgrounds are represented by single top quark and SM diboson (WW, WZ or ZZ) production processes.
+The Feynman diagrams for W+jets, \ttbar, single top quark and SM diboson production processes are shown, respectively, in Figures~\ref{fig:FDbkgWJets}, \ref{fig:FDbkgttbar}, \ref{fig:FDbkgStop}, and \ref{fig:FDbkgVV}.
 The mass spectrum for the dominant W+jets background is estimated from observed events with a reconstructed jet mass not compatible with the V or H hypothesis.\\ 
 %This strategy partially relies on the simulation of the background processes.
 %Furthermore, simulated events are used for the optimization of the analysis selection aimed at maximizing the discrimination of the signal against the background and hence the analysis sensitivity.\\
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.3\textwidth]{\chfour/WplusJets_NLO_1.pdf}
+\includegraphics[width=0.3\textwidth]{\chfour/WplusJets_NLO_2.pdf}
+\caption{Feynman diagrams for the production of W bosons in association with jets and subsequent decay in the lepton+jet final state. Charge conjugate production and decay modes are implied.}
+\label{fig:FDbkgWJets}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.3\textwidth]{\chfour/gg_ttbar-1.pdf}
+\includegraphics[width=0.3\textwidth]{\chfour/gg_ttbar.pdf}
+\includegraphics[width=0.3\textwidth]{\chfour/qq_ttbar.pdf}
+\caption{Feynman diagrams for the production of top quark-antiquark pairs and subsequent decay in the lepton+jet final state. Charge conjugate modes for the decays of W bosons are implied.}
+\label{fig:FDbkgttbar}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.3\textwidth]{\chfour/WWproduction.pdf}
+\includegraphics[width=0.3\textwidth]{\chfour/WZproduction.pdf}
+\includegraphics[width=0.3\textwidth]{\chfour/ZZproduction.pdf}\\
+\includegraphics[width=0.3\textwidth]{\chfour/WWproduction-1.pdf}
+\includegraphics[width=0.3\textwidth]{\chfour/WZproduction-1.pdf}
+\caption{Feynman diagrams for the production of SM vector boson pairs and subsequent decay in the lepton+jet final state. Charge conjugate production and decay modes are implied.}
+\label{fig:FDbkgVV}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\subfigure[]{\label{fig:FDbkgStop_a}\includegraphics[width=0.3\textwidth]{\chfour/top-schannel.pdf}}
+\subfigure[]{\label{fig:FDbkgStop_b}\includegraphics[width=0.3\textwidth]{\chfour/top-tchannel.pdf}}
+\subfigure[]{\label{fig:FDbkgStop_c}\includegraphics[width=0.3\textwidth]{\chfour/top-tWchannel.pdf}}
+\caption{Feynman diagrams for the production of single top quarks and subsequent decay in the lepton+jet final state: (a) s-channel, (b) t-channel, (c) tW-channel.}
+\label{fig:FDbkgStop}
+\end{figure}
 
 This part of the thesis is organized as follows.
 Chapter~\ref{ch:dataAndSim} gives an overview of the methods used to simulate the physics processes happening in pp collisions at the LHC

@@ -100,7 +100,7 @@ As discussed in more in detail in Section~\ref{subsec:EWSB}, one additional spin
 since without it all the particles in the model are predicted to have zero mass.
 
 %gravity
-In addition to the strong, weak and electromagnetic interactions between quarks and leptons, there is a fourth force of nature, gravity, which is not accounted for in the standard model.
+In addition to the strong, weak and electromagnetic interactions between quarks and leptons, there is a fourth force of nature, the gravitational force, which is not accounted for in the standard model.
 In fact, the gravitational interaction between elementary particles is so small that it can be neglected at the presently accessible energies.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -650,13 +650,16 @@ All Higgs couplings are therefore determined by $M_\PH$, $M_\PW$, $M_\PZ$, the m
 \subsection{Observation of a particle compatible with the standard model Higgs boson}\label{subsec:HiggsLHC}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The SM Higgs boson production cross sections at a proton-proton collider are shown in Fig.~\ref{fig:HiggsXS_a} as a function of the Higgs mass hypothesis and for the different leading production mechanisms.
-In addition, in Fig.~\ref{fig:HiggsProd}, the corresponding Feynman diagrams are shown.
+Before the Higgs boson was discovered, its production cross sections at a proton-proton collider and its branching fractions as a function of the mass hypothesis were predicted to be as shown in Fig.~\ref{fig:HiggsXS}. 
+%The SM Higgs boson production cross sections at a proton-proton collider are shown in Fig.~\ref{fig:HiggsXS_a} as a function of the Higgs mass hypothesis and for the different leading production mechanisms.
+%In addition, in Fig.~\ref{fig:HiggsProd}, the corresponding Feynman diagrams are shown.
+The Feynman diagrams for the different leading production mechanisms are shown in Fig.~\ref{fig:HiggsProd}.
 The gluon fusion process ($gg \to \PH$) is the dominating Higgs production mechanism over the entire mass range accessible at the LHC.
-In the vector boson fusion process  ($\mathrm{qq}^\prime \to \mathrm{qq}^\prime \PH$), which is about one order of magnitude weaker than gluon fusion, the Higgs boson is produced through a direct coupling with vector bosons (\PW or \PZ), which are radiated by a pair of incoming quarks from the proton beams. 
+In the vector boson fusion process ($\mathrm{qq}^\prime \to \mathrm{qq}^\prime \PH$), which is about one order of magnitude weaker than gluon fusion, the Higgs boson is produced through a direct coupling with vector bosons (\PW or \PZ), which are radiated by a pair of incoming quarks from the proton beams. 
 The associated production with a \PW or \PZ boson ($\mathrm{q\bar{q}}^\prime \to \PW\PH$, $\qqbar \to \PZ\PH$) have a smaller cross section than the previous mechanisms but the presence of the vector boson helps in reconstructing the events by reducing the contamination from other SM processes.
-The associated production with \ttbar pairs (qq, $gg \to \ttbar\PH$) has the smallest cross section, however, it allows for a direct access to the Higgs coupling to top quarks, representing thus an important process.
-Depending on the Higgs boson mass hypothesis, different decay channels (Fig.~\ref{fig:HiggsXS_b}) can be exploited to detect it.
+The associated production with \ttbar pairs (qq, $gg \to \ttbar\PH$) has the smallest cross section, however, it allows for a direct access to the Higgs coupling to top quarks,
+which is important since the Higgs coupling to the top quark is the strongest, of order 1.
+%Depending on the Higgs boson mass hypothesis, different decay channels (Fig.~\ref{fig:HiggsXS_b}) can be exploited to detect it.
 The Higgs boson does not couple to photons and gluons at LO, but such processes can arise via fermion or vector boson loops, giving a sizable contribution
 below the mass at which the Higgs boson would decay to on-shell vector bosons.\\
 
@@ -664,7 +667,7 @@ below the mass at which the Higgs boson would decay to on-shell vector bosons.\\
 \centering
 \subfigure[]{\label{fig:HiggsXS_a}\includegraphics[width=0.56\textwidth]{\chtwo/XS_8TeV.eps}}
 \subfigure[]{\label{fig:HiggsXS_b}\includegraphics[width=0.42\textwidth]{\chtwo/Higgs_BR.eps}}
-\caption{(a) The SM Higgs production cross-sections at $\sqrt{s} = 8\TeV$ for the different production mechanisms~\cite{Dittmaier:2011ti}. (b) Decay branching ratios of the SM Higgs boson in the different channels as a function of the mass hypothesis~\cite{Dittmaier:2011ti}.}
+\caption{Predictions for (a) the SM Higgs production cross-sections at $\sqrt{s} = 8\TeV$ for the different production mechanisms and (b) branching fractions for its decays in the different channels as a function of the Higgs boson mass hypothesis~\cite{Dittmaier:2011ti}. After the Higgs boson discovery these properties are well predicted for the measured mass.}
 \label{fig:HiggsXS}
 \end{figure}
 
@@ -679,7 +682,7 @@ below the mass at which the Higgs boson would decay to on-shell vector bosons.\\
 \end{figure}
 
 The search for the massive Higgs boson has been long and tedious. 
-However, in summer 2012, the ATLAS and the CMS collaborations announced the observation of a new particle in data taken in 2011 and 2012~\cite{Chatrchyan:2013lba,Aad:2012tfa}.
+However, in summer 2012, the ATLAS and the CMS collaborations announced the observation of a new particle in data taken in 2011 and 2012~\cite{Aad:2012tfa,Chatrchyan:2013lba}.
 A combination of the measurements targeting its decay into fermions ($\bbbar$, $\tau\tau$) or vector bosons ($\PZ\PZ^*$, $\PW\PW^*$, $\gamma\gamma$) and all the different production modes, led to an excess of events above the expected background around a mass of 125\GeV.
 The CMS result yielded a local significance of $5.0\sigma$ with a global significance of $4.6\sigma$ in the Higgs mass search range of $115 < m_\PH < 130\GeV$ (Fig.~\ref{fig:HiggsPvalue_a}).
 For ATLAS, the local significance was found to be $5.9\sigma$ with a global significance of $5.1\sigma$ in the range $100 < m_\PH < 600\GeV$ (Fig.~\ref{fig:HiggsPvalue_b}).
@@ -689,11 +692,12 @@ Subsequent studies on production and decay rates~\cite{Khachatryan:2016vau} and 
 
   \begin{figure}[!htb]
   \centering
+  \subfigure[]{\label{fig:HiggsPvalue_b}\includegraphics[width=0.45\textwidth]{\chtwo/HiggsDiscovery_ATLAS_pvalue.pdf}}
   \subfigure[]{\label{fig:HiggsPvalue_a}\includegraphics[width=0.45\textwidth]{\chtwo/rect_pvala_all_bydecay_smallGGScale_wideX.pdf}}
-  \subfigure[]{\label{fig:HiggsPvalue_b}\includegraphics[width=0.45\textwidth]{\chtwo/HiggsDiscovery_ATLAS_pvalue.eps}}
-  \caption{The observed (solid) local p-value as a function of the Higgs boson mass $m_\PH$ for (a) the CMS and (b) ATLAS experiments. In (a) the results for each individual channel are also shown. 
+  \caption{The observed (solid) local p-value as a function of the Higgs boson mass $m_\PH$ for the (a) ATLAS and (b) CMS experiments obtained with data collected in pp collisions at $\sqrt{s} = 7$ and 8\TeV.
+  In (a) the results for each individual channel are also shown. 
   The dashed curve shows the expected local p-value under the hypothesis of a SM Higgs boson signal at that mass.
-  The horizontal red lines indicate the p-values corresponding to significances of 1 to 6$\sigma$.}
+  The horizontal red lines indicate the p-values corresponding to significances of 1 to 7$\sigma$~\cite{Aad:2012tfa,Chatrchyan:2013lba}.}
   \label{fig:HiggsPvalue}
 \end{figure} 
 

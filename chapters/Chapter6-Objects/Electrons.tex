@@ -31,12 +31,12 @@ Because of the different geometry of the detector in barrel and endcap, differen
 %are formed, by merging clusters of similar eta over some range of f.  
 
 For the electron track reconstruction two approaches are used.
-In the first one, referred to as ``ECAL driven'', the supercluster energy and position, and the assumption that the electron originated near the center of the beam spot, are used to extrapolate the electron trajectory in the tracker. Tracker seeds compatible with the predicted trajectory are sought in the first or second layer of the pixel detector (and also in the TEC to improve efficiency in the forward region).
+In the first one, referred to as ``ECAL-driven'', the supercluster energy and position, and the assumption that the electron originated near the center of the beam spot, are used to extrapolate the electron trajectory in the tracker. Tracker seeds compatible with the predicted trajectory are sought in the first or second layer of the pixel detector (and also in the TEC to improve efficiency in the forward region).
 This method is designed for isolated electrons with $\pt > 5\GeV$.
 
 %A ?tracker driven? approach, developped in the context of the PF algorithm, is also used and extends the electron track reconstruction for low momentum and non isolated electrons.
-A second approach, referred to as ``tracker driven'', complements the electron track reconstruction,
-especially for low-\pt or non isolated electrons, as well as for electrons in the barrel-endcap transition region. This method is developed as part of the particle-flow (PF) reconstruction algorithm~\cite{CMS-PAS-PFT-10-001,CMS-PAS-PFT-09-001} described in Section~\ref{subsec:jetsreco}.
+A second approach, referred to as ``tracker-driven'', complements the electron track reconstruction,
+especially for low-\pt or non-isolated electrons, as well as for electrons in the barrel-endcap transition region. This method is developed as part of the particle-flow (PF) reconstruction algorithm~\cite{CMS-PAS-PFT-10-001,CMS-PAS-PFT-09-001} described in Section~\ref{subsec:jetsreco}.
 It takes the standard track collection reconstructed with the KF algorithm and attempts to identify a subset of these tracks that are compatible with being electrons. 
 Electrons that suffer only little bremsstrahlung loss can be identified by searching for tracks extrapolated to the ECAL that pass close to an ECAL PF cluster.
 Electrons that suffer large bremsstrahlung loss can be identified by the fact that the fitted track will often have poor $\chi^2$ or few associated hits. 
@@ -95,7 +95,7 @@ At energies above 35\GeV however, the momentum measurement is completely driven 
 
 As explained in Section~\ref{subsec:CMStrigger}, the events of interest for physics analyses are selected by the trigger system in two steps, namely, the L1 and HLT.
 %the trigger system consists of the layers: the Level 1 (L1) and the High Level Trigger (HLT).
-At the L1, where the tracker information is not available, electrons and photons are indistinguishable and based on calorimeter trigger towers, consisting, in the barrel, of a $5\times5$ matrix of ECAL crystals and the corresponding HCAL tower, while a more complex definition of the tower is used in the endcaps. A L1 candidate is formed combining the highest-energy central trigger tower together with its next-highest adjacent tower.
+At the L1, where the tracker information is not available, electrons and photons are indistinguishable and based on calorimeter trigger towers, consisting, in the barrel, of a $5\times5$ matrix of ECAL crystals and the corresponding HCAL tower, while a more complex definition of the tower is used in the endcaps. An L1 candidate is formed combining the highest-energy central trigger tower together with its next-highest adjacent tower.
 At this stage, the trigger choice is based on the energy distribution among the central and neighbouring towers, on the amount of energy in the HCAL downstream the central tower, and on the \ET of the e/$\gamma$ candidate. 
 %At this stage, the trigger choice is based only on the transverse energy of the calorimetric deposit, coarse shower shape requirements and the fraction of the total L1 seed energy belonging to the hadronic calorimeter, required to be smaller than 5\%.
 %Two criteria on the shower shape are then applied: the ratio of the energy measured in the HCAL over the one in the ECAL is required to be less than 5\% and, in the barrel, 90\% of the ECAL energy must be contained in a 2 × 5 band of crystals in ? × ?. 
@@ -183,7 +183,7 @@ All the physics analyses in CMS involving one or two electrons in the final stat
 A high efficiency in any kinematical conditions is therefore needed to maximize each analysis sensitivity and, as a consequence, the probability for other particles to be reconstructed as electrons is sizeable.
 For instance, a charged pion can mimic the signature of an electron if it interacts early and leaves most of its energy in the ECAL. Moreover electrons can emerge in a jet through the weak decay of a hadron containing a c or b quark. Finally, in addition to jets, photons can also lead to GSF electron candidates. This happens if the photon converts into a dielectron pair in one of the first layers of the tracker detector. If one of the electron takes most of the photon momentum, a GSF electron candidate is likely to be reconstructed.
 %In fact, the GSF electron candidates reconstructed in the data are mainly other physics objects misreconstructed as electrons, or ``fakes''. These fakes are of several kinds: a charged pion can for instance mimic the signature of an electron if it interacts early and leaves most of its energy in the ECAL. Moreover electrons can emerge in a jet through the weakly decay of a hadron containing a c or b quark. Finally, in addition to jets, photons can also lead to GSF electron candidates. This happens if the photon converts into a dielectron pair in one of the first layers of the tracker detector. If one of the electron takes most of the photon momentum, a GSF electron candidate is likely to be reconstructed.
-An analysis dependent selection, which takes into account the specific kinematics and background level, has therefore to be applied on top of the electron reconstruction. This thesis focuses on the search for massive resonances decaying to pairs of SM bosons where one of the bosons is a W decaying leptonically, with a highly energetic electron or muon in the final state. A high and stable selection efficiency for \et above 100\GeV is therefore an important requirement.
+An analysis-dependent selection, which takes into account the specific kinematics and background level, has therefore to be applied on top of the electron reconstruction. This thesis focuses on the search for massive resonances decaying to pairs of SM bosons where one of the bosons is a W decaying leptonically, with a highly energetic electron or muon in the final state. A high and stable selection efficiency for \et above 100\GeV is therefore an important requirement.
 %Most of the searches for new physics involving high energy electrons share the same features:
 %-The cross sections probed are tiny (sometimes below 1 fb).
 %-The background due to jets or other particles wrongly reconstructed as GSF electron candidates is moderate.
@@ -191,7 +191,7 @@ An analysis dependent selection, which takes into account the specific kinematic
 %-The usual control region to check the performance of an electron selection in the data is the Z peak, where a large statistics is available for electrons with ET ? 35 GeV.
 %-For higher ET values, the control regions (events with boosted on-shell Z or high mass tail of the Drell-Yan process) suffer from low statistics.
 %A high and stable selection efficiency for ET above 100GeV is therefore the main requirement. The selection must also reasonably work for lower values, down to 35 GeV. Finally, given the fact that the validation of the selection at high ET in data is difficult, a simple and understandable selection is preferred.
-Since this is a common feature of many searches for new physics, a specific cut based selection has been developed in CMS~\cite{Khachatryan:2014fba}, consisting of requirements on several variables that exploit the characteristics of high-\et electrons. Only GSF electron candidates with $\et > 35\GeV$ and well reconstructed in the tracker and ECAL sensitive regions are selected. Candidates in the ECAL transition region ($1.442 < |\eta_\mathrm{SC}| < 1.56$) and beyond the $\eta$ coverage ($|\eta_\mathrm{SC}|  > 2.5$) of the tracker are therefore discarded. A different selection is applied for candidates reconstructed in the ECAL barrel ($|\eta_\mathrm{SC}| < 1.442$) and endcaps ($1.56 < |\eta_\mathrm{SC}|  < 2.5$). For Run~2 the values of $\eta_\mathrm{SC}$ have been slightly adjusted to match the acceptance of the detector more accurately. The selections are summarized in Tables~\ref{tab:heep8TeV} and \ref{tab:heep13TeV}, for the 8 and 13\TeV data analysis, respectively, and discussed in the following.
+Since this is a common feature of many searches for new physics, a specific cut-based selection has been developed in CMS~\cite{Khachatryan:2014fba}, consisting of requirements on several variables that exploit the characteristics of high-\et electrons. Only GSF electron candidates with $\et > 35\GeV$ and well reconstructed in the tracker and ECAL sensitive regions are selected. Candidates in the ECAL transition region ($1.442 < |\eta_\mathrm{SC}| < 1.56$) and beyond the $\eta$ coverage ($|\eta_\mathrm{SC}|  > 2.5$) of the tracker are therefore discarded. A different selection is applied for candidates reconstructed in the ECAL barrel ($|\eta_\mathrm{SC}| < 1.442$) and endcaps ($1.56 < |\eta_\mathrm{SC}|  < 2.5$). For Run~2 the values of $\eta_\mathrm{SC}$ have been slightly adjusted to match the acceptance of the detector more accurately. The selections are summarized in Tables~\ref{tab:heep8TeV} and \ref{tab:heep13TeV}, for the 8 and 13\TeV data analysis, respectively, and discussed in the following.
 
 %https://twiki.cern.ch/twiki/bin/viewauth/CMS/HEEPElectronID
 \begin{table}[!htb]
@@ -215,7 +215,8 @@ Relative track isolation & 5\% & 5\% \\
 %$\sigma_{i\eta i\eta}$ & - & $< 0.03$\\
 $H/E$ & $< 0.05$ & $< 0.05$\\
 $|d_{xy}|$ & $< 0.02$ & $< 0.05$\\
-Inner layer lost hits & $\leq 1$ & $\leq 1$\\
+Lost hits in & \multirow{2}{*}{$\leq 1$} & \multirow{2}{*}{$\leq 1$}\\
+innermost tracking layers & & \\
 \end{tabular}}
 \label{tab:heep8TeV}
 \end{table}
@@ -241,7 +242,8 @@ Relative track isolation & 5\% & 5\% \\
 %$\sigma_{i\eta i\eta}$ & - & $< 0.03$\\
 $H/E$ & $< 1/E + 0.05$ & $< 5/E + 0.05$\\
 $|d_{xy}|$ & $< 0.02$ & $< 0.05$\\
-Inner layer lost hits & $\leq 1$ & $\leq 1$\\
+Lost hits in & \multirow{2}{*}{$\leq 1$} & \multirow{2}{*}{$\leq 1$}\\
+innermost tracking layers & & \\
 \end{tabular}}
 \label{tab:heep13TeV}
 \end{table}
@@ -289,19 +291,19 @@ Additionally, the transverse profile of the energy deposition in the ECAL is req
 \item $\sigma_{i\eta i\eta}$ : measure of the spread in $\eta$ in units of crystals of the electrons energy in the $5\times5$ block centered on the seed crystal.
 \end{itemize}
 
-In the barrel, the best performance are obtained applying a selection on both $E_{1\times5}/E_{5\times5}$ and $E_{2\times5}/E_{5\times5}$.
-The two variables are indeed complementary: while $E_{1\times5}/E_{5\times5}$ is well designed for electrons hitting the center of a crystal, $E_{2\times5}/E_{5\times5}$ allows to recover electrons that hit the crystal close to its edge. Combining the two variables with a logic OR instead of using just one of them allows to set a  tight requirement on both and thus well reject background while keeping a high efficiency on simulated electrons. 
+In the barrel, the best performance is obtained applying a selection on both $E_{1\times5}/E_{5\times5}$ and $E_{2\times5}/E_{5\times5}$.
+The two variables are indeed complementary: while $E_{1\times5}/E_{5\times5}$ is well designed for electrons hitting the center of a crystal, $E_{2\times5}/E_{5\times5}$ allows the recovery of electrons that hit the crystal close to its edge. Combining the two variables with a logic OR instead of using just one of them allows a tight requirement to be set on both and thus resonably reject background while keeping a high efficiency on simulated electrons. 
 The distributions of these variables are much broader for electrons in the endcaps and a higher discrimination power is obtained applying a selection on the variable $\sigma_{i\eta i\eta}$.
 %This is because the x ? y geometry does not follow the ? ? ? direction. As a consequence, part of the energy is sometimes missing in both E1×5/E5×5 and E2×5/E5×5 and their discrimination power is reduced and becomes worse than ?i?i?.
 %H/E
 %The cut value (0.05) is sensibly lower than the one usually used at moderate ET (0.12 in the barrel and 0.10 in the endcaps). At moderate ET this cut is indeed quite inefficient for a high number of pile-up interactions in the event ... why?
 
 %missing hits + dxy
-Two additional requirements are applied to reject photons that convert into a electron-positron pair in the tracker.
+Two additional requirements are applied to reject photons that convert into an electron and positron in the tracker.
 First, the track associated with the cluster is required to have no more than one hit missing in the pixel layers.
 %It is mainly designed to reject photons that convert into a pair in the tracker as can be seen from figure 4.14. It can happen that only one of the electron tracks is reconstructed.
-In fact, the signature arising from a photon conversion process is very similar to the one from real electrons, and the gain in discrimination using shower shape variables is limited. However, one of the main differences is the absence of hits in the first layers of the tracker, before the conversion happens.
-Furthermore, the transverse impact parameter $d_{xy}$, defined as the closest distance, in the transverse plane, between the primary vertex and the track of the electron candidate, is required to be $< 0.02\cm$ (barrel) or 
+In fact, the signature arising from the photon conversion process is very similar to the one from real electrons, and the gain in discrimination using shower shape variables is limited. However, one of the main differences is the absence of hits in the first layers of the tracker, before the conversion happens.
+Furthermore, the transverse impact parameter $d_{xy}$, defined as the closest distance in the transverse plane between the primary vertex and the track of the electron candidate, is required to be $< 0.02\cm$ (barrel) or 
 $0.05\cm$ (endcaps). The distribution of the transverse impact parameter is usually wider in the endcaps due to the poorer resolution of the track position in that region.\\
 
 The efficiency of the high-\et electron selection measured with the T\&P method in pp collisions at $\sqrt{s} = 8\TeV$ and in simulation as a function of the electron \pt is shown in Fig.~\ref{fig:el_heep}, for electrons reconstructed in the ECAL barrel and endcaps. Similar results are obtained using 13\TeV data. The efficiencies and data-to-simulation scale factors are summarized in Tables~\ref{tab:heepsf8TeV} and~\ref{tab:heepsf13TeV}, as measured in 8 and 13\TeV data and simulation, respectively. The scale factors are close to unity, indicating a good agreement between data and simulation. They are used in the analysis presented in this thesis to correct the normalization of simulations.

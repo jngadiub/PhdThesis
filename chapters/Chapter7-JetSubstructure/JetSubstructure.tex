@@ -112,10 +112,10 @@ Data sets                     & V tagging selections      & signal efficiency   
 \multirow{2}{*}{8\TeV}  & 60 $< \mJ <$ 100\GeV  & \multirow{2}{*}{0.65}   & \multirow{2}{*}{0.04}\\
                                     & \nsubj $<$ 0.5                &                                    & \\
 \hline
-\multirow{2}{*}{13\TeV} & 65 $< \mJ <$ 105\GeV  & \multirow{2}{*}{0.55}   & \multirow{2}{*}{0.03}\\
+\multirow{4}{*}{13\TeV} & 65 $< \mJ <$ 105\GeV  & \multirow{2}{*}{0.55}   & \multirow{2}{*}{0.03}\\
                                      & \nsubj $<$ 0.45              &                                    & \\
-\hline
-\multirow{2}{*}{13\TeV} & 65 $< \mJ <$ 105\GeV  & \multirow{2}{*}{0.76}   & \multirow{2}{*}{0.05}\\
+\cline{2-4}
+                                     & 65 $< \mJ <$ 105\GeV  & \multirow{2}{*}{0.76}   & \multirow{2}{*}{0.05}\\
                                      & \nsubj $<$ 0.6                &                                    & \\
 \end{tabular}
 \label{tab:vtagging}
@@ -283,7 +283,7 @@ The subjet b tagging outperforms the fat jet tagging for most of the phase space
 \centering     %%% not \center
 \subfigure[]{\label{fig:htagging8TeV_a}\includegraphics[width=0.45\textwidth]{\chseven/BTV-13-001_Figure_022-a.pdf}}
 \subfigure[]{\label{fig:htagging8TeV_b}\includegraphics[width=0.45\textwidth]{\chseven/BTV-13-001_Figure_022-b.pdf}}
- \caption{Misidentification probability as a function of b tagging efficiency for boosted H $\to$ \bbbar jets and inclusive QCD jets for the CSV algorithm applied to CA8 jets
+ \caption{Misidentification probability as a function of b tagging efficiency for boosted $\PH\to\bbbar$ jets and inclusive QCD jets for the CSV algorithm applied to CA8 jets
  and pruned subjets for jets with (a) $300 < \pt < 500\GeV$ and (b) $\pt > 700\GeV$. Loose, medium, and tight operating points of the CSV discriminator are indicated~\cite{CMS:BTV13001}.}
 \label{fig:htagging8TeV}
 \end{figure}
@@ -334,5 +334,14 @@ These scale factors are used in the analysis to reweight the simulated events.
 %to validate the agreement of the data with the simulation and to measure the performance of
 %b tagging in boosted environments.  A good agreement is found between measurements per-
 %formed in boosted topologies with those performed in the standard, non-boosted topologies.
+
+The discrepancy between data and simulation in the \mJ distribution for V jets is well estimated 
+using the pure sample of merged W jets provided by lepton+jet \ttbar events as described in the previous section (Table~\ref{tab:Wmass13TeV}).
+On the contrary, a pure source of high-\pt H bosons is not available to validate the H mass tagging selection.
+An uncertainty in the \mJ selection for H jets is therefore assigned by evaluating the discrepancies
+between different showering algorithms in handling hadronically decaying W and H bosons.
+In particular, the different \mJ windows for W and H jets are applied,
+and the ratios $R_\PYTHIA{}$ and $R_\HERWIG{}$ of the corresponding efficiencies calculated for the \PYTHIA{} and \HERWIG{} showering algorithms, respectively.
+The double ratio $R_\PYTHIA{}/R_\HERWIG{}$ provides the required uncertainty and it is estimated to be 2.6\%.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

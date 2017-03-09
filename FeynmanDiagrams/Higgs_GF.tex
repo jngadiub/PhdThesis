@@ -4,12 +4,13 @@
 \usepackage{amsmath} %maths
 \usepackage[utf8]{inputenc} %useful to type directly diacritic characters
 \usepackage{feynmp}\begin{document}
-\begin{fmffile}{feyngraph}
+\[\begin{fmffile}{feyngraph}
   \begin{fmfgraph*}(280,100)
     \fmfset{arrow_len}{15}
     \fmfset{curly_len}{12}
     \fmfset{dash_len}{15}
     \fmfstraight
+    \fmfpen{thick}
     \fmfleft{i1,i2}
     \fmfright{o1,m,o2}
     % gluons
@@ -31,4 +32,5 @@
     \fmf{phantom,tension=1}{h,o2}
   \end{fmfgraph*}
 \end{fmffile}
+\]
 \end{document}

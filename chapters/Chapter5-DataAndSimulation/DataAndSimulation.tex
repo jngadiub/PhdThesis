@@ -171,7 +171,7 @@ For a detailed understanding on how interactions in pp collisions at the LHC are
 The CMS simulation is based on the \GEANTfour~\cite{Agostinelli:2002hh} toolkit, which takes as input the collections of particles produced by MC event generators.
 %Both the propagation of particles through the detector material as well as the response of the active detector components and their digital output need to be simulated.
 %The input to the detector simulation are collections of particles produced by MC event generators. The output is the digital signal from all detector components in the same format that is used for real data.
-The program calculates the trajectory of the various particles generated during the collision, simulates their electromagnetic and hadronic interaction with the crossed material and the signal they will produce in the various subdetectors. The detector geometry is given as an input to the program, and to obtain a description as close as possible to the reality, any available information such as the existence of insensitive materials or dead channels and their position, is included. The electronic readout of the hits produced by particles is simulated, taking into account resolution and detector response effects.
+The program calculates the trajectory of the various particles generated during the collision, simulates their electromagnetic and hadronic interaction with the crossed material and the signal they will produce in the various sub-detectors. The detector geometry is given as an input to the program, and to obtain a description as close as possible to the reality, any available information such as the existence of insensitive materials or dead channels and their position, is included. The electronic readout of the hits produced by particles is simulated, taking into account resolution and detector response effects.
 The same algorithms as for real data are then used to reconstruct the various physical objects (Chapter~\ref{ch:EventReconstruction}).
 %The software used by CMS, CMSSW, is a code mainly written in the C++ language which is constantly updated by the whole collaboration to integrate new knowledge on the detector (new tracker alignment or calorimeter calibration,...) or to improve the object reconstruction.
 
@@ -182,7 +182,7 @@ The same algorithms as for real data are then used to reconstruct the various ph
 \subsection{Simulation of signal processes}\label{subsec:signalMC}
 
 For the 8\TeV data analysis, the signal hypothesis has been simulated at LO accuracy with a \Wpr boson produced via quark-antiquark annihilation and decaying into W and Higgs bosons
-in the $\ell\Pgn\qqbar$ final state with q = b, c or g and $\ell$ = e, $\mu$ or $\tau$. Resonance masses in the range 0.8--2.5\TeV are considered in this analysis.
+in the $\ell\Pgn\qqbar$ decay channel with q = b, c or g and $\ell$ = e, $\mu$ or $\tau$. Resonance masses in the range 0.8--2.5\TeV are considered in this analysis.
 The events are generated at parton level using a model of a generic narrow spin-1 \Wpr resonance implemented with \MADGRAPH{}.
 Showering and hadronization are performed using \PYTHIA{6} using the Z2* tune to describe the underlying event~\cite{Chatrchyan:2011id,Chatrchyan:2013gfi}.
 It has been verified that the kinematic distributions obtained with the implementation of the generic model 
@@ -250,9 +250,9 @@ for values of $0.084 < |\mathrm{cot}\theta| < 1.21$. Hence, in both models the r
 \end{figure}
 
 For the 13\TeV data analysis, the bulk graviton model and HVT models are used as benchmark signal processes.
-In these models, a resonance is simulated which decays only to pairs of vector gauge bosons in the $\ell\Pgn\qqbar$ final state, with $\ell$ = e, $\mu$, and $\tau$.
+In these models, a resonance is simulated which decays only to pairs of vector gauge bosons in the $\ell\Pgn\qqbar$ decay channel, with $\ell$ = e, $\mu$, and $\tau$.
 The vector gauge bosons are produced with a longitudinal polarization in more than 99\% of the cases.
-For each resonance hypothesis, masses are considered in the range 0.6 to 4.0\TeV.
+For each resonance hypothesis, masses are considered in the range 0.8 to 4.0\TeV.
 Simulated signal events are generated at LO accuracy with \amcatnlo{} with a relative resonance width of 0.1\%.
 
 The natural width of a bulk graviton as a function of the curvature parameter $\tilde{k}$ and for different mass hypotheses is shown in Fig.~\ref{fig:bulkGwidth}.

@@ -4,7 +4,7 @@
 
 The CMS pixel detector was designed to cope with the high radiation environment of LHC and to operate with the highest performance even after the accumulation of significant radiation doses.
 Nevertheless, radiation damage affects hit efficiency and resolution and hence, it is necessary to monitor its effects during operation.
-As described in this chapter, throughout Run~1, re-calibrations of the detector have been performed to compensate for these effects and recover full performance.
+As described in this chapter, throughout Run~1, recalibrations of the detector have been performed to compensate for these effects and recover full performance.
 
 During LS1, both BPix and FPix were extracted from CMS for maintenance with the purpose to recover broken channels.
 In this period, the calibration procedure has been exercised and improved in view of commissioning and operation for Run~2.
@@ -13,8 +13,8 @@ The pixel detector has been operated with a coolant temperature of 7.4\unit{$^\c
 In order to limit the impact of radiation damage, during Run~2 the detector has been operated at much lower temperature, down to -10\unit{$^\circ$C}.
 This has been made possible thanks to a major effort during the long shut-down to implement a tracker wide sealing that ensures minimal humidity levels.
 The flow of dry gas into the tracker volume was increased and a new safety system was developed that shuts down the detector safely in case a sudden increase of temperature, electric current or humidity is detected. 
-During LS1, the pixel detector functionalities at very low temperature have been checked and its (temperature dependent) settings re-calibrated to allow for optimal operations under such conditions.
-This activity, described in the following, have been crucial to achieve a quick and reliable re-installation and commissioning for Run~2, as well as for stable and excellent operations during 2015 and 2016.
+During LS1, the pixel detector functionalities at very low temperature have been checked and its (temperature dependent) settings recalibrated to allow for optimal operations under such conditions.
+This activity, described in the following, have been crucial to achieve a quick and reliable reinstallation and commissioning for Run~2, as well as for stable and excellent operations during 2015 and 2016.
 
 %%%%%%%%%%%
 \section{Effects of radiation damage in LHC Run 1}
@@ -70,9 +70,9 @@ The presence of a minimum for the layer 1 and layer 2 is evidence for type inver
 The evolution of the pixel threshold (Fig.~\ref{fig:PixRadDamag_a}) and the analog current (Fig.~\ref{fig:PixRadDamag_b}) was also frequently monitored in Run~1,
 and an increase of both parameters with integrated luminosity was observed.
 The possible explanation for these changes is the radiation damage in the bad-gap reference voltage circuit, which would shift all voltage settings inside the ROC.
-Because of the described effect, a re-calibration of the analog voltage and the pixel threshold during technical stops was necessary to recover the optimal ROC performance.
+Because of the described effect, a recalibration of the analog voltage and the pixel threshold during technical stops was necessary to recover the optimal ROC performance.
 
-The pixel hit resolution also exhibits a slow degradation with integrated luminosity as shown in Fig.~\ref{fig:PixRelvsLumi}. The two points of improvement correspond to re-calibrations of the pixel threshold.
+The pixel hit resolution also exhibits a slow degradation with integrated luminosity as shown in Fig.~\ref{fig:PixRelvsLumi}. The two points of improvement correspond to recalibrations of the pixel threshold.
 
 \begin{figure}[!htb]
  \begin{center}
@@ -138,12 +138,12 @@ An overview of the calibration procedure is given in the following.
 Detector functionality and performance depend on proper calibrations of readout chain parameters.
 Most of these parameters are quite stable unless major changes occur, such as the detector operating temperature.
 Other parameters are more sensitive to environmental variations.
-For these parameters a re-calibration on a regular basis was necessary during Run~1 operations.
+For these parameters a recalibration on a regular basis was necessary during Run~1 operations.
 
 Further expertise in the calibration procedure was achieved during LS1 and it has been fundamental 
-for the re-commissioning of the detector to prepare it for a successful data-taking in 2015--2016.
-In addition, the detector was fully re-calibrated at low temperature after re-installation.
-As for Run~1, in these two years, re-calibrations have been performed during technical stops, and in particular in mid-2016 when the analog current drawn by the ROCs of the innermost layer reached critical values ($\approx6$\unit{A}) that led to the trip of the power supplies in several occasions.
+for the recommissioning of the detector to prepare it for a successful data-taking in 2015--2016.
+In addition, the detector was fully recalibrated at low temperature after reinstallation.
+As for Run~1, in these two years, recalibrations have been performed during technical stops, and in particular in mid-2016 when the analog current drawn by the ROCs of the innermost layer reached critical values ($\approx6$\unit{A}) that led to the trip of the power supplies in several occasions.
 
 The calibrations are performed with POS which was installed and run on the computers available in the clean room.
 There are a large number of different calibration tasks that need to be executed sequentially and sometimes iterated.
@@ -233,7 +233,7 @@ In order to provide a margin of error for these variations, the optimal laser bi
 This offset can be externally configured before running the calibration.
 
 It is also important that the laser bias is not too high to avoid that the signal moves out of the dynamic range of the FED.
-In the last part of the AOH bias calibration a coarse baseline adjustment is performed to bring the black level into the target range by re-adjusting the FED optical receiver offsets and laser bias settings.
+In the last part of the AOH bias calibration a coarse baseline adjustment is performed to bring the black level into the target range by readjusting the FED optical receiver offsets and laser bias settings.
 %The FED channel offsets are set to the center of the range, and then the FED optical receiver offsets and AOH bias settings are adjusted to bring all FED baselines into a wide target range.
 In this step the AOH bias is not decreased below the saturation value unless it is absolutely necessary.
 The main output of the calibration is a new configuration for the AOH bias and FED offset values that puts all FED baselines near the center of the dynamic range, with laser bias values that allow for a large BL-UBL separation.
@@ -387,7 +387,7 @@ The speed of the pixel amplifier is controlled by \textit{Vana}, a 8-bit DAC tha
 The \textit{Vana} has to be optimized such that a compromise is obtained between the desire to minimize the time-walk and the need to keep the current drawn by the analog part of the ROC, or analog current, at a reasonable level.
 During module testing the optimal \textit{Vana} setting was determined for each BPix ROC by measuring directly the analog current drawn by the ROC, and then choosing the value that corresponds to 26--28\unit{mA}.
 In fact, this value for the current has been found optimal to avoid exceeding the limit of the power supply.
-Nevertheless, the radiation damage affects the ROC analog current and a re-calibration is necessary during operations (Fig.~\ref{fig:PixRadDamag_b}). 
+Nevertheless, the radiation damage affects the ROC analog current and a recalibration is necessary during operations (Fig.~\ref{fig:PixRadDamag_b}). 
 
 \begin{figure}[!htb]
  \begin{center}
@@ -409,7 +409,7 @@ For BPix, a target DT value of 14 \textit{Vcal} was found to be sufficient to re
 
 In order to optimize the DT, the calibration is implemented as an iterative procedure, which makes use of the in-time and absolute threshold measurements given by the S-curve method.
 It has been found from calibrations performed during Run~1 that the relation $\Delta(\mathrm{DT}) = \mathrm{DT} - \mathrm{DT}_{target} \simeq \Delta{Vana}$ holds~\cite{Gaz:2013pja}.
-Using this relation, the new \textit{Vana} settings are computed for each iteration and then downloaded to the ROCs for the next iteration. In each iteration, the absolute threshold and charge injection timing has to be re-calibrated (step 5 in Section~\ref{subsec:calibPart1}) because of their dependence on \textit{Vana}. 
+Using this relation, the new \textit{Vana} settings are computed for each iteration and then downloaded to the ROCs for the next iteration. In each iteration, the absolute threshold and charge injection timing has to be recalibrated (step 5 in Section~\ref{subsec:calibPart1}) because of their dependence on \textit{Vana}. 
 Figure~\ref{fig:VanaCalib} illustrates the evolution of the \textit{Vana} settings with the iterations showing how these converge to the value corresponding to the target DT.
 
 \begin{figure}[!htb]
@@ -426,7 +426,7 @@ This step is meant to set the threshold of each ROC at the lowest practical valu
 but above the noise level.
 The procedure for minimizing the threshold starts setting a large value of the comparator threshold (for instance 50 \textit{Vcal}) in each ROC such that it is above the level of noise.
 The threshold is then lowered by 2 units and a pixel alive test or S-curve is run to check wether a ROC is failing because the threshold is too low and noise occurs.
-The procedure is iterated until all ROCs reach the minimum achievable value. For each iteration the charge injection timing has to be re-optimized as well.
+The procedure is iterated until all ROCs reach the minimum achievable value. For each iteration the charge injection timing has to be reoptimized as well.
 Several scripts have been implemented during LS1 to automatize this time consuming procedure. An example of the results from tests conducted in the clean room during LS1 is shown in Fig.~\ref{fig:ThrCalibLS1}.
 The final threshold and noise distributions for the whole detector obtained with this method before the start of data-taking in 2015 are discussed in Section~\ref{sec:commissioning}.
 
@@ -505,7 +505,7 @@ The results of the gain calibration performed for the whole detector before the 
 The barrel pixel detector was installed back into CMS on 8th December 2014.
 The operations, described in Section~\ref{sec:BPixInst}, were coordinated by the PSI and UZH teams (Fig.~\ref{fig:BPixInst}), and were completed in only 5 days.
 After that, the FPix detector was also installed following a similar check out procedure as for BPix so that most work was already completed before Christmas.
-The full pixel detector was re-commissioned in January 2015 within about a fortnight using the procedure described in the previous section.
+The full pixel detector was recommissioned in January 2015 within about a fortnight using the procedure described in the previous section.
 Section~\ref{sec:FinalBPixCalib} presents the results of the detector calibrations performed for the whole detector at low temperature after the installation.
 Finally, in Section~\ref{sec:BPixPerf2015}, the detector performance at the beginning of the LHC Run~2 are discussed.
 
@@ -513,13 +513,13 @@ Finally, in Section~\ref{sec:BPixPerf2015}, the detector performance at the begi
  \begin{center}
  \includegraphics[width=0.8\textwidth]{\chfifteen/aIMG_6479ts.jpeg}
  \end{center}
- \caption{Pictures taken on the CMS underground platform after the re-installation of the barrel pixel detector in December 2014. The operations were coordinated by the PSI and UZH teams.}
+ \caption{Pictures taken on the CMS underground platform after the reinstallation of the barrel pixel detector in December 2014. The operations were coordinated by the PSI and UZH teams.}
  \label{fig:BPixInst}
 \end{figure}
 
 \subsection{Installation into CMS}\label{sec:BPixInst}
 
-The barrel pixel detector re-installation into CMS took place only three months later than originally planned due to the incident mentioned in the previous section. 
+The barrel pixel detector reinstallation into CMS took place only three months later than originally planned due to the incident mentioned in the previous section. 
 Particular care was given to the centering of the detector with respect to the new beam pipe, required for the upgraded pixel detector planned for Spring 2017 (Chapter~\ref{ch:Phase1Intro}),
 since before it had been slightly shifted irradiating one side stronger than the other.
 Figure~\ref{fig:BPixInst2} shows pictures taken on the CMS underground platform illustrating the operations conducted in the first two days.
@@ -544,7 +544,7 @@ A picture of the detector in the final position with all power and control cable
  \begin{center}
  \includegraphics[width=0.8\textwidth]{\chfifteen/BPixInstallation2015.png}
  \end{center}
- \caption{Pictures illustrating the steps of the BPix re-installation in December 2014. The operation has been completed in 2 days.}
+ \caption{Pictures illustrating the steps of the BPix reinstallation in December 2014. The operation has been completed in 2 days.}
  \label{fig:BPixInst2}
 \end{figure}
 
@@ -566,7 +566,7 @@ After the installation, the detector was then checked out at room temperature of
 The basic set of calibrations was run from the CMS control room aimed at assessing the detector status and setting the basic operating parameters.
 These include calibrations of the Delay25 chip, FED baseline, AOH bias and gain, TBM and ROC UB, and address levels.
 The absence of a good quality TBM signal in the FED (Fig.~\ref{fig:FEDBaseline}) or bad address levels indicate poor optical connections.
-This kind of problems were immediately established and solved underground on the platform by re-cleaning the optical connectors with special tools.
+This kind of problems were immediately established and solved underground on the platform by recleaning the optical connectors with special tools.
 Few iterations were needed.
 These operations were completed in about 3 days establishing the functionality of the whole BPix detector.
 Only 1\% dead or disabled channels were found and most of them were acknowledged during LS1.
@@ -577,7 +577,7 @@ The check out procedure was repeated after the insertion of the FPix.
 As discussed at the beginning of this chapter, it was planned to operate the detector at -10\unit{$^\circ$C} since low temperatures
 are favorable to mitigate the effects of radiation damage and guarantee excellent performance.
 Since the detector settings largely depend on the temperature, a full calibration of the detector under the new conditions has to be performed.
-Because of the limited amount of time, it was not possible to achieve this before the re-installation, and tests were conducted for only few sectors aimed at verifying some basic functionalities at such low temperatures.
+Because of the limited amount of time, it was not possible to achieve this before the reinstallation, and tests were conducted for only few sectors aimed at verifying some basic functionalities at such low temperatures.
 %However, it was not possible to perform the full calibration at low temperature was never been performed except for the tests conducted in the clean room during LS1
 %for only few sectors and aimed at ensuring basic functionalities under such conditions.
 The full calibration procedure was instead run in January 2015 and completed in only 8 days, including the final optimization of the signal performance (Section~\ref{subsec:calibPart2}).
@@ -635,7 +635,7 @@ The distribution of the linearity parameter of the response curve as extracted f
 \section{Performance at the start of Run 2}\label{sec:BPixPerf2015}
 %%%%%%%%%%%%%%%%%%%%%
 
-The detector re-calibration discussed in the previous section has been crucial to ensure excellent performance during the start-up of data-taking in 2015.
+The detector recalibration discussed in the previous section has been crucial to ensure excellent performance during the start-up of data-taking in 2015.
 Figure~\ref{fig:ThrVsLumi2015} shows the average threshold, RMS and noise in units of 1 ke for each barrel pixel layer as a function of the integrated luminosity delivered in 2015.
 Due to the different levels of irradiation, the old and new modules have been monitored separately.
 The threshold of the new modules rapidly increased with irradiation as was observed also in Run~1 (Fig.~\ref{fig:PixRadDamag}).
@@ -681,7 +681,7 @@ This behavior was also observed for old modules in Run~1 in the beginning of the
 \end{figure}
 
 Finally, the hit resolution has also been measured by the pixel group for layer 2 with tracks that have hits on layer 1 and layer 3.
-The tracks are re-fitted without the hit in the middle, and the residual between the original and the interpolated hit positions are measured.
+The tracks are refitted without the hit in the middle, and the residual between the original and the interpolated hit positions are measured.
 The residual distribution is then fitted with a student-t function. Figure~\ref{fig:RelVsLumi2015} shows the hit resolution as a function of the delivered luminosity in 2015.
 A large improvement was observed with respect to the measurements performed at the end of Run~1 (Fig.~\ref{fig:PixRelvsLumi}).
 

@@ -3,7 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 CMS is a full coverage hermetic detector which identifies and reconstructs almost all stable or long-lived particles produced in pp collisions. 
-The only exceptions are neutrinos and hypothetical neutral weakly interacting particles.
+The only exceptions are neutrinos and hypothetical neutral weakly-interacting particles.
 Although these particles do not leave a signal in the detector, their presence can be inferred from the momentum imbalance in the transverse plane,
 a quantity known as missing transverse momentum and denoted by \ptvecmiss.
 
@@ -17,7 +17,7 @@ The PF \ptvecmiss is used in this analysis along with PF jets and it is calculat
 
 Its magnitude is referred to as missing transverse energy and denoted by \ETmiss.
 The \ETmiss is an important variable in many searches for physics beyond the standard model such as the ones described in this thesis where a real highly energetic neutrino is expected in the final state.
-In addition, the precise measurement of \ETmiss plays a crucial role for measurements of standard model physics involving W bosons and top quarks.
+In addition, the precise measurement of \ETmiss plays a crucial role for measurements of standard model physics involving W and Z bosons and top quarks.
 The \ptvecmiss reconstruction is sensitive to pileup, detector malfunctions and to various reconstruction effects. A precise calibration of all reconstructed physics objects is therefore crucial for its performance.
 The level of mismeasurement is significantly reduced after jet energy calibration, described in Section~\ref{subsec:jetsreco}.
 A correction to the \ptvecmiss is derived by propagating the jet energy scale corrections as described in the following.
@@ -63,7 +63,7 @@ where the sum is performed over all jets with corrected $\pt > 10\GeV$.
 %
 %where ${\vec v}$ represents the sum of the transverse momenta of charged particles for each pileup interaction.
 %The correction $f({\vec v})$ is parametrized as $f({\vec v}) = c_1 (1.0 +erf(-c_2|{\vec v}^{c_3}|))$, where the coefficients $c_1$, $c_2$, and $c_3$ are extracted from simulated minimum bias events.
-%The corrected \ptvecmiss is then obtained removing the additional contribution ${\vec \Delta}_\mathrm{PU}$ from Eq.~\ref{eqn:metraw}
+%The corrected \ptvecmiss is then obtained by removing the additional contribution ${\vec \Delta}_\mathrm{PU}$ from Eq.~\ref{eqn:metraw}
 %
 %\begin{equation}
 %{\vec p}_\mathrm{T}^\mathrm{\; miss,PUcorr} = {\vec E}_\mathrm{T}^\mathrm{\; miss,raw} + {\vec \Delta}_\mathrm{PU}.
@@ -81,8 +81,8 @@ where the coefficients are determined separately for data and simulated events.
 
 The distributions of the PF \ETmiss, obtained after applying all the corrections described above, in $\PZ\to\MM$, $\PZ\to\EE$, and prompt photon events are presented in Fig.~\ref{fig:met_distr} as measured in 8\TeV data and for simulation. Good agreement between data and simulation is observed in all distributions.
 
-These events contain no genuine \ptvecmiss, and thus a balance exists between the well-measured vector boson transverse momentum, denoted as ${\vec q}_\mathrm{T}$, and the hadronic recoil, denoted as ${\vec u}_\mathrm{T}$,  which dominates the \ptvecmiss measurement. The $q_\mathrm{T}$ can therefore be used as a reference to measure the scale and resolution of \ptvecmiss.
-The hadronic recoil can be projected to the axis defined by $q_\mathrm{T}$, yeilding two signed components, parallel ($u_\parallel$) and perpendicular ($u_\perp$) to this axis. The parallel component is typically negative as the observed hadronic system is usually in the hemisphere opposite the boson. The scalar quantity $-\left\langle u_\parallel\right\rangle/{\vec q}_\mathrm{T}$ is referred to as the \ptvecmiss response. The response curves, extracted from the data as a function of the vector boson boost ${\vec q}_\mathrm{T}$, are shown in Fig.~\ref{fig:met_resol_a}, where deviations from unity indicate a bias on the hadronic recoil energy scale which is  fully recovered for ${\vec q}_\mathrm{T} > 40\GeV$.
+These events contain no genuine \ptvecmiss, and thus a balance exists between the well-measured vector-boson transverse momentum, denoted as ${\vec q}_\mathrm{T}$, and the hadronic recoil, denoted as ${\vec u}_\mathrm{T}$,  which dominates the \ptvecmiss measurement. The $q_\mathrm{T}$ can therefore be used as a reference to measure the scale and resolution of \ptvecmiss.
+The hadronic recoil can be projected along the axis defined by $q_\mathrm{T}$, yielding two signed components, parallel ($u_\parallel$) and perpendicular ($u_\perp$) to this axis. The parallel component is typically negative as the observed hadronic system is usually in the hemisphere opposite the boson. The scalar quantity $-\left\langle u_\parallel\right\rangle/{\vec q}_\mathrm{T}$ is referred to as the \ptvecmiss response. The response curves, extracted from the data as a function of the vector boson boost ${\vec q}_\mathrm{T}$, are shown in Fig.~\ref{fig:met_resol_a}, where deviations from unity indicate a bias on the hadronic recoil energy scale which is  fully recovered for ${\vec q}_\mathrm{T} > 40\GeV$.
 %The bias is fully recovered for ${\vec q}_\mathrm{T} > 40\GeV$, while below this value the uncorrected unclustered energy contribution starts to be significant compared to the corrected energy of the recoiling jets, leading to an underestimation of the response.
 %A reasonable agreement is found between data and simulation.
 %The curves fit to $\gamma$ + jets data are 2?3\% lower than those fit to Z data at ${\vec q}_\mathrm{T} < 100\GeV$. This effect primarily stems from the large contribution of QCD multijet events to the ${\vec q}_\mathrm{T} < 100\GeV$ region of the selected photon sample. In these QCD multijet events, the hadronic recoil of the photon candidate tends to have a higher contamination of gluon jets. As the calorimeter response to gluon jets is characteristically lower than for quark jets due to difference of jet composition and collimation, the overall average response is reduced for the photon sample in this region.
@@ -104,7 +104,7 @@ The resolution curves, $\sigma(u_\parallel)$ and $\sigma(u_\perp)$ as a function
 \subfigure[]{\label{fig:met_resol_b}\includegraphics[width=0.3\textwidth]{\chsix/met-run1-type1phi-resopara.pdf}}
 \subfigure[]{\label{fig:met_resol_c}\includegraphics[width=0.3\textwidth]{\chsix/met-run1-type1phi-resoperp.pdf}}
 \end{center} 
-\caption{(a) Response curves for PF \ptvecmiss in events with a Z-boson or prompt photon.
+\caption{(a) Response curves for PF \ptvecmiss in events with a Z boson or prompt photon.
 Also shown are the resolution curves of the parallel (b) and perpendicular (b) recoil components as a function of the Z/$\gamma$ $q_\mathrm{T}$. 
 In each plot the upper frame shows the response in 8\TeV data, while the lower one shows the ratio between data and simulation.~\cite{Khachatryan:2014gga}.}
 \label{fig:met_resol}

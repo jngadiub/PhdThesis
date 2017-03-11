@@ -3,8 +3,8 @@
 \label{ch:Phase1Intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The present pixel detector will be replaced with a new pixel system in order to maintain the excellent tracking performance of CMS with the upcoming higher luminosity conditions at the LHC.
-This project is referred to as \textit{Phase I pixel upgrade}~\cite{Dominguez:1481838}. The new upgrade detector comprises four barrel layers and three forward disks at each endcap to provide on average one more spatial point measurement per track compared to the present system, in the whole detector acceptance. It also provides improved track impact parameter resolution reducing the radius of the innermost layer and increasing radial acceptance. 
+The original pixel detector has been recently replaced with a new pixel system in order to maintain the excellent tracking performance of CMS with the upcoming higher luminosity conditions at the LHC.
+This project is referred to as \textit{Phase I pixel upgrade}~\cite{Dominguez:1481838} and was defined with a technical design report in 2012. The new upgrade detector comprises four barrel layers and three forward disks at each endcap to provide on average one more spatial point measurement per track compared to the present system, in the whole detector acceptance. It also provides improved track impact parameter resolution reducing the radius of the innermost layer and increasing radial acceptance. 
 Further improvement is obtained thanks to optimized engineering of the mechanical design and services of the detector, that provide a substantial reduction of the passive material in the tracking volume despite the addition of one barrel layer. Since the innermost sensitive layer is closer to the interaction point compared to the present detector, faster front-end electronics have been developed to operate with high hit efficiency and low dead-time.
 %Details on the main features of the new barrel pixel system will be given in the following.
 In this chapter, the main features of the new barrel pixel system are introduced.\\
@@ -12,10 +12,12 @@ In this chapter, the main features of the new barrel pixel system are introduced
 
 At the end of LS1 eight prototype Phase-1 pixel modules were installed in the CMS detector, on the third unpopulated forward disk. This so-called pilot system was commissioned and integrated into the central DAQ and control system with the aim of gaining operation experience under realistic conditions~\cite{Akgun:2015afw}.
 
-As for the present barrel pixel detector, the supply tubes have been assembled and tested at the University of Zurich, while the modules have been mounted on the detector mechanical structure at PSI. The integration of the supply tubes with the detector is currently ongoing and the installation into CMS and commissioning of the complete system is planned for March 2017.
+As for the present barrel pixel detector, the supply tubes have been assembled and tested at the University of Zurich, while the modules have been mounted on the detector mechanical structure at PSI.
+The integration of the supply tubes with the detector took place at PSI and after performing several tests, the full assembled system was shipped to P5 at the beginning of 2017.
+After few weeks of tests in the clean room, the detector has now been successfully installed into CMS in the spring of 2017 and after a period of commissioning it will start taking data in the summer of 2017.
 
 Several procedures for testing the new system have been developed over the last three years, thanks to a test stand assembled at the University of Zurich. The test stand, described in this chapter, includes a slice of the CMS pixel data-acquisition system and all components of the upgrade readout chain, together with a number of detector modules. It allowed for detailed evaluation and verification of the components placed on the supply tubes before their integration.
-I have contributed to the assembly of the test system and I implemented some of its functionalities. Furthermore, I employed the system to test new calibration procedures that I developed to be included in the main pixel online software. The aim of the procedure is to guarantee a quick verification of the detector functionality during assembly and commissioning. This work, detailed in the following, has been crucial to gain experience with the new barrel pixel system and to acknowledge and implement several modifications to the pixel software to be able to operate with the detector.
+I have contributed to the assembly of the test system and I implemented some of its functionalities. Furthermore, I employed the system to test new calibration procedures that I developed to be included in the main pixel online software. The aim of the procedure was to help guarantee a quick verification of the detector functionality during assembly and commissioning. This work, detailed in the following, has been crucial to gain experience with the new barrel pixel system and to acknowledge and implement several modifications to the pixel software to be able to operate with the detector.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Motivations}
@@ -466,7 +468,7 @@ The algorithm to chose the optimal phases or delays is the same as for the tests
 
 The read back mechanism described in the previous section allows to access the ROC analog current information (\textit{Iana}).
 For the present detector it is possible to access only the total current of a large number of ROCs provided by a reading of the power supply, so that only an average value per ROC can be obtained.
-As discussed in Chapter~\ref{ch:BPixCalib}, the analog current increases with irradiation and a re-calibration of the ROC analog voltage setting \textit{Vana}
+As discussed in Chapter~\ref{ch:BPixCalib}, the analog current increases with irradiation and a recalibration of the ROC analog voltage setting \textit{Vana}
 is necessary to bring back the current in the safe range and recover the optimal ROC performance (Fig.~\ref{fig:PixRadDamag_b}).
 The \textit{Vana} calibration for each ROC is a time consuming procedure that converges after a large number of iterations of the S-curve test,
 which provides measurements of the threshold every time the settings are changed (Section~\ref{subsec:calibPart2}).

@@ -73,7 +73,8 @@ The normalization factor $d_0$ is taken as
 d_0 = \sum_{k} p_{T,k} R_{0},
 \end{equation}
 
-where $R_0$ is the characteristic jet radius used in the original jet clustering algorithm. The subjet axes are obtained by running the exclusive $k_T$ algorithm~\cite{Ellis:1993tq}, and reversing the last $N$ clustering steps. The variable $\tau_N$ quantifies the compatibility of the jet clustering with the hypothesis that exactly $N$ subjets are present.
+where $R_0$ is the characteristic jet radius used in the original jet-clustering algorithm. The subjet axes are obtained by running the exclusive $k_T$ algorithm~\cite{Ellis:1993tq}, and reversing the last $N$ clustering steps.
+%The variable $\tau_N$ quantifies the compatibility of the jet clustering with the hypothesis that exactly $N$ subjets are present.
 %to what degree the jet can be regarded as a jet composed of $N$ subjets. 
 Jets with $\tau_N \approx 0$ have all their radiation aligned with the candidate subjet directions and therefore have $N$ (or fewer) subjets. Jets with $\tau_N \gg 0$ have a large fraction of their energy distributed away from the candidate subjet directions and therefore have at least $N+1$ subjets.
 %The \tau_N$ observable has a small value if the jet is consistent with having N or fewer subjets, as almost every jet constituent will be close in ?R to its own true subjet.
@@ -98,7 +99,7 @@ Figure~\ref{fig:tau21} shows the $N$-subjettiness ratio $\tau_{21}$ distribution
 
 The jet substructure observables described in the previous section are employed for identifying, or ``tagging'', W and Z jets (``V jets''). The V tagging of the jets is obtained combining selections on both the pruned jet mass \mJ and N-subjettiness ratio \nsubj observables. %If the conditions are met the jet is referred to as ``V jets''. 
 
-The selection criteria have been optimized in the context of searches for resonances decaying into diboson in the \lnujet and dijet final states~\cite{Khachatryan:2014gha,Khachatryan:2014hpa,CMS-PAS-EXO-15-002}. The optimization, based on simulation, aims at maximizing the analysis sensitivity and it leads to slightly different working points for each analysis. In particular, the baseline selection values have been changed from Run~1 to Run~2. Typical signal efficiencies and mistagging rates of QCD jets obtained, respectively, from simulations and measurements with 8 and 13\TeV data are summarized in Table~\ref{tab:vtagging}, for jets with $\pt = 500\GeV$.
+The selection criteria have been optimized in the context of searches for resonances decaying into diboson in the lepton+jet and dijet final states~\cite{Khachatryan:2014gha,Khachatryan:2014hpa,CMS-PAS-EXO-15-002}. The optimization, based on simulation, aims at maximizing the analysis sensitivity and it leads to slightly different working points for each analysis. In particular, the baseline selection values have been changed from Run~1 to Run~2. Typical signal efficiencies and mistagging rates of QCD jets obtained, respectively, from simulations and measurements with 8 and 13\TeV data are summarized in Table~\ref{tab:vtagging}, for jets with $\pt = 500\GeV$.
 The $\ell\Pgn\qqbar$ analysis described in this work makes use of a looser \nsubj working point of 0.6 resulted from an optimization which takes into account signal efficiency and background rejection over a large jet \pt range.
 In fact, this channel is characterized by a low background rate and a \nsubj selection providing a higher signal efficiency over the whole jet \pt range is therefore preferred.\\
 
@@ -106,7 +107,7 @@ In fact, this channel is characterized by a low background rate and a \nsubj sel
 \centering
 \caption{Typical selection criteria for V tagging used in Run~1 and Run~2. The corresponding signal efficiency for W jets and mistagging rate of QCD jets are also reported for jets with $\pt = 500\GeV$, obtained from 8 and 13\TeV data and from simulation.}
 \begin{tabular}{c|c|c|c}
-Data sets                     & V tagging selections      & signal efficiency          & mistagging rate\\
+Data sets                     & V tagging selections      & Signal efficiency          & Mistagging rate\\
 \hline
 \hline
 \multirow{2}{*}{8\TeV}  & 60 $< \mJ <$ 100\GeV  & \multirow{2}{*}{0.65}   & \multirow{2}{*}{0.04}\\
@@ -246,7 +247,7 @@ Because the kinematic properties of W jets and Z jets are very similar, the same
 %introduction: say that a efficient higgs tagger is obtained exploiting both jet substructure and btagging
 As discussed in the previous sections boosted V bosons are reconstructed using jet substructure methods
 through the V tagging algorithm, providing large discrimination against multijet backgrounds.
-However, if one or more of the decay products is a b quark, adding b jet identification (Section~\ref{sec:jets}) along
+However, if one or more of the decay products is a b quark, adding b-jet identification (Section~\ref{sec:jets}) along
 with jet substructure information can significantly improve the sensitivity of these methods.
 %In the previous sections the techniques deployed to reconstruct highly boosted V boson has been discussed.
 %Boosted topologies are usually reconstructed and interpreted using the jet substructure methods such as top- and W/Z-tagging algorithms. 
@@ -264,10 +265,10 @@ and used at CMS~\cite{CMS:BTV13001}:
 \item application of b tagging to the subjets reconstructed within the fat jet (``subjets b tagging'')
 \end{itemize}
 
-Both approaches are based on the standard b tagging algorithms which take advantage of the tracking and vertexing information and are designed to identify jets from single b quarks.
+Both approaches are based on the standard b-tagging algorithms which take advantage of the tracking and vertexing information and are designed to identify jets from single b quarks.
 %In the first approach the standard b tagging algorithms are applied to the fat jet but with the track and vertex association criteria relaxed due to a larger jet cone size, while in the second approach the subjets are first defined and then the standard b tagging is applied to each of the subjets. The performance of the fat jet b tagging is inherently limited by the fact that the algorithm is not designed to identify signal jets containing two b quarks.  On the other hand, the subjet b tagging, with its focus on individual subjets, does not fully profit from the global properties of the fat jets containing two b hadrons.  The two approaches are therefore complementary to an extent. The fat jet b tagging performs better in the high efficiency regime mostly relying on the presence of displaced tracks, while the subjet b tagging performs better in the high purity regime relying heavily on the reconstruction of secondary vertices associated to the subjets. Furthermore, at high \pt the subjets start to overlap causing the standard b tagging techniques to break down due to double-counting of tracks and secondary vertices when computing the subjet b-tag discriminants.  In Run I the subjet b tagging was mainly used at CMS to identify boosted H $\rightarrow$ bb candidates. While this approach is successful, its complementarity with the fat jet b tagging is a clear indication that further improvements can be achieved.
-As described in Section~\ref{sec:jets}, the b tagging procedure starts with an association of tracks to jets, based on the angular distance between the tracks and the jet axis. 
-The default b tagging algorithms use the selection $\Delta R < 0.3$.  However, when applying this to a large-cone jet of size $R = 0.8$, 
+As described in Section~\ref{sec:jets}, the b-tagging procedure starts with an association of tracks to jets, based on the angular distance between the tracks and the jet axis. 
+The default b-tagging algorithms use the selection $\Delta R < 0.3$.  However, when applying this to a large-cone jet of size $R = 0.8$, 
 the criteria is suboptimal. Hence, to apply b tagging to fat jets, this angular distance is enlarged to $\Delta R < 0.8$. 
 For the application of b tagging to subjets, the angular distance remains at the default value of $\Delta R < 0.3$.\\
 
@@ -275,7 +276,7 @@ The H tagging technique starts requiring that the pruned jet mass of the H jet c
 as this requirement rejects a large fraction of QCD background as demonstrated in the previous sections.
 The subjets are then obtained by reversing the last step of the pruning recombination algorithm described in Section~\ref{subsec:pruning}.
 In addition to the jet mass requirement, the b tagging is applied either to the whole fat jet or to the two subjets, where both subjets are required
-to pass the same selection on the CSV discriminator. The b tagging efficiency and misidentification probability of QCD jets after applying the selection $75 < \mJ < 135\GeV$ are shown in Fig.~\ref{fig:htagging8TeV}.
+to pass the same selection on the CSV discriminator. The b-tagging efficiency and misidentification probability of QCD jets after applying the selection $75 < \mJ < 135\GeV$ are shown in Fig.~\ref{fig:htagging8TeV}.
 The subjet b tagging outperforms the fat jet tagging for most of the phase space.
 %A requirement on the pruned jet mass [26], 75 $<$ \mJ $<$ 135\GeV, is used, which rejects a large fraction of QCD background.
 
@@ -283,7 +284,7 @@ The subjet b tagging outperforms the fat jet tagging for most of the phase space
 \centering     %%% not \center
 \subfigure[]{\label{fig:htagging8TeV_a}\includegraphics[width=0.45\textwidth]{\chseven/BTV-13-001_Figure_022-a.pdf}}
 \subfigure[]{\label{fig:htagging8TeV_b}\includegraphics[width=0.45\textwidth]{\chseven/BTV-13-001_Figure_022-b.pdf}}
- \caption{Misidentification probability as a function of b tagging efficiency for boosted $\PH\to\bbbar$ jets and inclusive QCD jets for the CSV algorithm applied to CA8 jets
+ \caption{Misidentification probability as a function of b-tagging efficiency for boosted $\PH\to\bbbar$ jets and inclusive QCD jets for the CSV algorithm applied to CA8 jets
  and pruned subjets for jets with (a) $300 < \pt < 500\GeV$ and (b) $\pt > 700\GeV$. Loose, medium, and tight operating points of the CSV discriminator are indicated~\cite{CMS:BTV13001}.}
 \label{fig:htagging8TeV}
 \end{figure}
@@ -298,7 +299,7 @@ For boosted H jets the fraction of shared tracks, defined as the ratio of the nu
 from more than one subjet and the number of all tracks within $\Delta R < 0.3$ from any of the subjets,
 ranges from a few percent at a jet \pt of 400\GeV
 and increases to 40\% at a jet \pt of 700\GeV and to 80\% at a jet \pt of 1\TeV.
-Because of track sharing, the b tagging probabilities for individual subjets deteriorate at large jet \pt and the subjet b tagging performance approach the
+Because of track sharing, the b-tagging probabilities for individual subjets deteriorate at large jet \pt and the subjet b-tagging performance approach the
 fat jet b tagging one as can be seen in Fig.~\ref{fig:htagging8TeV}.
 The loss in efficiency is then recovered applying the two approaches depending on the $\Delta R$ between the two subjets.
 In particular, the analysis involving boosted Higgs bosons such as the one presented in this work
@@ -321,10 +322,10 @@ The validation of b tagging in boosted H jets is performed selecting events cont
 To enrich a sample of fat jets in g $\to$ \bbbar component, used as an analogue of boosted $\PH\to\bbbar$ jets, the fat jets are required to be double-muon-tagged with both subjets
 matched to distinct muon candidates within a cone of size $\Delta R < 0.4$.
 %Event samples containing high-\pt jets reconstructed using the CA8 algorithm are used to select such gluon splitting to \bbbar jets. The CA8 jets are required to have a transverse momentum \pt > 400 \GeV/.  The jet-pruning algorithm is used to decompose the fat jets into their subjet components. In order to enrich this sample in heavy-flavour jets, at least one of the two subjets can be required to be muon-tagged where a muon candidate with pT > 5 \GeV/ needs to be matched to a subjet within DR <0.4.  Finally, to additionally enrich a sample of fat jets in gluon splitting to bb component (g!bb), used as an analogue of boosted H!bb jets, the fat jets can be required to be double-muon-tagged with both subjets matched to distinct muon candidates. Furthermore, the validation of b tagging in boosted Higgs jets requires the presence of a jet with two b quarks within it.  One such standard model process consists of jets from gluon splitting to bb in which the two b quarks hadronise inside one jet.  Event samples containing high-pt jets reconstructed using the CA8 algorithm are used to select such gluon splitting to bb jets. The CA8 jets are required to have a transverse momentum \pt > 400 \GeV/.  The jet-pruning algorithm is used to decompose the fat jets into their subjet components. To remove infrared unsafe pruned subjet configurations, the following requirement is imposed [27]: DR(subjets)>Rcut2m/pT. Here DR (subjets) is the angular separation between the two subjets of a pruned CA8 jet, Rcut(=0.5) is the jet-pruning parameter, m the mass of the unpruned CA8 jet and pTis its transverse momentum.  This cut removes fat jets containing one very soft subjet with the other subjet nearly collinear with the fat jet axis. The selection described so far defines what is referred to as the inclusive sample of fat jets.  In order to enrich this sample in heavy-flavour jets, at least one of the two subjets can be required to be muon-tagged where a muon candidate with pT > 5 \GeV/ needs to be matched to a subjet within DR <0.4.  Finally, to additionally enrich a sample of fat jets in gluon splitting to bb component (g!bb), used as an analogue of boosted H!bb jets, the fat jets can be required to be double-muon-tagged with both subjets matched to distinct muon candidates. CA8 fat jets are labeled as b jets from gluon splitting (g!bb) if at least two generator-level b hadrons are found within DR<0.8 from the jet axis. However, for subjets of fat jets only the standard three flavour categories (udsg, c, and b) are used.
-This sample is used to study the modelling of b tagging efficiencies in boosted $\PH\to\bbbar$ topologies.
+This sample is used to study the modelling of b-tagging efficiencies in boosted $\PH\to\bbbar$ topologies.
 The scale factors, given by the ratio between the efficiencies measured in data and simulation, are
 found to be in good agreement with those measured in the standard, non-boosted topologies,
-indicating that the simulation reproduces the b tagging performance in boosted and non-boosted environments equally well.
+indicating that the simulation reproduces the b-tagging performance in boosted and non-boosted environments equally well.
 These scale factors are used in the analysis to reweight the simulated events.
 %Overall, the scale factors measured in boosted topologies are found to be in good agreement
 %with those measured in the standard, non-boosted topologies. This confirms observations from

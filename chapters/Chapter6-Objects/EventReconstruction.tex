@@ -3,7 +3,7 @@
 \label{ch:EventReconstruction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In the pp collisions at the LHC a large number of particles are produced which must be efficiently reconstructed and identified. These particles travel through the CMS detector and they are classified as objects depending on their specific signature in each subdetector. This chapter covers the reconstruction of physics objects that are needed for the identification of signal events in the lepton plus jet event topology described in Chapter~\ref{ch:dibosonIntro}.
+In the pp collisions at the LHC a large number of particles are produced which must be efficiently reconstructed and identified. These particles travel through the CMS detector and they are classified as objects depending on their specific signature in each sub-detector. This chapter covers the reconstruction of physics objects that are needed for the identification of signal events in the lepton plus jet event topology described in Chapter~\ref{ch:dibosonIntro}.
 
 The measurement of tracks in the tracker detector for charged particles and the reconstruction of the primary vertices represent key aspects of the reconstruction of the various objects and are detailed in Section~\ref{sec:tracksandvtx}. Details on the methods for reconstructing electrons, muons and jets present in the final states of these analyses are given, respectively, in Sections~\ref{sec:electrons}, \ref{sec:muons}, and \ref{sec:jets}. %In this analysis $\tau$ leptons are reconstructed as electrons (Section~\ref{sec:electrons}) or muons (Section~\ref{sec:muons}) and accounted to the respective channel if they decay leptonically, or as jets (Section~\ref{sec:jets}) if they decay hadronically. However, only the leptonic decay mode contributes to the analysis since at least one muon or electron has to be reconstructed in the event.
 %However, the resulting gain in sensitivity is limited by the small branching ratios.
@@ -33,3 +33,57 @@ The identified lepton and the missing transverse energy in the event are associa
 %%%%%%%%%%
 %\section{W$\rightarrow\ell\Pgn$ reconstruction}\label{sec:leptonicW}
    \input{chapters/Chapter6-Objects//Wlept.tex}
+
+%%%%%%%%%%
+\section{Summary}
+
+A detailed description of the reconstruction of the objects present in the lepton+jet final states under study has been provided in this chapter, and a summary is given in the following.\\
+
+Section~\ref{sec:tracksandvtx} was focused on the reconstruction of the tracks and primary-vertices in the event.
+The trajectories of charged particles are reconstructed through an iterative procedure that uses the reconstructed hits in the silicon detectors to determine the track parameters, i.e. the \pt, the azimuthal and polar angles, and the transverse and longitudinal impact parameters.
+The primary vertices are reconstructed from a set of well-reconstructed tracks.
+All events are required to have at least one primary vertex reconstructed within a 24\cm window along the beam axis, with a transverse distance from the nominal pp interaction region of less than 2\cm. In the presence of more than one vertex passing these requirements, the primary-interaction vertex, where the hard process of interest takes place, is chosen to be the one with the highest total $\pt^2$, summed over all the associated tracks.\\
+
+The following two sections, namely Sections~\ref{sec:electrons} and~\ref{sec:muons}, were devoted to the reconstruction and identification of electrons and muons, respectively.
+
+Electron candidates are reconstructed by matching energy deposits in the ECAL with reconstructed tracks. In order to suppress multijet background, electron candidates must pass stringent quality criteria tuned for high-\pt objects and an isolation selection. The total scalar sum of the \pt of all the tracks in a cone of radius $\Delta R = 0.3$ around the electron direction, excluding tracks within an inner cone of $\Delta R = 0.04$ to remove the contribution from the electron itself, is required be less than 5\GeV. In addition, a calorimetric isolation parameter is calculated by summing the energies of reconstructed deposits in both ECAL and HCAL, not associated with the electron itself, within a cone of radius $\Delta R = 0.3$ around the electron. The upper threshold for this isolation parameter depends on the electron kinematic quantities and the average amount of additional energy coming from pileup interactions.
+
+Muons are reconstructed through a fit to the hits in both the inner tracking system and the muon spectrometer.
+They must satisfy identification requirements on the impact parameters of the track, the number of hits reconstructed in both the silicon tracker and the muon detectors, and the uncertainty in the \pt measurement.
+These quality criteria ensure a precise measurement of the four-momentum and reject misreconstructed muons.
+An isolation requirement is applied to suppress background from multijet events where jet constituents are identified as muons.
+Specifically, the scalar sum of the \pt of all other tracks in a cone of radius $\Delta R = 0.3$ around but not including the muon track must be less than 10\% of the muon \pt.
+
+The triggers used in this analysis have also been described in Sections~\ref{sec:electrons} and~\ref{sec:muons}. They require either one muon or one electron, without isolation requirements and with loose identification criteria.
+A minimum value for the \pt of the lepton is required, which is higher for the data collected in pp collisions at 13\TeV.
+Specifically, the electrons selected by the trigger must have $\et > 80$ and 105\GeV for the 8 and 13\TeV data analyses, respectively,
+whereas the thresholds on the \pt of the muons are 40 and 45\GeV. In addition, the electrons and muons must have $\eta < 2.5$ and 2.1, respectively.
+The efficiency for an electron passing the identification and isolation requirements summarized above to fire the single-electron trigger has been measured to be 98--99\%.
+The efficiency for the single-muon trigger varies between 80 and 95\%, and between 92 and 98\%, for the 8 and 13\TeV analyses, respectively, depending on the $\eta$ of the muon.\\
+
+The jet reconstruction in CMS has been described in Section~\ref{sec:jets}.
+Jets are clustered from the four-momenta of the particles reconstructed by the PF algorithm, which reconstructs individual particles by combining information from all sub-detector systems.
+The reconstructed PF constituents are assigned to one of the five candidate categories (electrons, muons, photons, charged hadrons, and neutral hadrons) and used as input to the chosen jet-clustering algorithm.
+In order to mitigate biases in the reconstruction due to PU interactions, in the jet-clustering procedure charged PF particles not associated with the primary-interaction vertex are excluded.
+
+The CA and AK jet-clustering algorithms with a distance parameter $R = 0.8$ are used to identify the $\PH\to\bbbar$ and $\PV\to\qqbar$ candidates in the 8 and 13\TeV data analyses, respectively.
+In order to identify b jets, the AK jet-clustering algorithm is used with a distance parameter $R = 0.5$ and 0.4 for the 8 and 13\TeV data analyses, respectively.
+In addition, the CSV b-tagging algorithm is applied to the reconstructed AK4 and AK5 jets using a working point that provides a misidentification rate of 1\% and efficiency of 64--69\%.
+The ratio of the b-tagging efficiency between data and simulation is used as a scale factor to correct the simulated events.
+A correction based on the projected area of the jet on the front face of the calorimeter is used to take into account the extra energy clustered in jets due to neutral particles coming from pileup.
+Jet energy corrections are derived from simulation and from dijet and photon+jet events in data.
+Additional quality criteria are applied to the jets in order to remove spurious jet-like features originating from isolated noise patterns
+in the calorimeters or the tracker. The efficiency of these jet quality requirements for real jets is above 99\%.
+
+For the 8\TeV data analysis, the CA8 (AK5) jets are required to be separated from any well-identified electron or muon by $\Delta R > 0.8$ (0.3).
+In addition, all AK5 and CA8 jets must have $\pt > 30\GeV$ and $> 200\GeV$, respectively, and $|\eta| < 2.4$ to be considered in the subsequent steps of the analysis.
+The AK5 jets are required to be separated from the CA8 jet representing the $\PV\to\qqbar$ candidate by $\Delta R > 0.8$.
+Finally, CA8 jets are not used in the analysis if their pseudorapidity falls in the region $1.0 < |\eta| < 1.8$, thus overlapping the barrel-endcap transition region of the silicon tracker where the reconstruction is not optimal for the objects relevant to this analysis. The same selections are applied for AK4 and AK8 jets in the 13\TeV data analysis, except for the aforementioned fiducial cut on the $\eta$ of the large-cone jet since the reconstruction issue was fixed for Run~2.\\
+
+As described in Section~\ref{sec:met}, the missing transverse energy is estimated through the magnitude of the vector sum of the transverse momenta of the reconstructed PF objects.
+The value of the \ETmiss so obtained is modified to account for corrections to the energy scale of all the reconstructed AK5 or AK4 jets in the event.
+In addition, a correction applied to correct for a modulation in $\phi$ in the \ptvecmiss due to imperfect detector alignment, inefficiencies, a residual \pt dependence of the calibration, and a shift between the center of the detector and the beam line.\\
+
+Finally, the $\PW\to\ell\nu$ candidate is formed from the combination of electron and muon candidates with the \ptvecmiss,
+where an estimate of the neutrino longitudinal momentum is derived through the methods described in Section~\ref{sec:leptonicW},
+which imposes the constraint of the W mass on the invariant mass of the $\ell\Pgn$ system.

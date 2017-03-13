@@ -28,7 +28,7 @@ The generation of hard inelastic pp collisions is factorized into different step
 \label{fig:MCgenSteps}
 \end{figure}
 
-The basis of theoretical event generation at the LHC is a parametrisation of the incoming partons (quarks, anti-quarks and gluons) stemming from the proton, which is given by the parton density functions (PDF).
+The basis of theoretical event generation at the LHC is a parametrisation of the incoming partons (quarks, antiquarks and gluons) stemming from the proton, which is given by the parton density functions (PDF).
 They describe the probability to find a quark or gluon with a given proton momentum fraction $x$ in a proton of a pp collision taking place at the LHC.
 In pQCD the PDFs depend on a factorization scale $\mu^2_F$ at which the proton is probed.
 All interactions between quarks and gluons happening at scales below the scale $\mu^2_F$ are absorbed into the PDFs. Therefore at small $\mu^2_F$ the proton is observed basically as a combination of its
@@ -290,7 +290,7 @@ for resonances produced via quark-antiquark annihilation such as \Wpr and \Zpr.
 \subsection{Simulation of background processes}\label{subsec:bkgMC}
 
 For the 8\TeV data analysis, the background is modelled using the \MADGRAPH{5} v1.3.30 event generator to simulate the production of a W boson in association with jets at LO,
-the \POWHEG{} 1.0 r1380 package to generate \ttbar and single top quark events at NLO accuracy, and \PYTHIA{6.424} for SM diboson (WW, WZ, and ZZ) production at LO.
+the \POWHEG{} 1.0 r1380 package to generate \ttbar and single-top-quark events at NLO accuracy, and \PYTHIA{6.424} for SM diboson (WW, WZ, and ZZ) production at LO.
 All simulated event samples are generated using the CTEQ6L1 PDF set with $\alpha_S$ also at LO, except for the \POWHEG{} \ttbar sample,
 for which the CT10 NNLO PDF set is used.
 All the samples are then processed further by \PYTHIA{6}, using the Z2* tune for simulation of parton showering and subsequent hadronization,
@@ -335,7 +335,7 @@ The simulated samples used in the 8\TeV data analysis described in this work are
 For the 13\TeV analysis, the W+jets SM process is simulated with \amcatnlo{} at LO accuracy.
 A set of W+jets samples are used, each containing generated events where the scalar \pt sum of all jets (\HT) is in a given range.
 This splitting provides the analyses with large MC statistics for a wide range of jet transverse momenta.
-The \ttbar, single top quark and diboson events are generated with both \POWHEG{} and \amcatnlo{} at NLO accuracy.
+The \ttbar, single-top-quark and diboson events are generated with both \POWHEG{} and \amcatnlo{} at NLO accuracy.
 Parton showering and hadronization are implemented through \PYTHIA{8} using the CUETP8M1 tune~\cite{Skands:2014pea,Khachatryan:2015pea}.
 The NNPDF 3.0 PDFs with $\alpha_S$ at NLO, are used for all simulated samples. 
 The simulated background is normalized using inclusive cross sections calculated at NLO, or NNLO order in QCD where available, using \MCFM{} and \textsc{fewz},

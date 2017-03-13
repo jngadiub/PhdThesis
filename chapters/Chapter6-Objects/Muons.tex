@@ -19,7 +19,7 @@ A standalone-muon track is reconstructed from pre-built track segments (i.e. a s
 Based on reconstructed standalone-muon and tracker tracks, two reconstruction approaches are then used:
 
 \begin{itemize}
-\item {\bf global-muon reconstruction (outside-in)}: each standalone-muon track is extrapolated to the tracker and a search is performed in a cone around it to match a tracker track; a global-muon track is fitted combining hits from the tracker track and standalone-muon track, using the KF technique;
+\item {\bf global-muon reconstruction (outside-in)}: each standalone-muon track is extrapolated to the tracker and a search is performed in a cone around it to match a tracker track; a global-muon track is fit combining hits from the tracker track and standalone-muon track, using the KF technique;
 \item {\bf tracker-muon reconstruction (inside-out)}: all tracker tracks with $\pt > 0.5\GeV$ are considered as possible muon candidates and are extrapolated to the muon system while searching for a match with at least one muon segment.
 \end{itemize}
 

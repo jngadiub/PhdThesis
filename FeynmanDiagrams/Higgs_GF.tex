@@ -4,11 +4,11 @@
 \usepackage{amsmath} %maths
 \usepackage[utf8]{inputenc} %useful to type directly diacritic characters
 \usepackage{feynmp}\begin{document}
-\[\begin{fmffile}{feyngraph}
-  \begin{fmfgraph*}(280,100)
-    \fmfset{arrow_len}{15}
-    \fmfset{curly_len}{12}
-    \fmfset{dash_len}{15}
+\begin{fmffile}{feyngraph}
+  \begin{fmfgraph*}(150,80)
+    %\fmfset{arrow_len}{15}
+    %\fmfset{curly_len}{12}
+    %\fmfset{dash_len}{15}
     \fmfstraight
     \fmfpen{thick}
     \fmfleft{i1,i2}
@@ -22,7 +22,7 @@
     \fmf{phantom,tension=0.4}{t2,o2}
     \fmffreeze
     % top loop
-    \fmf{fermion,tension=1,label=$t$}{t1,t2,t3,t1}
+    \fmf{fermion,tension=1,label=$t$,label.side=left}{t1,t2,t3,t1}
     \fmf{phantom,tension=1.4}{t3,m}
     \fmffreeze
     % Higgs boson
@@ -32,5 +32,5 @@
     \fmf{phantom,tension=1}{h,o2}
   \end{fmfgraph*}
 \end{fmffile}
-\]
+
 \end{document}

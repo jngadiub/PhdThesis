@@ -269,10 +269,10 @@ i.e. with $\alpha_i = \alpha_i(x)$ and $\beta = \beta(x)$.
 In order to satisfy this symmetry requirement, the fermion derivatives are exchanged with covariant objects.
 Since there are now four gauge parameters, $\alpha_i(x)$ and $\beta(x)$, four different gauge fields are needed:
 
-\begin{eqnarray}\label{eqn:SM_e16}
-\mathcal{D}_\mu \equiv \partial_\mu + ig\textbf{W}_\mu \cdot \textbf{T} + ig^\prime\frac{Y}{2}B_\mu.
-%\mathcal{D}_\mu \equiv \partial_\mu + ig\frac{\tau_i}{2}W^i_\mu + ig^\prime\frac{Y}{2}B_\mu.
-\end{eqnarray}
+\begin{equation}\label{eqn:SM_e16}
+%\mathcal{D}_\mu \equiv \partial_\mu + ig\textbf{W}_\mu \cdot \textbf{T} + ig^\prime\frac{Y}{2}B_\mu.
+\mathcal{D}_\mu \equiv \partial_\mu - ig\frac{\tau_i}{2}W^i_\mu - ig^\prime \frac{Y}{2} B_\mu.
+\end{equation}
 
 Thus, four additional vector fields of spin 1 have been added: the isotriplet $\textbf{W}_\mu = (W_{1\mu}, W_{2\mu}, W_{3\mu})$ for the $SU(2)_L$ and the singlet $B_\mu$ for the $U(1)_Y$.
 The quanta of these fields are called gauge bosons.
@@ -281,7 +281,7 @@ In order to build the gauge-invariant kinetic term for the gauge bosons, the cor
 \begin{equation}\label{eqn:SM_e17}
 \begin{split}
 B_{\mu\nu} & \equiv \partial_\mu B_\nu - \partial_\nu B_\mu\\
-W^i_{\mu\nu} & \equiv \partial_\mu W^\prime_\nu - \partial_\nu W^i_\mu - g\epsilon_{ijk} W^j_\mu W^k_\nu.
+W^i_{\mu\nu} & \equiv \partial_\mu W^i_\nu - \partial_\nu W^i_\mu - g\epsilon_{ijk} W^j_\mu W^k_\nu.
 \end{split}
 \end{equation}
 
@@ -294,7 +294,8 @@ The final $SU(2)_L \times U(1)_Y$ Lagrangian is then given by
 \noindent where $\mathcal{L}_f$ is the Lagrangian for the free fermion fields
 
 \begin{equation}\label{eqn:SM_e19}
-\mathcal{L}_f = i\sum_{j}\bar{\psi}^j_L\gamma^\mu[\partial_\mu + ig\textbf{W}_\mu \cdot \textbf{T} + ig^\prime\frac{Y_L}{2}B_\mu]\psi^i_L + i\sum_j\bar{\psi}^j_R[\partial_\mu - g^\prime Y_RB_\mu]\psi^j_R
+%\mathcal{L}_f = i\sum_{j}\bar{\psi}^j_L\gamma^\mu[\partial_\mu + ig\textbf{W}_\mu \cdot \textbf{T} + ig^\prime\frac{Y_L}{2}B_\mu]\psi^i_L + i\sum_j\bar{\psi}^j_R[\partial_\mu - g^\prime Y_RB_\mu]\psi^j_R
+\mathcal{L}_f = i\bar{\psi}_1\gamma^\mu[\partial_\mu - ig\frac{\tau_i}{2}W^i_\mu - ig^\prime\frac{Y_1}{2}B_\mu]\psi_1 + i\sum_{j=2}^3\bar{\psi}_j\gamma^\mu[\partial_\mu - ig^\prime\frac{Y_j}{2}B_\mu]\psi_j
 \end{equation}
 
 \noindent and $\mathcal{L}_g$ is the Lagrangian for the gauge bosons
@@ -328,7 +329,7 @@ As it will be demonstrated in the following, by arbitrarily selecting one of tho
 In order to explain this mechanism the Lagrangian for a complex scalar field $\phi(x) = \phi_1(x) + i\phi_2(x)$ is considered
 
 \begin{equation}\label{eqn:SM_e21}
-\mathcal{L} = \partial_\mu\phi^\dag\partial^\mu\phi - V(\phi) \, , \qquad\qquad V(\phi) = \mu^2\phi^\dag\phi + h(\phi^\dag\phi)^2
+\mathcal{L} = \partial_\mu\phi^\dag\partial^\mu\phi - V(\phi) \, , \qquad\qquad V(\phi) = \mu^2\phi^\dag\phi + \lambda(\phi^\dag\phi)^2
 \end{equation}
 
 \noindent where $V(\phi)$ is a potential. 
@@ -338,11 +339,11 @@ The Lagrangian $\mathcal{L}$ is invariant under global phase transformations of 
 \phi(x) \xrightarrow{U(1)} \phi^\prime(x) \equiv e^{i\theta} \phi(x).
 \end{equation}
 
-In order to allow for a minimum or ``ground state'' of the potential, the parameter $h$ has to be $\geq 0$. For the quadratic term there are the two following possibilities.
+In order to allow for a minimum or ``ground state'' of the potential, the parameter $\lambda$ has to be $\geq 0$. For the quadratic term there are the two following possibilities.
 If $\mu^2 \geq 0$, the potential acquires only the trivial minimum $\phi_m = 0$. If $\mu^2 \leq 0$ the minimum is obtained for all those field configurations satisfying
 
 \begin{equation}\label{eqn:SM_e23}
-|\phi_m| = \sqrt{\frac{-\mu^2}{2h}} \equiv \frac{v}{\sqrt{2}} \geq 0 \qquad\qquad \Rightarrow \qquad\qquad V(\phi_m) = -\frac{h}{4}v^4
+|\phi_m| = \sqrt{\frac{-\mu^2}{2\lambda}} \equiv \frac{v}{\sqrt{2}} \geq 0 \qquad\qquad \Rightarrow \qquad\qquad V(\phi_m) = -\frac{\lambda}{4}v^4.
 \end{equation}
 
 As the Lagrangian is invariant under $U(1)$ phase transformations, there is an infinite number of degenerate states of minimum energy given by 
@@ -358,7 +359,7 @@ two new real fields $\eta(x)$ and $\xi(x)$ are introduced representing these flu
 In terms of these new fields, the potential $V(\phi)$ takes the form
 
 \begin{equation}\label{eqn:SM_e25}
-V(\phi) = V(\phi_m) - \mu^2\eta^2 + hv\eta(\eta^2+\xi^2) + \frac{h}{4}(\eta^2+\xi^2)^2
+V(\phi) = V(\phi_m) - \mu^2\eta^2 + \lambda v\eta(\eta^2+\xi^2) + \frac{\lambda}{4}(\eta^2+\xi^2)^2
 \end{equation}
 
 \noindent and the resulting Lagrangian does not share the same symmetry as the original one. Thus, by choosing a particular solution as the ground state, the symmetry gets spontaneously broken.
@@ -394,8 +395,8 @@ The gauged scalar Lagrangian of the Goldstone model (Eq.~\ref{eqn:SM_e21}) is no
 
 \begin{equation}\label{eqn:SM_e27}
 \begin{aligned}
-\mathcal{L}_\phi  & = \mathcal{D}_\mu\phi^\dag\mathcal{D}^\mu\phi - \mu^2\phi^\dag\phi + h(\phi^\dag\phi)^2 \, , & \qquad (h \geq 0, \mu^2 \leq 0) \, , \\
- \mathcal{D}^\mu\phi & =  [\partial^\mu + ig\textbf{W}_\mu \cdot \textbf{T} + ig^\prime\frac{Y}{2}B_\mu] \, , & \qquad (Y = Q - \tau_3 = \frac{1}{2}) \, , 
+\mathcal{L}_\phi  & = (\mathcal{D}_\mu\phi)^\dag\mathcal{D}^\mu\phi - \mu^2\phi^\dag\phi + \lambda(\phi^\dag\phi)^2 \, , & \qquad (\lambda \geq 0, \mu^2 \leq 0) \, , \\
+ \mathcal{D}_\mu\phi & =  [\partial_\mu - ig\frac{\tau_i}{2}W_\mu^i - ig^\prime\frac{Y}{2}B_\mu]\phi \, , & \qquad (Y = 2Q - 2\tau_3 = 1) \, , 
 \end{aligned}
 \end{equation}
 
@@ -406,7 +407,7 @@ As observed in the previous section, there is an infinite set of degenerate stat
 \begin{equation}\label{eqn:SM_e29}
 \begin{aligned}
 \left\langle0|\phi_i|0\right\rangle & = 0 \quad \mbox{for} \quad i = 1,2,4\\
-\left\langle0|\phi_3|0\right\rangle & = \sqrt{\frac{-\mu^2}{2h}} \equiv \frac{v}{\sqrt{2}}.
+\left\langle0|\phi_3|0\right\rangle & = \sqrt{\frac{-\mu^2}{2\lambda}} \equiv \frac{v}{\sqrt{2}}.
 \end{aligned}
 \end{equation}
 
@@ -419,7 +420,7 @@ Thus, the $SU(2)_L\times U(1)_Y$ group of the electroweak theory is spontaneousl
 The scalar doublet can now be written in its general, gauge-invariant form as a fluctuation over the ground state
 
 \begin{equation}\label{eqn:SM_e30}
-\phi(x) = e^{i\frac{\tau^i}{2}\theta^i(x)}\frac{1}{\sqrt{2}}
+\phi(x) = e^{i\frac{\tau^i}{v}\theta^i(x)}\frac{1}{\sqrt{2}}
 \begin{pmatrix}
   0 \\ v + H(x)
 \end{pmatrix}
@@ -439,7 +440,7 @@ At the same time, the kinetic piece of the scalar Lagrangian in Eq.~\ref{eqn:SM_
 \end{equation}
 
 The vacuum expectation value of the neutral scalar has generated a quadratic term, i.e. mass terms, for the gauge bosons.
-Usually, one rewrites the fields in terms of the three massive vector bosons $\PW^\pm$ and \PZ, and a massless vector boson, the photon $A$.
+In Eq.~\ref{eqn:SM_e31}, the gauge fields have been rewritten in terms of the three massive vector bosons $\PW^\pm$ and \PZ, and a massless vector boson, the photon $A$.
 One finds that they are mixtures of the original gauge fields $\mathbf{W}_\mu$ and $B_\mu$:
 
 \begin{equation}\label{eqn:SM_e32}
@@ -463,7 +464,8 @@ W^\pm_\mu = \frac{(W^1_\mu \mp iW^2_\mu)}{\sqrt{2}},
 The masses of the gauge bosons $\PW^\pm$ and the \PZ are then given by:
 
 \begin{equation}\label{eqn:SM_e34}
-M_\PW = \frac{1}{2}vg \qquad\qquad \mbox{and} \qquad\qquad M_\PZ = \frac{v\sqrt{g^2 + g^{\prime 2}}}{2} = \frac{M_\PW}{\cos\theta_W}.
+M_\PW = \frac{1}{2}vg = M_\PZ \cos\theta_W
+%M_\PW = \frac{1}{2}vg \qquad\qquad \mbox{and} \qquad\qquad M_\PZ = \frac{v\sqrt{g^2 + g^{\prime 2}}}{2} = \frac{M_\PW}{\cos\theta_W}.
 \end{equation}
 
 The Lagrangian $\mathcal{L}_\phi$ has to be added to the electroweak theory given by the Lagrangian of Eqs.~\ref{eqn:SM_e18}--\ref{eqn:SM_e20}, such that
@@ -477,7 +479,7 @@ After spontaneous symmetry breaking, three massless Goldstone bosons are generat
 Going to the unitary gauge, the $\PW^\pm$ and the \PZ (but not the photon, because $U(1)_Q$ is an unbroken symmetry) have acquired masses given by Eq.~\ref{eqn:SM_e34}.
 %Notice that (3.22) has now the meaning of writing the gauge fields in terms of the physical boson fields with definite mass.
 In fact, before the spontaneous symmetry breaking mechanism, the massless $\PW^\pm$ and \PZ bosons lead to $3\times2 = 6$ degrees of freedom (d.o.f.), due to the two possible polarizations of a massless spin-1 field.
-The four real scalar fields are also present at this stage, corresponding to an additional four d.o.f..
+The four real scalar fields are also present at this stage, corresponding to additional four d.o.f..
 After spontaneous symmetry breaking, the three Goldstone modes are ``eaten'' by the weak gauge bosons, which become massive, and therefore acquire one additional longitudinal polarization.
 This leads to a total of $3 \times 3 = 9$ d.o.f. in the gauge sector, plus the remaining scalar particle $H$, which is called the \textit{Higgs boson}. The total number of d.o.f. is obviously conserved.
 This theory is generally called the \textit{Higgs mechanism} and it was proposed by three independent groups in 1964: by Brout and Englert~\cite{PhysRevLett.13.321}, by Higgs~\cite{Higgs1964132,PhysRevLett.13.508,PhysRev.145.1156}, and by Guralnik, Hagen, and Kibble~\cite{PhysRevLett.13.585}.
@@ -493,7 +495,7 @@ The scalar Lagrangian in Eq.~\ref{eqn:SM_e27} has introduced a new scalar partic
 In terms of the physical fields (unitary gauge), $\mathcal{L}_\phi$ takes the form
 
 \begin{equation}\label{eqn:SM_e36}
-\mathcal{L}_\phi = \frac{1}{4}hv^4 + \mathcal{L}_H + \mathcal{L}_{HG^2}, 
+\mathcal{L}_\phi = \frac{1}{4}\lambda v^4 + \mathcal{L}_H + \mathcal{L}_{HG^2}, 
 \end{equation}
 
 \noindent where
@@ -508,7 +510,7 @@ In terms of the physical fields (unitary gauge), $\mathcal{L}_\phi$ takes the fo
 \noindent and the Higgs boson mass is given by
 
 \begin{equation}\label{eqn:SM_e38}
-M_H = \sqrt{-2\mu^2} = \sqrt{2h}v.
+M_H = \sqrt{-2\mu^2} = \sqrt{2\lambda}v.
 \end{equation}
  
 A fermionic mass term $-m\bar{\psi}\psi$ is not allowed, because it breaks the gauge symmetry.
@@ -651,7 +653,7 @@ All Higgs couplings are therefore determined by $M_\PH$, $M_\PW$, $M_\PZ$, the m
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Before the Higgs boson was discovered, its production cross sections at a proton-proton collider and its branching fractions as a function of the mass hypothesis were predicted to be as shown in Fig.~\ref{fig:HiggsXS}. 
-%The SM Higgs boson production cross sections at a proton-proton collider are shown in Fig.~\ref{fig:HiggsXS_a} as a function of the Higgs mass hypothesis and for the different leading production mechanisms.
+%The SM Higgs boson production cross sections at a proton-proton collider are shown in Fig.~\ref{fig:HiggsXS_a} as a function of the Higgs-boson mass hypothesis and for the different leading production mechanisms.
 %In addition, in Fig.~\ref{fig:HiggsProd}, the corresponding Feynman diagrams are shown.
 The Feynman diagrams for the different leading production mechanisms are shown in Fig.~\ref{fig:HiggsProd}.
 The gluon fusion process ($gg \to \PH$) is the dominating Higgs production mechanism over the entire mass range accessible at the LHC.
@@ -682,9 +684,9 @@ below the mass at which the Higgs boson would decay to on-shell vector bosons.\\
 \end{figure}
 
 The search for the massive Higgs boson has been long and tedious. 
-However, in summer 2012, the ATLAS and the CMS collaborations announced the observation of a new particle in data taken in 2011 and 2012~\cite{Aad:2012tfa,Chatrchyan:2013lba}.
+However, in the summer of 2012, the ATLAS and the CMS collaborations announced the observation of a new particle in data taken in 2011 and 2012~\cite{Aad:2012tfa,Chatrchyan:2013lba}.
 A combination of the measurements targeting its decay into fermions ($\bbbar$, $\tau\tau$) or vector bosons ($\PZ\PZ^*$, $\PW\PW^*$, $\gamma\gamma$) and all the different production modes, led to an excess of events above the expected background around a mass of 125\GeV.
-The CMS result yielded a local significance of $5.0\sigma$ with a global significance of $4.6\sigma$ in the Higgs mass search range of $115 < m_\PH < 130\GeV$ (Fig.~\ref{fig:HiggsPvalue_a}).
+The CMS result yielded a local significance of $5.0\sigma$ with a global significance of $4.6\sigma$ in the Higgs-boson mass search range of $115 < m_\PH < 130\GeV$ (Fig.~\ref{fig:HiggsPvalue_a}).
 For ATLAS, the local significance was found to be $5.9\sigma$ with a global significance of $5.1\sigma$ in the range $100 < m_\PH < 600\GeV$ (Fig.~\ref{fig:HiggsPvalue_b}).
 A simultaneous fit to the reconstructed invariant mass peaks in the two channels with the highest mass resolution, $\PH \to \PZ\PZ^* \to 4\ell$ and $\PH \to \gamma\gamma$ , and for the two experiments has been performed.
 The resulting combined measured mass of the Higgs boson was $m_\PH = 125.09 \pm 0.21 \mbox{(stat.)} \pm 0.11 \mbox{(syst.)} \GeV$ (Fig.~\ref{fig:HiggsMass})~\cite{Aad:2015zhl}.
@@ -730,7 +732,7 @@ This constraint applies to invisible decays into BSM particles, decays into BSM 
   \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.7\textwidth]{\chtwo/plot_K2_K2_BRinv_per_exp_merged.pdf}
-  \caption{Fit results for two parameterizations: the first one assumes that $B_\mathrm{BSM} \geq 0$, and the second one assumes that there are no additional BSM contributions to the Higgs boson width ($B_\mathrm{BSM} = 0$). The measured results for the combination of ATLAS and CMS are reported together with their uncertainties, as well as the individual results from each experiment~\cite{Aad:2015zhl}.}
+  \caption{Fit results for two parametrizations: the first one assumes that $B_\mathrm{BSM} \geq 0$, and the second one assumes that there are no additional BSM contributions to the Higgs boson width ($B_\mathrm{BSM} = 0$). The measured results for the combination of ATLAS and CMS are reported together with their uncertainties, as well as the individual results from each experiment~\cite{Aad:2015zhl}.}
   \label{fig:HiggsCoupl}
 \end{figure} 
 
@@ -740,15 +742,20 @@ This constraint applies to invisible decays into BSM particles, decays into BSM 
 
 Quantum Chromodynamics (QCD) is the gauge theory of strong interactions, describing the dynamics of colored quarks and gluons.
 The QCD represents the $SU(3)_C$ component of the standard model, where $C$ denotes the color.
-After applying the principle of gauge invariance to the free Lagrangian for the quark fields holding color $\alpha$ that runs from 1 to 3 (usually identified with red, green, blue), and flavor $q$, one obtains the following expression for the final gauge invariant QCD Lagrangian
+After applying the principle of gauge invariance to the free Lagrangian for the quark fields $\psi$ holding color $\alpha$ that runs from 1 to 3 (usually identified with red, green, blue), and flavor $q$, one obtains the following expression for the final gauge invariant QCD Lagrangian
 
 \begin{equation}\label{eqn:SM_e46}
-\mathcal{L}_\mathrm{QCD} = \sum_{q} \bar{\psi}_{q,\alpha} (i\gamma^\mu\partial_\mu\delta_{\alpha\beta} - g_s\gamma^\mu t^a_{\alpha\beta}\mathcal{A}^a_\mu - m_q\delta_{\alpha\beta})\psi_{q,b} - \frac{1}{4}G^a_{\mu\nu}G^{\mu\nu}_a.
+\begin{split}
+%\mathcal{L}_\mathrm{QCD} = \sum_{q} \bar{\psi}_{q,\alpha} (i\gamma^\mu\partial_\mu\delta_{\alpha\beta} - g_s\gamma^\mu t^a_{\alpha\beta}\mathcal{A}_{\mu,a} - m_q\delta_{\alpha\beta})\psi_{q,\beta} - \frac{1}{4}G^a_{\mu\nu}G^{\mu\nu}_a.
+\mathcal{L}_\mathrm{QCD} & = \sum_{q} i\bar{\psi}_{q,\alpha} \gamma^\mu(\mathcal{D}_\mu)_{\alpha\beta}\psi_{q,\beta} - \frac{1}{4}G^a_{\mu\nu}G^{\mu\nu}_a\\
+(\mathcal{D}_\mu)_{\alpha\beta} & = \partial_\mu\delta_{\alpha\beta} - ig_st^a_{\alpha\beta}\mathcal{A}_\mu^a
+\end{split}
 \end{equation}
 
-In the equation above, the quark fields are represented by the spinors $\psi$. The fields $\mathcal{A}^a_\mu$ corresponds to the eight gluon fields, since $C$ runs from 1 to $N^2_C - 1 = 8$.
+%In the equation above, the quark fields are represented by the spinors $\psi$. 
+In the equation above, the fields $\mathcal{A}^a_\mu$ corresponds to the eight gluon fields, since $C$ runs from 1 to $N^2_C - 1 = 8$.
 Each gluon carries one unit of color and one unit of anticolor.
-The eight $3\times3$ matrices $t^a_{\alpha\beta}$ are the $SU(3)_C$ generators and rotate the quark color in the $SU(3)_C$ space in a quark-gluon interaction.
+The eight $3\times3$ matrices $t^a$ are the $SU(3)_C$ generators and rotate the quark color in the $SU(3)_C$ space in a quark-gluon interaction.
 The field tensor is
 
 \begin{equation}\label{eqn:SM_e47}
@@ -757,7 +764,8 @@ G^a_{\mu\nu} = \partial_\mu\mathcal{A}^a_\nu - \partial_\nu\mathcal{A}^a_\mu - g
 
 \noindent where $f_{abc}$ are the structure constants of the $SU(3)$ group.
 As $[t^a,t^b] = if_{abc}t^c$ the group is non-Abelian. Owing to this property, $G^a_{\mu\nu}G^{\mu\nu}_a$ term generates the cubic and quartic gluon self-interactions.
-The fundamental parameters of QCD are the \textit{strong coupling constant} $g_s$, often written in terms of $\alpha_s = g_s^2/4\pi$, and the quark masses $m_q$.
+The \textit{strong coupling constant} $g_s$ is a fundamental parameter of QCD and is often written in terms of $\alpha_s = g_s^2/4\pi$.
+%The fundamental parameters of QCD are the \textit{strong coupling constant} $g_s$, often written in terms of $\alpha_s = g_s^2/4\pi$, and the quark masses $m_q$.
 All interactions appearing in Eq.~\ref{eqn:SM_e45} have strength given by $g_s$ (Fig.~\ref{fig:QCDVtx}).\\
 
 \begin{figure}[!htb]
@@ -769,7 +777,7 @@ All interactions appearing in Eq.~\ref{eqn:SM_e45} have strength given by $g_s$ 
 
 QCD has the property of \textit{asymptotic freedom}, i.e. the coupling becomes weak at high energies or short distances, and for energies approaching zero or for very large distances, it tends toward infinity.
 As a consequence, the further away a quark is pulled from another one, the stronger the force gets, such that it is more energetically favorable for a new quark-antiquark pair to be spontaneously produced from the vacuum.
-This process continues until the formation a stable colourless hadron consisting of either a quark and an antiquark (mesons) or three quarks or antiquarks (baryons), such that quarks cannot exist as free particles.
+This process continues until the formation of a stable colourless hadron consisting of either a quark and an antiquark (mesons), or three quarks or antiquarks (baryons), such that quarks cannot exist as free particles.
 %As a consequence, only in very high momentum transfer interactions, quarks can be regarded as free particles, whereas at low energy or large distance, the interaction becomes strongly coupled leading to \textit{confinement} of quarks %and gluons. Instead, they form bound color-singlet states called hadrons, consisting of either a quark and an antiquark (mesons) or three quarks or antiquarks (baryons).
 %In this process, after a quark production, at very short distances, the quantum nature of QCD predicts the generation of virtual quark-antiquark (or gluons) pairs, which couple together through color strings forming observable un-%colored baryons and mesons.
 
@@ -786,7 +794,7 @@ The coupling satisfies the renormalisation group equation:
 
 \noindent where the $b_i$ are the $i$-loop coefficients of the $\beta$ function.
 They depend on the number of quark flavors $n_f$, and for sixteen or less flavors the strong coupling gets smaller for processes that involve large momentum transfer, leading to the asymptotic freedom.
-Choosing $\mu_R$ close to the typical scale of the process of interest $Q^2$, the $\alpha_s(\mu_R)$ represents the effective strength of the strong interaction between particles under study.
+By choosing $\mu_R$ close to the typical scale of the process of interest $Q$, the $\alpha_s(\mu_R^2)$ represents the effective strength of the strong interaction between particles under study.
 Neglecting all the $b_i$ coefficients but $b_0$, an exact leading order expression for the running coupling $\alpha_s$ can be obtained
 
 \begin{equation}\label{eqn:SM_e49}

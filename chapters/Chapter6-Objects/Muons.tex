@@ -47,13 +47,13 @@ Figure~\ref{fig:mu_reco_eff} shows the muon tracking efficiency as a function of
 \end{figure}
 
 The combination of different algorithms provides robust and efficient muon reconstruction.
-After the completion of both algorithms, the reconstructed stand-alone, global, and tracker muons are merged into a single software object, with the addition of further information, like isolation and energy collected in matching calorimeter towers. This information can be used for further identification, in order to achieve a balance between efficiency and purity of the muon sample as described in Section~\ref{subsec:muonid}.\\
+After the completion of both algorithms, the reconstructed standalone, global, and tracker muons are merged into a single software object, with the addition of further information, like isolation and energy collected in matching calorimeter towers. This information can be used for further identification, in order to achieve a balance between efficiency and purity of the muon sample as described in Section~\ref{subsec:muonid}.\\
 
 The performance of the reconstruction for high-\pt muons is strongly affected by radiative processes and by the muon detector alignment. 
 Electromagnetic showers and large energy losses can arise as the muon traverses the steel layers of the magnet return yoke, producing additional segments in the muon chambers.
 These events can affect the measurement done in the muon detectors. Therefore, specialized reconstruction algorithms for high-\pt muons, known as ``TeV-muon'' refits, have been developed in CMS as described in the following.
 
-The \textit{tracker-plus-first-muon-station} fit (TPFMS) only uses hits from the tracker and the innermost muon station with hits, to reduce the sensitivity to possible showering starting deeper in the muon system. The \textit{Picky} fit uses all tracker hits, while a selection is applied to muon hits. Hits from chambers with a high probability of shower contamination (determined from the hit occupancy) are required to be compatible with the extrapolated trajectory by applying a $\chi^2$ cut. The \textit{dynamic truncation} algorithm (DYT) starts from the idea that the muon track reconstruction should be stopped after a large energy loss, as hits produced after that can only bias the momentum measurement. For every global muon trajectory the algorithm starts from the corresponding tracker track and propagates it out to the muon stations. Compatible segments (or hits) in the muon chambers are found by using an estimator which takes into account the propagation of the tracker covariance matrix through the material and the magnetic field, and the covariance matrices of the candidate muon segments (or hits).
+The \textit{tracker-plus-first-muon-station} fit (TPFMS) only uses hits from the tracker and the innermost muon station with hits, to reduce the sensitivity to possible showering starting deeper in the muon system. The \textit{Picky} fit uses all tracker hits, while a selection is applied to muon hits. Hits from chambers with a high probability of shower contamination (determined from the hit occupancy) are required to be compatible with the extrapolated trajectory by applying a $\chi^2$ cut. The \textit{dynamic truncation} algorithm (DYT) starts from the idea that the muon track reconstruction should be stopped after a large energy loss, as hits produced after that can only bias the momentum measurement. For every global-muon trajectory the algorithm starts from the corresponding tracker track and propagates it out to the muon stations. Compatible segments (or hits) in the muon chambers are found by using an estimator which takes into account the propagation of the tracker covariance matrix through the material and the magnetic field, and the covariance matrices of the candidate muon segments (or hits).
 
 Momentum assignment is then performed by the \textit{Cocktail} algorithm which combines the above methods to further improve the resolution at high \pt reducing the tails of the momentum resolution distribution.
 In particular, the algorithm chooses, on a track-by-track basis, the best muon reconstruction. For Run~1, the Cocktail-algorithm decision is taken between the tracker-only, TPFMS, and Picky fits. 
@@ -70,15 +70,18 @@ The momentum resolution obtained with the Tune P algorithm for muons with \pt in
 \subsection{Muon trigger}\label{subsec:mutrigger}
 %%%%%%%%
 
-The Level-1 muon trigger uses signals from all three CMS muon detector systems: DT, CSC, and RPC. It has a latency of 3.2\mus and reduces the rate of the readout of events with muon candidates
+In the Level-1 muon trigger, muon candidates are identified by using hits in all three CMS muon detector systems: DT, CSC, and RPC.
+It has a latency of 3.2\mus and reduces the rate of the readout of events with muon candidates
 at the detector front-end electronics to a few kHz by applying selections on the estimated muon \pt and quality.
 In the muon HLT, first a Level-1 trigger object is used as a seed to reconstruct a standalone-muon track in the muon system, leading to an improved \pt estimate. At this point, \pt threshold filters are applied to the standalone-muon (also called Level-2 muon). Then seeds in the inner tracker are generated in the region around the extrapolated Level-2 muon, and tracker tracks are reconstructed. If a successful match is made between a tracker track and the Level-2 muon, a global fit combining tracker and muon hits is performed, yielding a Level-3 muon track on which the final \pt requirements are applied. In this way, the rate of recorded inclusive muon events is reduced to a few tens of Hz. The average processing time of the HLT reconstruction is about 50\unit{ms}.
 
 The L1 and HLT trigger used to collect the data analyzed in this thesis are listed in Tables~\ref{tab:triggMu8TeV} and~\ref{tab:triggMu13TeV} for the 8 and 13\TeV data analysis, respectively.
 For both analyses the HLT used to select the events is the unprescaled single-muon trigger with the lowest \pt threshold that does not include muon isolation requirements. 
 %Both analyses requires one muon candidate. The HLT used to select the events is the unprescaled single-muon trigger with the lowest \pt threshold that does not include muon isolation requirements.
-In fact, although muons produced by the leptonic decay of a high-\pt W boson tend to be isolated, their high momentum enhances the production of electromagnetic showers, that can mimic a non-isolated muon candidate.
+In fact, although muons produced in the leptonic decays of high-\pt W bosons tend to be isolated, their high momentum enhances the production of electromagnetic showers, that can mimic a non-isolated muon candidate.
 Therefore, only requirements on the muon \pt and $\eta$ are applied at this stage.
+As the very forward region, $2.1 < |\eta| < 2.4$, is characterized by higher rates of low-\pt muons, the muon candidate is required to have $|\eta| < 2.1$, so preventing a too high trigger rate while keeping a reasonably low \pt threshold.
+The final states under study here are characterized by centrally produced muons so that the probability of signal events with muons in the very forward region is negligible.
 The efficiency of the L1 single-muon trigger with the 16\GeV threshold is shown in Fig.~\ref{fig:mu_L1trigg} as a function of the offline reconstructed muon \pt and $\eta$. In 2012 the efficiency for this trigger was greater than 90\%. A similar result is obtained in 2015.
 %The efficiency at the plateau is 2% lower in 2012 with respect to 2011 due to an optimization aimed to reduce the single muon trigger rate by 50% which allowed to keep pT thresholds for 2012 running as low as the ones used for 2011. In both 2011 and 2012 the efficiency of the L1 single muon trigger was greater than 90%.
 
@@ -89,7 +92,7 @@ The efficiency of the L1 single-muon trigger with the 16\GeV threshold is shown 
 Trigger & Name & Selections\\
 \hline
 \hline
-\multirow{3}{*}{Level 1} & \multirow{3}{*}{L1\_SingleMu16\_eta2p1}                 & 1 global muon with:\\ 
+\multirow{3}{*}{Level 1} & \multirow{3}{*}{L1\_SingleMu16\_eta2p1}                 & 1 muon candidate with:\\ 
                                      &                                                                                   & \pt $>$ 16\GeV\\
                                      &                                                                                   & $|\eta| <$ 2.1\\
 \hline
@@ -108,7 +111,7 @@ Trigger & Name & Selections\\
 Trigger & Name & Selections\\
 \hline
 \hline
-\multirow{2}{*}{Level 1} & \multirow{2}{*}{L1\_SingleMu25}  & 1 global muon with:\\ 
+\multirow{2}{*}{Level 1} & \multirow{2}{*}{L1\_SingleMu25}  & 1 muon candidate with:\\ 
                                      &                                                       & \pt $>$ 25\GeV\\
 \hline
 \multirow{3}{*}{HLT} & \multirow{3}{*}{HLT\_Mu45\_eta2p1} & 1 global muon with:\\
@@ -132,7 +135,7 @@ The efficiency for a muon passing the high-\pt selections described in Section~\
 
 \begin{table}[!htb]
 \centering
-\caption{Efficiencies and scale factors for the single-muon HLT trigger used in the 8\TeV analysis
+\caption{Efficiencies and scale factors for the single-muon HLT trigger used in the 8\TeV data analysis
 for muons with \pt $>$ 50\GeV, $|\eta| <$ 2.1, and satisfying the high-\pt and isolation selections described in Section~\ref{subsec:muonid}.
 The quoted uncertainties are statistical.}
 \begin{tabular}{ c | c | c | c}
@@ -151,7 +154,7 @@ Data/simulation scale factor & 0.9768 $\pm$ 0.0004 & 0.956 $\pm$ 0.001 & 0.984 $
 
 \begin{table}[!htb]
 \centering
-\caption{Efficiencies and scale factors for the single-muon HLT trigger used in the 13\TeV analysis
+\caption{Efficiencies and scale factors for the single-muon HLT trigger used in the 13\TeV data analysis
 for muons with \pt $>$ 53\GeV, $|\eta| <$ 2.1, and satisfying the high-\pt and isolation selections described in Section~\ref{subsec:muonid}.
 The quoted uncertainties are statistical.}
 \begin{tabular}{ c | c | c | c}
@@ -173,25 +176,25 @@ Data/simulation scale factor & 0.969 $\pm$ 0.002 & 0.961 $\pm$ 0.006 & 0.968 $\p
 %%%%%%%%
 
 The standard CMS muon reconstruction provides additional information for each muon, useful for muon quality selection and identification in physics analyses~\cite{Chatrchyan:2012xi}. 
-In general, particles detected as muons are produced in pp collision from different sources which lead to different experimental signatures. The so-called \textit{prompt muons} arise either from decays of W, Z, or promptly produced quarkonia states. Real muons are also produced in the decay of heavy flavour particles, such as beauty or charmed mesons, as well as in light hadron (pions or kaons) decays. Less frequently, muons might originate from a calorimeter shower or from a nuclear interaction in the detector. Furthermore, the so called ``punch-through'' effect, i.e. hadron shower remnants penetrating through the calorimeters and reaching the muon system, can lead to the reconstruction of a muon candidate. Most of the physics analyses in CMS studying SM processes or searching for BSM signals use prompt muons, while all the other categories of muons constitute the background. These analyses exploit the same set of information, although the applied selections might be different depending on the signature of interest and the expected background. In this section only the specific selection developed for high-\pt muons is described. One of the main difference with respect to the low- and medium-\pt muon selection is that this particular identification procedure does not use the PF algorithm. It is aimed at the best reconstruction of the muon track parameters without relying on external information on the event. Moreover, the goodness of the global-muon track fit selection, based on the $\chi^2$ of the track, is not requested, but an additional selection based on the relative \pt resolution for the track used for momentum determination is applied. 
+In general, particles detected as muons are produced in pp collisions from different sources which lead to different experimental signatures. The so-called \textit{prompt muons} arise either from decays of W, Z, or promptly produced quarkonia states. Real muons are also produced in the decay of heavy flavour particles, such as beauty or charmed mesons, as well as in light hadron (pions or kaons) decays. Less frequently, muons might originate from a calorimeter shower or from a nuclear interaction in the detector. Furthermore, the so called ``punch-through'' effect, i.e. hadron shower remnants penetrating through the calorimeters and reaching the muon system, can lead to the reconstruction of a muon candidate. Most of the physics analyses in CMS studying SM processes or searching for BSM signals use prompt muons, while all the other categories of muons constitute the background. These analyses exploit the same set of information, although the applied selections might be different depending on the signature of interest and the expected background. In this section only the specific selection developed for high-\pt muons is described. One of the main difference with respect to the low- and medium-\pt muon selection is that this particular identification procedure does not use the PF algorithm. It is aimed at the best reconstruction of the muon track parameters without relying on external information on the event. Moreover, the goodness of the global-muon track fit selection, based on the $\chi^2$ of the track, is not requested, but an additional selection based on the relative \pt resolution for the track used for momentum determination is applied. 
 
 The high-\pt muon selection criteria are described in the following and they have not been changed since Run~1:
 
 \begin{itemize}
-\item The muon must be reconstructed both as a tracker- and a global-muon. This is effective against decays-in-flight, punch-through and accidental matching (with noisy or background tracks or segments).
+\item The muon must be reconstructed both as a tracker and a global muon. This is effective against decays in flight, punch through and accidental matching (with noisy or background tracks or segments).
 %\item The number of hits in the tracker track part of the muon. Generally tracks with small number of hits give bad pT estimate. In addition decays in flight give rise in many cases to lower hit occupancy in the tracks.
 \item Number of pixel hits in the tracker track $\geq$ 1. To further suppress muons from decays in flight.
 %\item There should be at least one pixel hit in the tracker track part of the muon. The innermost part of the tracker is an important handle to discard non-prompt muons. By requiring just a minimal number of hits we introduce negligible reconstruction inefficiency.
 \item Number of tracker layers involved in the track measurement $\geq$ 6. This guarantees a good \pt measurement, for which some minimal number of measurement points in the tracker is needed. It also suppresses muons from decays in flight.
-\item Number of muon-chamber hits included in the global-muon track fit $\geq$ 1. This requirement assures that the global muon is not an accidental match between the information from the muon system and the tracker. This could happen in particular for non-prompt muons or fake muons from punch-through.
+\item Number of muon-chamber hits included in the global-muon track fit $\geq$ 1. This requirement assures that the global muon is not an accidental match between the information from the muon system and the tracker. This could happen in particular for non-prompt muons or fake muons from punch through.
 %\item The global muon has to contain at least one ?valid? muon hit. This re- quirement assures that the global muon is not a ?bad? match between the information from the muon system and the tracker. This could happen in particular for non-prompt muons.
-\item The muon track is required to have muon segments in at least 2 muon stations to further suppress punch-through and accidental track-to-segment matches. This selection is furthermore consistent with the logic of the single-muon trigger, which requires segments in at least two muon stations to obtain a meaningful estimate of the muon \pt.
+\item The muon track is required to have muon segments in at least 2 muon stations to further suppress punch through and accidental track-to-segment matches. This selection is furthermore consistent with the logic of the single-muon trigger, which requires segments in at least two muon stations to obtain a meaningful estimate of the muon \pt.
 %\item The muon track has to have a minimum number (2) of chamber hits in different stations with matching (consistent with the propagated to the muon chambers tracker track) segments. This is also to comply with a similar looser requirement in the trigger.
 %\item Very bad fits are rejected by requiring reasonable global muon fit quality. If there is a decay in flight inside the tracking volume, the trajectory could contain a sizeable ?kink?, resulting in a poorer  2 of the fit used to determine the trajectory.
 \item Transverse impact parameter of the muon track $< 2\mm$. This assures the compatibility of the muon track with the interaction point hypothesis and it is effective against cosmic background and further suppress muons from decays in flight.
 \item Longitudinal impact parameter of the muon track $< 5\mm$. To further suppress cosmic muons, muons from decays in flight and tracks from pileup.
 %\item Muon can be required also to be matched a Particle Flow (PF) muon. PF is a reconstruction technique widely used in CMS analyses. It makes use of the full detector information to describe the global collision event, by identifying particles individually and clustering them into more complex objects. More details about PF algorithm are available in [49,50].
-\item Relative \pt error $< 30\%$. To further suppress mis-reconstructed muons.
+\item Relative \pt error $< 30\%$. To further suppress misreconstructed muons.
 \end{itemize}
 
 In addition to these identification criteria, an isolation requirement is applied to the well-identified muons. In particular, the muon must pass a relative tracker-only isolation selection: the scalar sum of the \pt of all other tracks in a cone of  $\Delta R < 0.3$ around but not including the muon tracker track must be less than 10\% of the muon \pt, also as measured by the tracker. To be used in the calculation of the tracker-based isolation, tracks have to be within 2\mm, in the $z$ direction, of the primary vertex with which the muon candidate is associated. These additional criteria help suppress the effect of tracks originating from pileup on the reconstructed quantities.

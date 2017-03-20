@@ -46,7 +46,7 @@ All events are required to have at least one primary vertex reconstructed within
 
 The following two sections, namely Sections~\ref{sec:electrons} and~\ref{sec:muons}, were devoted to the reconstruction and identification of electrons and muons, respectively.
 
-Electron candidates are reconstructed by matching energy deposits in the ECAL with reconstructed tracks. In order to suppress multijet background, electron candidates must pass stringent quality criteria tuned for high-\pt objects and an isolation selection. The total scalar sum of the \pt of all the tracks in a cone of radius $\Delta R = 0.3$ around the electron direction, excluding tracks within an inner cone of $\Delta R = 0.04$ to remove the contribution from the electron itself, is required be less than 5\GeV. In addition, a calorimetric isolation parameter is calculated by summing the energies of reconstructed deposits in both ECAL and HCAL, not associated with the electron itself, within a cone of radius $\Delta R = 0.3$ around the electron. The upper threshold for this isolation parameter depends on the electron kinematic quantities and the average amount of additional energy coming from pileup interactions.
+Electron candidates are reconstructed by matching energy deposits in the ECAL with reconstructed tracks. In order to suppress multijet background, electron candidates must pass stringent quality criteria tuned for high-\pt objects and an isolation selection. The total scalar sum of the \pt of all the tracks in a cone of radius $\Delta R = 0.3$ around the electron direction, excluding tracks within an inner cone of $\Delta R = 0.04$ to remove the contribution from the electron itself, divided by the electron \pt, is required be less than 5\%. In addition, a calorimetric isolation parameter is calculated by summing the energies of reconstructed deposits in both ECAL and HCAL, not associated with the electron itself, within a cone of radius $\Delta R = 0.3$ around the electron. The upper threshold for this isolation parameter depends on the electron kinematic quantities and the average amount of additional energy coming from pileup interactions.
 
 Muons are reconstructed through a fit to the hits in both the inner tracking system and the muon spectrometer.
 They must satisfy identification requirements on the impact parameters of the track, the number of hits reconstructed in both the silicon tracker and the muon detectors, and the uncertainty in the \pt measurement.
@@ -56,18 +56,18 @@ Specifically, the scalar sum of the \pt of all other tracks in a cone of radius 
 
 The triggers used in this analysis have also been described in Sections~\ref{sec:electrons} and~\ref{sec:muons}. They require either one muon or one electron, without isolation requirements and with loose identification criteria.
 A minimum value for the \pt of the lepton is required, which is higher for the data collected in pp collisions at 13\TeV.
-Specifically, the electrons selected by the trigger must have $\et > 80$ and 105\GeV for the 8 and 13\TeV data analyses, respectively,
+Specifically, the electrons selected by the trigger must have $\et > 80$ and 105\GeV for the 8 and 13\TeV data analysis, respectively,
 whereas the thresholds on the \pt of the muons are 40 and 45\GeV. In addition, the electrons and muons must have $\eta < 2.5$ and 2.1, respectively.
 The efficiency for an electron passing the identification and isolation requirements summarized above to fire the single-electron trigger has been measured to be 98--99\%.
-The efficiency for the single-muon trigger varies between 80 and 95\%, and between 92 and 98\%, for the 8 and 13\TeV analyses, respectively, depending on the $\eta$ of the muon.\\
+The efficiency for the single-muon trigger varies between 80 and 95\%, and between 92 and 98\%, for the 8 and 13\TeV analysis, respectively, depending on the $\eta$ of the muon.\\
 
 The jet reconstruction in CMS has been described in Section~\ref{sec:jets}.
 Jets are clustered from the four-momenta of the particles reconstructed by the PF algorithm, which reconstructs individual particles by combining information from all sub-detector systems.
 The reconstructed PF constituents are assigned to one of the five candidate categories (electrons, muons, photons, charged hadrons, and neutral hadrons) and used as input to the chosen jet-clustering algorithm.
 In order to mitigate biases in the reconstruction due to PU interactions, in the jet-clustering procedure charged PF particles not associated with the primary-interaction vertex are excluded.
 
-The CA and AK jet-clustering algorithms with a distance parameter $R = 0.8$ are used to identify the $\PH\to\bbbar$ and $\PV\to\qqbar$ candidates in the 8 and 13\TeV data analyses, respectively.
-In order to identify b jets, the AK jet-clustering algorithm is used with a distance parameter $R = 0.5$ and 0.4 for the 8 and 13\TeV data analyses, respectively.
+The CA and AK jet-clustering algorithms with a distance parameter $R = 0.8$ are used to identify the $\PH\to\bbbar$ and $\PV\to\qqbar$ candidates in the 8 and 13\TeV data analysis, respectively.
+In order to identify b jets, the AK jet-clustering algorithm is used with a distance parameter $R = 0.5$ and 0.4 for the 8 and 13\TeV data analysis, respectively.
 In addition, the CSV b-tagging algorithm is applied to the reconstructed AK4 and AK5 jets using a working point that provides a misidentification rate of 1\% and efficiency of 64--69\%.
 The ratio of the b-tagging efficiency between data and simulation is used as a scale factor to correct the simulated events.
 A correction based on the projected area of the jet on the front face of the calorimeter is used to take into account the extra energy clustered in jets due to neutral particles coming from pileup.
@@ -86,4 +86,4 @@ In addition, a correction applied to correct for a modulation in $\phi$ in the \
 
 Finally, the $\PW\to\ell\nu$ candidate is formed from the combination of electron and muon candidates with the \ptvecmiss,
 where an estimate of the neutrino longitudinal momentum is derived through the methods described in Section~\ref{sec:leptonicW},
-which imposes the constraint of the W mass on the invariant mass of the $\ell\Pgn$ system.
+which imposes the constraint of the W-boson mass on the invariant mass of the $\ell\Pgn$ system.

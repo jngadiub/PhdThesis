@@ -7,20 +7,22 @@
 \begin{fmffile}{feyngraph}
 \begin{equation*}
 \begin{gathered}
-  \begin{fmfgraph*}(120,100)
+  \begin{fmfgraph*}(110,60)
+    \fmfpen{thick}
     \fmfleft{i1}
     \fmfright{o1,o2}
-    \fmf{boson}{i1,v1}
+    \fmf{dashes}{i1,v1}
     \fmf{boson}{v1,o2}
-    \fmf{dashes}{v1,o1}
-    \fmflabel{Z}{i1}
+    \fmf{boson}{v1,o1}
+    \fmflabel{H}{i1}
     \fmflabel{Z}{o2}
-    \fmflabel{H}{o1}
+    \fmflabel{Z}{o1}
     \fmfv{decor.shape=circle,decor.filled=full,decor.size=4thick}{v1}
   \end{fmfgraph*}
 \end{gathered}
-2ig\frac{M^2_Z}{v}
+\frac{M^2_Z}{v}
 \end{equation*}
 \end{fmffile}
+
 
 \end{document}

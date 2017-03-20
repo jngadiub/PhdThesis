@@ -2,11 +2,11 @@
 \section{W+jets background estimate with $\alpha$ ratio method}\label{sec:alpha}
 %%%%%%%%%
 
-The $\mlvj$ distribution observed in data is dominated by SM background processes where single
-quark or gluon jets are falsely identified as W or H jets. The dominant process is inclusive W boson production. 
+The $\mlvj$ distribution observed in data is dominated by SM background processes where
+single-quark or gluon jets are falsely identified as W or H jets. The dominant process is inclusive W-boson production. 
 Since both normalization and shape discrepancies are visibile between data and simulation (Figures~\ref{fig:controlPlots13TeV} and~\ref{fig:controlPlots8TeV}),
-a data driven method has been developed to estimate this background component, as described in the following.
-Sub-dominant backgrounds include \ttbar, single-top-quark, and non resonant diboson SM production,
+a data-driven method has been developed to estimate this background component, as described in the following.
+Sub-dominant backgrounds include \ttbar, single-top-quark, and non-resonant diboson SM production,
 which are estimated from simulation, after applying correction factors for residual data-to-simulation disagreement measured in control samples selected in data.
 
 \subsection{Background estimation procedure}
@@ -18,7 +18,7 @@ $\mlvj$ distribution observed in this region is then extrapolated to the nominal
 a transfer function estimated from simulation. Other minor sources of background, such as
 \ttbar, single-top-quark, and SM diboson production, are estimated using simulated events after
 applying correction factors based on control regions in data, as described in Sections~\ref{sec:vtagging} and~\ref{sec:ttbar}.
-The sideband region is defined around the jet mass window that represents the analysis signal region (Section~\ref{sec:finalselection}).
+The sideband region is defined around the jet-mass window that represents the analysis signal region (Section~\ref{sec:finalselection}).
 The lower and upper sidebands for the two analyses are summarized in Table~\ref{tab:sidebands}.
 For the 13\TeV analysis a ``gap'' is introduced between the signal region and the upper sideband, since the
 range defined by $105 < \mJ < 135$ might include contribution from signals with highly Lorentz-boosted Higgs bosons in the final state.
@@ -26,7 +26,7 @@ Since these types of searches at 13\TeV~\cite{Khachatryan:2016cfx} have been per
 this region has been discarded to avoid introducing a bias in the shape and normalization extrapolation due to a possible signal.
 On the other hand, the lower sideband of the 8\TeV $\ell\Pgn\bbbar$ analysis includes the region where signals from highly Lorentz-boosted V bosons might occur.
 In fact, this analysis has been performed after the search for WV resonances in the lepton+jet final state at 8\TeV disclosed the signal region,
-where no deviation from the predicted SM background have been observed~\cite{Khachatryan:2014gha}.
+where no deviation from the predicted SM background has been observed~\cite{Khachatryan:2014gha}.
 
 \begin{table}[!htb]
 \centering
@@ -120,7 +120,7 @@ The form of the $\mlvj$ distribution for the W+jets background in the signal reg
 \end{equation}
 
 where $F_\mathrm{MC, SB}^{\mathrm{W+jets}}$ and $F_\mathrm{MC, SR}^{\mathrm{W+jets}}$ are the probability density functions used to describe the simulated \mlvj spectrum in the lower \mJ sideband and signal region, respectively.
-The upper \mJ sideband is not considered since the W+jets shape is different here compared to what expected in the lower sideband. Furthermore, the upper sideband suffers from a larger \ttbar background contamination.
+The upper \mJ sideband is not considered since the W+jets shape is different here compared to what is expected in the lower sideband. Furthermore, the upper sideband suffers from a larger \ttbar background contamination.
 
 Since the lower sideband region does not represent a perfectly pure sample of W+jets events in data, the presence of minor backgrounds is subtracted from the observed diboson invariant mass distribution
 to obtain an estimation of the W+jets contribution in the sideband control region of the data, $F_\mathrm{data, SB}^{\mathrm{W+jets}}(\mlvj)$.
@@ -189,8 +189,8 @@ Results of the final background extraction in the signal region will be presente
 \subsection{Validation of the $\alpha$ method}
 %%%%%%%%%%%
 
-To test the validity and the robustness of the data driven method used to estimate the W+jets contribution and described previously in this section, a closure test is performed.
-In this test, the background is extracted to a signal free control region that allows to check the compatibility with data for both the distribution and normalization.
+To test the validity and the robustness of the data-driven method used to estimate the W+jets contribution and described previously in this section, a closure test is performed.
+In this test, the background is extracted to a signal-free control region that allows the compatibility with data to be checked for both the distribution and normalization.
 In order to achieve this, the low mass sideband defined in Table~\ref{tab:sidebands} is divided into two regions:
 $40 < \mJ < 55\GeV$, referred to as ``region A'', is used as sideband, while $55 < \mJ < 65\GeV$, referred to as ``region B'', is used as signal region.
 The W+jets background normalization is then predicted in region B by performing a fit to the \mJ distribution of the data in region A and in the upper sideband (Table~\ref{tab:sidebands}),
@@ -204,7 +204,7 @@ An example of the result of this test is presented in the following for the muon
 %\begin{figure}[!htb]
 %\centering
 %\includegraphics[width=0.5\textwidth]{\cheight/closureTest_HP_mu_mjetpruned.pdf}
-%\caption{Result of the closure test for the muon channel in the $\ell\nu\qqbar$ analysis. The plot shows the fit to the pruned-jet-mass distribution considering only events in data with \mJ in the ranges 40--55\GeV (A) and 135--150\GeV (HSB) performed to extract the W+jets normalization inside region B.}
+%\caption{Result of the closure test for the muon channel in the $\ell\nu\qqbar$ analysis. The plot shows the fit to the pruned jet-mass distribution considering only events in data with \mJ in the ranges 40--55\GeV (A) and 135--150\GeV (HSB) performed to extract the W+jets normalization inside region B.}
 %\label{fig:mj_closureTest}
 %\end{figure}
 
@@ -214,7 +214,7 @@ Figure~\ref{fig:mlvjSBandAlpha_closureTest_a} shows the transfer function $\alph
 \centering
 \subfigure[]{\label{fig:mlvjSBandAlpha_closureTest_a}\includegraphics[width=0.47\textwidth]{\cheight/closureTest_HP_mu_alpha.pdf}}
 \subfigure[]{\label{fig:mlvjSBandAlpha_closureTest_b}\includegraphics[width=0.43\textwidth]{\cheight/closureTest_HP_mu_regionA_mlvj.pdf}}
-\caption{(a) The transfer function $\alpha_\mathrm{MC}$ obtained by simultaneously fitting the diboson invariant mass distributions of simulation data inside the sideband (A) and signal region (B). (b) Diboson invariant mass distribution for events with $40 < \mJ < 55\GeV$ (A). The W+jets shape is fit, after subtracting contaminations from minor backgrounds, by means of a leveled-exponential function.}
+\caption{(a) The transfer function $\alpha_\mathrm{MC}$ obtained by simultaneously fitting the diboson invariant mass distributions of simulation data inside the sideband (A) and signal region (B). (b) Diboson invariant mass distribution for events with $40 < \mJ < 55\GeV$ (A). The W+jets shape is fit after subtracting contaminations from minor backgrounds, by means of a leveled-exponential function.}
 \label{fig:mlvjSBandAlpha_closureTest}
 \end{figure}
 

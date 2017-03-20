@@ -12,22 +12,22 @@ Some of the main unresolved issues of the SM are briefly described in the follow
 \subsection*{The hierarchy problem}
 
 This issue arises from the observation of a large discrepancy between the electroweak and gravitational scales. This is reflected in the mass difference between the masses of the \PW and \PZ bosons that define the scale of electroweak interactions ($\mathcal{O}(10^2\GeV)$), and the Planck mass ($\MPl = \sqrt{\hbar c/G_\mathrm{Newton}} = \mathcal{O}(10^{19})$), that defines the scale beyond which the gravitational force must be described by quantum mechanics. This feature is commonly known as \textit{hierarchy problem} or as well ``problem of \textit{naturalness}'', meaning an ``unnatural'' or equivalently ``unexpected'' behaviour.
-More technically, the question is why the Higgs boson of mass $m_\PH$ (Eq.~\ref{eqn:SM_e38}) is so much lighter than the Planck mass.
+More technically, the question is why the measured Higgs-boson mass $(M_\PH)_{measured} \approx 125\GeV$ is so much smaller than the Planck mass.
 %\begin{wrapfigure}{R}{0.4\textwidth}
  %\centering
  %\includegraphics[width=0.35\textwidth]{\chtwo/HiggsLoop.pdf}
  %\caption{One-loop quantum corrections to the Higgs squared mass parameter $m^2_\PH$ due to a fermion $f$.}
  %\label{fig:HiggsLoop}
 %\end{wrapfigure}
-The problem is that $m^2_\PH$ receives enormous quantum corrections from the virtual effects of every particle that couples, directly or indirectly, to the Higgs field.
+The problem is that the tree-level Higgs-boson mass $M^2_\PH$ (Eq.~\ref{eqn:SM_e38}) receives quadratically-divergent corrections from the virtual effects of every particle that couples, directly or indirectly, to the Higgs field.
 %For example, the Feynman diagram in Fig.~\ref{fig:HiggsLoop} brings a correction to $m^2_\PH$ from a loop containing a fermion $f$ with mass $m_f$.
 %If the Higgs field $H$ couples to $f$ with a term in the Lagrangian $-\lambda_fH\bar{f}f$, where $\lambda_f$ is the Yukawa coupling, then this loop yields a correction
 %\begin{equation}\label{eqn:HiggsCorr}
 %\delta m^2_\PH = - \frac{|\lambda_f|^2}{8\pi^2}\Lambda^2 + \dotsc,
 %\end{equation}
 %\noindent where $\Lambda$ is a momentum cut-off representing the scale up to which the SM remains valid, and beyond which new physics enters to alter the high-energy behavior of the theory.
-There are three types of radiative corrections to the Higgs mass that arise from the diagrams in Fig.~\ref{fig:HiggsLoop}.
-Each of them gives a correction to the Higgs mass:
+There are three types of corrections to the Higgs-boson mass that arise from the diagrams in Fig.~\ref{fig:HiggsLoop}.
+Each of them gives a correction to the Higgs-boson mass:
 
 \begin{equation}\label{eqn:HiggsCorr}
 \begin{aligned}
@@ -40,8 +40,8 @@ Each of them gives a correction to the Higgs mass:
 \noindent where $\lambda_t$ is the Yukawa coupling with the top quark, $g$ is the gauge coupling, $\lambda$ is the Higgs self coupling, and $\Lambda$ represents the energy scale up to which the SM remains valid, and beyond which an unknown new physics theory enters to alter the high-energy behavior of the theory.
 Each of the leptons and quarks of the SM also contribute, however the largest correction arises from the top quark.
 %Each of the leptons and quarks of the SM can play the role of $f$ and the largest correction arises when $f$ is the top quark.
-If $\Lambda$ is of the order of \MPl, then this quantum correction to $m^2_\PH$ is about 30 orders of magnitude larger than the measured value of $m_\PH$ of 125\GeV.
-Thus, in order to obtain such a small value for the Higgs boson mass an incredible fine-tuning cancellation must occur between the quadratic radiative corrections and the physical mass.
+If $\Lambda$ is of the order of \MPl, then this correction to $M^2_\PH$ is about 30 orders of magnitude larger than the measured value of 125\GeV.
+Thus, in order to obtain such a small value for the Higgs-boson mass an incredible fine-tuning cancellation must occur between the tree-level value and the correction.
 Avoiding such a miraculous cancellation can only happen if the cut-off scale is $\Lambda \simeq \mathcal{O}(1 - 10\TeV)$ rather than the Planck scale, which implies that new physical processes show up at that energy.
 This is only directly a problem for corrections to the Higgs scalar boson squared mass, because quantum corrections to fermion and gauge boson masses do not have the direct
 quadratic sensitivity to $\Lambda$ found in Eq.~\ref{eqn:HiggsCorr}. However, the quarks and leptons and the electroweak gauge bosons of the SM all obtain masses from the Higgs boson,
@@ -52,13 +52,13 @@ so that the entire mass spectrum of the theory is directly or indirectly sensiti
  \subfigure[]{\label{fig:HiggsLoop_a}\includegraphics[width=0.3\textwidth]{\chtwo/HiggsLoop.pdf}}
  \subfigure[]{\label{fig:HiggsLoop_b}\includegraphics[width=0.3\textwidth]{\chtwo/HiggsLoop1.pdf}}
  \subfigure[]{\label{fig:HiggsLoop_c}\includegraphics[width=0.3\textwidth]{\chtwo/HiggsLoop2.pdf}} 
- \caption{Radiative corrections to the Higgs squared mass parameter $m^2_\PH$ due to: (a) Yukawa coupling with the top quark; (b) gauge boson loop; (c) Higgs quartic self-interaction.}
+ \caption{Radiative corrections to the Higgs squared mass parameter $M^2_\PH$ due to: (a) Yukawa coupling with the top quark; (b) gauge boson loop; (c) Higgs quartic self-interaction.}
  \label{fig:HiggsLoop}
 \end{figure}
 
 Many extensions of the SM suggest new physics at the TeV scale to address the hierarchy problem, providing more ``natural'' options.
 Models of \textit{supersymmetry}~\cite{PhysRevD.24.1681,Casas:1994qy} introduce a new heavy scalar called \textit{stop} as a \textit{superpartner} of the SM top quark,
-which produces loop corrections to the Higgs mass that cancel out those of the top quark.
+which produces loop corrections to the Higgs-boson mass that cancel out those of the top quark.
 Non-supersymmetric models have also been proposed, which predict heavier partners to the top quark.
 %In \textit{Little Higgs} models (Section~\ref{subsec:composite}), several heavy top quark partners (also called vector-like quarks) are introduced which cancel the quadratic divergence.
 Another possibility to address the hierarchy problem is to assume the Higgs boson to be a composite particle as in the \textit{composite Higgs} models (Section~\ref{subsec:composite}),
@@ -79,7 +79,7 @@ The easiest way to account for this discrepancy is to postulate the existence of
 A second major result in cosmology is the discovery that the Universe is in accelerated expansion: it was measured that on average galaxies recede from each other and that this expansion rate increases with the distance.
 Such a feature cannot be achieved with usual particles or with dark matter, but rather a new type of energy with a negative pressure, called \textit{dark energy}, has to be added to the Universe content.
 To account for the experimental observations, dark matter and dark energy have been estimated to compose respectively 26\% and 69\% of the total Universe content~\cite{Ade:2015xua}, but their fundamental nature remains nowadays a mystery.
-The most widely accepted hypothesis on the form for dark matter is that it is composed of weakly interacting massive particles (WIMPs) that interact only through the gravitational force and an unknown force which is as weak as or weaker than the SM weak force.
+The most widely accepted hypothesis on the form for dark matter is that it is composed of \textit{weakly interacting massive particles} (WIMPs) that interact only through the gravitational force and an unknown force which is as weak as or weaker than the SM weak force.
 The search from the point of view of experimental and theoretical dark matter hunting is one of the major efforts in particle physics.
 There are two fronts: direct searches in cosmic rays by underground experiments, and searches at hadron colliders, where dark matter would be produced as a pair of neutral particles that may be predicted by different models.
 %In the case of supersymmetry, dark matter is incarnated by neutralinos ($\tilde{\chi}^0$), often called Weakly Interacting Massive Particles or WIMP's, in processes such as 

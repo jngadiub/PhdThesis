@@ -8,7 +8,7 @@ A hypothesis test is built to decide between a null hypothesis given by the pred
 In principle one can either test the background-only hypothesis and exclude it if there is a large deviation of the data from the SM background prediction,
 or test the signal hypothesis and exclude it if there is a large deviation of the data from the expected signal model.
 In particular, if no significant deviation from the SM background prediction is observed in data, compatible with the signal hypothesis, an upper limit on 
-production cross section of such signal is usually set, up to a certain degree of belief.
+production cross section of such signal is usually set, up to a certain degree of confidence.
 %From the statistical analysis of the reconstructed diboson invariant mass, one can infer that there is 95\% confidence level (CL) that the signal $\sigma\times\cal B$ is not larger than some value $?_\mathrm{95\%}$;
 %otherwise, if the cross section was above this value, a statistically-significant excess of data would have emerged over the background.
 %If the upper limit $?_\mathrm{95\%}$ is as large as the $\sigma\times\cal B$ predicted by some specific theoretical model $?_\mathrm{th}$ or smaller, it can be inferred that a resonance of that mass is excluded at 95\% C.L..
@@ -26,13 +26,14 @@ In order to construct the test statistic a likelihood function is defined as
 \end{equation}
 
 In this definition, $s$ and $b$ denote the expected signal and background event yields, respectively,
-which, before the scrutiny of the observed data entering the statistical analysis, are subject to multiple uncertainties that are treated by introducing nuisance parameters $\theta$,
+which, prior to the comparison with the observed data entering the statistical analysis, are subject to multiple uncertainties that are treated by introducing nuisance parameters $\theta$,
 so that signal and background expectations depend on these parameters as $s(\theta)$ and $b(\theta)$.
 The exclusion of a signal hypothesis is generally expressed as an upper limit on the \textit{signal strength modifier} $\mu$
 which scales the cross section used as input in the evaluation of the expected signal yields.
 With this definition, the likelihood represents the Poisson probability of observing a certain amount of data when the expected yield is $\mu\cdot s(\theta) + b(\theta)$
 and given the probability $p(\tilde{\theta}|\theta)$ of measuring a value $\tilde{\theta}$ for the nominal nuisance parameter $\theta$.
-Note that, in this likelihood definition, ``data'' stands for a generic dataset, either experimental or a pseudo-data generated randomly.
+Note that, in this likelihood definition, ``data'' stands for a generic dataset, either
+collected in pp collisions or from randomly generated events, which is known as pseudo-data.
 
 The likelihood can be either binned or unbinned. In the first case the function $\mathrm{Poisson}(data | \mu\cdot s + b)$ in Eq.~\ref{eqn:likelihood} is the product of Poisson probabilities
 for observing $n_i$ events in each bin $i$ of the signal+background model
@@ -89,7 +90,7 @@ The two probabilities are shown in the example in Fig.~\ref{fig:CLs-ex_a}.
 In the classical frequentist approach, the level of agreement between the data and hypothesized $\mu$ is evaluated by using the $\mathrm{CL}_{s+b}$ probability only,
 and one says that the hypothesized signal $\mu$ is excluded at 95\% CL if $\mathrm{CL}_{s+b} \leq 0.05$.
 
-However, such a definition has a caveat. If the distributions of the test statistic for the signal+background and background-only hypotheses have a not negligible overlap as in the plot (c) of Fig.~\ref{fig:CLs-ex_b},
+However, such a definition has a caveat. If the distributions of the test statistic for the signal+background and background-only hypotheses have a non-negligible overlap as in the plot (c) of Fig.~\ref{fig:CLs-ex_b},
 the experiment would tend to exclude the hypothesized signal $\mu$ even if the experiment in this case has little sensitivity to discriminate it against the background.
 In fact, in this case the experimental data are highly contaminated with background and a statement about the signal would be a mistake of interpretation.
 To prevent the inference of a signal in such cases, the so-called modified frequentist approach has been introduced at the time of LEP~\cite{CLs1,Junk:1999kv}.
@@ -135,7 +136,7 @@ are extracted from the values of the 16\% (2.5\%) and 84\% (97.5\%) quantiles.
 In order to compute $\mathrm{CL}_s$ the probability density functions of the test statistics are required.
 In particular, one needs the probability density functions $f(\tilde{q}_\mu|\mu^\prime)$, where $\mu^\prime = 0$ or $\mu^\prime = \mu$,
 which are obtained from MC pseudo-experiments requiring very expensive computational resources.
-An approximation for the $\mathrm{CL}_s$ method, valid in the large sample limit, also referred to as ``asymptotic approximation'' has been proposed in Ref.~\cite{AsymptCLs}
+An approximation for the $\mathrm{CL}_s$ method, valid in the large sample limit, also referred to as the \textit{asymptotic approximation} has been proposed in Ref.~\cite{AsymptCLs}
 and it is briefly described in the following.\\
 
 By using the Wald approximation~\cite{10.2307/1990256} the desired distribution $f(\tilde{q}_\mu|\mu^\prime)$ can be obtained by expressing the test statistic given by the log-likelihood ratio as
@@ -223,7 +224,7 @@ In this search, a scan is performed over a wide range of resonance mass hypothes
 the minimum local p-value, which describes the probability of a background fluctuation for that particular resonance mass hypothesis.
 However, it is important to distinguish the probability of finding a fluctuation in some particular location from the probability of finding such a fluctuation anywhere else in the spectrum.
 The former is associated to the so called \textit{local significance}, whereas the latter is referred to as the \textit{global significance}.
-The fact that the global significance is usually smaller than the largest local one is often referred to as the ``look-elsewhere effect'' (LEE).
+The fact that the global significance is usually smaller rather than equal to the largest local one is often referred to as the ``look-elsewhere effect'' (LEE).
 As demonstrated in Ref.~\cite{Gross:2010qma}, the global and local p-values are related to each other by a multiplicative factor, usually referred to as ``trial factor'', proportional to the number of independent search regions.
 In the asymptotic approximation the trial factor grows linearly with the local significance, through a proportional constant
 that is related to the ratio between the mass range under consideration divided by its resolution. In particular, it can be shown that

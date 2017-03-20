@@ -57,7 +57,7 @@ The classical action describing the above set-up is given by the sum of the grav
 \begin{equation}\label{eqn:WED_2}
 \begin{gathered}
 \mathcal{S} = \mathcal{S}_{gravity} + \mathcal{S}_{TeV} + \mathcal{S}_{Planck}, \\
-\mathcal{S}_{gravity} = \int d^4x \int_{-\pi}^{+\pi} d\phi\sqrt{-G}{-\Lambda+2M^3_*R}, \\
+\mathcal{S}_{gravity} = \int d^4x \int_{-\pi}^{+\pi} d\phi\sqrt{-G}(-\Lambda+2M^3_*R), \\
 \mathcal{S}_{TeV} = \int d^4x\sqrt{-G(x^\mu,\phi=\pi)}\Lambda, \\
 \mathcal{S}_{Planck} = \int d^4x\sqrt{-G(x^\mu,\phi=0)}\Lambda.
 \end{gathered}
@@ -83,7 +83,7 @@ Solving the 5-dimensional Einstein's equations provides a unique solution for $\
 By plugging the solution back into the original action and integrating over the extra dimension $\phi$, one finds that the 4-dimensional Planck mass is given by
 
 \begin{equation}\label{eqn:WED_5}
-\bMPl = \frac{M^3_*}{k}(1 - e^{-2\pi kr_c}).
+\bMPl^2 = \frac{M^3_*}{k}(1 - e^{-2\pi kr_c}).
 \end{equation}
 
 %\noindent where the term $e^{-2\pi kr_c}$ is usually called the \textit{warp factor}.
@@ -144,7 +144,7 @@ Another crucial point of the bulk scenario is that before symmetry-breaking, the
 However, after symmetry-breaking, the gauge bosons absorb the Higgs degrees of freedom, and their wave functions are still mostly flat in the bulk but fall sharply near the brane.
 Thus, in the bulk scenario, branching fractions for decays into a pair of vector bosons are the same level as those for decays into Higgs bosons or top quarks.
 The branching fractions for the different decay modes of the graviton in both the bulk and RS1 scenarios are shown in Fig.~\ref{fig:GrBR} as a function of the graviton mass.
-It can also be shown that in RS1 scenario the graviton decays preferentially to transversely polarized vector bosons, whereas in the bulk scenario it decays preferentially to longitudinally polarized modes, making those two benchmarks an excellent framework for studying the sensitivity of the vector boson identification techniques used at the collider experiments to the polarization (Chapter~\ref{ch:vtagging}).
+It can also be shown that in RS1 scenario the graviton decays preferentially to transversely-polarized vector bosons, whereas in the bulk scenario it decays preferentially to longitudinally-polarized modes, making those two benchmarks an excellent framework for studying the sensitivity of the vector boson identification techniques used at the collider experiments to the polarization (Chapter~\ref{ch:vtagging}).
 
 \begin{figure}[!htb]
 \centering
@@ -172,9 +172,9 @@ However, because of the non-vanishing and differing masses of the quarks, the $S
 
 In composite Higgs models, a similar structure is assumed, where the Higgs is a pseudo-Goldstone boson of some symmetry with strong coupling scale $\Lambda \approx 4\pi f$,
 where $f$ is the scale at which the symmetry is spontaneously broken.
-The main idea is that the Higgs mass parameter is protected against quadratic quantum corrections up to the compositeness scale because it is a pseudo-Goldstone boson. 
+The main idea is that the Higgs-boson mass parameter is protected against quadratic quantum corrections up to the compositeness scale because it is a pseudo-Goldstone boson. 
 Above the scale of compositeness, it is simply not an elementary scalar.
-Furthermore, the pseudo-Goldstone nature of the Higgs is an explanation for why the Higgs mass is so much lighter than the other bound states in the strongly coupled sector.
+Furthermore, the pseudo-Goldstone nature of the Higgs is an explanation for why the Higgs-boson mass is so much lighter than the other bound states in the strongly coupled sector.
 
 Such models start with a large global symmetry group $G$, analogous to the ``large'' $SU(2)_L \times SU(2)_R$ global symmetry of low energy QCD.
 The strong dynamics spontaneously breaks $G$ to a subgroup $H$, similarly to the QCD chiral symmetry breaking $SU(2)_L \times SU(2)_R \to SU(2)_V$.
@@ -182,7 +182,7 @@ In particular, for a minimal composite Higgs model $G = SO(5) \to H = SO(4)$.
 The SM electroweak group $SU(2)_L \times U(1)_Y$ is a subgroup of $H$, thus introducing a preferred orientation in the coset space SO(5)/SO(4) with respect to the global SO(4).
 In this way, the electroweak scale $v$ is distinct from the $G \to H$ symmetry breaking scale $f$. The parameter $\xi = (v/f)^2$ is introduced to characterize this separation of scales and to quantify the degree of vacuum misalignment.
 In a theory with little hierarchy $\xi \sim 1$, while a small amount of fine-tuning can give rise to $\xi \ll 1$. In particular, compatibility with the constraints coming from electroweak precision tests and Higgs coupling measurements generically implies $\xi \lesssim 0.2$. This bound places the scale $f$ at about 1\TeV, resulting in a strong coupling scale $\Lambda \approx 4\pi f \sim 10\TeV$.
-Such large value results in a large one-loop contribution to the Higgs mass parameter (Eq.~\ref{eqn:HiggsCorr}), so that a generic composite Higgs setup still requires some tuning between the $v$ and $f$ scales.
+Such large value results in a large one-loop contribution to the Higgs-boson mass parameter (Eq.~\ref{eqn:HiggsCorr}), so that a generic composite Higgs setup still requires some tuning between the $v$ and $f$ scales.
 One way to generate a ``little hierarchy'' is through the mechanism of \textit{collective symmetry breaking} as in \textit{little Higgs} (LH) scenarios~\cite{Han:2003wu,Perelstein:2005ka,Schmaltz:2005ky,Arkani:2002LH,Burdman:2002ns}, which is now a key ingredient in composite Higgs models.
 The main idea of this approach is that one can separate the scales $v$ and $f$ by introducing new particles, which cancel the quadratic divergences at one-loop order. 
 In particular, the quadratic divergence induced by the SM gauge boson loops are canceled by the quadratic divergence induced by heavy gauge bosons at one loop level.
@@ -190,7 +190,7 @@ Heavy fermionic states are also introduced, which couple to the Higgs field such
 Furthermore, extra Higgs fields exist as the Goldstone boson multiplets from the global symmetry breaking.
 %In Little Higgs models, instead of a simple global group $G$ a direct product of two (or more) groups $G_1 \times G_2 \times \dotsc$ is considered so that its breaking has a collective nature.
 %The models then contain additional gauge bosons at the TeV scale that produce the necessary cancellations to the one-loop quadratic divergence.
-%It implies that any non-vanishing quantum contribution to the Higgs mass parameter must necessarily be proportional to a product of all the gauge coupling constants corresponding to the different $G_i$ factors.
+%It implies that any non-vanishing quantum contribution to the Higgs-boson mass parameter must necessarily be proportional to a product of all the gauge coupling constants corresponding to the different $G_i$ factors.
 %Thus, setting any one of the coupling constants to zero must result in a vanishing contribution.
 %The extended gauge group $G_1 \times G_2 \times \dotsc$ of the LH models is typically broken down to the SM $\mathrm{SU(2)_L \times U(1)_Y}$ at a scale $f$ by the same condensates that break $G \to H$.
 %The models then contain additional gauge bosons at the TeV scale. In the mass eigenbasis, the vanishing of the one-loop quadratic divergence can be understood as a result of a cancellation between the SM bow tie diagrams and their counterparts involving the TeV-scale bosons. 
@@ -254,8 +254,8 @@ The dynamics of the new vector is described by a simple phenomenological Lagrang
 \noindent where $g$ denotes the gauge coupling.
 The first line of the above equation contains the kinetic and mass terms for the field $V$, plus trilinear and quadrilinear interactions with the vector bosons from the covariant derivatives.
 The second line contains direct interactions of $V$ with the Higgs current in the first term, and with the SM left-handed fermionic currents $J^{\mu a}_F$ in the second term.
-The Higgs current term with coefficient $c_H$ leads to vertices involving the physical Higgs field and the three unphysical goldstone bosons.
-Since the goldstone bosons represent the longitudinally polarized SM vector bosons \PW and \PZ, the parameter $c_H$ controls the interactions of $V$ with the SM vector bosons and with the Higgs boson, and in particular its decay modes into these electroweak particles.
+The Higgs current term with coefficient $c_H$ leads to vertices involving the physical Higgs field and the three unphysical Goldstone bosons.
+Since the Goldstone bosons represent the longitudinally-polarized SM vector bosons \PW and \PZ, the parameter $c_H$ controls the interactions of $V$ with the SM vector bosons and with the Higgs boson, and in particular its decay modes into these electroweak particles.
 Similarly, the parameter $c_F$ describes the direct interaction with fermions, which is responsible for both the resonance production via \qqbar annihilation and for its fermionic decays.
 One observes that a universal coupling of the new field $V$ to fermions is assumed in Eq.~\ref{eqn:HVT_2} for simplicity, such that $c_F$ represents the couplings to leptons ($c_\ell$), light quarks ($c_q$) and the third quark family ($c_3$).
 The third line of the equation contains new operators and free parameters, which however have a sub-leading effect on the phenomenology of interest for resonant searches, and

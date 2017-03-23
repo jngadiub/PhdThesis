@@ -140,7 +140,7 @@ The H tagging requires the selected CA8 jet to have pruned mass in the range $11
 Otherwise, b tagging is applied to the whole CA8 jet using the same algorithm.
 
 The 13\TeV analysis is instead focused on events with a high-\pt V boson decaying to \qqbar and the V-tagging algorithm described in Section~\ref{sec:htagging} is applied in this case.
-The pruned jet-mass window is shifted down to the V-boson mass, requiring the selected AK8 jet to have pruned mass in the range $65 < \mJ < 105\GeV$.
+The window applied on the mass of the pruned jet is shifted down to the V-boson mass, requiring the selected AK8 jet to have pruned mass in the range $65 < \mJ < 105\GeV$.
 Furthermore, the V jet is required to have $\nsubj < 0.6$.
 Finally, the V jet is deemed a W-boson candidate if its pruned mass falls in the range 65--85\GeV, while it is deemed a Z-boson candidate if it falls in the range 85--105\GeV instead.
 This categorization has been added on the top of the V-tagging requirements on the \mJ to enhance discrimination between resonances with different charge and spin. 
@@ -164,7 +164,7 @@ the asymmetric tails at larger values due to combinatorial background.\\
 
 According to the above description of the final selections, the event categorization is based on two orthogonal classes of events for the 8\TeV data analysis in the $\ell\nu\bbbar$ decay channel,
 depending on the lepton flavour (muon or electron),
-and on four orthogonal classes of events for the 13\TeV data analysis in the $\ell\nu\qqbar$ decay channel, depending on the lepton flavour and on the pruned jet-mass category (WW or WZ).
+and on four orthogonal classes of events for the 13\TeV data analysis in the $\ell\nu\qqbar$ decay channel, depending on the lepton flavour and on the \mJ category (WW or WZ).
 
 The two boson candidates are combined into a diboson candidate, with presence of signal then inferred from the observation of localized excesses in the $\mlvj$ distribution.
 When several diboson resonance candidates are present in the same event, only the one with the highest-\pt
@@ -172,21 +172,24 @@ V or H jet is kept for further analysis.
 
 The reconstructed invariant mass of the resonance is required to be at least 0.7\TeV.\\ 
 
-The distributions in \pt and N-subjettiness ratio \nsubj distributions for the V-jet candidate in the $\ell\Pgn\qqbar$ channel is shown in Fig.~\ref{fig:controlPlots13TeV},
-after requiring $65 < \mJ < 105\GeV$, for both simulation and 13\TeV data.  Figure~\ref{fig:controlPlots8TeV} shows the distribution in \pt for the H-jet candidate
-after requiring $40 < \mJ < 110\GeV$, for both simulation and 8\TeV data.
+The distributions in \pt and N-subjettiness ratio \nsubj for the V-jet candidate in the $\ell\Pgn\qqbar$ channel are shown in Fig.~\ref{fig:controlPlots13TeV},
+together with the distribution in \pt of the $\PW\to\ell\nu$ candidate,
+after requiring $40 < \mJ < 150\GeV$, for both 13\TeV data and simulation.
+Figure~\ref{fig:controlPlots8TeV} shows the distribution in \pt of the $\PW\to\ell\nu$ and H-jet candidates after requiring $40 < \mJ < 110\GeV$, for both 8\TeV data and simulation.
 
 \begin{figure}[!htb]
 \centering
-\subfigure[]{\label{fig:controlPlots13TeV_a}\includegraphics[width=0.45\textwidth]{\cheight/ptvjet-13TeV-wjets.pdf}}
-\subfigure[]{\label{fig:controlPlots13TeV_b}\includegraphics[width=0.45\textwidth]{\cheight/tau21-13TeV-wjets.pdf}}
-\caption{Distributions in \pt (a) and N-subjettiness ratio \nsubj (b) for the V-jet candidate obtained requiring $65 < \mJ < 105\GeV$ after merging muon and electron channels. The SM diboson, \ttbar, and single-top-quark backgrounds are taken from simulation and are normalized to the integrated luminosity of the 13\TeV data sample. The W+jets background is rescaled to match the number of events in data.}
+\subfigure[]{\label{fig:controlPlots13TeV_a}\includegraphics[width=0.45\textwidth]{\cheight/c_Whadr_pt.pdf}}
+\subfigure[]{\label{fig:controlPlots13TeV_b}\includegraphics[width=0.45\textwidth]{\cheight/c_tau21.pdf}}\\
+\subfigure[]{\label{fig:controlPlots13TeV_c}\includegraphics[width=0.45\textwidth]{\cheight/c_Wlept_pt.pdf}}
+\caption{Distributions in \pt (a) and N-subjettiness ratio \nsubj (b) for the V-jet candidate, and distribution in \pt of the $\PW\to\ell\nu$ candidate, obtained requiring $40 < \mJ < 150\GeV$ for the electron channels. The SM diboson, \ttbar, and single-top-quark backgrounds are taken from simulation and are normalized to the integrated luminosity of the 13\TeV data sample. The W+jets background is rescaled to match the number of events in data.}
 \label{fig:controlPlots13TeV}
 \end{figure}
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.5\textwidth]{\cheight/can_h_ptHjj.pdf}
-\caption{Distributions in \pt for the H-jet candidate obtained requiring $40 < \mJ < 110\GeV$ for events in the muon channel. The SM diboson, \ttbar, and single-top-quark backgrounds are taken from simulation and are normalized to the integrated luminosity of the 8\TeV data sample. The W+jets background is rescaled to match the number of events in data.}
+\subfigure[]{\label{fig:controlPlots8TeV_a}\includegraphics[width=0.45\textwidth]{\cheight/c_Wlept_pt_8TeV.pdf}}
+\subfigure[]{\label{fig:controlPlots8TeV_b}\includegraphics[width=0.45\textwidth]{\cheight/c_Hjet_pt_8TeV.pdf}}
+\caption{Distributions in \pt of the (a) $\PW\to\ell\nu$ and (b) H-jet candidates obtained requiring $40 < \mJ < 150\GeV$ after merging muon and electron channels The SM diboson, \ttbar, and single-top-quark backgrounds are taken from simulation and are normalized to the integrated luminosity of the 8\TeV data sample. The W+jets background is rescaled to match the number of events in data.}
 \label{fig:controlPlots8TeV}
 \end{figure}

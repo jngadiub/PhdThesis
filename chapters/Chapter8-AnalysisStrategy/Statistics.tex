@@ -58,7 +58,7 @@ the test statistic $\tilde{q}_\mu$ is constructed based on the profile likelihoo
 \tilde{q}_\mu = -2\ln\frac{{\cal L}(data | \mu,\hat{\theta}_\mu)}{{\cal L}( data | \hat{\mu},\hat{\theta})},\qquad \mathrm{with} \qquad 0 \leq \hat{\mu} \leq \mu.
 \end{equation}
 
-Here $\hat{\theta}_\mu$ denotes the value of $\theta$ that maximizes the likelihood for the hypothesized $\mu$,
+Here $\hat{\theta}_\mu$ denotes the values of $\theta$ that maximize the likelihood for the hypothesized $\mu$,
 i.e. it is the conditional maximum-likelihood (ML) estimator of $\theta$ (and thus is a function of $\mu$). 
 The procedure of refitting the nuisance parameters to maximize the likelihood for each possible value of the parameter of interest $\mu$, is usually referred to as ``profiling''.
 The denominator is the maximized (unconditional) likelihood function, i.e., $\hat{\mu}$ and $\hat{\theta}$ are the global maximum of the likelihood.
@@ -66,7 +66,8 @@ The presence of the nuisance parameters broadens the profile likelihood as a fun
 This reflects the loss of information about $\mu$ due to the systematic uncertainties.
 Higher values of $\tilde{q}_\mu$ correspond to increasing incompatibility between the data and the hypothesized signal of strength $\mu$.
 The lower constraint for $\hat{\mu}$ in the denominator excludes the possibility of negative signal yields. 
-The upper constraint is introduced to avoid that data with $\hat{\mu} > \mu$ (upward fluctuations) are considered as representing less compatibility with $\mu$ than what obtained with data.
+%The upper constraint is introduced to avoid that data with $\hat{\mu} > \mu$ (upward fluctuations) are considered as representing less compatibility with $\mu$ than what obtained with data.
+The upper constraint $\hat{\mu} \leq \mu$, applied in the maximization at the denominator, causes $\tilde{q}_\mu$ to be zero if the data are best described with a signal rate larger than the tested one, so that excesses are always considered to be more signal-like (i.e. small $\tilde{q}_\mu$) than the observation of no signal ($\hat{\mu} = 0$), even when they are far too large with respect to the signal hypothesis being tested.
 
 The observed value of the test statistic, $\tilde{q}_\mu^\mathrm{obs}$ for the given signal strength modifier $\mu$ under test is computed,
 as well as the nuisance parameters $\hat{\theta}_0^\mathrm{obs}$ and $\hat{\theta}_\mu^\mathrm{obs}$ maximizing the likelihood under the background-only and signal+background hypothesis, respectively.

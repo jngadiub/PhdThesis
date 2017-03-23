@@ -2,19 +2,19 @@
 \chapter{Optimization and commissioning for LHC Run 2}\label{ch:BPixCalib}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The CMS pixel detector was designed to cope with the high radiation environment of LHC and to operate with the highest performance even after the accumulation of significant radiation doses.
+The CMS pixel detector was designed to cope with the high-radiation environment of LHC and to operate with the highest performance even after the accumulation of significant radiation doses.
 Nevertheless, radiation damage affects hit efficiency and resolution and hence, it is necessary to monitor its effects during operation.
 As described in this chapter, throughout Run~1, recalibrations of the detector have been performed to compensate for these effects and recover full performance.
 
-During LS1, both BPix and FPix were extracted from CMS for maintenance with the purpose to recover broken channels.
+During LS1, both BPix and FPix were extracted from CMS for maintenance with the purpose of recovering broken channels.
 In this period, the calibration procedure has been exercised and improved in view of commissioning and operation for Run~2.
 
 The pixel detector has been operated with a coolant temperature of 7.4\unit{$^\circ$C} in 2008--2011 and 0\unit{$^\circ$C} in 2012, which for the pixel sensors translates to values of about 10\unit{$^\circ$C} higher.
 In order to limit the impact of radiation damage, during Run~2 the detector has been operated at much lower temperature, down to -10\unit{$^\circ$C}.
-This has been made possible thanks to a major effort during the long shut-down to implement a tracker wide sealing that ensures minimal humidity levels.
+This has been made possible thanks to a major effort during the long shut-down to implement a tracker-wide sealing that ensures minimal humidity levels.
 The flow of dry gas into the tracker volume was increased and a new safety system was developed that shuts down the detector safely in case a sudden increase of temperature, electric current or humidity is detected. 
-During LS1, the pixel detector functionalities at very low temperature have been checked and its (temperature dependent) settings recalibrated to allow for optimal operations under such conditions.
-This activity, described in the following, have been crucial to achieve a quick and reliable reinstallation and commissioning for Run~2, as well as for stable and excellent operations during 2015 and 2016.
+During LS1, the pixel detector functionalities at very low temperature have been checked and its (temperature-dependent) settings recalibrated to allow for optimal operations under such conditions.
+This activity, described in the following sections, have been crucial for achieving a quick and reliable reinstallation and commissioning for Run~2, as well as for stable and excellent operations during 2015 and 2016.
 
 %%%%%%%%%%%
 \section{Effects of radiation damage in LHC Run 1}
@@ -24,14 +24,15 @@ One of the first visible effect of radiation is the increase of the sensor leaka
 The most fundamental type of bulk radiation damage is a defect, produced by the displacement of an atom of the semiconductor material from its normal lattice site.
 The vacancy left behind, together with the original atom now at an interstitial position, constitutes a trapping site for normal charge carriers.
 The formation of mid-gap states facilitates the transition of electrons from the valence to the conduction band leading to an increase of the leakage current in the depletion region.
-The primary defects caused by irradiation are not stable but able to move through the crystal. As result of this diffusion process, there is the possibility of combination of more complex defects.
-This process is called \textit{annealing}, with a beneficial part reducing the damage and a reverse one degrading macroscopic sensor properties, called \textit{reverse annealing}.
+The primary defects caused by irradiation are not stable but are able to move through the crystal. As a result of this diffusion process, there is the possibility of combination of more complex defects.
+This process is called \textit{annealing}, with a beneficial component that reduces the damage
+and an unfavorable one degrading macroscopic sensor properties, called \textit{reverse annealing}.
 During beneficial annealing, with a time constant of a few days at room temperature, the leakage current decreases, while later it rises due to reverse annealing process until it finally saturates at a value which is significantly above the initial level. At temperatures below 0\unit{$^\circ$C} however, both effects can be frozen and the detector current remains constant.
-Thus, irradiated detectors should be operated and stored at low temperature, while it is favorable to shortly expose them to room temperature to take advantage of the beneficial annealing.
+Thus, irradiated detectors should be operated and stored at low temperature, with a short exposure them to room temperature in order to take advantage of the beneficial annealing.
 
 Figure~\ref{fig:PixLeakageCurrent} shows the increase of the leakage current for the pixel barrel layers measured from readings of the high voltage power supplies as a function of the integrated luminosity and of time in 2011-2012.
 The damage was only partially recovered by beneficial annealing that took place during a longer shut-down after about 6\fbinv and a shorter technical stop after about 13\fbinv delivered integrated luminosity.
-Between the end of 2011 and the beginning of 2012 the operating temperature was decreased from 7.4\unit{$^\circ$C} to 0\unit{$^\circ$C} achieving a reduction in leakage current by a factor two and preventing reverse annealing which would eventually require too high depletion voltages.
+Between the end of 2011 and the beginning of 2012 the operating temperature was decreased from 7.4\unit{$^\circ$C} to 0\unit{$^\circ$C}, achieving a reduction in leakage current by a factor two and preventing reverse annealing which would eventually require too high of a depletion voltages.
 The data are compared to a parametrization that accounts for accumulated damage and for annealing, whose input is the fluence as predicted by a model of the CMS detector.
 The overall trend of the measurements is in agreement with this model except for the normalization.
 The reasons for this discrepancy in scale remain under investigation, with possibilities including uncertainties in the operational temperature and incorrect inputs to the model of the CMS detector.
@@ -47,7 +48,7 @@ The reasons for this discrepancy in scale remain under investigation, with possi
 
 The depletion voltage was also monitored during operations.
 With irradiation, defects with a negative space charge are generated throughout the bulk leading to variations in the effective doping concentration.
-When starting with n-type bulk, the effective doping concentration decreases because of the negatively charged defects until the bulk is transformed into an effective p-type.
+When starting with n-type bulk, the effective doping concentration decreases because of the negatively-charged defects until the bulk is transformed into an effective p-type.
 This process, called \textit{type inversion}, happens at a relatively low dose of several $10^{12}$\unit{$n_{eq}/cm^2$} (neutron equivalent fluence)~\cite{PixelDetectorsBook2006}.
 As a consequence of this space charge sign inversion, the depletion zone now expands from the n$^+$ pixel implants towards the p-type back.
 The depletion voltage scales with the bulk doping concentration: it initially decreases reaching a minimum at the inversion point, and then rises with the effective bulk doping concentration.
@@ -63,7 +64,7 @@ The presence of a minimum for the layer 1 and layer 2 is evidence for type inver
  \subfigure[]{\label{fig:PixBiasV_a}\includegraphics[width=0.3\textwidth]{\chfifteen/hv_l1_eff.png}}
  \subfigure[]{\label{fig:PixBiasV_b}\includegraphics[width=0.3\textwidth]{\chfifteen/hvturnon_totlumi.png}}
  \end{center}
- \caption{(a) Scans of the bias voltage performed on the innermost barrel layer. (b) Bias voltage corresponding to full single hit efficiency for all barrel layers and forward disks as a function of the integrated luminosity delivered in Run~1~\cite{PixelOffline}.}
+ \caption{(a) Scans of the bias voltage performed on the innermost barrel layer. (b) Bias voltage corresponding to full single-hit efficiency for all barrel layers and forward disks as a function of the integrated luminosity delivered in Run~1~\cite{PixelOffline}.}
  \label{fig:PixBiasV}
 \end{figure}
 
@@ -77,7 +78,7 @@ The pixel hit resolution also exhibits a slow degradation with integrated lumino
 \begin{figure}[!htb]
  \begin{center}
  \subfigure[]{\label{fig:PixRadDamag_a}\includegraphics[width=0.45\textwidth]{\chfifteen/PixelThreshold_vs_IntLumi.png}}
- \subfigure[]{\label{fig:PixRadDamag_b}\includegraphics[width=0.45\textwidth]{\chfifteen/IanaROCvsLumi.png}}
+ \subfigure[]{\label{fig:PixRadDamag_b}\includegraphics[width=0.45\textwidth]{\chfifteen/IanaROCvsLumi.pdf}}
  \end{center}
  \caption{(a) Average pixel threshold in units of 1\unit{ke} for the barrel layers and forward disks, and (b) average analog current per ROC drawn by the power supply for BPix layers 1 and 2, as a function of the integrated luminosity delivered in Run~1~\cite{PixelOffline}.}
  \label{fig:PixRadDamag}
@@ -113,7 +114,7 @@ The defects in layer 3 made up 52\% of the faulty channels.
 Two AOHs were found with disconnected wire bonds between the laser and the AOH PCB, and they were also replaced. Figure~\ref{fig:AOHreplace} shows pictures from the laboratory in LHC-P5 during this operation.
 In order to proceed with the replacement one of the two cold boxes was opened and the half shell of interest extracted using a support equipped with rails.
 The shields covering the AOHs were unscrewed and all the AOHs of the sector in the outside direction had to be unplugged in order to replace the two malfunctioning ones.
-Before restoring the detector in its original position inside the box, the two new AOHs were tested by checking with the oscilloscope the variations in the optical output when changing the laser bias settings with commands sent through the tkFEC. The same tests were performed for the other functioning AOHs that had to be unplugged to perform the replacement. It was found that during the operation, two additional AOHs were damaged and they had to be replaced as well.
+Before restoring the detector to its original position inside the box, the two new AOHs were tested by checking with the oscilloscope the variations in the optical output when changing the laser bias settings with commands sent through the tkFEC. The same tests were performed for the other functioning AOHs that had to be unplugged to perform the replacement. It was found that during the operation, two additional AOHs were damaged and they had to be replaced as well.
 
 \begin{figure}[!htb]
  \begin{center}
@@ -125,10 +126,10 @@ Before restoring the detector in its original position inside the box, the two n
 \end{figure}
 
 There was, however, a serious incident in mid-August 2014. After having replaced a BPix module, tests of the corresponding quadrant showed severe damage: 55 new unresponsive modules were found.
-It was decided to take that part of the detector to PSI for further tests and repairs. Shorts were discovered at the ROCs and in several modules between the TBM and cable pads. Eventually, the detector was repaired within three months using 40 new modules and 19 repaired ones. The shorts were suspected to be caused by humidity due to unobserved condensation in the cold box. 
+It was decided to take that part of the detector to PSI for further tests and repairs. Shorts were discovered at the ROCs and in several modules between the TBM and cable pads. Eventually, the detector was repaired within three months using 40 newly-constructed modules and 19 repaired ones. The shorts were suspected to be caused by humidity due to unobserved condensation in the cold box. 
 After being repaired, the functionalities of the new modules were successfully confirmed and at the end of LS1 the good detector fraction was 99\%.
 
-Part of the time available during LS1 have been employed to exercise and improve calibration procedures in view of commissioning and operations for Run~2.
+Part of the time available during LS1 was employed to exercise and improve calibration procedures in view of commissioning and operations for Run~2.
 An overview of the calibration procedure is given in the following.
 
 %%%%%%%%%%%
@@ -161,10 +162,10 @@ Other calibrations write binary data files which have to be analyzed offline, th
 As described in Section~\ref{sec:BPix_DAQ} (Fig.~\ref{fig:BPixSystem}), the LHC clock, L1 trigger and programming signals are transmitted from the pxFEC placed in the underground counting room to the detector through fibers.
 The optical signals are first converted into digital signals by the DOH to be then sent to the detector through the Delay25, PLL and Gate-Keeper chips integrated in the same digital circuit.
 The clock and trigger are encoded as a single signal transmitted using one single fiber.
-As schematically illustrated in Fig.~\ref{fig:DigitalCircuit}, this signal is decoded by the PLL chip and sent via two separate lines, LHC clock (CLK) and Calibrate/Trigger/Reset (CTR), through the Delay25 chip to the BPix modules.
+As schematically illustrated in Fig.~\ref{fig:DigitalCircuit}, this signal is decoded by the PLL chip and sent via two separate lines, the LHC clock (CLK) and the Calibrate/Trigger/Reset (CTR), through the Delay25 chip to the BPix modules.
 In addition, the CLK signal is split in the Gate-Keeper chip and one line (RCK) is returned and sent back to the pxFEC through the Delay25 chip.
 The digital programming and control data (SDA) also goes through the Delay25 and Gate-Keeper chips.
-If the gate is open the SDA is transmitted to the BPix modules which sends the acknowledge signal (RDA) back, otherwise the data packet is returned in the Gate-Keeper.
+If the gate is open the SDA is transmitted to the BPix modules which send the acknowledge signal (RDA) back, otherwise the data packet is returned in the Gate-Keeper.
 
 \begin{figure}[!htb]
  \begin{center}
@@ -193,12 +194,12 @@ This calibration is fundamental to ensure correct communication with the pxFEC, 
 \subsection*{2) FED receiver offset}
 
 This calibration adjusts the individual offsets included in each input channel of the FED such that the baseline of the analog signal (black level) is tuned to be near a given target value, normally 450 ADC counts, which is near the midpoint of the dynamic range of the ADC. The main output consists of new FED parameters that, if satisfactory, are used to update the previous settings.
-This calibration is performed often because the AOH is very temperature sensitive. Already 1\unit{$^\circ$C} temperature change shifts the signal by 50 ADC counts (out of 1024).
+This calibration is performed often because the AOH is very temperature sensitive. Already a 1\unit{$^\circ$C} temperature change shifts the signal by 50 ADC counts (out of 1024).
 The pixel FED automatically corrects for baseline shifts during a run but it is important to start with a uniform baseline distribution.
 The baseline calibration adjusts each optical input to be $\pm5$ ADC counts from the target value. During normal LHC operations it is performed at least once a day during the LHC fills.
 
 The calibration also produces an output file with the analog signal for each module where its several components are visible, namely the TBM header and trailer, and each ROC header (Fig.~\ref{fig:FEDBaseline}).
-It runs quickly and provides an information on the data buffer for each FED channel. It is therefore very useful as a debugging tool since it provides a feedback on the basic functionalities of optical links, AOHs, TBMs and ROCs, needed to assess the status of the detector.
+It runs quickly and provides information on the data buffer for each FED channel. It is therefore very useful as a debugging tool since it provides feedback on the basic functionalities of optical links, AOHs, TBMs and ROCs, needed to assess the status of the detector.
 
 If this step fails to converge, for instance when part of the analog signal is not visible, a calibration can be run that adjusts the timing of the signal digitization in the FED by changing the phase of the ADC clock.
 This calibration is usually very stable, and needs to be repeated only when the FEDs, fibers, or other parts of the detector are touched, or if modifications of the fine phase of the global clock occur.
@@ -216,11 +217,11 @@ This calibration is usually very stable, and needs to be repeated only when the 
 Each AOH is equipped with 6 lasers for which the bias and the gain can be adjusted individually. The optical fibers connected to the lasers are combined in groups of 12 and each of them is connect to one FED channel.
 The AOH bias is a setting that controls the laser bias current and hence, the amount of light (optical power) sent to the FED.
 The optical power, and hence the ADC counts in the FED, increases with the laser bias setting.
-As shown in Fig.~\ref{fig:AOHBias}, at low values of the bias, the black (BL) and ultra black (UBL) levels are unaffected, so that there is no separation between the two.
+As shown in Fig.~\ref{fig:AOHBias}, at low values of the bias, the black (BL) and ultra-black (UBL) levels are unaffected, so that there is no separation between the two.
 At some threshold, the BL begins to increase approximately linearly, followed by the UBL at a higher laser bias value and with about the same slope.
 
 The maximum BL-UBL separation depends on the TBM settings discussed in the next section, and it is low if these parameters are configured to low values.
-In fact, the BL is independent on these settings, whereas the linear rise of the UBL begins at a later point if the configured values in the TBM are higher.
+In fact, the BL is independent of these settings, whereas the linear rise of the UBL begins at a later point if the configured values in the TBM are higher.
 As a consequence, the BL-UBL difference saturates at a higher laser bias value.
 The goal of the AOH bias calibration is to determine a laser bias setting for each FED channel that is just high enough to saturate the BL-UBL difference.
 The calibration measures this difference, using the levels from the TBM header and trailer, as a function of the laser bias.
@@ -232,7 +233,7 @@ Temperature variations alter the response of the AOH, essentially shifting the c
 In order to provide a margin of error for these variations, the optimal laser bias setting is chosen by the calibration to be 4 counts higher than the saturation value.
 This offset can be externally configured before running the calibration.
 
-It is also important that the laser bias is not too high to avoid that the signal moves out of the dynamic range of the FED.
+It is also important that the laser bias is not too high to avoid the signal moving out of the dynamic range of the FED.
 In the last part of the AOH bias calibration a coarse baseline adjustment is performed to bring the black level into the target range by readjusting the FED optical receiver offsets and laser bias settings.
 %The FED channel offsets are set to the center of the range, and then the FED optical receiver offsets and AOH bias settings are adjusted to bring all FED baselines into a wide target range.
 In this step the AOH bias is not decreased below the saturation value unless it is absolutely necessary.
@@ -243,31 +244,31 @@ After the AOH bias calibration, the FED baseline calibration should be run to ob
  \begin{center}
  \includegraphics[width=0.45\textwidth]{\chfifteen/AOHBias.png}
  \end{center}
- \caption{Black and ultra black levels as a function of the AOH laser bias. An optimal value for this parameter is found at the saturation value of the BL-UBL separation.}
+ \caption{Black and ultra-black levels as a function of the AOH laser bias. An optimal value for this parameter is found at the saturation value of the BL-UBL separation.}
  \label{fig:AOHBias}
 \end{figure}
 
-The gain is a setting for each AOH laser that can accept just 4 possible values (0, 1, 2, 3).
-This setting does not affect the black level, whereas it scales the size of deviations from the BL expanding or shrinking the signal.
+The gain of each AOH laser can be set to one of four possible values (0, 1, 2, 3).
+This setting does not affect the black level, whereas it scales the size of deviations from the BL, thereby expanding or reducing the signal.
 Larger settings correspond to larger deviations and hence, to a larger BL-UBL separation.
 Although the adjustment of TBM and ROC parameters will be the primary method for tuning the UBL to the optimal value, 
 the aim of this calibration is to set the laser gain at the lowest level that will allow the TBM UBL to be sufficiently low for an optimal readout of the signal.
-In fact, too high laser gain values will increase the power drawn and they are intended to be used to compensate for radiation damage over time.
-The optimal laser gain setting is chosen as the lowest value that provides an UBL below a user-defined threshold.
+In fact, an excessively high laser gain value will increase the power drawn, and this range is intended to be used to compensate for radiation damage over time.
+The optimal laser gain setting is chosen as the lowest value that provides a UBL below a user-defined threshold.
 
-\subsection*{4) TBM and ROC ultra black levels}
+\subsection*{4) TBM and ROC ultra-black levels}
 
-With the black level set at about 450 ADC counts by the FED baseline calibration and automatic correction, the next step consists in a fine adjustment of the TBM and ROC ultra black levels.
+With the black level set at about 450 ADC counts by the FED baseline calibration and automatic correction, the next step consists in a fine adjustment of the TBM and ROC ultra-black levels.
 First, the TBM settings are calibrated to set the TBM header and trailer UBL to a value of about 250 ADC counts.
 There are three registers on the TBM affecting the UBL, where higher configured values correspond to lower UBL and hence, larger BL-UBL separation. Furthermore, two of them affect also the signal from the ROCs.
 A simultaneous scan of all three registers is usually performed.
-Although higher settings generally provide lower ultra black levels, at very high values the UBL may actually increase. 
+Although higher settings generally provide lower ultra-black levels, at very high values the UBL may actually increase. 
 Thus, if the calibration finds multiple settings that give the target UBL, it will choose the lower ones.
 
-Dual TBMs represent a special case. The two channels on a dual TBM share the same registers, so that they cannot be adjusted independently to tune both ultra black levels at the target value.
+Dual TBMs represent a special case. The two channels on a dual TBM share the same registers, so that they cannot be adjusted independently to tune both ultra-black levels at the target value.
 In this case, the settings are optimized such that one channel is at the target UBL, and the other is below.\\
 
-A second calibration is run that sets the ultra black level for each ROC equal to the corresponding TBM's UBL.
+A second calibration is run that sets the ultra-black level for each ROC equal to the corresponding TBM's UBL.
 There are two DAC settings on the ROC which affect the UBL, and higher configured values correspond to lower UBL (and larger BL-UBL separation).
 %VIbias\_roc affects UB, address levels, and pulse height. VIbias\_DAC affects UB and address levels, but not pulse height. In this routine, VIbias\_DAC is scanned while VIbias\_roc is fixed.
 
@@ -278,9 +279,9 @@ These calibrations have to be repeated every time the previous steps 2 and 3 are
 The rest of the calibrations require the use of the charge injection feature of the ROC.
 For the injected charge to be readout as a hit, it has to cross the comparator threshold and be validated by the trigger (which involves the timing of the injection).
 Thus, a calibration is first run that aims at finding the settings for each ROC for the comparator threshold and for the delay at which the charge is injected into the pixels.
-It is meant at quickly finding a working point in which the injected test charge can be read out.
+It is meant to quickly find a working point in which the injected test charge can be read out.
 The amplitude of the injected signal is set by programming the corresponding DAC register (\textit{Vcal}).
-Since these settings are common to all pixels in a ROC, only few cells can be enabled for this calibration.
+Since these settings are common to all pixels in a ROC, only a few cells can be enabled for this calibration.
 A 2D scan of the threshold and delay settings is performed: for each pair of values, a defined number of triggers are sent and for each of them the event is readout from FIFO1 or FIFO3 to verify that the hits have been collected for each ROC. The settings are changed by programming the corresponding DAC registers, \textit{VcThr} and \textit{CalDel}.
 
 It has to be mentioned that the \textit{CalDel} setting is only relevant for calibration data taken with charge injection.
@@ -288,7 +289,7 @@ For real data, only the trigger delay has to be known and programmed into the so
 The trigger delay basically sets the bunch crossing in which data is read out and is estimated from the known cable/fiber lengths and delays introduced by the electronics.
 
 An example of \textit{VcThr} versus \textit{CalDel} scan is shown in Fig.~\ref{fig:VcThrCalDel_a}.
-For large \textit{VcThr} values, which correspond to low thresholds, a large number of pixel fire due to noise such that to block a double column.
+For large \textit{VcThr} values, which correspond to low thresholds, a large number of pixels fire due to noise such that to block a double column.
 For lower values, hits are collected in the \textit{CalDel} range that corresponds to the \textit{WBC} used.
 The curve bends to smaller delay values as the \textit{VcThr} decreases. The explanation for this behavior is illustrated in Fig.~\ref{fig:VcThrCalDel_b}.
 Since a low \textit{VcThr} value corresponds to a higher threshold, the signal reaches the threshold later and hence a smaller delay is needed for the signal, i.e. the signal is injected earlier.
@@ -349,7 +350,7 @@ In fact, the detection thresholds are an important parameter of the pixel detect
 The thresholds are measured through the so called ``S-curve'' scan, which provides the pixel response efficiency as a function of the amplitude of the injected test charge (\textit{Vcal}), varied from 0 to its maximum.
 The \textit{Vcal} value where the signal shows 50\% efficiency is defined as the threshold.
 As for the pixel alive test, the data are analyzed offline to produce the final results.
-An example of such scan is shown in Fig.~\ref{fig:SCurve_a} for a test conducted in the clean room at a temperature of -15\unit{$^\circ$C}.\\
+An example of such a scan is shown in Fig.~\ref{fig:SCurve_a} for a test conducted in the clean room at a temperature of -15\unit{$^\circ$C}.\\
 
 \begin{figure}[!t]
  \begin{center}
@@ -424,10 +425,10 @@ Figure~\ref{fig:VanaCalib} illustrates the evolution of the \textit{Vana} settin
 
 This step is meant to set the threshold of each ROC at the lowest practical value, so that the threshold is low enough to detect low amplitude signals and ensure high hit resolution,
 but above the noise level.
-The procedure for minimizing the threshold starts setting a large value of the comparator threshold (for instance 50 \textit{Vcal}) in each ROC such that it is above the level of noise.
-The threshold is then lowered by 2 units and a pixel alive test or S-curve is run to check wether a ROC is failing because the threshold is too low and noise occurs.
-The procedure is iterated until all ROCs reach the minimum achievable value. For each iteration the charge injection timing has to be reoptimized as well.
-Several scripts have been implemented during LS1 to automatize this time consuming procedure. An example of the results from tests conducted in the clean room during LS1 is shown in Fig.~\ref{fig:ThrCalibLS1}.
+The procedure for minimizing the threshold starts by setting a large value of the comparator threshold (for instance 50 \textit{Vcal}) in each ROC such that it is above the level of noise.
+The threshold is then lowered by 2 units and a pixel alive test or S-curve is run to check whether a ROC is failing because the threshold is too low such that noise occurs.
+The procedure is iterated until all ROCs reach the minimum achievable value. For each iteration the charge injection timing has to be re-optimized as well.
+Several scripts have been implemented during LS1 to automatize this time-consuming procedure. An example of the results from tests conducted in the clean room during LS1 is shown in Fig.~\ref{fig:ThrCalibLS1}.
 The final threshold and noise distributions for the whole detector obtained with this method before the start of data-taking in 2015 are discussed in Section~\ref{sec:commissioning}.
 
 \begin{figure}[!htb]
@@ -444,8 +445,8 @@ The final part of the calibration procedure is aimed at maximizing the range and
 In fact, the hit position is interpolated from the charge information of all pixels in a cluster. For a precise position resolution it is therefore crucial to know for each pixel the exact response curve (or pixel gain) that converts the analog pulse height (in ADC counts) into the corresponding charge.
 %Furthermore, a linear response is preferable in order to simplify its modeling and hence, reduce uncertainties in the position resolution.
 The response curve is measured by injecting signals with increasing amplitudes to each pixel and measuring the analog pulse height.
-Before this calibration, the linearity of the response curve is optimized by adjusting few DAC registers in the ROC.
-The linearity is required for two reasons. On one hand the non-linear behavior in the low range does not allow to reconstruct the charge of the signal, on the other hand fewer parameters have to be stored in the data base.
+Before this calibration, the linearity of the response curve is optimized by adjusting a few DAC registers in the ROC.
+The linearity is required for two reasons. On one hand the non-linear behavior in the low range does not allow the reconstruction of the charge of the signal, on the other hand fewer parameters have to be stored in the data base.
 The \textit{VhldDel} register controls the delay that is applied to each pulse before its height is sampled and stored in the sample and hold capacitance until the readout mechanism is started from the periphery.
 The supply voltage of the sample and hold circuit is regulated by the \textit{Vsf} register.
 
@@ -470,7 +471,7 @@ Hence, a calibration is run to optimize these settings as well.
 
 After these fine adjustments, the measurement of the response curve for each pixel is performed. For each pixel about 30 charge values are injected. 
 During the scan, the acquired data is stored in binary files and is later analyzed offline. All pixels have to be calibrated, therefore, the procedure is time consuming and takes about 8 hours for the whole detector.
-An example of such measurement for one pixel is shown in Fig.~\ref{fig:GainCalib}. For comparison, an example exhibiting a non-linear behavior for a non optimal \textit{Vsf} setting is also shown.
+An example of such a measurement for one pixel is shown in Fig.~\ref{fig:GainCalib}. For comparison, an example exhibiting a non-linear behavior for a non-optimal \textit{Vsf} setting is also shown.
 The saturation in the high range is less important since it occurs for charges of more than 30-40 ke.
 
 \begin{figure}[!htb]
@@ -513,15 +514,14 @@ Finally, in Section~\ref{sec:BPixPerf2015}, the detector performance at the begi
  \begin{center}
  \includegraphics[width=0.8\textwidth]{\chfifteen/aIMG_6479ts.jpeg}
  \end{center}
- \caption{Pictures taken on the CMS underground platform after the reinstallation of the barrel pixel detector in December 2014. The operations were coordinated by the PSI and UZH teams.}
+ \caption{Pictures taken on the CMS underground platform after the reinstallation of the barrel pixel detector in December 2014. The operations were coordinated by the PSI and UZH teams. The author of this work is second from left.}
  \label{fig:BPixInst}
 \end{figure}
 
 \subsection{Installation into CMS}\label{sec:BPixInst}
 
 The barrel pixel detector reinstallation into CMS took place only three months later than originally planned due to the incident mentioned in the previous section. 
-Particular care was given to the centering of the detector with respect to the new beam pipe, required for the upgraded pixel detector planned for Spring 2017 (Chapter~\ref{ch:Phase1Intro}),
-since before it had been slightly shifted irradiating one side stronger than the other.
+%Particular care was given to the centering of the detector with respect to the new beam pipe, required for the upgraded pixel detector planned for Spring 2017 (Chapter~\ref{ch:Phase1Intro}), since before it had been slightly shifted irradiating one side stronger than the other.
 Figure~\ref{fig:BPixInst2} shows pictures taken on the CMS underground platform illustrating the operations conducted in the first two days.
 The first day, each half of the detector was moved inside a transport box from the clean room and lowered down to the cavern through the main shaft.
 A system with rails on top and bottom inside CMS had been designed to insert the pixel detector and the supply tubes along the beam pipe.
@@ -563,10 +563,10 @@ A picture of the detector in the final position with all power and control cable
  %\label{fig:OpticalConn}
 %\end{wrapfigure}
 After the installation, the detector was then checked out at room temperature of about 16\unit{$^\circ$C}.
-The basic set of calibrations was run from the CMS control room aimed at assessing the detector status and setting the basic operating parameters.
+The basic set of calibrations were run from the CMS control room aimed at assessing the detector status and setting the basic operating parameters.
 These include calibrations of the Delay25 chip, FED baseline, AOH bias and gain, TBM and ROC UB, and address levels.
 The absence of a good quality TBM signal in the FED (Fig.~\ref{fig:FEDBaseline}) or bad address levels indicate poor optical connections.
-This kind of problems were immediately established and solved underground on the platform by recleaning the optical connectors with special tools.
+These kind of problems were immediately established and solved underground on the platform by recleaning the optical connectors with special tools.
 Few iterations were needed.
 These operations were completed in about 3 days establishing the functionality of the whole BPix detector.
 Only 1\% dead or disabled channels were found and most of them were acknowledged during LS1.
@@ -576,12 +576,12 @@ The check out procedure was repeated after the insertion of the FPix.
 
 As discussed at the beginning of this chapter, it was planned to operate the detector at -10\unit{$^\circ$C} since low temperatures
 are favorable to mitigate the effects of radiation damage and guarantee excellent performance.
-Since the detector settings largely depend on the temperature, a full calibration of the detector under the new conditions has to be performed.
-Because of the limited amount of time, it was not possible to achieve this before the reinstallation, and tests were conducted for only few sectors aimed at verifying some basic functionalities at such low temperatures.
+Since the detector settings largely depend on the temperature, a full calibration of the detector under the new conditions needed to be performed.
+Because of the limited amount of time, it was not possible to achieve this before the reinstallation, and tests were conducted for only a few sectors aimed at verifying some basic functionalities at such low temperatures.
 %However, it was not possible to perform the full calibration at low temperature was never been performed except for the tests conducted in the clean room during LS1
 %for only few sectors and aimed at ensuring basic functionalities under such conditions.
 The full calibration procedure was instead run in January 2015 and completed in only 8 days, including the final optimization of the signal performance (Section~\ref{subsec:calibPart2}).
-The improvements added to the procedure during LS1 as well as the time spent in practicing it 
+The improvements added to the procedure during LS1 as well as the time spent practicing its functionality
 were crucial to make these time consuming operations much faster and smoother with respect to 2011 and 2012.\\
 %The final adjustments of outsiders (ROCs not converging at the end of the procedure) were quite time consuming, typically fixed by hand
 
@@ -661,7 +661,7 @@ The noise quickly reached similar values as that of the old modules, which no lo
  \label{fig:ClusterChargeVsLumi}
 \end{figure}
 
-Cluster properties like charge and size are important indicators of detector conditions and they have been monitored throughout the year by the pixel group.
+Cluster properties like charge and size are important indicators of detector conditions and they have been monitored throughout 2015 by the pixel group.
 The cluster charge is determined by fitting the Landau distribution (Fig.~\ref{fig:Landau}) arising from the hits of tracks with $\pt > 1\GeV$ and extracting the MPV parameter.
 In the Run~1 measurements, the MPV changed significantly throughout the year and also after calibrations during technical stop periods (Fig.~\ref{fig:ClusterChargeVsLumi_a}).
 %Each sudden increase is due to the increased cluster size after every threshold readjustment. Each sudden

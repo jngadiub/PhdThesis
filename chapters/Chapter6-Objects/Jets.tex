@@ -150,15 +150,15 @@ The fully-calibrated PF jets are finally obtained in both data and simulation by
 p_\mathrm{T,corr} = p_\mathrm{T,raw} \times C_\mathrm{pu}(p_\mathrm{T,raw},\eta,\rho\cdot\mathrm{A}) \times C_\mathrm{sim}(C_\mathrm{pu} \cdot p_\mathrm{T,raw},\eta) \times C_\mathrm{res}(C_\mathrm{pu} \cdot C_\mathrm{sim} \cdot p_\mathrm{T,raw},\eta)
 \end{equation}
 
-where $C_\mathrm{pu}$ represents the pileup correction, $C_\mathrm{sim}$ is the simulated response correction and $C_\mathrm{res}$ is the global residual correction applied only on jets in data.
+\noindent where $C_\mathrm{pu}$ represents the pileup correction, $C_\mathrm{sim}$ is the simulated response correction and $C_\mathrm{res}$ is the global residual correction applied only on jets in data.
 Figure~\ref{fig:jesunc813TeV} shows the overall uncertainty on the corrections to the jet energy scale for AK5 and AK4 CHS jets for 8 and 13\TeV data, respectively. In both cases, the final uncertainties are below 3\% across the phase space of this analysis.
 
 \begin{figure}[!htb]
 \centering
 \subfigure[]{\label{fig:jesunc_ak5chs_a}\includegraphics[width=0.45\textwidth]{\chsix/jesunc-ak5chs-pt.pdf}}
 \subfigure[]{\label{fig:jesunc_ak5chs_b}\includegraphics[width=0.45\textwidth]{\chsix/jesunc-ak5chs-eta.pdf}}\\
-\subfigure[]{\label{fig:jesunc_ak4chs_c}\includegraphics[width=0.45\textwidth]{\chsix/jesunc-ak4chs-pt.png}}
-\subfigure[]{\label{fig:jesunc_ak4chs_d}\includegraphics[width=0.45\textwidth]{\chsix/jesunc-ak4chs-eta.png}}
+\subfigure[]{\label{fig:jesunc_ak4chs_c}\includegraphics[width=0.45\textwidth]{\chsix/jesunc-ak4chs-pt.pdf}}
+\subfigure[]{\label{fig:jesunc_ak4chs_d}\includegraphics[width=0.45\textwidth]{\chsix/jesunc-ak4chs-eta.pdf}}
 \caption{Summary of jet energy scale systematic uncertainties for the 8\TeV data collected in 2012 for AK5 CHS jets (upper plots) and for the 13\TeV data collected in 2015 for AK4 CHS jets (lower plots). Uncertainties are shown for jets at $|\eta| = 0$ as a function of the corrected jet \pt (left), and for jets with $\pt = 30\GeV$ as a function of the jet $|\eta|$ (right)~\cite{Khachatryan:2016kdb,CMS-DP-2016-020}.}
 \label{fig:jesunc813TeV}
 \end{figure}
@@ -166,6 +166,16 @@ Figure~\ref{fig:jesunc813TeV} shows the overall uncertainty on the corrections t
 The energy resolution of jets is relatively poor compared to the resolution of other physics objects (electrons, muons, photons), and the biases caused by jet resolution smearing are important for steeply falling spectra and for resonance decays. Hence, calibrations are evaluated to correct the jet energy resolution in addition to the corrections to the jet energy scale described above. The measurements are performed with methods which are extensions of the methods used for measuring jet energy scales, but instead of looking at the mean of the response distribution, the width is the interesting parameter. Furthermore, corrections have to compensate for effects that do not produce an overall shift in the mean, but that can widen the distribution. As shown in Fig.~\ref{fig:resolcorr813TeV}, the jet energy resolution in data is worse than in the simulation by 10--20\% depending on $\eta$, and the jets in simulation need to be smeared accordingly.\\
 %Typical jet energy resolutions at the central rapidities are 15--20\% at 30\GeV, about 10\% at 100\GeV, and 5\% at 1\TeV. 
 %The total uncertainty varies between 3--8\% for $|\eta| < 2.3$, increasing toward higher rapidity.
+
+\begin{figure}[!htb]
+\begin{center}
+%\subfigure[]{\label{fig:resolcorr_ak5chs_a}\includegraphics[width=0.45\textwidth]{\chsix/resolution-ak5chs-eta.pdf}}
+%\subfigure[]{\label{fig:resolcorr_ak4chs_b}\includegraphics[width=0.45\textwidth]{\chsix/resolution-ak4chs-eta.png}}
+\includegraphics[width=0.45\textwidth]{\chsix/resolution-ak4chs-eta.png}
+\end{center} 
+\caption{Data-to-simulation scale factors for the jet \pt resolution for AK5 CHS jets as a function of $|\eta|$ determined from 8\TeV data collected in 2012, and for AK4 CHS jets in 13\TeV data collected in 2015~\cite{CMS-DP-2016-020}.}
+\label{fig:resolcorr813TeV}
+\end{figure}
 
 Jets used in this analysis are requested to pass loose identification criteria, in order to reject spurious jet-like features originating from isolated noise patterns in the calorimeters or the tracker. The efficiency of these requirements is above 99\% for real jets~\cite{CMS-PAS-JME-10-003}. 
 
@@ -187,16 +197,6 @@ The same selections are applied for AK4 and AK8 jets in the 13\TeV data analysis
 %As a consequence of these results, other analyses involving similar kinematic cuts and identification algorithms have been affected~\cite{CMS-PAS-EXO-15-008}.
 %However, this problem has been fixed for Run~2 and this additional fiducial cut does not have to be applied in 13\TeV data analyses.
 
-\begin{figure}[!htb]
-\begin{center}
-%\subfigure[]{\label{fig:resolcorr_ak5chs_a}\includegraphics[width=0.45\textwidth]{\chsix/resolution-ak5chs-eta.pdf}}
-%\subfigure[]{\label{fig:resolcorr_ak4chs_b}\includegraphics[width=0.45\textwidth]{\chsix/resolution-ak4chs-eta.png}}
-\includegraphics[width=0.45\textwidth]{\chsix/resolution-ak4chs-eta.png}
-\end{center} 
-\caption{Data-to-simulation scale factors for the jet \pt resolution for AK5 CHS jets as a function of $|\eta|$ determined from 8\TeV data collected in 2012, and for AK4 CHS jets in 13\TeV data collected in 2015~\cite{CMS-DP-2016-020}.}
-\label{fig:resolcorr813TeV}
-\end{figure}
-
 %%%%%%%% 
 \subsection{Identification of b jets}\label{subsec:bjets}
 %%%%%%%%
@@ -206,9 +206,9 @@ The same selections are applied for AK4 and AK8 jets in the 13\TeV data analysis
 %https://twiki.cern.ch/twiki/bin/viewauth/CMS/BtagRecommendation53XReReco
 %https://twiki.cern.ch/twiki/bin/view/CMSPublic/PhysicsResultsBTV
 
-The identification of jets originating from b quarks (``b jets'') is one of the key ingredients of the analysis described in this work, which aims at isolating events of new physics with H bosons decaying to $\bbbar$. The ability to identify b jets (``b tagging'') plays a crucial role in reducing background coming from processes involving jets from gluons and light-flavor quarks (u, d, s), and from c quark fragmentation.
+The identification of jets originating from b quarks (``b jets'') is one of the key ingredients of the analysis described in this work, which aims at isolating events of new physics with H bosons decaying to $\bbbar$. The ability to identify b jets (``b tagging'') plays a crucial role in reducing background coming from processes involving jets from gluons and light-flavor quarks (u, d, s), and from c-quark fragmentation.
 
-Identifying b jets relies on the properties of the weak decay and fragmentation of the b hadrons formed from the original b quarks. The most important property is the relatively long lifetime of b hadrons of about 1.5\unit{ps} ($c\tau \equiv 450\mu m$) corresponding to a flight distance that is observable with high resolution tracking detectors. A b hadron with $\pt = 50\GeV$ propagates, on average, over almost half a centimetre ($Lc \sim \gamma\tau$) before decaying. As shown in Fig.~\ref{fig:bjet}, this leads to secondary vertices displaced from the primary event vertex and charged particle tracks incompatible with the primary vertex with sizeable impact parameter. In addition, b hadrons have a large mass and large multiplicity of charged particles in the final state (about five charged particles on average per b-hadron decay). Because of the hard b-fragmentation function, the b hadron in a b jet carries a large fraction of the jet energy. Since b and c hadrons may decay semileptonically, in about 20\% (per lepton species) of the cases an electron or muon is produced inside a b jet, if both direct and cascade decays are taken into account.
+Identifying b jets relies on the properties of the weak decay and fragmentation of the b hadrons formed from the original b quarks. The most important property is the relatively long lifetime of b hadrons of about 1.5\unit{ps} ($c\tau \equiv 450\mu m$) corresponding to a flight distance that is observable with high resolution tracking detectors. A b hadron with $\pt = 50\GeV$ propagates, on average, over almost half a centimetre ($L \sim \gamma c \tau$) before decaying. As shown in Fig.~\ref{fig:bjet}, this leads to secondary vertices displaced from the primary event vertex and charged particle tracks incompatible with the primary vertex with sizeable impact parameter. In addition, b hadrons have a large mass and large multiplicity of charged particles in the final state (about five charged particles on average per b-hadron decay). Because of the hard b-fragmentation function, the b hadron in a b jet carries a large fraction of the jet energy. Since b and c hadrons may decay semileptonically, in about 20\% (per lepton species) of the cases an electron or muon is produced inside a b jet, if both direct and cascade decays are taken into account.
 
 \begin{figure}[!htb]
  \begin{center}
@@ -278,7 +278,7 @@ Two likelihood ratios are built from these variables used to discriminate betwee
 \label{fig:csv_813TeV}
 \end{figure}
 
-The CSV algorithm was further optimized for Run~2 and the new version is referred to as CSV version 2 (CSVv2)~\cite{CMS-PAS-BTV-15-001}. The main differences with respect to the Run~1 version of the CSV algorithm are the different vertex reconstruction algorithm used, the number of input variables and the way those are combined. As in the previous version, the input variables are combined using a multivariate technique. However, the method previously used limited the amount of input variables since correlation between those could not be taken into account properly. In addition, the secondary vertex information is obtained with the IVF method described above. Figure~\ref{fig:csv_813TeV_b} shows the distribution of the CSVv2 discriminator value in a multijet sample for 13\TeV data and for simulation, for jets clustered with the AK4 algorithm.
+The CSV algorithm was further optimized for Run~2 and the new version is referred to as CSV version 2 (CSVv2)~\cite{CMS-PAS-BTV-15-001}. The main differences with respect to the Run~1 version of the CSV algorithm are the different vertex reconstruction algorithm used, the number of input variables and the way those are combined. As in the previous version, the input variables are combined using a multivariate technique. However, the method previously used limited the amount of input variables since correlations between those could not be taken into account properly. In addition, the secondary vertex information is obtained with the IVF method described above. Figure~\ref{fig:csv_813TeV_b} shows the distribution of the CSVv2 discriminator value in a multijet sample for 13\TeV data and for simulation, for jets clustered with the AK4 algorithm.
 
 The performance of the CSVv2 tagger is presented in Fig.~\ref{fig:btagalgo} as the b-jet identification efficiency versus the misidentification probability for jets in simulated \ttbar events requiring jet $\pt > 30\GeV$. A comparison is shown with the Run~1 version of the CSV algorithm trained for 8\TeV pp collisions using AK5 jets. The absolute improvement of the CSVv2 algorithm with respect to the CSV is of the order of 2 to 4\% in b-jet identification efficiency when comparing at the same misidentification probability for light-flavour jets. The improvement of using IVF vertices with respect to using AVR vertices in the CSVv2 algorithm is of the order of 1 to 2\%.\\
 %For light-flavour jets, the absolute efficiency improves by about 4\% with respect to the CSVv2 algorithm.
@@ -292,7 +292,7 @@ The performance of the CSVv2 tagger is presented in Fig.~\ref{fig:btagalgo} as t
 \end{figure}
 
 The value of the discriminator threshold for the b-tagging algorithms used in this analysis and the corresponding efficiencies are presented in Table~\ref{tab:btagwp}.
-In this analysis the medium working point is used to identify and reject \ttbar events where a real b jet is expected in addition to the large-cone jet used to reconstruct the $\PV\to\qqbarpr$ or $\PH\to\bbbar$ candidate, representing instead the signal. The same b-tagging algorithm but together with the loose working point is used to identify whether the CA8 jet comes from a H boson decaying into bottom quarks, as described in Section~\ref{sec:htagging}.
+In this analysis the medium working point is used to identify and reject \ttbar events where a real b jet is expected in addition to the large-cone jet used to reconstruct the $\PV\to\qqbar$ or $\PH\to\bbbar$ candidate, representing instead the signal. The same b-tagging algorithm but together with the loose working point is used to identify whether the CA8 jet comes from a H boson decaying into bottom quarks, as described in Section~\ref{sec:htagging}.
 
 \begin{table}[!htb]
 \centering

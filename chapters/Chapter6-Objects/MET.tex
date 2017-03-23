@@ -28,7 +28,7 @@ The raw missing transverse momentum can be written as:
 {\vec p}_\mathrm{T}^\mathrm{\; miss,raw} = - \sum_{i}^{N_\mathrm{jets}} {\vec p}_{\mathrm{T},i}^{\;\mathrm{raw}} - \sum_{i}^{N_\mathrm{uncl}} {\vec p}_{\mathrm{T},i},
 \end{equation}
 
-where the first and second sum runs over the \pt of the PF candidates clustered as jets and unclustered, respectively, and the superscript ``raw'' indicates the uncorrected value.
+\noindent where the first and second sum runs over the \pt of the PF candidates clustered as jets and unclustered, respectively, and the superscript ``raw'' indicates the uncorrected value.
 The correction to the \ptvecmiss is then obtained by replacing the first sum with the vector sum of the transverse momenta of the jets to which jet energy scale corrections (JEC) are applied:
 
 \begin{equation}
@@ -36,6 +36,11 @@ The correction to the \ptvecmiss is then obtained by replacing the first sum wit
 \end{equation}
 
 where the sum is performed over all jets with corrected $\pt > 10\GeV$.
+This term is then added to the raw ${\vec p}_\mathrm{T}^\mathrm{\; miss,raw}$ to yield the corrected value:
+
+\begin{equation}
+{\vec p}_\mathrm{T}^\mathrm{\; miss,JEC} = {\vec p}_\mathrm{T}^\mathrm{\; miss,raw} + {\vec C}_\mathrm{T}^\mathrm{JEC} = - \sum_{i}^{N_\mathrm{jets}} {\vec p}_{\mathrm{T},i}^{\;\mathrm{JEC}} - \sum_{i}^{N_\mathrm{uncl}} {\vec p}_{\mathrm{T},i}.
+\end{equation}
 
 %Further corrections improve the performance of the \ptvecmiss reconstruction in events with large numbers of pileup interactions. This is achieved as explained in the following.
 %
@@ -72,11 +77,13 @@ where the sum is performed over all jets with corrected $\pt > 10\GeV$.
 Another type of correction is derived and applied to correct for a modulation in $\phi$ in the \ptvecmiss present not only in data but also in simulation. The distribution of genuine \ptvecmiss is instead independent of $\phi$ because of the rotational symmetry of the collisions around the beam axis. The possible causes of the modulation include imperfect detector alignment, inefficiencies, a residual \pt dependence of the calibration, and a shift between the center of the detector and the beam line. The correction for this effect can be expressed as a shift in the \ptvecmiss components along the $x$ and $y$ detector coordinates, which increases approximately linearly with the number of reconstructed vertices. This correlation is used for a correction procedure as follows
 
 \begin{equation}
-{\vec E}_{\mathrm{T},x}^\mathrm{\; miss,\phi corr} = {\vec E}_{\mathrm{T},x}^\mathrm{\; miss,raw} - (c_{x_0} + c_{x_s}N_\mathrm{vtx}),\\
-{\vec E}_{\mathrm{T},y}^\mathrm{\; miss,\phi corr} = {\vec E}_{\mathrm{T},y}^\mathrm{\; miss,raw} - (c_{y_0} + c_{y_s}N_\mathrm{vtx}),
+\begin{split}
+{\vec E}_{\mathrm{T},x}^\mathrm{\; miss,\phi corr} & = {\vec E}_{\mathrm{T},x}^\mathrm{\; miss,raw} - (c_{x_0} + c_{x_s}N_\mathrm{vtx}),\\
+{\vec E}_{\mathrm{T},y}^\mathrm{\; miss,\phi corr} & = {\vec E}_{\mathrm{T},y}^\mathrm{\; miss,raw} - (c_{y_0} + c_{y_s}N_\mathrm{vtx}),
+\end{split}
 \end{equation}
 
-where the coefficients are determined separately for data and simulated events.
+\noindent where the coefficients are determined separately for data and simulated events.
 %Other more sophisticated missing energy determinations aimed at improving the resolution have been developed in CMS\cite{Khachatryan:2014gga,CMS-PAS-JME-16-004} but will not be discussed in this section since they are not used in this work.\\
 
 The distributions of the PF \ETmiss, obtained after applying all the corrections described above, in $\PZ\to\MM$, $\PZ\to\EE$, and prompt photon events are presented in Fig.~\ref{fig:met_distr} as measured in 8\TeV data and for simulation. Good agreement between data and simulation is observed in all distributions.

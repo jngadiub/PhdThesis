@@ -101,12 +101,12 @@ In this approach, the level of agreement between the data and hypothesized $\mu$
 \mathrm{CL}_s = \frac{\mathrm{CL}_{s+b}}{\mathrm{CL}_b},
 \end{equation}
 
-and the hypothesized signal $\mu$ is excluded at 95\% confidence level (CL) if $\mathrm{CL}_s \leq 0.05$.
+\noindent and the hypothesized signal $\mu$ is excluded at 95\% confidence level (CL) if $\mathrm{CL}_s \leq 0.05$.
 It is straightforward to see from plot (a) of Fig.~\ref{fig:CLs-ex_b} that, if the distribution of the test statistic for the signal+background hypothesis
 is well separated from the background-only distribution, then $\mathrm{CL}_s \sim \mathrm{CL}_{s+b}$ and there is no risk of misinterpretation.
 
 In order to quote, as conventionally done, 95\% CL observed upper limits, the full procedure is iterated for different values of $\mu$, until $\mathrm{CL}_s = 0.05$ is found.
-This value of $\mu$ is denoted as $\mu_{95\%}$, and one can infer that the hypothesized resonance X$\rightarrow$WV/VH with a cross section $\mu$-times larger than the one predicted 
+This value of $\mu$ is denoted as $\mu_{95\%}$, and one can infer that the hypothesized resonance X$\rightarrow$WV/WH with a cross section $\mu$-times larger than the one predicted 
 by some specific theoretical model $\sigma_{th}$ used as input to the statistical analysis, is excluded at 95\% CL.
 In this analysis, model-independent limits on the cross section are set by rescaling the $\mu^{95\%} = \sigma_{95\%}/\sigma_{th}$ by the input cross section in order to obtain $\sigma_{95\%}$.
 
@@ -146,7 +146,7 @@ By using the Wald approximation~\cite{10.2307/1990256} the desired distribution 
 \tilde{q}_\mu = \frac{(\mu-\hat{\mu})^2}{\sigma^2} + \mathcal{O}(1/\sqrt{N}),
 \end{equation}
 
-where $\hat{\mu}$ follows a Gaussian distribution with a mean $\mu^\prime$ and standard deviation $\sigma$, and $N$ represents the data sample size.
+\noindent where $\hat{\mu}$ follows a Gaussian distribution with a mean $\mu^\prime$ and standard deviation $\sigma$, and $N$ represents the data sample size.
 For large data samples ($N\rightarrow\infty$), the $\mathcal{O}(1/\sqrt{N})$ can be neglected and it can be shown~\cite{wilks1938} that the distribution $f(\tilde{q}_\mu|\mu^\prime)$ of the test statistic $\tilde{q}_\mu$
 follows a \textit{noncentral chi-square} distribution for one degree of freedom with noncentrality parameter
 
@@ -193,7 +193,7 @@ For a given resonance mass hypothesis $M_X$, the test statistic used in this cas
 
 %The constraint $\hat{\mu} \geq 0$ gives an accumulation of the test statistic at zero for events with downward fluctuations, since we are not interested in interpreting a deficit of events with respect to the expected background on an equal footing with an excess.
 The probability density function $f(\tilde{q}_0|0,\hat{\theta}_0^{obs})$ is built by generating MC pseudo-experiments under the assumption of the background-only hypothesis.
-From this distribution, the p-value corresponding to a given experimental observation $q_0^{obs}$ is evaluated:
+From this distribution, the p-value corresponding to a given experimental observation $\tilde{q}_0^{obs}$ is evaluated:
 
 \begin{equation}
 p_0 = P(\tilde{q}_0 \geq \tilde{q}_0^\mathrm{obs}|b(\hat{\theta}_0^\mathrm{obs})) = \int_{\tilde{q}_0^\mathrm{obs}}^{+\infty} f(\tilde{q}_0|0,\hat{\theta}_0^\mathrm{obs})d\tilde{q}_0.
@@ -202,9 +202,10 @@ p_0 = P(\tilde{q}_0 \geq \tilde{q}_0^\mathrm{obs}|b(\hat{\theta}_0^\mathrm{obs})
 This probability is converted into a \textit{significance}, also referred to as \textit{Z value}, as follows
 
 \begin{equation}
-Z = \Phi^{-1} (1-p_0).
+Z = \Phi^{-1} (1-p_0),
 \end{equation}
 
+\noindent where $\Phi^{-1}$ is the quantile of the standard Gaussian distribution.
 A significance of 5$\sigma$, corresponding to a p-value of 2.87$\times$10$^{-7}$, is conventionally used in high energy physics to claim a discovery,
 and 3$\sigma$ for an evidence.
 

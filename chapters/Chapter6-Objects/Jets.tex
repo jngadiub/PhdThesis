@@ -223,16 +223,16 @@ A variety of algorithms have been developed in CMS~\cite{Chatrchyan:2012jua} tha
 Only the tracking detectors offer the spatial resolution needed to measure the properties of b-hadron decays such as their long flight path. Efficient track reconstruction, and in particular precise spatial reconstruction close to the interaction point, is thus the key ingredient. 
 Some of these algorithms use just a single observable, while others combine several of these objects to achieve a higher discrimination power. Each of these algorithms yields a single discriminator value for each jet. The minimum thresholds on these discriminators define loose (``L''), medium (``M''), and tight (``T'') operating points with a misidentification probability for light-flavor jets of 10\%, 1\%, and 0.1\%, respectively, at an average jet \pt of about 80\GeV.
 
-The jets used for b tagging are reconstructed with the PF algorithm and calibrated as described in Section~\ref{subsec:jetsreco}. A sample of well-reconstructed tracks of high purity inside the jet is selected as input to each of the b-tagging methods. In addition to the selection applied in the iterative tracking procedure described in Section~\ref{subsec:tracks}, specific requirements are imposed:
+The jets used for b tagging are reconstructed with the PF algorithm and calibrated as described in Section~\ref{subsec:jetsreco}. A sample of well-reconstructed tracks of high purity inside the jet is selected as input to each of the b-tagging methods. In addition to the selection applied in the iterative tracking procedure described in Section~\ref{subsec:tracks}, specific requirements are imposed on each track:
 
 \begin{itemize}
-\item the fraction of misreconstructed or poorly reconstructed tracks is reduced by requiring $\pt >1\GeV$;
+\item $\pt >1\GeV, which reduces the  fraction of misreconstructed or poorly reconstructed tracks$;
 \item at least 8 tracker hits (including pixel) must be associated with the track;
 \item at least 2 hits are required in the pixel system since track measurements in the innermost layers provide most of the discriminating power;
 \item the normalised $\chi^2$ is required to be $< 5$ to ensure a good-quality fit;
 \item the absolute value of the transverse and longitudinal impact parameter of the track must be $< 0.2$ and $< 17\unit{cm}$, respectively, to reject charged particle tracks having their origin from sources with large displacement from the primary vertex (e.g. photon conversions and nuclear interactions in the beam pipe or the first layers of the pixel detector);
-\item tracks are associated to jets in a cone $\Delta R < 0.3$ around the jet axis, where the jet axis is defined by the primary vertex and the direction of the jet momentum;
-\item in order to reject tracks from pileup the distance to the jet axis, defined as the distance of closest approach of the track to the axis, is required to be $< 700\mum$;
+\item tracks must be associated to jets in a cone $\Delta R < 0.3$ around the jet axis, where the jet axis is defined by the primary vertex and the direction of the jet momentum;
+\item the distance of closest approach of the track to the jet axis is required to be $< 700\mum$, in order to reject tracks from pileup;
 \item the point of closest approach between the track trajectory and the jet axis, must be within 5\unit{cm} of the primary vertex.
 \end{itemize}
 
